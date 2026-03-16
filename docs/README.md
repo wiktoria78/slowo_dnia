@@ -1,0 +1,1 @@
+Pomysł: Aplikacja, która każdego dnia podaje definicję innego polskiego słowa, ale takiego, którego ludzie nie używają/nie znają, tak aby użytkownicy aplikacji posługujący się językiem polskim ładniej się wypowiadali.
