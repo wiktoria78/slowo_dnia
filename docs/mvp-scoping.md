@@ -93,15 +93,16 @@ Tech: React + Tailwind + CSS animations
 ```
 Struktura słowa:
 {
-  "word": "łagodność",
-  "definition": "cecha osoby spokojnej, łagodnej; nieagresywność",
+  "word": "dyletant",
+  "definition": "osoba zajmująca się czymś bez wymaganych kwalifikacji; amator",
   "examples": [
-    "Jego łogodność i cierpliwość zadziwiały wszystkich.",
-    "Łagodność to nie słabość."
+    "Ten dyletant wziął się za naprawę samochodu i tylko pogorszył sprawę.",
+    "Nie jestem dyletantem - studiowałem to przez pięć lat."
   ],
-  "etymology": "od przymiotnika łagodny",
-  "partOfSpeech": "rzeczownik, rodzaj żeński",
-  "category": "cechy charakteru"
+  "etymology": "od włoskiego dilettante, z łaciny dilectare = rozkoszować się",
+  "partOfSpeech": "rzeczownik, rodzaj męski",
+  "category": "charakterystyka osoby",
+  "synonyms": ["amator", "laik"]
 }
 
 Wymagania:
@@ -267,16 +268,17 @@ const getRandomWord = (words) => {
 [
   {
     "id": 1,
-    "word": "łagodność",
-    "definition": "cecha osoby spokojnej, łagodnej; nieagresywność, delikatność",
+    "word": "dyletant",
+    "definition": "osoba zajmująca się czymś bez wymaganych kwalifikacji; amator",
     "examples": [
-      "Jego łagodność i cierpliwość zadziwiały wszystkich wokoło.",
-      "Łagodność to nie słabość, to siła charakteru."
+      "Ten dyletant wziął się za naprawę samochodu i tylko pogorszył sprawę.",
+      "Nie jestem dyletantem - studiowałem to przez pięć lat."
     ],
-    "etymology": "od przymiotnika łagodny",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "cechy charakteru",
-    "synonyms": ["delikatność", "łaskawość", "pogoda"]
+    "etymology": "od włoskiego dilettante, z łaciny dilectare = rozkoszować się",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "charakterystyka osoby",
+    "synonyms": ["amator", "laik"],
+    "difficulty": "easy"
   }
 ]
 ```
@@ -362,10 +364,10 @@ WordCard:
 
 | Kategoria | Przykłady | Liczba |
 |-----------|-----------|--------|
-| **Cechy charakteru** | łagodność, szczerość, odwaga | 25 |
+| **Cechy charakteru** | dyletant, szczerość, odwaga | 25 |
 | **Natura** | zmierzch, południe, szept | 20 |
 | **Uczucia** | tęsknota, radość, nadzieja | 20 |
-| **Sytuacje** | zaduma, zaskoczenie, spokój | 15 |
+| **Sytuacje** | dyletant, zaskoczenie, spokój | 15 |
 | **Inne** | architektura, tradycja | 20 |
 
 ### 8.2 Kryteria Wyboru Słów
