@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #722F37;
+  --color-secondary: #C9A227;
+  --color-background: #FDF5E6;
+  --color-surface: #FFFFFF;
+  --color-text: #2C2C2C;
+  --color-accent: #228B22;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-body {
+  font-family: 'Merriweather', serif;
+}
+
+.font-ui {
+  font-family: 'Inter', sans-serif;
+}

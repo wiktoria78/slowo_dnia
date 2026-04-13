@@ -80,8 +80,14 @@ Słowa są przechowywane w pliku [`src/data/words.json`](src/data/words.json):
 ### 3. Deployment
 
 ```bash
-# Deploy to Vercel
-vercel --prod
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+Lub ręcznie:
+```bash
+npm run build
+npx gh-pages -d dist
 ```
 
 ---
@@ -164,7 +170,7 @@ vercel --prod
 | Styling | Tailwind CSS |
 | Fonts | Playfair Display, Merriweather |
 | State | React Context + localStorage |
-| Hosting | Vercel |
+| Hosting | GitHub Pages |
 | Domain | slowodnia.pl |
 
 **Koszt MVP:** ~50 PLN/rok
@@ -179,7 +185,7 @@ vercel --prod
 | 2 | Core | WordCard + Definition |
 | 3 | Features | Favorites + Archive + Search |
 | 4 | Polish | Animacje + Mobile + Share |
-| 5 | Deploy | Vercel + Domain + SEO |
+| 5 | Deploy | GitHub Pages + Domain + SEO |
 | 6 | Launch | Product Hunt + Social |
 
 ---
@@ -196,7 +202,7 @@ vercel --prod
 - [ ] Share na social media
 - [ ] Mobile responsive
 - [ ] Piękna typografia i design
-- [ ] Deploy na Vercel
+- [ ] Deploy na GitHub Pages
 
 ---
 

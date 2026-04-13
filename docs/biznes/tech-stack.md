@@ -18,7 +18,7 @@ Audyt i optymalizacja stacku technologicznego dla projektu "Słowo Dnia" pod ką
 | **State** | React Context + localStorage | Prosty, bez backendu |
 | **Routing** | React Router v6 | Standard |
 | **Animacje** | Framer Motion | Smooth, beautiful |
-| **Hosting** | Vercel | Free tier, CDN, SSL |
+| **Hosting** | GitHub Pages | Free, CDN, SSL |
 | **Domain** | slowodnia.pl | Brand |
 
 ### 1.2 Stack v2 (Po MVP)
@@ -252,18 +252,20 @@ export const useLocalStorage = (key, initialValue) => {
 
 ## 6. Deployment
 
-### 6.1 Vercel Setup
+### 6.1 GitHub Pages Setup
 
 ```bash
-# Install Vercel CLI
-npm i -g vercel
+# Install gh-pages
+npm install -D gh-pages
 
 # Deploy
-vercel
-
-# Environment variables
-VITE_APP_URL=https://slowodnia.pl
+npm run deploy
 ```
+
+Lub w GitHub Settings:
+1. Settings → Pages
+2. Source: Deploy from branch
+3. Branch: gh-pages / root
 
 ### 6.2 CI/CD Pipeline
 
@@ -283,12 +285,10 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
-      - uses: amondnet/vercel-action@v25
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
 ```
 
 ---
@@ -321,7 +321,7 @@ jobs:
 
 | Pozycja | Koszt |
 |---------|-------|
-| Vercel (hosting) | $0 |
+| GitHub Pages (hosting) | $0 |
 | Domain (.pl) | ~50 PLN/rok |
 | Google Fonts | $0 |
 | **Razem** | **~50 PLN/rok** |
@@ -330,13 +330,13 @@ jobs:
 
 | Pozycja | Koszt |
 |---------|-------|
-| Vercel Pro | $20/mies |
+| GitHub Pages Pro | $0 |
 | Supabase | $0/mies (free tier) |
 | Stripe | 2% + 0.50 PLN |
 | Resend | $0/mies (free tier) |
 | Plausible | €10/mies |
 | Domain | ~50 PLN/rok |
-| **Razem** | **~300 PLN/mies** |
+| **Razem** | **~250 PLN/mies** |
 
 ---
 
@@ -346,11 +346,11 @@ jobs:
 
 | Praktyka | Implementacja |
 |----------|---------------|
-| **HTTPS** | Vercel SSL (auto) |
+| **HTTPS** | GitHub Pages SSL (auto) |
 | **CSP** | Meta tags |
 | **Sanitization** | DOMPurify dla user input |
 | **Secrets** | ENV variables |
-| **Rate limiting** | Vercel Edge |
+| **Rate limiting** | GitHub Pages limits |
 
 ---
 

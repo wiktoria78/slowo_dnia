@@ -1,0 +1,1388 @@
+[
+  {
+    "id": 1,
+    "word": "Dyletant",
+    "definition": "Osoba zajmująca się czymś bez wymaganych kwalifikacji; amator",
+    "examples": [
+      "Ten dyletant wziął się za naprawę samochodu i tylko pogorszył sprawę.",
+      "Nie jestem dyletantem - studiowałem to przez pięć lat."
+    ],
+    "etymology": "od włoskiego dilettante, z łaciny dilectare = rozkoszować się",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "charakterystyka osoby",
+    "synonyms": ["amator", "laik"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "word": "Apropriacja",
+    "definition": "Przyswojenie sobie cudzej własności; zawłaszczenie",
+    "examples": [
+      "Apropriacja kulturowa to nie to samo co inspiracja.",
+      "Doszło do apropriacji terytorium przez sąsiednie państwo."
+    ],
+    "etymology": "od łacińskiego appropriare = przywłaszczać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "prawo",
+    "synonyms": ["zawłaszczenie", "przywłaszczenie"],
+    "difficulty": "hard"
+  },
+  {
+  "id": 3,
+  "word": "Imponderabilia",
+  "definition": "Czynniki trudne do zmierzenia lub uchwycenia, mające wpływ na sytuację; subtelne i niemierzalne elementy rzeczywistości",
+  "examples": [
+    "O wyniku rozmowy zadecydowały imponderabilia, takie jak atmosfera spotkania.",
+    "Nie wszystko da się przewidzieć – w każdej decyzji pojawiają się imponderabilia."
+  ],
+  "etymology": "z łac. 'imponderabilis' („niedający się zważyć”), od 'in-' (nie) + 'ponderare' (ważyć)",
+  "partOfSpeech": "rzeczownik (liczba mnoga)",
+  "category": "pojęcia abstrakcyjne",
+  "synonyms": ["niuanse", "subtelności", "czynniki niemierzalne", "nieuchwytne elementy"],
+  "difficulty": "hard"
+},
+  {
+    "id": 4,
+    "word": "Cnota",
+    "definition": "Dobra cecha moralna; zaleta charakteru",
+    "examples": [
+      "Cnota uczciwości jest fundamentem każdego społeczeństwa.",
+      "Mędrzec gardzi próżnością jako cnotą pozorowaną."
+    ],
+    "etymology": "od łacińskiego virtus = siła, cność",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "etyka",
+    "synonyms": ["zaleta", "cność", "przywaga"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "word": "Dezintegracja",
+    "definition": "Rozpad na części; utrata spójności",
+    "examples": [
+      "Dezintegracja systemu politycznego nastąpiła po wojnie.",
+      "Proces dezintegracji społecznej postępuje w szybkim tempie."
+    ],
+    "etymology": "od łacińskiego des- + integratio = rozwiązanie całości",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "proces",
+    "synonyms": ["rozpad", "rozkład", "rozpadliny"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 6,
+    "word": "Eklektyzm",
+    "definition": "Łączenie różnych stylów, metod, poglądów",
+    "examples": [
+      "Jego malarstwo to eklektyzm różnych epok i kierunków.",
+      "Eklektyzm filozoficzny bywa postrzegany jako brak konsekwencji."
+    ],
+    "etymology": "od greckiego eklektikos = wybierający",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "sztuka",
+    "synonyms": ["mieszanka", "synkretyzm"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "word": "Fascynacja",
+    "definition": "Silne zainteresowanie, urzeczenie",
+    "examples": [
+      "Miał fascynację starożytnymi cywilizacjami od dziecka.",
+      "Fascynacja młodą aktorką trwała tylko sezon."
+    ],
+    "etymology": "od łacińskiego fascinare = czarować",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "emocje",
+    "synonyms": ["urok", "zauroczenie", "powab"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "word": "Gnob",
+    "definition": "Drobny diabeł, skrzat; złośliwy duch",
+    "examples": [
+      "W ludowych wierzeniach gnob zamieszkivał stodoły.",
+      "Dzieci wierzyły, że gnoby wystraszą niegrzecznych."
+    ],
+    "etymology": "od niemieckiego Kobold = duszek",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "mitologia",
+    "synonyms": ["kobold", "skrzat", "duszek"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "word": "Hermetyzm",
+    "definition": "Niezrozumiałość; zamknięcie w sobie",
+    "examples": [
+      "Jego poezja słynęła z hermetyzmu i abstrakcji.",
+      "Styl hermetyczny utrudnia komunikację z czytelnikiem."
+    ],
+    "etymology": "od greckiego hermeneia = wykładnia (według Hermesa)",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "sztuka",
+    "synonyms": ["nieprzystępność", "encyklopedyczność"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "word": "Idiosynkrazja",
+    "definition": "Osobliwość; niezwykła cecha lub awersja",
+    "examples": [
+      "Miał idiosynkrazję do koloru zielonego.",
+      "Idiosynkrazje językowe są fascynującym fenomenem."
+    ],
+    "etymology": "od greckiego idios + synkrasis = mieszanina właściwa",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "charakterystyka",
+    "synonyms": ["osobliwość", "dziwactwo", "wyspa"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "word": "Kontemplacja",
+    "definition": "Głęboka obserwacja; zadumanie, rozmyślanie",
+    "examples": [
+      "Kontemplacja natury dawała mu spokój.",
+      "W ciszy klasztornej oddawał się kontemplacji."
+    ],
+    "etymology": "od łacińskiego contemplatio = patrzenie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan umysłu",
+    "synonyms": ["zadumanie", "medytacja", "refleksja"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "word": "Kuriozum",
+    "definition": "Coś dziwnego, osobliwego; zaskakujący fakt",
+    "examples": [
+      "To kuriozum, że nikt wcześniej tego nie zauważył.",
+      "Muzeum pełne jest kuriozów z całego świata."
+    ],
+    "etymology": "od łacińskiego curiosus = ciekawy",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki",
+    "category": "cecha",
+    "synonyms": ["osobliwość", "rzadkość", "dziwactwo"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "word": "Lukier",
+    "definition": "Słodka masa z cukru i białka; polewa",
+    "examples": [
+      "Ciasto było pokryte cienkim lukrem.",
+      "Lukier królewski wymaga białka i cukru pudru."
+    ],
+    "etymology": "od niemieckie Likör = likier (pierwotnie alkoholowy)",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "kulinaria",
+    "synonyms": ["polewa", "smarowidło"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "word": "Melancholia",
+    "definition": "Smutność, tęsknota; ponury nastrój",
+    "examples": [
+      "Jesienna pogoda wywoływała w nim melancholię.",
+      "Melancholia poetów romantycznych stała się archetypem."
+    ],
+    "etymology": "od greckiego melas + chole = czarna żółć",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "emocje",
+    "synonyms": ["smutek", "tęsknota", "czarnogłów"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "word": "Nostalgia",
+    "definition": "Tęsknota za minionym; błogi żal",
+    "examples": [
+      "Nostalgia za dzieciństwem to uczucie uniwersalne.",
+      "Nostalgia za krajem ogarniała go każdej jesieni."
+    ],
+    "etymology": "od greckiego nostos = powrót + algos = ból",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "emocje",
+    "synonyms": ["tęsknota", "ból", "rozżalenie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "word": "Opuszczność",
+    "definition": "Stan opuszczonego miejsca; pustka",
+    "examples": [
+      "Opuszczność dawnych fabryk świadczy o przemianach.",
+      "Czuł opuszczość po wyprowadzce z rodzinnego domu."
+    ],
+    "etymology": "od 'opuszczony' + -ność",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan",
+    "synonyms": ["pustka", "opor", "opuszczenie"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "word": "Paradoks",
+    "definition": "Twierdzenie logicznie sprzeczne",
+    "examples": [
+      "Paradoks czasu fascynuje filozofów od wieków.",
+      "To paradoks, że bogactwo często przynosi nieszczęście."
+    ],
+    "etymology": "od greckiego para + doxa = przeciwko opinii",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "logika",
+    "synonyms": ["sprzeczność", "anomalia"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "word": "Peregrynacja",
+    "definition": "Podróż, wędrówka; pielgrzymka",
+    "examples": [
+      "Peregrynacja po Europie trwała trzy lata.",
+      "Peregrynacja duchowa była częścią jego życia."
+    ],
+    "etymology": "od łacińskiego peregrinatio = przebywanie za granicą",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "podróż",
+    "synonyms": ["pielgrzymka", "wędrówka", "tułaczka"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "word": "Quiwizacja",
+    "definition": "Zejście na manowce; błędna droga",
+    "examples": [
+      "Polityka rządu to jedna wielka quiwizacja.",
+      "Od quiwizacji uratowała go rozmowa z mentorem."
+    ],
+    "etymology": "od niemieckiego Quiwi = fałszywy (.Argon)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "błąd",
+    "synonyms": ["błąd", "pomyłka", "fiasko"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "word": "Refleksja",
+    "definition": "Zastanowienie; rozmyślanie nad czymś",
+    "examples": [
+      "Refleksja nad własnym życiem jest konstruktywna.",
+      "Poetka dzieliła się refleksjami o naturze."
+    ],
+    "etymology": "od łacińskiego reflectere = odwrócić",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "myślenie",
+    "synonyms": ["zastanowienie", "rozmyślanie", "rozważanie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "word": "Sekularność",
+    "definition": "Świeckość; niezależność od religii",
+    "examples": [
+      "Wzrastająca sekularność społeczeństwa jest faktem.",
+      "Debata o sekularności w szkołach trwa od lat."
+    ],
+    "etymology": "od łacińskiego saecularis = świecki",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "społeczeństwo",
+    "synonyms": ["świeckość", "laickość"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "word": "Transcendencja",
+    "definition": "Występowanie ponad czymś; przekroczenie",
+    "examples": [
+      "Transcendencja Boga jest niepojęta dla ludzi.",
+      "Sztuka pozwala doświadczyć transcendencji."
+    ],
+    "etymology": "od łacińskego transcendere = przechodzić ponad",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "filozofia",
+    "synonyms": ["przekroczenie", "wyniesienie"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 23,
+    "word": "Utopia",
+    "definition": "Niwerealny ideał; wyobrażenie doskonałości",
+    "examples": [
+      "Utopia wolnego społeczeństwa jest jeszcze daleka.",
+      "Każda utopia prędzej czy później upada."
+    ],
+    "etymology": "od greckiego ou + topos = nigdzie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "ideologia",
+    "synonyms": ["ideał", "mir", "baśń"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 24,
+    "word": "Wirtuozostwo",
+    "definition": "Doskonałość w jakiejś dziedzinie; biegłość",
+    "examples": [
+      "Wirtuozostwo pianisty zachwyciło publiczność.",
+      "Jego wirtuozostwo w negocjacjach było legendą."
+    ],
+    "etymology": "od włoskiego virtuoso = doskonały",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki",
+    "category": "umiejętność",
+    "synonyms": ["biegłość", "mistrzostwo", "wprawa"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "word": "Zaduma",
+    "definition": "Głębokie zastanowienie; melancholia",
+    "examples": [
+      "Siedział w zadumie, patrząc przez okno.",
+      "Zaduma nad przemijaniem ogarniała go co jesieni."
+    ],
+    "etymology": "od 'zadumać się' = pogrążyć w myślach",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan umysłu",
+    "synonyms": ["refleksja", "kontemplacja", "rozmyślanie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 26,
+    "word": "Zbędność",
+    "definition": "Niepotrzebność; coś, co można pominąć",
+    "examples": [
+      "Zbędność tego dokumentu jest oczywista.",
+      "Czuł zbędność swojej pracy w korporacji."
+    ],
+    "etymology": "od 'zbędny' + -ność",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "cecha",
+    "synonyms": ["niepotrzebność", "martwość"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 27,
+    "word": "Abnegacja",
+    "definition": "Zaniedbanie siebie; zrezygnowanie z dbania o siebie",
+    "examples": [
+      "Abnegacja w wyglądzie świadczyła o jego stanie emocjonalnym.",
+      "Walka z abnegacją jest trudna, ale możliwa."
+    ],
+    "etymology": "od łacińskiego abnegare = odmówić",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan",
+    "synonyms": ["zaniedbanie", "opuszczenie"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 28,
+    "word": "Bezwzględność",
+    "definition": "Brak litości; surowość",
+    "examples": [
+      "Bezwzględność w interesach bywała okrutna.",
+      "Sędzia słynął z bezwzględności wobec przestępców."
+    ],
+    "etymology": "od 'bezwzględny' = bez litości",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "charakter",
+    "synonyms": ["surowość", "okrutność", "bezlitość"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 29,
+    "word": "CYWILIZACJA",
+    "definition": "Wysoki poziom rozwoju społecznego i kulturalnego",
+    "examples": [
+      "Starożytni Grecy stworzyli cywilizację wpływającą na wieki.",
+      "Każda cywilizacja ma swój szczyt i upadek."
+    ],
+    "etymology": "od łacińskiego civilis = obywatelski",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "społeczeństwo",
+    "synonyms": ["kultura", "społeczeństwo"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 30,
+    "word": "Degustacja",
+    "definition": "Ocenianie smaku; próbowanie",
+    "examples": [
+      "Degustacja win odbyła się w piwnicy pałacu.",
+      "Degustacja herbaty to prawdziwa sztuka."
+    ],
+    "etymology": "od łacińskiego degustare = smakować",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "kulinaria",
+    "synonyms": ["próbowanie", "ocena"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "word": "Efemeryczność",
+    "definition": "Krótkotrwałość; nietrwałość",
+    "examples": [
+      "Efemeryczność mody jest wszechobecna.",
+      "Piękno kwiatów ma efemeryczność zachwycającą."
+    ],
+    "etymology": "od greckiego ephemeros = jednodniowy",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "cecha",
+    "synonyms": ["krótkotrwałość", "nietrwałość"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 32,
+    "word": "Flegmatyk",
+    "definition": "Osoba spokojna, opanowana, nieskora do gniewu",
+    "examples": [
+      "Flegmatyk z natury rzadko się denerwuje.",
+      "Mimo chaosu flegmatyk zachował spokój."
+    ],
+    "etymology": "od greckiego phlegma = śluz (jeden z temperamentów)",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "charakter",
+    "synonyms": ["spokojny", "opanowany"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "word": "Guru",
+    "definition": "Mistrz duchowy; nauczyciel",
+    "examples": [
+      "Guru medytacji przyciągał tysiące uczniów.",
+      "W biznesie guru transformacji był wziętym mówcą."
+    ],
+    "etymology": "od sanskrytu guru = ciężki (autorytet)",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "religia",
+    "synonyms": ["nauczyciel", "mistrz"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "word": "Hybris",
+    "definition": "Pysznność; nadmierna duma prowadząca do upadku",
+    "examples": [
+      "Hybris bohatera doprowadziła do jego tragedii.",
+      "Hybris władców kończy się źle."
+    ],
+    "etymology": "od greckiego hybris = duma, przemoc",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "wada",
+    "synonyms": ["pyszałkowatość", "zarozumiałość"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "word": "Ilocja",
+    "definition": "Opis; przedstawienie czegoś słowami",
+    "examples": [
+      "Ilocja wydarzeń była bardzo szczegółowa.",
+      "Ilocja snu okazała się prorocza."
+    ],
+    "etymology": "od łacińskiego illocutio = wypowiedzenie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "język",
+    "synonyms": ["opis", "relacja"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 36,
+    "word": "Jednostka",
+    "definition": "Pojedyncza osoba; element całości",
+    "examples": [
+      "Każda jednostka ma swój potencjał.",
+      "Jednostka w grupie może wiele zmienić."
+    ],
+    "etymology": "od 'jeden' + -ka",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "społeczeństwo",
+    "synonyms": ["osoba", "element"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 37,
+    "word": "Konsolidacja",
+    "definition": "Zjednoczenie; wzmocnienie",
+    "examples": [
+      "Konsolidacja partii nastąpiła przed wyborami.",
+      "Konsolidacja finansowa firmy wymagała lat."
+    ],
+    "etymology": "od łacińskiego consolidare = umacniać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "proces",
+    "synonyms": ["zjednoczenie", "umocnienie"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "word": "Lansjer",
+    "definition": "Członek oddziału konnego; lansjer",
+    "examples": [
+      "Lansjerzy stanowili elitarne wojska.",
+      "Lansjer w stepie był groźnym przeciwnikiem."
+    ],
+    "etymology": "od francuskiego lansquenet = najemnik",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "wojsko",
+    "synonyms": ["kawalerzysta", "ułan"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 39,
+    "word": "Marność",
+    "definition": "Pustka; próżność; bezwartościowość",
+    "examples": [
+      "Marność tego świata jest streszczona w jednym zdaniu.",
+      "Próżność i marność to różne rzeczy."
+    ],
+    "etymology": "od 'marny' = próżny",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan",
+    "synonyms": ["próżność", "pustka"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "word": "Niezłomność",
+    "definition": "Stałość; nieugiętość",
+    "examples": [
+      "Niezłomność bohatera była wzorem dla pokoleń.",
+      "Niezłomność w obliczu przeciwności budzi szacunek."
+    ],
+    "etymology": "od 'niezłomny' = nieustępliwy",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "charakter",
+    "synonyms": ["nieugiętość", "stałość", "wytrwałość"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "word": "Obligacja",
+    "definition": "Papier wartościowy; zobowiązanie",
+    "examples": [
+      "Obligacje skarbowe są bezpieczną inwestycją.",
+      "Emitowanie obligacji było strategicznym posunięciem."
+    ],
+    "etymology": "od łacińskiego obligare = zobowiązywać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "finanse",
+    "synonyms": ["bon", "weksel"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 42,
+    "word": "ObfITOŚĆ",
+    "definition": "Duża ilość; bogactwo",
+    "examples": [
+      "Obfitość plonów pozwoliła przetrwać zimę.",
+      "Obfitość talentów w drużynie była imponująca."
+    ],
+    "etymology": "od 'obfity' = pełny",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "ilość",
+    "synonyms": ["bogactwo", "urodzaj"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 43,
+    "word": "Percepcja",
+    "definition": "Postrzeganie; rozumienie",
+    "examples": [
+      "Percepcja kolorów różni się u każdego człowieka.",
+      "Percepcja czasu zależy od wieku."
+    ],
+    "etymology": "od łacińskiego perceptio = pojmowanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "psychologia",
+    "synonyms": ["postrzeganie", "rozumienie"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "word": "Pogarda",
+    "definition": "Wysoka pogarda; lekceważenie",
+    "examples": [
+      "Pogarda dla pieniędzy była jego znakiem firmowym.",
+      "Pogarda w oczach była wyraźna."
+    ],
+    "etymology": "od 'pogardzać' = gardzić",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "emocje",
+    "synonyms": ["lekceważenie", "wzgarda"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 45,
+    "word": "Próżniactwo",
+    "definition": "Bezczynność; próżnowanie",
+    "examples": [
+      "Próżniactwo jest matką wszystkich występków.",
+      "Próżniactwo intelektualne go przeszkadzało."
+    ],
+    "etymology": "od 'próżny' + -ctwo",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki",
+    "category": "zachowanie",
+    "synonyms": ["bezczynność", "bierność"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "word": "Reprezentacja",
+    "definition": "Przedstawicielstwo; przedstawienie",
+    "examples": [
+      "Reprezentacja kraju na olimpiadzie była dumą.",
+      "Reprezentacja interesów wymagała negocjacji."
+    ],
+    "etymology": "od łacińskiego representare = przedstawiać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "społeczeństwo",
+    "synonyms": ["przedstawicielstwo"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "word": "Rewelacja",
+    "definition": "Objawienie; zaskakująca wiadomość",
+    "examples": [
+      "Rewelacja w gazecie wstrząsnęła polityką.",
+      "Ta rewelacja zmieniła całe dochodzenie."
+    ],
+    "etymology": "od łacińskiego revelare = odsłaniać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "informacja",
+    "synonyms": ["objawienie", "odkrycie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 48,
+    "word": "Samotność",
+    "definition": "Stan bycia samemu; izolacja",
+    "examples": [
+      "Samotność w górach była wybraną drogą.",
+      "Samotność seniorów to problem społeczny."
+    ],
+    "etymology": "od 'sam' + -ność",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan",
+    "synonyms": ["izolacja", "osamotnienie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 49,
+    "word": "Troska",
+    "definition": "Niepokój; staranie o kogoś",
+    "examples": [
+      "Troska o dzieci była dla niej wszystkim.",
+      "Troska o przyszłość planety rośnie."
+    ],
+    "etymology": "od 'troszczyć się'",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "emocje",
+    "synonyms": ["niepokój", "opiekowanie się"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 51,
+    "word": "Ambicja",
+    "definition": "Dążenie do celu; pragnienie sukcesu",
+    "examples": [
+      "Ambicja sportowca nie znała granic.",
+      "Jego ambicja była siłą napędową kariery."
+    ],
+    "etymology": "od łacińskiego ambitio = obchodzenie, staranie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "charakter",
+    "synonyms": ["dążenie", "pragnienie", " aspiration"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 52,
+    "word": "Archaizm",
+    "definition": "Przestarzałe słowo lub wyrażenie",
+    "examples": [
+      "W tym tekście użyto archaizmów z XVIII wieku.",
+      "Archaizmy dodają mu uroku."
+    ],
+    "etymology": "od greckiego archaios = starożytny",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "język",
+    "synonyms": ["przestarzałe słowo", "anachronizm"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 53,
+    "word": "Atrofia",
+    "definition": "Zanik; stopniowe zmniejszanie się",
+    "examples": [
+      "Atrofia mięśni nastąpiła po długiej chorobie.",
+      "Atrofia edukacji artystycznej jest problemem."
+    ],
+    "etymology": "od greckiego a-trophe = brak pożywienia",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "medycyna",
+    "synonyms": ["zanik", "wygaszenie"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 54,
+    "word": "Benevolentny",
+    "definition": "Życzliwy; przychylny",
+    "examples": [
+      "Benevolentny władca był umiłowany przez lud.",
+      "Ton listu był benevolentny i ciepły."
+    ],
+    "etymology": "od łacińskiego benevolens = życzliwy",
+    "partOfSpeech": "przymiotnik",
+    "category": "charakter",
+    "synonyms": ["życzliwy", "przychylny", "łaskawy"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 55,
+    "word": "Cenzura",
+    "definition": "Kontrola treści; ocenzurowanie",
+    "examples": [
+      "Cenzura w mediałach była surowa.",
+      "Cenzura książek była zakazana."
+    ],
+    "etymology": "od łacińskiego censura = osąd",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "społeczeństwo",
+    "synonyms": ["kontrola", "ocenzurowanie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 56,
+    "word": "Dezorganizacja",
+    "definition": "Brak porządku; chaos",
+    "examples": [
+      "Dezorganizacja w biurze utrudniała pracę.",
+      "Dezorganizacja harmonogramu była widoczna."
+    ],
+    "etymology": "od łacińskiego des- + organizacja",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan",
+    "synonyms": ["chaos", "nieporządek"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 57,
+    "word": "Ekscentryczność",
+    "definition": "Osobliwość; dziwactwo w zachowaniu",
+    "examples": [
+      "Jego ekscentryczność była legendarna.",
+      "Ekscentryczność artystów bywała manifestowana."
+    ],
+    "etymology": "od łacińskiego eccentricus = odśrodkowy",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "charakter",
+    "synonyms": ["osobliwość", "dziwactwo"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 58,
+    "word": "Fascynujący",
+    "definition": "Intrygujący; przyciągający uwagę",
+    "examples": [
+      "Ta książka jest fascynująca od pierwszej strony.",
+      "Fascynujący występ zachwycił widzów."
+    ],
+    "etymology": "od łacińskiego fascinare = czarować",
+    "partOfSpeech": "przymiotnik",
+    "category": "cecha",
+    "synonyms": ["interesujący", "intrygujący"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 59,
+    "word": "Gondolier",
+    "definition": "Wenecki przewoźnik gondolą",
+    "examples": [
+      "Gondolier śpiewał podczas rejsu.",
+      "Spotkałem gondoliera przy kanale."
+    ],
+    "etymology": "od włoskiego gondoliere",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "zawód",
+    "synonyms": ["przewoźnik", "wioślarz"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 60,
+    "word": "Hierarchia",
+    "definition": "Uporządkowany system; stopień ważności",
+    "examples": [
+      "Hierarchia kościelna była jasna.",
+      "Hierarchia w firmie wymagała rewizji."
+    ],
+    "etymology": "od greckiego hierarchia = święte rządzenie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "organizacja",
+    "synonyms": ["układ", "struktur"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 61,
+    "word": "Imponderabilium",
+    "definition": "Coś niemierzalnego; nieuchwytne",
+    "examples": [
+      "Atmosfera spotkania była imponderabilium.",
+      "Miłość to imponderabilium."
+    ],
+    "etymology": "od łacińskiego in- + ponderare = nie ważyć",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki",
+    "category": "filozofia",
+    "synonyms": ["niejawne", "tajemnica"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 62,
+    "word": "Junonny",
+    "definition": "Godny Junony; wspaniały, wspaniałomyślny",
+    "examples": [
+      "Junonny gest wyrazyił szlachetność.",
+      "Junonny wygląd królowej zachwycał."
+    ],
+    "etymology": "od łacińskiego Junonus = Juno (bogini)",
+    "partOfSpeech": "przymiotnik",
+    "category": "cecha",
+    "synonyms": ["wspaniały", "szlachetny"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 63,
+    "word": "Koloryt",
+    "definition": "Charakterystyczny nastrój;barwność",
+    "examples": [
+      "Koloryt tego miasta jest niepowtarzalny.",
+      "Koloryt tekstu wymagał podkreślenia."
+    ],
+    "etymology": "od włoskiego colorito = malowanie",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "sztuka",
+    "synonyms": ["nastrój", "atmosfera"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "word": "Laur",
+    "definition": "Wieniec zwycięstwa; chwała",
+    "examples": [
+      "Laur zwycięstwa spoczął na jego głowie.",
+      "Zdobył laury w wielu dziedzinach."
+    ],
+    "etymology": "od łacińskiego laurus = drzewo laurowe",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "sukces",
+    "synonyms": ["zwycięstwo", "chwała"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 65,
+    "word": "Mitologia",
+    "definition": "Zbiór mitów; nauka o mitach",
+    "examples": [
+      "Mitologia grecka jest fascynująca.",
+      "Studia z mitologii były wymagające."
+    ],
+    "etymology": "od greckiego mythos + logos = słowo o micie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "nauka",
+    "synonyms": ["mity", "wierzenia"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 66,
+    "word": "Nieufność",
+    "definition": "Brak zaufania; podejrzliwość",
+    "examples": [
+      "Nieufność wobec obcych była uzasadniona.",
+      "Nieufność w relacjach jest trudna do przełamania."
+    ],
+    "etymology": "od 'nieufny' = nieufający",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "emocje",
+    "synonyms": ["podejrzliwość", "wątpliwość"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 67,
+    "word": "Obserwacja",
+    "definition": "Uważne patrzenie; badanie",
+    "examples": [
+      "Obserwacja ptaków była jego hobby.",
+      "Obserwacja zachowań wymaga cierpliwości."
+    ],
+    "etymology": "od łacińskiego observatio = pilnowanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "działanie",
+    "synonyms": ["patrzenie", "badanie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 68,
+    "word": "Patos",
+    "definition": "Podniosły nastrój; uroczystość",
+    "examples": [
+      "Patos przemówienia poruszył słuchaczy.",
+      "W filmie nie brakowało patosu."
+    ],
+    "etymology": "od greckiego pathos = uczucie",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "sztuka",
+    "synonyms": ["podniosłość", "uroczystość"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "word": "Reifikacja",
+    "definition": "Traktowanie abstrakcji jako rzeczy",
+    "examples": [
+      "Reifikacja pieniądza jest powszechna.",
+      "Reifikacja pojęć utrudnia myślenie."
+    ],
+    "etymology": "od łacińskiego res = rzecz + facere = robić",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "filozofia",
+    "synonyms": ["uprzedmiotowienie"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 70,
+    "word": "Subtelność",
+    "definition": "Drobny niuans; wyrafinowanie",
+    "examples": [
+      "Subtelność tego gestu była niezauważalna.",
+      "Subtelność kuchni japońskiej jest wyjątkowa."
+    ],
+    "etymology": "od łacińskiego subtilis = delikatny",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "cecha",
+    "synonyms": ["wyrafinowanie", "drobiazg"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 71,
+    "word": "Tolerancja",
+    "definition": "Poszanowanie innych poglądów",
+    "examples": [
+      "Tolerancja jest fundamentem demokracji.",
+      "Tolerancja religijna była postulatem."
+    ],
+    "etymology": "od łacińskiego tolerare = znosić",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "wartość",
+    "synonyms": ["poszanowanie", "akceptacja"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 72,
+    "word": "Utopijny",
+    "definition": "Nierealny; idealny",
+    "examples": [
+      "Utopijne wizje były inspirujące.",
+      "Świat utopijny nie istnieje."
+    ],
+    "etymology": "od greckiego ou + topos = nigdzie",
+    "partOfSpeech": "przymiotnik",
+    "category": "ideologia",
+    "synonyms": ["idealny", "nierealny"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 73,
+    "word": "Wergel",
+    "definition": "Pasterska różdżka; symbol władzy",
+    "examples": [
+      "Wergel pasterski symbolizował opiekę.",
+      "Wergel jako insygnium władzy."
+    ],
+    "etymology": "od łacińskiego virga = różdżka",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "symbol",
+    "synonyms": ["różdżka", "laska"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 74,
+    "word": "Zarozumiałość",
+    "definition": "Przesadne przekonanie o sobie",
+    "examples": [
+      "Zarozumiałość jest oznaką niewiedzy.",
+      "Jego zarozumiałość irytowała otoczenie."
+    ],
+    "etymology": "od 'zarozumiały' = zbyt pewny siebie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "wada",
+    "synonyms": ["pyszałkowatość", "wyniosłość"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 75,
+    "word": "Afirmacja",
+    "definition": "Potwierdzenie; pozytywne stwierdzenie",
+    "examples": [
+      "Afirmacja życia była jego mottem.",
+      "Afirmacja wiary była wzmacniająca."
+    ],
+    "etymology": "od łacińskiego affirmare = potwierdzać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "działanie",
+    "synonyms": ["potwierdzenie", "akceptacja"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 76,
+    "word": "Brzęk",
+    "definition": "Dźwięk metalu; odgłos uderzenia",
+    "examples": [
+      "Brzęk szkła obudził cały dom.",
+      "Brzęk kluczy był słyszalny na korytarzu."
+    ],
+    "etymology": "onomatopeja dźwięku",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "dźwięk",
+    "synonyms": ["dzwonienie", "gardłowanie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 77,
+    "word": "Dystynkcja",
+    "definition": "Wyróżnienie; różnica",
+    "examples": [
+      "Dystynkcja między nimi była jasna.",
+      "Otrzymał dystynkcję za zasługi."
+    ],
+    "etymology": "od łacińskiego distinctio = rozróżnienie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "cecha",
+    "synonyms": ["wyróżnienie", "różnica"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 78,
+    "word": "Emulacja",
+    "definition": "Naśladowanie; współzawodnictwo",
+    "examples": [
+      "Emulacja idoli była powszechna.",
+      "Emulacja w sporcie prowadzi do sukcesu."
+    ],
+    "etymology": "od łacińskiego aemulatio = współzawodnictwo",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "działanie",
+    "synonyms": ["naśladowanie", "współzawodnictwo"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 79,
+    "word": "Fatalizm",
+    "definition": "Przekonanie o nieuchronności losu",
+    "examples": [
+      "Fatalizm starożytnych był głęboki.",
+      "Fatalizm nie jest drogą do sukcesu."
+    ],
+    "etymology": "od łacińskiego fatalis = losowy",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "filozofia",
+    "synonyms": ["przeznaczenie", "los"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 80,
+    "word": "Gnoza",
+    "definition": "Poznanie duchowe; tajemna wiedza",
+    "examples": [
+      "Gnoza byłasecretem starożytnych.",
+      "Gnoza jako forma poznania boskiego."
+    ],
+    "etymology": "od greckiego gnosis = poznanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "religia",
+    "synonyms": ["poznanie", "wiedza"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 81,
+    "word": "Hezychazm",
+    "definition": "Modlitwa milczenia; kontemplacja",
+    "examples": [
+      "Hezychazm praktykowany był w klasztorach.",
+      "Hezychazm to droga do Boga przez ciszę."
+    ],
+    "etymology": "od greckiego hesychia = spokój, cisza",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "religia",
+    "synonyms": ["kontemplacja", "milczenie"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 82,
+    "word": "Ignorancja",
+    "definition": "Niewiedza; brak wiedzy",
+    "examples": [
+      "Ignorancja jest źródłem problemów.",
+      "Ignorancja historyczna jest niebezpieczna."
+    ],
+    "etymology": "od łacińskiego ignorare = nie wiedzieć",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "stan",
+    "synonyms": ["niewiedza", "ciemnota"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 83,
+    "word": "Jungia",
+    "definition": "Jednostka logiczna; pojęcie",
+    "examples": [
+      "Jungia czasu jest abstrakcyjna.",
+      "Te jungie są ze sobą powiązane."
+    ],
+    "etymology": "od łacińskiego jungere = łączyć",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "logika",
+    "synonyms": ["pojęcie", "kategoria"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 84,
+    "word": "Kanon",
+    "definition": "Zbiór prawideł; norma",
+    "examples": [
+      "Kanon literatury jest ustalony.",
+      "Kanon sztuki wymagał rewizji."
+    ],
+    "etymology": "od greckiego kanon = reguła",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "kultura",
+    "synonyms": ["norma", "reguła"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 85,
+    "word": "Lapidarny",
+    "definition": "Zwięzły; krótki i treściwy",
+    "examples": [
+      "Styl lapidarny jest charakterystyczny.",
+      "Odpowiedź była lapidarna i jasna."
+    ],
+    "etymology": "od łaciński lapidarius = dotyczący kamieni",
+    "partOfSpeech": "przymiotnik",
+    "category": "styl",
+    "synonyms": ["zwięzły", "krótki"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 86,
+    "word": "Mnemotechnika",
+    "definition": "Technika zapamiętywania",
+    "examples": [
+      "Mnemotechnika ułatwia naukę.",
+      "Stosował mnemotechnikę na pamięć."
+    ],
+    "etymology": "od greckiego mneme + techne = sztuka pamięci",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "edukacja",
+    "synonyms": ["pamięć", "sztuka zapamiętywania"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 87,
+    "word": "Nieśmiertelność",
+    "definition": "Stan wiecznego życia",
+    "examples": [
+      "Nieśmiertelność jest mitem.",
+      "Nieśmiertelność duszy jest wiarą."
+    ],
+    "etymology": "od 'nieśmiertelny' = wieczny",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "pojęcie",
+    "synonyms": ["wieczność", "nieśmiertelność"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 88,
+    "word": "Oracja",
+    "definition": "Uroczyste przemówienie",
+    "examples": [
+      "Oracja była wzruszająca.",
+      "Oracja na cześć bohatera trwała godzinę."
+    ],
+    "etymology": "od łacińskiego oratio = mowa",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "mowa",
+    "synonyms": ["przemówienie", "mowa"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 89,
+    "word": "Perypetia",
+    "definition": "Zwrot akcji; zmiana losu",
+    "examples": [
+      "Perypetia fabuły była zaskakująca.",
+      "Los przyniósł kolejną perypetię."
+    ],
+    "etymology": "od greckiego peripeteia = nagły zwrot",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "wydarzenie",
+    "synonyms": ["zwrot", "zmiana"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "word": "Quintessence",
+    "definition": "Istota; najczystsza forma",
+    "examples": [
+      "To jest quintessence piękna.",
+      "Quintessence jego filozofii."
+    ],
+    "etymology": "od łacińskiego quinta essentia = piąta esencja",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "filozofia",
+    "synonyms": ["esencja", "istota"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 91,
+    "word": "Reprezentatywny",
+    "definition": "Typowy; będący przedstawicielem",
+    "examples": [
+      "To jest przykład reprezentatywny.",
+      "Próbka była reprezentatywna."
+    ],
+    "etymology": "od łacińskiego representare = przedstawiać",
+    "partOfSpeech": "przymiotnik",
+    "category": "cecha",
+    "synonyms": ["typowy", "przykładowy"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 92,
+    "word": "Sanktuarium",
+    "definition": "Święte miejsce; świątynia",
+    "examples": [
+      "Sanktuarium było odwiedzane przez pielgrzymów.",
+      "Sanktuarium jako miejsce ciszy."
+    ],
+    "etymology": "od łacińskiego sanctuarium = święte miejsce",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki",
+    "category": "religia",
+    "synonyms": ["świątynia", "kościół"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 93,
+    "word": "Teodicea",
+    "definition": "Uzasadnienie dobroci Boga",
+    "examples": [
+      "Teodicea jest problemem filozoficznym.",
+      "Teodicea Leibniza jest klasyczna."
+    ],
+    "etymology": "od greckiego theos + dike = Bóg + sprawiedliwość",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "filozofia",
+    "synonyms": ["apologetyka", "teologia"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 94,
+    "word": "Unifikacja",
+    "definition": "Zjednoczenie; ujednolicenie",
+    "examples": [
+      "Unifikacja Niemiec była historyczna.",
+      "Unifikacja standardów jest potrzebna."
+    ],
+    "etymology": "od łacińskiego unificare = jednoczyć",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "proces",
+    "synonyms": ["zjednoczenie", "ujednolicenie"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 95,
+    "word": "Wibracja",
+    "definition": "Drganie; falowanie",
+    "examples": [
+      "Wibracja struny była słyszalna.",
+      "Wibracja głosu nadawała mu siłę."
+    ],
+    "etymology": "od łacińskiego vibrare = drgać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "fizyka",
+    "synonyms": ["drganie", "falowanie"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 96,
+    "word": "Zebracja",
+    "definition": "Gromadzenie; zbieranie",
+    "examples": [
+      "Zebracja funduszy była udana.",
+      "Zebracja danych wymagała czasu."
+    ],
+    "etymology": "od łacińskiego zebracja = zbieranie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "działanie",
+    "synonyms": ["gromadzenie", "zbieranie"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 97,
+    "word": "Akcydens",
+    "definition": "Cecha przypadkowa; coś nieistotnego",
+    "examples": [
+      "Akcydens nie jest istotą rzeczy.",
+      "To tylko akcydens, nie podstawa."
+    ],
+    "etymology": "od łaciński accidere = przydarzać się",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "filozofia",
+    "synonyms": ["przypadek", "okoliczność"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 98,
+    "word": "Bazylika",
+    "definition": "Wielki kościół; świątynia",
+    "examples": [
+      "Bazylika watykańska jest największa.",
+      "Bazylika była miejscem spotkań."
+    ],
+    "etymology": "od greckiego basilikos = królewski",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "architektura",
+    "synonyms": ["świątynia", "kościół"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 99,
+    "word": "Cyzelacja",
+    "definition": "Precyzyjne wygładzanie; wykończenie",
+    "examples": [
+      "Cyzelacja detali była imponująca.",
+      "Cyzelacja języka jest sztuką."
+    ],
+    "etymology": "od włoskiego cesellare = rzeźbić",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "sztuka",
+    "synonyms": ["wykończenie", "polerowanie"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 100,
+    "word": "Dynastia",
+    "definition": "Rodzina królewska; linia władców",
+    "examples": [
+      "Dynastia Piastów rządziła wieki.",
+      "Dynastia Habsburgów była potężna."
+    ],
+    "etymology": "od greckiego dynasteia = władza",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "historia",
+    "synonyms": ["ród", "linia"],
+    "difficulty": "easy"
+  }
+]
