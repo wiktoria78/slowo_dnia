@@ -173,4 +173,4 @@ To jest projekt z POTENCJAŁEM!
 ---
 
 ## Plik:
-**[kill-the-idea-slowo-dnia-komercyjna.md](\slowo_dnia\docs\biznes\kill-the-idea-slowo-dnia-komercyjna.md)** - Full commercial analysis
+**[kill-the-idea-slowo-dnia.md](biznes/kill-the-idea-slowo-dnia.md)** - Full commercial analysis
