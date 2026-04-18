@@ -4,7 +4,7 @@
 **Autor:** SaaS Architect & Business Auditor  
 **Wersja:** 1.0  
 **Status:** DOKUMENTACJA MVP  
-**Projekt:** Słowo Dnia (aplikacja3)
+**Projekt:** Słowo Dnia 
 
 ---
 
