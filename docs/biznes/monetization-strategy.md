@@ -41,8 +41,7 @@ Opracowanie kompleksowej strategii monetyzacji dla produktu "Słowo Dnia", uwzgl
 | Definicja + przykłady | ✅ | ✅ |
 | Archiwum (ostatnie 7 dni) | ✅ | ✅ |
 | Archiwum (pełne) | ❌ | ✅ |
-| Ulubione (10 słów) | ✅ | ✅ |
-| Ulubione (无限) | ❌ | ✅ |
+| Ulubione | ✅ | ✅ |
 | Powiadomienia push | ❌ | ✅ |
 | Quiz/ćwiczenia | ❌ | ✅ |
 | TTS (text-to-speech) | ❌ | ✅ |
@@ -221,9 +220,14 @@ Opracowanie kompleksowej strategii monetyzacji dla produktu "Słowo Dnia", uwzgl
 | ✅ | WF_MVP_Scoping — COMPLETE |
 | ✅ | WF_Competitor_Audit — COMPLETE |
 | ✅ | WF_GTM_Strategy — COMPLETE |
-| ✅ | **WF_Monetization_Strategy — TEN DOKUMENT** |
-| ⏳ | WF_Tech_Stack |
-| ⏳ | WF_Resource_Analysis |
+| ✅ | **WF_Monetization_Strategy — UKOŃCZONE** |
+| ⏳ | MVP Launch |
+| ⏳ | Premium features development |
+
+**Aktualny status (2026-04-18):**
+- Strategia monetyzacji gotowa
+- MVP w trakcie ukończenia
+- Monetyzacja planowana po zdobyciu użytkowników
 
 ---
 

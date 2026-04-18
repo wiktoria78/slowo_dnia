@@ -176,7 +176,7 @@ interface Word {
   partOfSpeech: string;
   category: string;
   synonyms: string[];
-  difficulty?: 'easy' | 'medium' | 'hard';
+  
 }
 ```
 
@@ -195,8 +195,7 @@ interface Word {
     "etymology": "od włoskiego dilettante, z łaciny dilectare = rozkoszować się",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "charakterystyka osoby",
-    "synonyms": ["amator", "laik"],
-    "difficulty": "easy"
+    "synonyms": ["amator", "laik"]
   }
 ]
 ```
@@ -219,12 +218,7 @@ export const useWordOfDay = (words) => {
     return words[index];
   };
 
-  const getRandomWord = () => {
-    const index = Math.floor(Math.random() * words.length);
-    return words[index];
-  };
-
-  return { getWordOfDay, getRandomWord };
+  return { getWordOfDay };
 };
 ```
 
@@ -365,8 +359,15 @@ jobs:
 | ✅ | WF_Competitor_Audit — COMPLETE |
 | ✅ | WF_GTM_Strategy — COMPLETE |
 | ✅ | WF_Monetization_Strategy — COMPLETE |
-| ✅ | **WF_Tech_Stack — TEN DOKUMENT** |
-| ⏳ | WF_Resource_Analysis |
+| ✅ | **WF_Tech_Stack — UKOŃCZONE** |
+| ✅ | WF_Resource_Analysis — UKOŃCZONE |
+| ✅ | MVP Built (React + Vite + Tailwind + Framer Motion) |
+| ⏳ | Zakup domeny |
+
+**Aktualny status (2026-04-18):**
+- Stack wdrożony zgodnie z planem
+- Hosting: GitHub Pages ✅
+- Technologie: React, Vite, Tailwind, Framer Motion ✅
 
 ---
 

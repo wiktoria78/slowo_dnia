@@ -2,12 +2,16 @@
 
 ## 1. Zasady Techniczne
 
-### 1.1 Architektura MVP
+### 1.1 Architektura Systemu
+
+Zgodnie ze specyfikacją architektoniczną, system opiera się na nowoczesnej architekturze SPA bez backendu:
+
 - **Brak backendu** — Dane w local JSON (`src/data/words.json`)
 - **Stan w localStorage** — Używać `useLocalStorage` hook
 - **React Context** — Do zarządzania stanem aplikacji
 
 ### 1.2 Tech Stack
+
 | Warstwa | Technologia |
 |---------|-------------|
 | Frontend | React + Vite |
@@ -17,15 +21,20 @@
 | Hosting | GitHub Pages |
 
 ### 1.3 Struktura Projektu
+
 ```
 src/
-├── components/    # Komponenty UI
-├── data/          # words.json
-├── hooks/         # useWordOfDay, useFavorites, useLocalStorage
-├── context/       # AppContext.jsx
-├── pages/         # Home, Archive, Favorites
-├── lib/           # utils.js
-└── App.jsx
+├── data/             # words.json (1388 słów)
+├── hooks/            # useWordOfDay, useFavorites, useLocalStorage
+├── context/          # AppContext.jsx + components/
+│   ├── AppContext.jsx
+│   └── components/
+│       ├── WordCard.jsx
+│       └── ShareButton.jsx
+├── pages/            # Home, Archive, Favorites
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
 ---
@@ -54,7 +63,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Potem wewnętrzne
-import WordCard from './components/WordCard';
+import WordCard from './context/components/WordCard';
 import { useWordOfDay } from './hooks/useWordOfDay';
 
 // Na końcu style
@@ -64,6 +73,8 @@ import './index.css';
 ---
 
 ## 3. Word Schema
+
+Definicja zgodna ze specyfikacją architektoniczną:
 
 ```typescript
 interface Word {
@@ -75,7 +86,7 @@ interface Word {
   partOfSpeech: string;
   category: string;
   synonyms: string[];
-  difficulty?: 'easy' | 'medium' | 'hard';
+  
 }
 ```
 
@@ -83,21 +94,32 @@ interface Word {
 
 ## 4. Algorytm Słowa Dnia
 
+Zgodnie z designem systemowym:
+
 ```javascript
-const getWordOfDay = (words) => {
+const START_DATE = new Date('2026-04-13');
+
+const getDaysElapsed = (startDate) => {
   const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  const diff = now - start;
-  const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const index = dayOfYear % words.length;
-  return words[index];
+  now.setHours(0, 0, 0, 0);
+  const start = new Date(startDate);
+  start.setHours(0, 0, 0, 0);
+  return Math.floor((now - start) / (1000 * 60 * 60 * 24));
+};
+
+const getWordOfDay = (words) => {
+  const days = getDaysElapsed(START_DATE);
+  if (days < 0) return words[0];
+  if (days >= words.length) return null;
+  return words[days];
 };
 ```
 
 **Zasady:**
+- Data startowa: 2026-04-13
 - To samo słowo dla wszystkich użytkowników w danym dniu
-- Zmiana o północy (UTC+1 dla Polski)
-- Opcja "losuj" dla nowego słowa
+- Po wyczerpaniu słów (1388 dni) wyświetla komunikat "Archiwum"
+- Używany również w Archive.jsx do wyświetlania historii
 
 ---
 
@@ -138,16 +160,16 @@ const getWordOfDay = (words) => {
 ## 6. Funkcjonalności MVP (MoSCoW)
 
 ### MUST HAVE
-- [ ] Wyświetlanie słowa dnia
-- [ ] Baza 100 pięknych słów
-- [ ] Definicja + przykłady
-- [ ] Słowo na dziś (data-based)
-- [ ] Zapis ulubionych (localStorage)
+- [x] Wyświetlanie słowa dnia
+- [x] Baza 1388 pięknych słów
+- [x] Definicja + przykłady
+- [x] Słowo na dziś (data-based)
+- [x] Zapis ulubionych (localStorage)
 
 ### SHOULD HAVE
-- [ ] Archiwum poprzednich słów
-- [ ] Share na social media
-- [ ] Wyszukiwarka słów
+- [x] Archiwum poprzednich słów
+- [x] Share na social media
+- [x] Wyszukiwarka słów
 
 ### COULD HAVE
 - [ ] Quiz/ćwiczenia
@@ -193,17 +215,17 @@ VITE_APP_URL=https://username.github.io/slowo-dnia
 
 ---
 
-## 9. Definition of Done (MVP)
+## 9. Definicja Ukończenia MVP
 
-- [ ] Widok słowa dnia działa
-- [ ] 100 pięknych słów w bazie
-- [ ] Definicje i przykłady wyświetlane
-- [ ] Zapis ulubionych działa (localStorage)
-- [ ] Archiwum poprzednich słów
-- [ ] Share na social media
-- [ ] Mobile responsive
-- [ ] Piękna typografia i design
-- [ ] Deploy na GitHub Pages
+- [x] Widok słowa dnia działa
+- [x] 1388 pięknych słów w bazie
+- [x] Definicje i przykłady wyświetlane
+- [x] Zapis ulubionych działa (localStorage)
+- [x] Archiwum poprzednich słów
+- [x] Share na social media
+- [x] Mobile responsive
+- [x] Piękna typografia i design
+- [x] Deploy na GitHub Pages
 
 ---
 
@@ -220,7 +242,8 @@ VITE_APP_URL=https://username.github.io/slowo-dnia
 
 ## 11. Referencje Dokumentów
 
-- [docs/README.md](../docs/README.md) — Dokumentacja projektu
-- [docs/biznes/mvp-scoping.md](../docs/biznes/mvp-scoping.md) — Zakres MVP
-- [docs/biznes/tech-stack.md](../docs/biznes/tech-stack.md) — Tech Stack
-- [docs/AGENTS.md](../docs/AGENTS.md) — Reguły agenta AI
+- [docs/architecture/system-design.md](docs/architecture/system-design.md) — Specyfikacja architektoniczna
+- [docs/AGENTS.md](docs/AGENTS.md) — Reguły agenta AI
+- [docs/README.md](docs/README.md) — Dokumentacja projektu
+- [docs/biznes/mvp-scoping.md](docs/biznes/mvp-scoping.md) — Zakres MVP
+- [docs/biznes/tech-stack.md](docs/biznes/tech-stack.md) — Tech Stack

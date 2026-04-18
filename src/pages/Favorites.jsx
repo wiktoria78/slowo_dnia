@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useFavorites } from '../hooks/useFavorites';
-import WordCard from '../components/WordCard';
+import { useFavorites } from '../hooks/useFavorites.js';
+import WordCard from '../context/components/WordCard.jsx';
 
 const Favorites = () => {
   const { favorites, removeFavorite } = useFavorites();

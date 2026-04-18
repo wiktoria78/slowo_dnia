@@ -290,10 +290,15 @@ Pozdrawiam,
 | ✅ | WF_ICP_Persona — COMPLETE |
 | ✅ | WF_MVP_Scoping — COMPLETE |
 | ✅ | WF_Competitor_Audit — COMPLETE |
-| ✅ | **WF_GTM_Strategy — TEN DOKUMENT** |
+| ✅ | **WF_GTM_Strategy — UKOŃCZONE** |
 | ⏳ | WF_Monetization_Strategy |
-| ⏳ | WF_Tech_Stack |
-| ⏳ | WF_Resource_Analysis |
+| ⏳ | MVP Launch |
+| ⏳ | TikTok/Social growth |
+
+**Aktualny status (2026-04-18):**
+- MVP gotowy do launchu
+- GTM strategy gotowy do wdrożenia
+- Kolejny krok: zakup domeny + soft launch
 
 ---
 

@@ -10,8 +10,7 @@
     "etymology": "od włoskiego dilettante, z łaciny dilectare = rozkoszować się",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "charakterystyka osoby",
-    "synonyms": ["amator", "laik"],
-    "difficulty": "medium"
+    "synonyms": ["amator", "laik"]
   },
   {
     "id": 2,
@@ -24,8 +23,7 @@
     "etymology": "od łacińskiego appropriare = przywłaszczać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "prawo",
-    "synonyms": ["zawłaszczenie", "przywłaszczenie"],
-    "difficulty": "hard"
+    "synonyms": ["zawłaszczenie", "przywłaszczenie"]
   },
   {
   "id": 3,
@@ -38,8 +36,7 @@
   "etymology": "z łac. 'imponderabilis' („niedający się zważyć”), od 'in-' (nie) + 'ponderare' (ważyć)",
   "partOfSpeech": "rzeczownik (liczba mnoga)",
   "category": "pojęcia abstrakcyjne",
-  "synonyms": ["niuanse", "subtelności", "czynniki niemierzalne", "nieuchwytne elementy"],
-  "difficulty": "hard"
+  "synonyms": ["niuanse", "subtelności", "czynniki niemierzalne", "nieuchwytne elementy"]
 },
   {
     "id": 4,
@@ -52,8 +49,7 @@
     "etymology": "od łacińskiego virtus = siła, cność",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "etyka",
-    "synonyms": ["zaleta", "cność", "przywaga"],
-    "difficulty": "easy"
+    "synonyms": ["zaleta", "cność", "przywaga"]
   },
   {
     "id": 5,
@@ -66,8 +62,7 @@
     "etymology": "od łacińskiego des- + integratio = rozwiązanie całości",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "proces",
-    "synonyms": ["rozpad", "rozkład", "rozpadliny"],
-    "difficulty": "hard"
+    "synonyms": ["rozpad", "rozkład", "rozpadliny"]
   },
   {
     "id": 6,
@@ -80,8 +75,7 @@
     "etymology": "od greckiego eklektikos = wybierający",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "sztuka",
-    "synonyms": ["mieszanka", "synkretyzm"],
-    "difficulty": "medium"
+    "synonyms": ["mieszanka", "synkretyzm"]
   },
   {
     "id": 7,
@@ -94,8 +88,7 @@
     "etymology": "od łacińskiego fascinare = czarować",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "emocje",
-    "synonyms": ["urok", "zauroczenie", "powab"],
-    "difficulty": "easy"
+    "synonyms": ["urok", "zauroczenie", "powab"]
   },
   {
     "id": 8,
@@ -108,8 +101,7 @@
     "etymology": "od niemieckiego Kobold = duszek",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "mitologia",
-    "synonyms": ["kobold", "skrzat", "duszek"],
-    "difficulty": "hard"
+    "synonyms": ["kobold", "skrzat", "duszek"]
   },
   {
     "id": 9,
@@ -122,8 +114,7 @@
     "etymology": "od greckiego hermeneia = wykładnia (według Hermesa)",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "sztuka",
-    "synonyms": ["nieprzystępność", "encyklopedyczność"],
-    "difficulty": "medium"
+    "synonyms": ["nieprzystępność", "encyklopedyczność"]
   },
   {
     "id": 10,
@@ -136,8 +127,7 @@
     "etymology": "od greckiego idios + synkrasis = mieszanina właściwa",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "charakterystyka",
-    "synonyms": ["osobliwość", "dziwactwo", "wyspa"],
-    "difficulty": "hard"
+    "synonyms": ["osobliwość", "dziwactwo", "wyspa"]
   },
   {
     "id": 11,
@@ -150,8 +140,7 @@
     "etymology": "od łacińskiego contemplatio = patrzenie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan umysłu",
-    "synonyms": ["zadumanie", "medytacja", "refleksja"],
-    "difficulty": "medium"
+    "synonyms": ["zadumanie", "medytacja", "refleksja"]
   },
   {
     "id": 12,
@@ -164,8 +153,7 @@
     "etymology": "od łacińskiego curiosus = ciekawy",
     "partOfSpeech": "rzeczownik, rodzaj nijaki",
     "category": "cecha",
-    "synonyms": ["osobliwość", "rzadkość", "dziwactwo"],
-    "difficulty": "easy"
+    "synonyms": ["osobliwość", "rzadkość", "dziwactwo"]
   },
   {
     "id": 13,
@@ -178,8 +166,7 @@
     "etymology": "od niemieckie Likör = likier (pierwotnie alkoholowy)",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "kulinaria",
-    "synonyms": ["polewa", "smarowidło"],
-    "difficulty": "easy"
+    "synonyms": ["polewa", "smarowidło"]
   },
   {
     "id": 14,
@@ -192,8 +179,7 @@
     "etymology": "od greckiego melas + chole = czarna żółć",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "emocje",
-    "synonyms": ["smutek", "tęsknota", "czarnogłów"],
-    "difficulty": "easy"
+    "synonyms": ["smutek", "tęsknota", "czarnogłów"]
   },
   {
     "id": 15,
@@ -206,8 +192,7 @@
     "etymology": "od greckiego nostos = powrót + algos = ból",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "emocje",
-    "synonyms": ["tęsknota", "ból", "rozżalenie"],
-    "difficulty": "easy"
+    "synonyms": ["tęsknota", "ból", "rozżalenie"]
   },
   {
     "id": 16,
@@ -220,8 +205,7 @@
     "etymology": "od 'opuszczony' + -ność",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan",
-    "synonyms": ["pustka", "opor", "opuszczenie"],
-    "difficulty": "medium"
+    "synonyms": ["pustka", "opor", "opuszczenie"]
   },
   {
     "id": 17,
@@ -234,8 +218,7 @@
     "etymology": "od greckiego para + doxa = przeciwko opinii",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "logika",
-    "synonyms": ["sprzeczność", "anomalia"],
-    "difficulty": "medium"
+    "synonyms": ["sprzeczność", "anomalia"]
   },
   {
     "id": 18,
@@ -248,8 +231,7 @@
     "etymology": "od łacińskiego peregrinatio = przebywanie za granicą",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "podróż",
-    "synonyms": ["pielgrzymka", "wędrówka", "tułaczka"],
-    "difficulty": "hard"
+    "synonyms": ["pielgrzymka", "wędrówka", "tułaczka"]
   },
   {
     "id": 19,
@@ -262,8 +244,7 @@
     "etymology": "od niemieckiego Quiwi = fałszywy (.Argon)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "błąd",
-    "synonyms": ["błąd", "pomyłka", "fiasko"],
-    "difficulty": "hard"
+    "synonyms": ["błąd", "pomyłka", "fiasko"]
   },
   {
     "id": 20,
@@ -276,8 +257,7 @@
     "etymology": "od łacińskiego reflectere = odwrócić",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "myślenie",
-    "synonyms": ["zastanowienie", "rozmyślanie", "rozważanie"],
-    "difficulty": "easy"
+    "synonyms": ["zastanowienie", "rozmyślanie", "rozważanie"]
   },
   {
     "id": 21,
@@ -290,8 +270,7 @@
     "etymology": "od łacińskiego saecularis = świecki",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "społeczeństwo",
-    "synonyms": ["świeckość", "laickość"],
-    "difficulty": "medium"
+    "synonyms": ["świeckość", "laickość"]
   },
   {
     "id": 22,
@@ -304,8 +283,7 @@
     "etymology": "od łacińskego transcendere = przechodzić ponad",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "filozofia",
-    "synonyms": ["przekroczenie", "wyniesienie"],
-    "difficulty": "hard"
+    "synonyms": ["przekroczenie", "wyniesienie"]
   },
   {
     "id": 23,
@@ -318,8 +296,7 @@
     "etymology": "od greckiego ou + topos = nigdzie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "ideologia",
-    "synonyms": ["ideał", "mir", "baśń"],
-    "difficulty": "easy"
+    "synonyms": ["ideał", "mir", "baśń"]
   },
   {
     "id": 24,
@@ -332,8 +309,7 @@
     "etymology": "od włoskiego virtuoso = doskonały",
     "partOfSpeech": "rzeczownik, rodzaj nijaki",
     "category": "umiejętność",
-    "synonyms": ["biegłość", "mistrzostwo", "wprawa"],
-    "difficulty": "medium"
+    "synonyms": ["biegłość", "mistrzostwo", "wprawa"]
   },
   {
     "id": 25,
@@ -346,8 +322,7 @@
     "etymology": "od 'zadumać się' = pogrążyć w myślach",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan umysłu",
-    "synonyms": ["refleksja", "kontemplacja", "rozmyślanie"],
-    "difficulty": "easy"
+    "synonyms": ["refleksja", "kontemplacja", "rozmyślanie"]
   },
   {
     "id": 26,
@@ -360,8 +335,7 @@
     "etymology": "od 'zbędny' + -ność",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "cecha",
-    "synonyms": ["niepotrzebność", "martwość"],
-    "difficulty": "easy"
+    "synonyms": ["niepotrzebność", "martwość"]
   },
   {
     "id": 27,
@@ -374,8 +348,7 @@
     "etymology": "od łacińskiego abnegare = odmówić",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan",
-    "synonyms": ["zaniedbanie", "opuszczenie"],
-    "difficulty": "hard"
+    "synonyms": ["zaniedbanie", "opuszczenie"]
   },
   {
     "id": 28,
@@ -388,8 +361,7 @@
     "etymology": "od 'bezwzględny' = bez litości",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "charakter",
-    "synonyms": ["surowość", "okrutność", "bezlitość"],
-    "difficulty": "easy"
+    "synonyms": ["surowość", "okrutność", "bezlitość"]
   },
   {
     "id": 29,
@@ -402,8 +374,7 @@
     "etymology": "od łacińskiego civilis = obywatelski",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "społeczeństwo",
-    "synonyms": ["kultura", "społeczeństwo"],
-    "difficulty": "easy"
+    "synonyms": ["kultura", "społeczeństwo"]
   },
   {
     "id": 30,
@@ -416,8 +387,7 @@
     "etymology": "od łacińskiego degustare = smakować",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "kulinaria",
-    "synonyms": ["próbowanie", "ocena"],
-    "difficulty": "medium"
+    "synonyms": ["próbowanie", "ocena"]
   },
   {
     "id": 31,
@@ -430,8 +400,7 @@
     "etymology": "od greckiego ephemeros = jednodniowy",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "cecha",
-    "synonyms": ["krótkotrwałość", "nietrwałość"],
-    "difficulty": "hard"
+    "synonyms": ["krótkotrwałość", "nietrwałość"]
   },
   {
     "id": 32,
@@ -444,8 +413,7 @@
     "etymology": "od greckiego phlegma = śluz (jeden z temperamentów)",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "charakter",
-    "synonyms": ["spokojny", "opanowany"],
-    "difficulty": "medium"
+    "synonyms": ["spokojny", "opanowany"]
   },
   {
     "id": 33,
@@ -458,8 +426,7 @@
     "etymology": "od sanskrytu guru = ciężki (autorytet)",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "religia",
-    "synonyms": ["nauczyciel", "mistrz"],
-    "difficulty": "easy"
+    "synonyms": ["nauczyciel", "mistrz"]
   },
   {
     "id": 34,
@@ -472,8 +439,7 @@
     "etymology": "od greckiego hybris = duma, przemoc",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "wada",
-    "synonyms": ["pyszałkowatość", "zarozumiałość"],
-    "difficulty": "medium"
+    "synonyms": ["pyszałkowatość", "zarozumiałość"]
   },
   {
     "id": 35,
@@ -486,8 +452,7 @@
     "etymology": "od łacińskiego illocutio = wypowiedzenie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "język",
-    "synonyms": ["opis", "relacja"],
-    "difficulty": "hard"
+    "synonyms": ["opis", "relacja"]
   },
   {
     "id": 36,
@@ -500,8 +465,7 @@
     "etymology": "od 'jeden' + -ka",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "społeczeństwo",
-    "synonyms": ["osoba", "element"],
-    "difficulty": "easy"
+    "synonyms": ["osoba", "element"]
   },
   {
     "id": 37,
@@ -514,8 +478,7 @@
     "etymology": "od łacińskiego consolidare = umacniać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "proces",
-    "synonyms": ["zjednoczenie", "umocnienie"],
-    "difficulty": "medium"
+    "synonyms": ["zjednoczenie", "umocnienie"]
   },
   {
     "id": 38,
@@ -528,8 +491,7 @@
     "etymology": "od francuskiego lansquenet = najemnik",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "wojsko",
-    "synonyms": ["kawalerzysta", "ułan"],
-    "difficulty": "hard"
+    "synonyms": ["kawalerzysta", "ułan"]
   },
   {
     "id": 39,
@@ -542,8 +504,7 @@
     "etymology": "od 'marny' = próżny",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan",
-    "synonyms": ["próżność", "pustka"],
-    "difficulty": "medium"
+    "synonyms": ["próżność", "pustka"]
   },
   {
     "id": 40,
@@ -556,8 +517,7 @@
     "etymology": "od 'niezłomny' = nieustępliwy",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "charakter",
-    "synonyms": ["nieugiętość", "stałość", "wytrwałość"],
-    "difficulty": "medium"
+    "synonyms": ["nieugiętość", "stałość", "wytrwałość"]
   },
   {
     "id": 41,
@@ -570,8 +530,7 @@
     "etymology": "od łacińskiego obligare = zobowiązywać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "finanse",
-    "synonyms": ["bon", "weksel"],
-    "difficulty": "medium"
+    "synonyms": ["bon", "weksel"]
   },
   {
     "id": 42,
@@ -584,8 +543,7 @@
     "etymology": "od 'obfity' = pełny",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "ilość",
-    "synonyms": ["bogactwo", "urodzaj"],
-    "difficulty": "easy"
+    "synonyms": ["bogactwo", "urodzaj"]
   },
   {
     "id": 43,
@@ -598,8 +556,7 @@
     "etymology": "od łacińskiego perceptio = pojmowanie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "psychologia",
-    "synonyms": ["postrzeganie", "rozumienie"],
-    "difficulty": "medium"
+    "synonyms": ["postrzeganie", "rozumienie"]
   },
   {
     "id": 44,
@@ -612,8 +569,7 @@
     "etymology": "od 'pogardzać' = gardzić",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "emocje",
-    "synonyms": ["lekceważenie", "wzgarda"],
-    "difficulty": "easy"
+    "synonyms": ["lekceważenie", "wzgarda"]
   },
   {
     "id": 45,
@@ -626,8 +582,7 @@
     "etymology": "od 'próżny' + -ctwo",
     "partOfSpeech": "rzeczownik, rodzaj nijaki",
     "category": "zachowanie",
-    "synonyms": ["bezczynność", "bierność"],
-    "difficulty": "medium"
+    "synonyms": ["bezczynność", "bierność"]
   },
   {
     "id": 46,
@@ -640,8 +595,7 @@
     "etymology": "od łacińskiego representare = przedstawiać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "społeczeństwo",
-    "synonyms": ["przedstawicielstwo"],
-    "difficulty": "easy"
+    "synonyms": ["przedstawicielstwo"]
   },
   {
     "id": 47,
@@ -654,8 +608,7 @@
     "etymology": "od łacińskiego revelare = odsłaniać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "informacja",
-    "synonyms": ["objawienie", "odkrycie"],
-    "difficulty": "easy"
+    "synonyms": ["objawienie", "odkrycie"]
   },
   {
     "id": 48,
@@ -668,8 +621,7 @@
     "etymology": "od 'sam' + -ność",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan",
-    "synonyms": ["izolacja", "osamotnienie"],
-    "difficulty": "easy"
+    "synonyms": ["izolacja", "osamotnienie"]
   },
   {
     "id": 49,
@@ -682,8 +634,7 @@
     "etymology": "od 'troszczyć się'",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "emocje",
-    "synonyms": ["niepokój", "opiekowanie się"],
-    "difficulty": "easy"
+    "synonyms": ["niepokój", "opiekowanie się"]
   },
   {
     "id": 51,
@@ -696,8 +647,7 @@
     "etymology": "od łacińskiego ambitio = obchodzenie, staranie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "charakter",
-    "synonyms": ["dążenie", "pragnienie", " aspiration"],
-    "difficulty": "easy"
+    "synonyms": ["dążenie", "pragnienie", " aspiration"]
   },
   {
     "id": 52,
@@ -710,8 +660,7 @@
     "etymology": "od greckiego archaios = starożytny",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "język",
-    "synonyms": ["przestarzałe słowo", "anachronizm"],
-    "difficulty": "medium"
+    "synonyms": ["przestarzałe słowo", "anachronizm"]
   },
   {
     "id": 53,
@@ -724,8 +673,7 @@
     "etymology": "od greckiego a-trophe = brak pożywienia",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "medycyna",
-    "synonyms": ["zanik", "wygaszenie"],
-    "difficulty": "hard"
+    "synonyms": ["zanik", "wygaszenie"]
   },
   {
     "id": 54,
@@ -738,8 +686,7 @@
     "etymology": "od łacińskiego benevolens = życzliwy",
     "partOfSpeech": "przymiotnik",
     "category": "charakter",
-    "synonyms": ["życzliwy", "przychylny", "łaskawy"],
-    "difficulty": "medium"
+    "synonyms": ["życzliwy", "przychylny", "łaskawy"]
   },
   {
     "id": 55,
@@ -752,8 +699,7 @@
     "etymology": "od łacińskiego censura = osąd",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "społeczeństwo",
-    "synonyms": ["kontrola", "ocenzurowanie"],
-    "difficulty": "easy"
+    "synonyms": ["kontrola", "ocenzurowanie"]
   },
   {
     "id": 56,
@@ -766,8 +712,7 @@
     "etymology": "od łacińskiego des- + organizacja",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan",
-    "synonyms": ["chaos", "nieporządek"],
-    "difficulty": "medium"
+    "synonyms": ["chaos", "nieporządek"]
   },
   {
     "id": 57,
@@ -780,8 +725,7 @@
     "etymology": "od łacińskiego eccentricus = odśrodkowy",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "charakter",
-    "synonyms": ["osobliwość", "dziwactwo"],
-    "difficulty": "medium"
+    "synonyms": ["osobliwość", "dziwactwo"]
   },
   {
     "id": 58,
@@ -794,8 +738,7 @@
     "etymology": "od łacińskiego fascinare = czarować",
     "partOfSpeech": "przymiotnik",
     "category": "cecha",
-    "synonyms": ["interesujący", "intrygujący"],
-    "difficulty": "easy"
+    "synonyms": ["interesujący", "intrygujący"]
   },
   {
     "id": 59,
@@ -808,8 +751,7 @@
     "etymology": "od włoskiego gondoliere",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "zawód",
-    "synonyms": ["przewoźnik", "wioślarz"],
-    "difficulty": "medium"
+    "synonyms": ["przewoźnik", "wioślarz"]
   },
   {
     "id": 60,
@@ -822,8 +764,7 @@
     "etymology": "od greckiego hierarchia = święte rządzenie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "organizacja",
-    "synonyms": ["układ", "struktur"],
-    "difficulty": "easy"
+    "synonyms": ["układ", "struktur"]
   },
   {
     "id": 61,
@@ -836,8 +777,7 @@
     "etymology": "od łacińskiego in- + ponderare = nie ważyć",
     "partOfSpeech": "rzeczownik, rodzaj nijaki",
     "category": "filozofia",
-    "synonyms": ["niejawne", "tajemnica"],
-    "difficulty": "hard"
+    "synonyms": ["niejawne", "tajemnica"]
   },
   {
     "id": 62,
@@ -850,8 +790,7 @@
     "etymology": "od łacińskiego Junonus = Juno (bogini)",
     "partOfSpeech": "przymiotnik",
     "category": "cecha",
-    "synonyms": ["wspaniały", "szlachetny"],
-    "difficulty": "hard"
+    "synonyms": ["wspaniały", "szlachetny"]
   },
   {
     "id": 63,
@@ -864,8 +803,7 @@
     "etymology": "od włoskiego colorito = malowanie",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "sztuka",
-    "synonyms": ["nastrój", "atmosfera"],
-    "difficulty": "medium"
+    "synonyms": ["nastrój", "atmosfera"]
   },
   {
     "id": 64,
@@ -878,8 +816,7 @@
     "etymology": "od łacińskiego laurus = drzewo laurowe",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "sukces",
-    "synonyms": ["zwycięstwo", "chwała"],
-    "difficulty": "medium"
+    "synonyms": ["zwycięstwo", "chwała"]
   },
   {
     "id": 65,
@@ -892,8 +829,7 @@
     "etymology": "od greckiego mythos + logos = słowo o micie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "nauka",
-    "synonyms": ["mity", "wierzenia"],
-    "difficulty": "easy"
+    "synonyms": ["mity", "wierzenia"]
   },
   {
     "id": 66,
@@ -906,8 +842,7 @@
     "etymology": "od 'nieufny' = nieufający",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "emocje",
-    "synonyms": ["podejrzliwość", "wątpliwość"],
-    "difficulty": "easy"
+    "synonyms": ["podejrzliwość", "wątpliwość"]
   },
   {
     "id": 67,
@@ -920,8 +855,7 @@
     "etymology": "od łacińskiego observatio = pilnowanie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "działanie",
-    "synonyms": ["patrzenie", "badanie"],
-    "difficulty": "easy"
+    "synonyms": ["patrzenie", "badanie"]
   },
   {
     "id": 68,
@@ -934,8 +868,7 @@
     "etymology": "od greckiego pathos = uczucie",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "sztuka",
-    "synonyms": ["podniosłość", "uroczystość"],
-    "difficulty": "medium"
+    "synonyms": ["podniosłość", "uroczystość"]
   },
   {
     "id": 69,
@@ -948,8 +881,7 @@
     "etymology": "od łacińskiego res = rzecz + facere = robić",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "filozofia",
-    "synonyms": ["uprzedmiotowienie"],
-    "difficulty": "hard"
+    "synonyms": ["uprzedmiotowienie"]
   },
   {
     "id": 70,
@@ -962,8 +894,7 @@
     "etymology": "od łacińskiego subtilis = delikatny",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "cecha",
-    "synonyms": ["wyrafinowanie", "drobiazg"],
-    "difficulty": "medium"
+    "synonyms": ["wyrafinowanie", "drobiazg"]
   },
   {
     "id": 71,
@@ -976,8 +907,7 @@
     "etymology": "od łacińskiego tolerare = znosić",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "wartość",
-    "synonyms": ["poszanowanie", "akceptacja"],
-    "difficulty": "easy"
+    "synonyms": ["poszanowanie", "akceptacja"]
   },
   {
     "id": 72,
@@ -990,8 +920,7 @@
     "etymology": "od greckiego ou + topos = nigdzie",
     "partOfSpeech": "przymiotnik",
     "category": "ideologia",
-    "synonyms": ["idealny", "nierealny"],
-    "difficulty": "easy"
+    "synonyms": ["idealny", "nierealny"]
   },
   {
     "id": 73,
@@ -1004,8 +933,7 @@
     "etymology": "od łacińskiego virga = różdżka",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "symbol",
-    "synonyms": ["różdżka", "laska"],
-    "difficulty": "hard"
+    "synonyms": ["różdżka", "laska"]
   },
   {
     "id": 74,
@@ -1018,8 +946,7 @@
     "etymology": "od 'zarozumiały' = zbyt pewny siebie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "wada",
-    "synonyms": ["pyszałkowatość", "wyniosłość"],
-    "difficulty": "easy"
+    "synonyms": ["pyszałkowatość", "wyniosłość"]
   },
   {
     "id": 75,
@@ -1032,8 +959,7 @@
     "etymology": "od łacińskiego affirmare = potwierdzać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "działanie",
-    "synonyms": ["potwierdzenie", "akceptacja"],
-    "difficulty": "medium"
+    "synonyms": ["potwierdzenie", "akceptacja"]
   },
   {
     "id": 76,
@@ -1046,8 +972,7 @@
     "etymology": "onomatopeja dźwięku",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "dźwięk",
-    "synonyms": ["dzwonienie", "gardłowanie"],
-    "difficulty": "easy"
+    "synonyms": ["dzwonienie", "gardłowanie"]
   },
   {
     "id": 77,
@@ -1060,8 +985,7 @@
     "etymology": "od łacińskiego distinctio = rozróżnienie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "cecha",
-    "synonyms": ["wyróżnienie", "różnica"],
-    "difficulty": "medium"
+    "synonyms": ["wyróżnienie", "różnica"]
   },
   {
     "id": 78,
@@ -1074,8 +998,7 @@
     "etymology": "od łacińskiego aemulatio = współzawodnictwo",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "działanie",
-    "synonyms": ["naśladowanie", "współzawodnictwo"],
-    "difficulty": "medium"
+    "synonyms": ["naśladowanie", "współzawodnictwo"]
   },
   {
     "id": 79,
@@ -1088,8 +1011,7 @@
     "etymology": "od łacińskiego fatalis = losowy",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "filozofia",
-    "synonyms": ["przeznaczenie", "los"],
-    "difficulty": "medium"
+    "synonyms": ["przeznaczenie", "los"]
   },
   {
     "id": 80,
@@ -1102,8 +1024,7 @@
     "etymology": "od greckiego gnosis = poznanie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "religia",
-    "synonyms": ["poznanie", "wiedza"],
-    "difficulty": "hard"
+    "synonyms": ["poznanie", "wiedza"]
   },
   {
     "id": 81,
@@ -1116,8 +1037,7 @@
     "etymology": "od greckiego hesychia = spokój, cisza",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "religia",
-    "synonyms": ["kontemplacja", "milczenie"],
-    "difficulty": "hard"
+    "synonyms": ["kontemplacja", "milczenie"]
   },
   {
     "id": 82,
@@ -1130,8 +1050,7 @@
     "etymology": "od łacińskiego ignorare = nie wiedzieć",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "stan",
-    "synonyms": ["niewiedza", "ciemnota"],
-    "difficulty": "easy"
+    "synonyms": ["niewiedza", "ciemnota"]
   },
   {
     "id": 83,
@@ -1144,8 +1063,7 @@
     "etymology": "od łacińskiego jungere = łączyć",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "logika",
-    "synonyms": ["pojęcie", "kategoria"],
-    "difficulty": "hard"
+    "synonyms": ["pojęcie", "kategoria"]
   },
   {
     "id": 84,
@@ -1158,8 +1076,7 @@
     "etymology": "od greckiego kanon = reguła",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "kultura",
-    "synonyms": ["norma", "reguła"],
-    "difficulty": "medium"
+    "synonyms": ["norma", "reguła"]
   },
   {
     "id": 85,
@@ -1172,8 +1089,7 @@
     "etymology": "od łaciński lapidarius = dotyczący kamieni",
     "partOfSpeech": "przymiotnik",
     "category": "styl",
-    "synonyms": ["zwięzły", "krótki"],
-    "difficulty": "hard"
+    "synonyms": ["zwięzły", "krótki"]
   },
   {
     "id": 86,
@@ -1186,8 +1102,7 @@
     "etymology": "od greckiego mneme + techne = sztuka pamięci",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "edukacja",
-    "synonyms": ["pamięć", "sztuka zapamiętywania"],
-    "difficulty": "medium"
+    "synonyms": ["pamięć", "sztuka zapamiętywania"]
   },
   {
     "id": 87,
@@ -1200,8 +1115,7 @@
     "etymology": "od 'nieśmiertelny' = wieczny",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "pojęcie",
-    "synonyms": ["wieczność", "nieśmiertelność"],
-    "difficulty": "easy"
+    "synonyms": ["wieczność", "nieśmiertelność"]
   },
   {
     "id": 88,
@@ -1214,8 +1128,7 @@
     "etymology": "od łacińskiego oratio = mowa",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "mowa",
-    "synonyms": ["przemówienie", "mowa"],
-    "difficulty": "medium"
+    "synonyms": ["przemówienie", "mowa"]
   },
   {
     "id": 89,
@@ -1228,8 +1141,7 @@
     "etymology": "od greckiego peripeteia = nagły zwrot",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "wydarzenie",
-    "synonyms": ["zwrot", "zmiana"],
-    "difficulty": "medium"
+    "synonyms": ["zwrot", "zmiana"]
   },
   {
     "id": 90,
@@ -1242,8 +1154,7 @@
     "etymology": "od łacińskiego quinta essentia = piąta esencja",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "filozofia",
-    "synonyms": ["esencja", "istota"],
-    "difficulty": "hard"
+    "synonyms": ["esencja", "istota"]
   },
   {
     "id": 91,
@@ -1256,8 +1167,7 @@
     "etymology": "od łacińskiego representare = przedstawiać",
     "partOfSpeech": "przymiotnik",
     "category": "cecha",
-    "synonyms": ["typowy", "przykładowy"],
-    "difficulty": "medium"
+    "synonyms": ["typowy", "przykładowy"]
   },
   {
     "id": 92,
@@ -1270,8 +1180,7 @@
     "etymology": "od łacińskiego sanctuarium = święte miejsce",
     "partOfSpeech": "rzeczownik, rodzaj nijaki",
     "category": "religia",
-    "synonyms": ["świątynia", "kościół"],
-    "difficulty": "easy"
+    "synonyms": ["świątynia", "kościół"]
   },
   {
     "id": 93,
@@ -1284,8 +1193,7 @@
     "etymology": "od greckiego theos + dike = Bóg + sprawiedliwość",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "filozofia",
-    "synonyms": ["apologetyka", "teologia"],
-    "difficulty": "hard"
+    "synonyms": ["apologetyka", "teologia"]
   },
   {
     "id": 94,
@@ -1298,8 +1206,7 @@
     "etymology": "od łacińskiego unificare = jednoczyć",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "proces",
-    "synonyms": ["zjednoczenie", "ujednolicenie"],
-    "difficulty": "medium"
+    "synonyms": ["zjednoczenie", "ujednolicenie"]
   },
   {
     "id": 95,
@@ -1312,8 +1219,7 @@
     "etymology": "od łacińskiego vibrare = drgać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "fizyka",
-    "synonyms": ["drganie", "falowanie"],
-    "difficulty": "easy"
+    "synonyms": ["drganie", "falowanie"]
   },
   {
     "id": 96,
@@ -1326,8 +1232,7 @@
     "etymology": "od łacińskiego zebracja = zbieranie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "działanie",
-    "synonyms": ["gromadzenie", "zbieranie"],
-    "difficulty": "medium"
+    "synonyms": ["gromadzenie", "zbieranie"]
   },
   {
     "id": 97,
@@ -1340,8 +1245,7 @@
     "etymology": "od łaciński accidere = przydarzać się",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "filozofia",
-    "synonyms": ["przypadek", "okoliczność"],
-    "difficulty": "hard"
+    "synonyms": ["przypadek", "okoliczność"]
   },
   {
     "id": 98,
@@ -1354,8 +1258,7 @@
     "etymology": "od greckiego basilikos = królewski",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "architektura",
-    "synonyms": ["świątynia", "kościół"],
-    "difficulty": "easy"
+    "synonyms": ["świątynia", "kościół"]
   },
   {
     "id": 99,
@@ -1368,8 +1271,7 @@
     "etymology": "od włoskiego cesellare = rzeźbić",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "sztuka",
-    "synonyms": ["wykończenie", "polerowanie"],
-    "difficulty": "hard"
+    "synonyms": ["wykończenie", "polerowanie"]
   },
   {
     "id": 100,
@@ -1382,7 +1284,6 @@
     "etymology": "od greckiego dynasteia = władza",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "historia",
-    "synonyms": ["ród", "linia"],
-    "difficulty": "easy"
+    "synonyms": ["ród", "linia"]
   }
 ]

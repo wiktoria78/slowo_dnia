@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useWordOfDay } from '../hooks/useWordOfDay';
-import { useFavorites } from '../hooks/useFavorites';
+import { useWordOfDay } from '../../hooks/useWordOfDay.js';
+import { useFavorites } from '../../hooks/useFavorites.js';
 import ShareButton from './ShareButton';
 
 const WordCard = ({ word, showFavoriteButton = true }) => {

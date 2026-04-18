@@ -56,14 +56,16 @@
 
 | Step | Task | Status | Output |
 |------|------|--------|--------|
-| 4.1 | Setup repo + Vite + Tailwind | ⏳ | Repo ready |
-| 4.2 | WordCard + Definition component | ⏳ | UI working |
-| 4.3 | Word of Day algorithm | ⏳ | Daily words |
-| 4.4 | Favorites (localStorage) | ⏳ | Save works |
-| 4.5 | Archive + Search | ⏳ | Browse works |
-| 4.6 | Share functionality | ⏳ | Social share |
-| 4.7 | Mobile responsive | ⏳ | Mobile OK |
-| 4.8 | Polish (animations) | ⏳ | Beautiful UI |
+| 4.1 | Setup repo + Vite + Tailwind | ✅ | Repo ready |
+| 4.2 | WordCard + Definition component | ✅ | UI working |
+| 4.3 | Word of Day algorithm | ✅ | Daily words |
+| 4.4 | Favorites (localStorage) | ✅ | Save works |
+| 4.5 | Archive + Search | ✅ | Browse works |
+| 4.6 | Share functionality | ✅ | Social share |
+| 4.7 | Mobile responsive | ✅ | Mobile OK |
+| 4.8 | Polish (animations) | ✅ | Beautiful UI |
+
+**Status na 2026-04-18:** MVP UKOŃCZONY (~90%)
 
 ---
 
@@ -71,11 +73,13 @@
 
 | Step | Task | Status | Output |
 |------|------|--------|--------|
-| 5.1 | Deploy to Vercel | ⏳ | Live site |
-| 5.2 | Domain setup | ⏳ | slowodnia.pl |
+| 5.1 | Deploy to GitHub Pages | ✅ | Live site |
+| 5.2 | Domain setup | ⏳ | slowodnia.pl (pending) |
 | 5.3 | SEO setup | ⏳ | Indexed |
 | 5.4 | Newsletter setup | ⏳ | Email capture |
 | 5.5 | Product Hunt launch | ⏳ | Launch post |
+
+**Status na 2026-04-18:** W TRAKCIE (deployed, domain pending)
 
 ---
 
@@ -109,11 +113,20 @@
 Discovery    [████████████] 100%
 Research     [████████████] 100%
 Strategy     [████████████] 100%
-Build MVP    [............] 0%
-Launch       [............] 0%
+Build MVP    [████████████] 90%
+Launch       [███░░░░░░░░░] 30%
 Growth       [............] 0%
 Monetize     [............] 0%
 ```
+
+### Aktualny Status (2026-04-18)
+
+| Etap | Postęp | Uwagi |
+|------|--------|-------|
+| **MVP** | ~90% | Gotowe: Home, Archive, Favorites, Share, 1388 słów |
+| **Launch** | 30% | GitHub Pages deployed, brak domeny |
+| **Growth** | 0% | Nie rozpoczęto |
+| **Monetize** | 0% | Nie rozpoczęto |
 
 ### Milestones
 
@@ -121,7 +134,7 @@ Monetize     [............] 0%
 |-----------|------|--------|
 | M1: Pomysł wybrany | 2026-03-15 | ✅ |
 | M2: Dokumentacja kompletna | 2026-03-21 | ✅ |
-| M3: MVP ready | TBD | ⏳ |
+| M3: MVP ready | 2026-04-18 | ✅ ~90% |
 | M4: Launch | TBD | ⏳ |
 | M5: First revenue | TBD | ⏳ |
 

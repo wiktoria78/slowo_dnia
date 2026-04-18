@@ -30,15 +30,16 @@
 | Dokument | Opis | Status |
 |----------|------|--------|
 | [README.md](README.md) | Ten dokument | ✅ |
-| [mvp-scoping.md](mvp-scoping.md) | Zakres MVP | ✅ |
-| [kill-the-idea-slowo-dnia-komercyjna.md](kill-the-idea-slowo-dnia-komercyjna.md) | Analiza biznesowa (Komercyjna) | ✅ |
-| [kill-the-idea-slowo-dnia-studencka.md](kill-the-idea-slowo-dnia-studencka.md) | Analiza biznesowa (Studencka) | ✅ |
-| [icp-persona.md](icp-persona.md) | Profil Idealnego Klienta | ✅ |
-| [competitor-audit.md](competitor-audit.md) | Analiza konkurencji | ✅ |
-| [gtm-strategy.md](gtm-strategy.md) | Strategia Go-To-Market | ✅ |
-| [monetization-strategy.md](monetization-strategy.md) | Strategia monetyzacji | ✅ |
-| [tech-stack.md](tech-stack.md) | Stack technologiczny | ✅ |
-| [resource-analysis.md](resource-analysis.md) | Analiza zasobów | ✅ |
+| [mvp-scoping.md](biznes/mvp-scoping.md) | Zakres MVP | ✅ |
+| [system-design.md](architecture/system-design.md) | Specyfikacja techniczna | ✅ |
+| [kill-the-idea-slowo-dnia-komercyjna.md](biznes/kill-the-idea-slowo-dnia-komercyjna.md) | Analiza biznesowa (Komercyjna) | ✅ |
+| [kill-the-idea-slowo-dnia-studencka.md](biznes/kill-the-idea-slowo-dnia-studencka.md) | Analiza biznesowa (Studencka) | ✅ |
+| [icp-persona.md](biznes/icp-persona.md) | Profil Idealnego Klienta | ✅ |
+| [competitor-audit.md](biznes/competitor-audit.md) | Analiza konkurencji | ✅ |
+| [gtm-strategy.md](biznes/gtm-strategy.md) | Strategia Go-To-Market | ✅ |
+| [monetization-strategy.md](biznes/monetization-strategy.md) | Strategia monetyzacji | ✅ |
+| [tech-stack.md](biznes/tech-stack.md) | Stack technologiczny | ✅ |
+| [resource-analysis.md](biznes/resource-analysis.md) | Analiza zasobów | ✅ |
 
 ---
 
@@ -60,7 +61,7 @@ npm run dev
 
 ### 2. Struktura Słów
 
-Słowa są przechowywane w pliku [`src/data/words.json`](src/data/words.json):
+Słowa są przechowywane w pliku [`src/data/words.json`](../src/data/words.json):
 
 ```json
 {
@@ -97,13 +98,13 @@ npx gh-pages -d dist
 ### User Journey Map
 
 ```
-┌─────────┐     ┌─────────┐     ┌─────────┐     ┌─────────┐
-│ Landing │ ──► │ Słowo   │ ──► │ Czytaj  │ ──► │ Zapisz  │
-│ Page    │     │ Dnia    │     │ Dalej   │     │ Ulubione│
-└─────────┘     └─────────┘     └─────────┘     └─────────┘
-      │                               │
-      │           ◄───────────────────┘
-      │                  "Losuj nowe"
+┌─────────┐     ┌─────────┐      ┌─────────┐
+│ Landing │ ──► │ Słowo   │ ──►  │ Zapisz  │
+│ Page    │     │ Dnia    │      │ Ulubione│
+└─────────┘     └─────────┘      └─────────┘
+      │                               
+      │           
+      │                  
       │
       ▼
 ┌─────────┐     ┌─────────┐
@@ -166,12 +167,13 @@ npx gh-pages -d dist
 
 | Warstwa | Technologia |
 |---------|-------------|
-| Frontend | React + Vite |
-| Styling | Tailwind CSS |
-| Fonts | Playfair Display, Merriweather |
+| Frontend | React 18 + Vite 6 |
+| Styling | Tailwind CSS 3.4 |
+| Animacje | Framer Motion 11 |
+| Fonts | Playfair Display, Merriweather, Inter |
 | State | React Context + localStorage |
+| Routing | React Router v6 |
 | Hosting | GitHub Pages |
-| Domain | slowodnia.pl |
 
 **Koszt MVP:** ~50 PLN/rok
 
@@ -181,19 +183,19 @@ npx gh-pages -d dist
 
 | Tydzień | Faza | Deliverable |
 |---------|------|-------------|
-| 1 | Setup | Repo + config + 50 słów |
+| 1 | Setup | Repo + config + 100 słów |
 | 2 | Core | WordCard + Definition |
-| 3 | Features | Favorites + Archive + Search |
-| 4 | Polish | Animacje + Mobile + Share |
-| 5 | Deploy | GitHub Pages + Domain + SEO |
-| 6 | Launch | Product Hunt + Social |
+| 3 | Data | Rozbudowa bazy do 1388 słów |
+| 4 | Features | Favorites + Archive + Search |
+| 5 | Polish | Animacje + Mobile + Share |
+| 6 | Deploy | GitHub Pages + Domain + SEO |
 
 ---
 
 ## ✅ Definition of Done (MVP)
 
 - [ ] Repozytorium na GitHub
-- [ ] 100 pięknych polskich słów w bazie
+- [ ] 1388 pięknych polskich słów w bazie
 - [ ] Word of the Day działa (algorytm daty)
 - [ ] Definicja + przykłady wyświetlane
 - [ ] Ulubione zapisują się w localStorage

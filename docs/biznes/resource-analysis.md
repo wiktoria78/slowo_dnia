@@ -267,8 +267,14 @@ Tydzień 6:
 | ✅ | WF_GTM_Strategy — COMPLETE |
 | ✅ | WF_Monetization_Strategy — COMPLETE |
 | ✅ | WF_Tech_Stack — COMPLETE |
-| ✅ | **WF_Resource_Analysis — TEN DOKUMENT** |
-| ⏳ | Stworzenie finalnego README |
+| ✅ | **WF_Resource_Analysis — UKOŃCZONE** |
+| ✅ | MVP built (88h → ~40h actual) |
+| ⏳ | Growth phase |
+
+**Aktualny status (2026-04-18):**
+- MVP zbudowany w mniejszym czasie niż planowano
+- 1388 słów (vs planowane 100) 
+- Koszty zgodne z planem (~50 PLN)
 
 ---
 

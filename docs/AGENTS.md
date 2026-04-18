@@ -25,53 +25,62 @@
 | ID | Feature | Priorytet |
 |----|---------|----------|
 | M1 | Wyświetlanie słowa dnia | MUST |
-| M2 | Baza 100 pięknych słów | MUST |
+| M2 | Baza 1388 pięknych słów | MUST |
 | M3 | Definicja + przykłady | MUST |
 | M4 | Słowo na dziś (data-based) | MUST |
 | M5 | Zapis ulubionych (localStorage) | MUST |
 | S1 | Archiwum poprzednich słów | SHOULD |
-| S2 | Powiadomienia push | SHOULD |
+| S2 | Wyszukiwarka słów | SHOULD |
 | S3 | Share na social media | SHOULD |
-| S4 | Wyszukiwarka słów | SHOULD |
 
 ---
 
-## 2. Struktura Projektu
+## 2. Architektura Systemu
+
+### 2.1 Struktura Projektu
 
 ```
 slowo-dnia/
 ├── src/
-│   ├── components/
-│   │   ├── WordCard.jsx
-│   │   ├── Definition.jsx
-│   │   ├── Examples.jsx
-│   │   ├── FavoriteButton.jsx
-│   │   ├── ShareButton.jsx
-│   │   ├── ArchiveList.jsx
-│   │   └── SearchBar.jsx
 │   ├── data/
-│   │   └── words.json
+│   │   └── words.json          # 100 słów
 │   ├── hooks/
-│   │   ├── useWordOfDay.js
-│   │   ├── useFavorites.js
-│   │   └── useLocalStorage.js
+│   │   ├── useWordOfDay.js     # Algorytm słowa dnia
+│   │   ├── useFavorites.js    # CRUD ulubionych
+│   │   └── useLocalStorage.js  # localStorage wrapper
 │   ├── context/
-│   │   └── AppContext.jsx
+│   │   ├── AppContext.jsx      # Global state provider
+│   │   └── components/
+│   │       ├── WordCard.jsx    # Komponent karty słowa
+│   │       └── ShareButton.jsx # Share functionality
 │   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Archive.jsx
-│   │   └── Favorites.jsx
-│   ├── App.jsx
-│   └── main.jsx
+│   │   ├── Home.jsx            # Strona główna
+│   │   ├── Archive.jsx        # Archiwum + search
+│   │   └── Favorites.jsx       # Ulubione
+│   ├── App.jsx                # Routing
+│   ├── main.jsx               # Entry point
+│   └── index.css              # Design system
 ├── index.html
 ├── package.json
 ├── vite.config.js
-└── tailwind.config.js
+├── tailwind.config.js
+└── postcss.config.js
 ```
+
+### 2.2 Warstwy Architektury
+
+| Warstwa | Komponenty | Odpowiedzialność |
+|---------|------------|------------------|
+| Presentation | Home, Archive, Favorites, WordCard, ShareButton | UI, routing, animacje |
+| Business Logic | useWordOfDay, useFavorites | Logika biznesowa, algorytmy |
+| Data | words.json, localStorage | Przechowywanie danych |
+| State | AppContext | Globalny stan aplikacji |
 
 ---
 
 ## 3. Word Schema
+
+Zgodnie ze specyfikacją architektoniczną:
 
 ```typescript
 interface Word {
@@ -83,28 +92,43 @@ interface Word {
   partOfSpeech: string;
   category: string;
   synonyms: string[];
-  difficulty?: 'easy' | 'medium' | 'hard';
+  
 }
 ```
 
 ---
 
-## 4. Word of Day Algorithm
+## 4. Algorytm Słowa Dnia
+
+Zgodnie z designem systemowym:
 
 ```javascript
-const getWordOfDay = (words) => {
+const START_DATE = new Date('2026-04-13');
+
+const getDaysElapsed = (startDate) => {
   const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  const diff = now - start;
-  const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const index = dayOfYear % words.length;
-  return words[index];
+  now.setHours(0, 0, 0, 0);
+  const start = new Date(startDate);
+  start.setHours(0, 0, 0, 0);
+  return Math.floor((now - start) / (1000 * 60 * 60 * 24));
+};
+
+const getWordOfDay = (words) => {
+  const days = getDaysElapsed(START_DATE);
+  if (days < 0) return words[0];
+  if (days >= words.length) return null;
+  return words[days];
 };
 ```
 
+**Zasady:**
+- Data startowa: 2026-04-13
+- To samo słowo dla wszystkich użytkowników w danym dniu
+- Po wyczerpaniu słów (100 dni) → tryb archiwum
+
 ---
 
-## 5. Tech Stack MVP
+## 5. Tech Stack
 
 | Warstwa | Technologia |
 |---------|-------------|
@@ -118,13 +142,7 @@ const getWordOfDay = (words) => {
 
 ---
 
-## 6. Design Principles
-
-- **Minimalizm:** Clean, focused on the word
-- **Estetyka:** Piękna typografia = core experience
-- **Mobile-first:** Touch-friendly, piękne na telefonie
-- **Viral:** Easy share buttons
-- **Polish:** Premium feel
+## 6. Design System
 
 ### Color Palette
 
@@ -137,60 +155,58 @@ const getWordOfDay = (words) => {
 | Text | Dark Gray | #2C2C2C |
 | Accent | Forest Green | #228B22 |
 
----
+### Typography
 
-## 7. Timeline MVP
-
-| Tydzień | Zadania |
-|---------|---------|
-| 1 | Setup projektu, baza 100 słów |
-| 2 | WordCard, definicje, design |
-| 3 | Ulubione, archiwum, search |
-| 4 | Share, animacje, PWA, deploy |
+| Element | Font | Waga |
+|---------|------|------|
+| Słowo hero | Playfair Display | 700 |
+| Definicja | Merriweather | 400 |
+| Przykłady | Merriweather | 400 italic |
+| UI | Inter | 500 |
 
 ---
 
-## 8. Definition of Done (MVP)
+## 7. Definicja Ukończenia MVP
 
-- [ ] Widok słowa dnia działa
-- [ ] 100 pięknych słów w bazie
-- [ ] Definicje i przykłady wyświetlane
-- [ ] Zapis ulubionych działa (localStorage)
-- [ ] Archiwum poprzednich słów
-- [ ] Share na social media
-- [ ] Mobile responsive
-- [ ] Piękna typografia i design
-- [ ] Deploy na GitHub Pages
-
----
-
-## 9. Kluczowe Zasady Deweloperskie
-
-1. **KISS** — Keep It Simple, Stupid. Prosty stack, minimalna złożoność.
-2. **Mobile-first** — 70%+ ruchu z mobile. Design dla telefonu.
-3. **Performance** — Fast load, graceful degradation.
-4. **Accessibility** — Czytelne czcionki, wystarczający kontrast.
-5. **Viral-first** — Każde słowo musi być "shareable".
-6. **No backend (MVP)** — Dane w local JSON, stan w localStorage.
-7. **Beautiful UI** — Piękna typografia = core experience.
+| ID | Kryterium |
+|----|-----------|
+| D1 | Widok słowa dnia działa |
+| D2 | 1388 pięknych słów w bazie |
+| D3 | Definicje i przykłady wyświetlane |
+| D4 | Zapis ulubionych działa (localStorage) |
+| D5 | Archiwum poprzednich słów |
+| D6 | Share na social media |
+| D7 | Mobile responsive |
+| D8 | Piękna typografia i design |
+| D9 | Deploy na GitHub Pages |
 
 ---
 
-## 10. Referencje Dokumentów
+## 8. Zasady Deweloperskie
+
+1. **KISS** — Keep It Simple, Stupid
+2. **Modularność** — Małe, wielokrotnego użytku komponenty
+3. **Mobile-first** — 70%+ ruchu z mobile
+4. **Performance** — Fast load, graceful degradation
+5. **Accessibility** — Czytelne czcionki, wystarczający kontrast
+6. **No backend (MVP)** — Dane w local JSON, stan w localStorage
+7. **Beautiful UI** — Piękna typografia = core experience
+
+---
+
+## 9. Referencje Dokumentów
+
+### Architektura
+- [system-design.md](architecture/system-design.md) — Pełna specyfikacja architektoniczna
 
 ### Biznes
-- [mvp-scoping.md](docs/biznes/mvp-scoping.md) — Zakres MVP
-- [tech-stack.md](docs/biznes/tech-stack.md) — Tech Stack
-- [icp-persona.md](docs/biznes/icp-persona.md) — Persona
-- [kill-the-idea-slowo-dnia-komercyjna.md](docs/biznes/kill-the-idea-slowo-dnia-komercyjna.md) — Kill the idea
-
-### Workflow
-- [workflow-slowo-dnia.md](docs/biznes/workflow-slowo-dnia.md) — Kompletny workflow
-- [resource-analysis.md](docs/biznes/resource-analysis.md) — Analiza zasobów
+- [mvp-scoping.md](biznes/mvp-scoping.md) — Zakres MVP
+- [tech-stack.md](biznes/tech-stack.md) — Tech Stack
+- [icp-persona.md](biznes/icp-persona.md) — Persona
 
 ---
 
-## 11. Koszty (MVP)
+## 10. Koszty (MVP)
 
 | Pozycja | Koszt |
 |---------|-------|
@@ -201,4 +217,5 @@ const getWordOfDay = (words) => {
 
 ---
 
-_Central rules for AI Developer Agent. Detailed implementation rules in .kilocode/_
+_Reguły zgodne z architekturą systemu (system-design.md)_
+_Aktualizacja: 2026-03-15_

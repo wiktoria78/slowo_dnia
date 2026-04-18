@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { useWordOfDay } from '../hooks/useWordOfDay';
-import WordCard from '../components/WordCard';
+import { useWordOfDay } from '../hooks/useWordOfDay.js';
+import WordCard from '../context/components/WordCard.jsx';
 import wordsData from '../data/words.json';
 
 const Home = () => {

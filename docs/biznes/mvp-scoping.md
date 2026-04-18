@@ -68,7 +68,8 @@ Niniejszy dokument definiuje zakres MVP (Minimum Viable Product) dla **Słowo Dn
 | **C2** | Newsletter email | COULD | Średnia | 2 dni | Alternative delivery |
 | **C3** | TTS (text-to-speech) | COULD | Niska | 1 dzień | Accessibility |
 | **W1** | User accounts | WON'T | Wysoka | Out of scope | MVP |
-| **W2** | Forum społeczności | WON'T | Wysoka | Out of scope | v2 |
+| **W2** | Panel admina | WON'T | Wysoka | Out of scope | MVP |
+| **W3** | Forum społeczności | WON'T | Wysoka | Out of scope | v2 |
 
 ### 3.2 Szczegółowy Opis Features MUST
 
@@ -135,9 +136,9 @@ Design:
 ```
 Funkcjonalność:
 - Obliczanie słowa na podstawie daty
-- Algorytm: hash(dzień_roku) % liczba_słów
+- Algorytm: dzień_roku % liczba_słów
 - To samo słowo dla wszystkich tego dnia
-- Opcja: "losuj" dla nowego słowa
+- Nowe słowo każdego dnia o północy
 
 Tech: JavaScript Date + modulo
 ```
@@ -165,9 +166,6 @@ Tech: localStorage API
 │ Landing │ ──► │ Słowo   │ ──► │ Czytaj  │ ──► │ Zapisz  │
 │ Page    │     │ Dnia    │     │ Dalej   │     │ Ulubione│
 └─────────┘     └─────────┘     └─────────┘     └─────────┘
-      │                               │
-      │           ◄───────────────────┘
-      │                  "Losuj nowe"
       │
       ▼
 ┌─────────┐     ┌─────────┐
@@ -249,14 +247,8 @@ const getWordOfDay = (words) => {
   const diff = now - start;
   const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
   
-  // Hash-based selection (same word for everyone on same day)
+  // Selection based on day of year (same word for everyone on same day)
   const index = dayOfYear % words.length;
-  return words[index];
-};
-
-// For "random" feature
-const getRandomWord = (words) => {
-  const index = Math.floor(Math.random() * words.length);
   return words[index];
 };
 ```
@@ -277,8 +269,7 @@ const getRandomWord = (words) => {
     "etymology": "od włoskiego dilettante, z łaciny dilectare = rozkoszować się",
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "charakterystyka osoby",
-    "synonyms": ["amator", "laik"],
-    "difficulty": "easy"
+    "synonyms": ["amator", "laik"]
   }
 ]
 ```
@@ -298,15 +289,17 @@ const getRandomWord = (words) => {
 
 ### 6.2 Definition of Done (MVP)
 
-- [ ] Widok słowa dnia działa
-- [ ] 100 pięknych słów w bazie
-- [ ] Definicje i przykłady wyświetlane
-- [ ] Zapis ulubionych działa (localStorage)
-- [ ] Archiwum poprzednich słów
-- [ ] Share na social media
-- [ ] Mobile responsive
-- [ ] Piękna typografia i design
-- [ ] Deploy na Vercel
+- [x] Widok słowa dnia działa
+- [x] 1388 pięknych słów w bazie
+- [x] Definicje i przykłady wyświetlane
+- [x] Zapis ulubionych działa (localStorage)
+- [x] Archiwum poprzednich słów
+- [x] Share na social media
+- [x] Mobile responsive
+- [x] Piękna typografia i design
+- [x] Deploy na GitHub Pages (2026-04-18)
+
+**Status:** ✅ UKOŃCZONE (2026-04-18)
 
 ---
 
@@ -451,11 +444,15 @@ WordCard:
 |--------|------|
 | ✅ | Wybrano Słowo Dnia |
 | ✅ | WF_Kill_The_Idea — PROCEED ✅✅✅ |
-| ⏳ | **WF_MVP_Scoping — TEN DOKUMENT** |
-| ⏳ | Zbieranie 100 pięknych słów |
-| ⏳ | Setup projektu |
-| ⏳ | Build MVP |
-| ⏳ | Deploy |
+| ✅ | **WF_MVP_Scoping — UKOŃCZONE** |
+| ✅ | Zbieranie 1388 pięknych słów |
+| ✅ | Setup projektu |
+| ✅ | Build MVP |
+| ✅ | Deploy na GitHub Pages |
+| ⏳ | Zakup domeny slowodnia.pl |
+| ⏳ | Marketing/Growth |
+
+**Aktualny status (2026-04-18):** MVP ~90% gotowy
 
 ---
 
