@@ -2,9 +2,9 @@
 
 > Aplikacja, która każdego dnia prezentuje piękne, rzadko używane polskie słowo, pomagając użytkownikom wzbogacić słownictwo i mówić piękniej po polsku.
 
-**Status:** ✅ PROCEED — Projekt zaakceptowany  
-**Wersja:** 1.0  
-**Data:** 2026-03-21  
+**Status:** ✅ LIVE — Projekt wdrożony  
+**Wersja:** 1.1  
+**Data:** 2026-04-18  
 **Autor:** SaaS Architect & Business Auditor
 
 ---
@@ -31,7 +31,6 @@
 |----------|------|--------|
 | [README.md](README.md) | Ten dokument | ✅ |
 | [mvp-scoping.md](biznes/mvp-scoping.md) | Zakres MVP | ✅ |
-| [system-design.md](architecture/system-design.md) | Specyfikacja techniczna | ✅ |
 | [kill-the-idea-slowo-dnia-komercyjna.md](biznes/kill-the-idea-slowo-dnia-komercyjna.md) | Analiza biznesowa (Komercyjna) | ✅ |
 | [kill-the-idea-slowo-dnia-studencka.md](biznes/kill-the-idea-slowo-dnia-studencka.md) | Analiza biznesowa (Studencka) | ✅ |
 | [icp-persona.md](biznes/icp-persona.md) | Profil Idealnego Klienta | ✅ |
@@ -194,17 +193,17 @@ npx gh-pages -d dist
 
 ## ✅ Definition of Done (MVP)
 
-- [ ] Repozytorium na GitHub
-- [ ] 1388 pięknych polskich słów w bazie
-- [ ] Word of the Day działa (algorytm daty)
-- [ ] Definicja + przykłady wyświetlane
-- [ ] Ulubione zapisują się w localStorage
-- [ ] Archiwum poprzednich słów
-- [ ] Wyszukiwarka
-- [ ] Share na social media
-- [ ] Mobile responsive
-- [ ] Piękna typografia i design
-- [ ] Deploy na GitHub Pages
+- [x] Repozytorium na GitHub
+- [x] 1388 pięknych polskich słów w bazie
+- [x] Word of the Day działa (algorytm daty)
+- [x] Definicja + przykłady wyświetlane
+- [x] Ulubione zapisują się w localStorage
+- [x] Archiwum poprzednich słów
+- [x] Wyszukiwarka
+- [x] Share na social media
+- [x] Mobile responsive
+- [x] Piękna typografia i design
+- [x] Deploy na GitHub Pages
 
 ---
 
@@ -303,10 +302,10 @@ Projekt przeszedł przez następujące workflow:
 | Status | Krok |
 |--------|------|
 | ✅ | Kompletna dokumentacja |
-| ⏳ | Zbieranie 100 pięknych słów |
-| ⏳ | Setup projektu React + Vite |
-| ⏳ | Build MVP |
-| ⏳ | Deploy |
+| ✅ | Zbieranie 1388 pięknych słów |
+| ✅ | Setup projektu React + Vite |
+| ✅ | Build MVP |
+| ✅ | Deploy na GitHub Pages |
 | ⏳ | TikTok content start |
 
 ---
@@ -321,4 +320,4 @@ Projekt przeszedł przez następujące workflow:
 ---
 
 _Dokument przygotowany przez SaaS Architecture & Business Auditor_  
-_Wersja: 1.0 | Data: 2026-03-21_
+_Wersja: 1.1 | Data: 2026-04-18_
