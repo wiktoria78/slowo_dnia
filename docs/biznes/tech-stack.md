@@ -366,7 +366,6 @@ jobs:
 
 **Aktualny status (2026-04-18):**
 - Stack wdrożony zgodnie z planem
-- Hosting: GitHub Pages ✅
 - Technologie: React, Vite, Tailwind, Framer Motion ✅
 
 ---

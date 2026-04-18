@@ -230,7 +230,7 @@ Precyzyjne zdefiniowanie Idealnego Klienta (ICP) oraz mapowanie jego kluczowych 
 |---------|---------|
 | **Problem** | Realny, codzienny |
 | **Rozwiązanie** | Proste, piękne, viralowe |
-| **ICP** | Jasny, платежоспособный |
+| **ICP** | Jasny |
 | **Kanały** | TikTok, grupy językowe = organic growth |
 | **Monetyzacja** | Freemium + Premium + B2B |
 | **Rynek** | Miliony użytkowników polskiego |

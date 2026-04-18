@@ -21,7 +21,7 @@ Niniejszy dokument definiuje zakres MVP (Minimum Viable Product) dla **Słowo Dn
 | **Target** | Miłośnicy języka polskiego, osoby chcące wzbogacić słownictwo |
 | **Cena** | Free (1 słowo/dzień), Premium 19 PLN/miesiąc |
 | **Dev time** | 2-4 tygodnie (Solo-Dev) |
-| **Dane** | Local JSON (500 słów) |
+| **Dane** | Local JSON (100 słów) |
 
 **Core Value Proposition:** Codzienna dawka pięknego polskiego słowa — prosta, viralowa, niszowa aplikacja z wysokim potencjałem społecznościowym.
 
@@ -290,16 +290,14 @@ const getWordOfDay = (words) => {
 ### 6.2 Definition of Done (MVP)
 
 - [x] Widok słowa dnia działa
-- [x] 1388 pięknych słów w bazie
+- [x] 100 pięknych słów w bazie
 - [x] Definicje i przykłady wyświetlane
 - [x] Zapis ulubionych działa (localStorage)
 - [x] Archiwum poprzednich słów
 - [x] Share na social media
 - [x] Mobile responsive
 - [x] Piękna typografia i design
-- [x] Deploy na GitHub Pages (2026-04-18)
-
-**Status:** ✅ UKOŃCZONE (2026-04-18)
+- [ ] Deploy na GitHub Pages 
 
 ---
 

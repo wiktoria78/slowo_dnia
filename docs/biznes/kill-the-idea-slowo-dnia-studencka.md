@@ -26,7 +26,7 @@
 
 | Funkcja | Złożoność |
 |---------|-----------|
-| Baza słów | Prosta (JSON 100-500 słów) |
+| Baza słów | Prosta (JSON 100 słów) |
 | Wyświetlanie słowa/dzień | Prosta |
 | Szczegóły słowa | Prosta (znaczenie, pochodzenie) |
 | Ulubione | Prosta (localStorage) |
@@ -40,7 +40,7 @@
 
 | Tydzień | Zadanie |
 |---------|---------|
-| 1 | Baza słów (50-100) + setup |
+| 1 | Baza słów (100) + setup |
 | 2 | Wyświetlanie słowa dnia |
 | 3 | Szczegóły + ulubione |
 | 4 | UI/UX + deploy |

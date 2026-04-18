@@ -165,7 +165,7 @@ Miesiąc 6: Rosnąca baza użytkowników
 To jest projekt z POTENCJAŁEM!
 
 **Następne kroki:**
-1. MVP: baza 50 słów + wyświetlanie
+1. MVP: baza 100 słów + wyświetlanie
 2. Social media: TikTok account
 3. Growth: viral content
 4. Monetyzacja: newsletter
@@ -173,4 +173,4 @@ To jest projekt z POTENCJAŁEM!
 ---
 
 ## Plik:
-**[kill-the-idea-slowo-dnia-komercyjna.md](architekt-biznesu-saas-main/architekt-biznesu-saas-main/plans/aplikacja1/kill-the-idea-slowo-dnia-komercyjna.md)** - Full commercial analysis
+**[kill-the-idea-slowo-dnia-komercyjna.md](\slowo_dnia\docs\biznes\kill-the-idea-slowo-dnia-komercyjna.md)** - Full commercial analysis

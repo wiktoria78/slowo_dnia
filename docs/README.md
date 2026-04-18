@@ -184,17 +184,16 @@ npx gh-pages -d dist
 |---------|------|-------------|
 | 1 | Setup | Repo + config + 100 słów |
 | 2 | Core | WordCard + Definition |
-| 3 | Data | Rozbudowa bazy do 1388 słów |
-| 4 | Features | Favorites + Archive + Search |
-| 5 | Polish | Animacje + Mobile + Share |
-| 6 | Deploy | GitHub Pages + Domain + SEO |
+| 3 | Features | Favorites + Archive + Search |
+| 4 | Polish | Animacje + Mobile + Share |
+| 5 | Deploy | GitHub Pages + Domain + SEO |
 
 ---
 
 ## ✅ Definition of Done (MVP)
 
 - [x] Repozytorium na GitHub
-- [x] 1388 pięknych polskich słów w bazie
+- [x] 100 pięknych polskich słów w bazie
 - [x] Word of the Day działa (algorytm daty)
 - [x] Definicja + przykłady wyświetlane
 - [x] Ulubione zapisują się w localStorage
@@ -203,7 +202,7 @@ npx gh-pages -d dist
 - [x] Share na social media
 - [x] Mobile responsive
 - [x] Piękna typografia i design
-- [x] Deploy na GitHub Pages
+- [ ] Deploy na GitHub Pages
 
 ---
 
@@ -302,7 +301,7 @@ Projekt przeszedł przez następujące workflow:
 | Status | Krok |
 |--------|------|
 | ✅ | Kompletna dokumentacja |
-| ✅ | Zbieranie 1388 pięknych słów |
+| ✅ | Zbieranie 100 pięknych słów |
 | ✅ | Setup projektu React + Vite |
 | ✅ | Build MVP |
 | ✅ | Deploy na GitHub Pages |

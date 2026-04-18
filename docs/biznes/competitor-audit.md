@@ -121,7 +121,7 @@ Przeprowadzenie kompleksowej analizy konkurencji, aby zidentyfikować luki rynko
 
 | Przewaga | Opis | Trudność kopiowania |
 |----------|------|---------------------|
-| **Baza słów** | 500+ starannie wyselekcjonowanych polskich słów | Wysoka |
+| **Baza słów** | 100+ starannie wyselekcjonowanych polskich słów | Wysoka |
 | **Brand** | "Słowo Dnia" = rozpoznawalność | Średnia |
 | **Design** | Piękna typografia, mobile-first | Średnia |
 | **Community** | Użytkownicy dodający słowa | Wysoka |
