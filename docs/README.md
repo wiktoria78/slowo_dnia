@@ -32,7 +32,6 @@
 | [README.md](README.md) | Ten dokument | ✅ |
 | [mvp-scoping.md](biznes/mvp-scoping.md) | Zakres MVP | ✅ |
 | [kill-the-idea-slowo-dnia-komercyjna.md](biznes/kill-the-idea-slowo-dnia-komercyjna.md) | Analiza biznesowa (Komercyjna) | ✅ |
-| [kill-the-idea-slowo-dnia-studencka.md](biznes/kill-the-idea-slowo-dnia-studencka.md) | Analiza biznesowa (Studencka) | ✅ |
 | [icp-persona.md](biznes/icp-persona.md) | Profil Idealnego Klienta | ✅ |
 | [competitor-audit.md](biznes/competitor-audit.md) | Analiza konkurencji | ✅ |
 | [gtm-strategy.md](biznes/gtm-strategy.md) | Strategia Go-To-Market | ✅ |

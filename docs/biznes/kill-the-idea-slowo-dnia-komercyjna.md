@@ -1,4 +1,4 @@
-# WF_Kill_The_Idea - Słowo Dnia (Wersja Komercyjna)
+# WF_Kill_The_Idea - Słowo Dnia
 
 ## Standardowa Metodologia
 
