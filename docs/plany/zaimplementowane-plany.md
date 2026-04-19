@@ -101,7 +101,7 @@ Poniższy dokument zawiera listę zaimplementowanych funkcjonalności w projekci
 | Funkcjonalność | Status |
 |---------------|--------|
 | Wyświetlanie słowa dnia | ✅ |
-| Baza 1388 pięknych słów | ✅ |
+| Baza 100 pięknych słów | ✅ |
 | Definicja + przykłady | ✅ |
 | Słowo na dziś (data-based) | ✅ |
 | Zapis ulubionych (localStorage) | ✅ |

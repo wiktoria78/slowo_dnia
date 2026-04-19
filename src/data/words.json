@@ -2,171 +2,171 @@
   {
     "id": 1,
     "word": "Dyletant",
-    "definition": "Osoba zajmująca się czymś bez wymaganych kwalifikacji; amator",
+    "definition": "Człowiek zajmujący się jakąś dziedziną albo wypowiadający się o niej bez fachowej wiedzy lub odpowiedniego przygotowania",
     "examples": [
       "Ten dyletant wziął się za naprawę samochodu i tylko pogorszył sprawę.",
       "Nie jestem dyletantem - studiowałem to przez pięć lat."
     ],
-    "etymology": "od włoskiego dilettante, z łaciny dilectare = rozkoszować się",
+    "etymology": "z niem. Dilettant, z fr., wł. dilettante ‛bawiący się czymś, zajmujący się czymś dla przyjemności’",
     "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "charakterystyka osoby",
+    "category": "Ludzie i postawy",
     "synonyms": ["amator", "laik"]
   },
   {
     "id": 2,
-    "word": "Apropriacja",
-    "definition": "Przyswojenie sobie cudzej własności; zawłaszczenie",
+    "word": "Tabloidyzacja",
+    "definition": "Postrzeganie lub przedstawianie rzeczywistości w sposób uproszczony i jednostronny, odwołujące się do emocji, często nastawione na wywołanie sensacji",
     "examples": [
-      "Apropriacja kulturowa to nie to samo co inspiracja.",
-      "Doszło do apropriacji terytorium przez sąsiednie państwo."
+      "Internet przyspieszył proces tabloidyzacji informacji.",
+      "Widać wyraźną tabloidyzację wiadomości w wielu serwisach informacyjnych."
     ],
-    "etymology": "od łacińskiego appropriare = przywłaszczać",
+    "etymology": "od angielskiego „tabloid” - pierwotnie nazwa handlowa określająca sprasowaną tabletkę (czyli skondensowaną formę substancji leczniczej); następnie: coś przedstawionego w formie skróconej lub zagęszczonej; w końcu także gazeta o mniejszym formacie, zawierająca uproszczone i często sensacyjne treści.",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "prawo",
-    "synonyms": ["zawłaszczenie", "przywłaszczenie"]
+    "category": "Media i społeczeństwo",
+    "synonyms": ["sensacjonalizacja", "upraszczanie przekazu"]
   },
   {
-  "id": 3,
-  "word": "Imponderabilia",
-  "definition": "Czynniki trudne do zmierzenia lub uchwycenia, mające wpływ na sytuację; subtelne i niemierzalne elementy rzeczywistości",
-  "examples": [
-    "O wyniku rozmowy zadecydowały imponderabilia, takie jak atmosfera spotkania.",
-    "Nie wszystko da się przewidzieć – w każdej decyzji pojawiają się imponderabilia."
-  ],
-  "etymology": "z łac. 'imponderabilis' („niedający się zważyć”), od 'in-' (nie) + 'ponderare' (ważyć)",
-  "partOfSpeech": "rzeczownik (liczba mnoga)",
-  "category": "pojęcia abstrakcyjne",
-  "synonyms": ["niuanse", "subtelności", "czynniki niemierzalne", "nieuchwytne elementy"]
-},
+    "id": 3,
+    "word": "Imponderabilia",
+    "definition": "Czynniki trudne do zmierzenia lub uchwycenia, mające wpływ na sytuację; subtelne i niemierzalne elementy rzeczywistości",
+    "examples": [
+      "O wyniku rozmowy zadecydowały imponderabilia, takie jak atmosfera spotkania.",
+      "Nie wszystko da się przewidzieć – w każdej decyzji pojawiają się imponderabilia."
+    ],
+    "etymology": "z łac. 'imponderabilis' („niedający się zważyć”), od 'in-' (nie) + 'ponderare' (ważyć)",
+    "partOfSpeech": "rzeczownik (liczba mnoga)",
+    "category": "Filozofia i pojęcia",
+    "synonyms": ["niuanse", "subtelności", "czynniki niemierzalne", "nieuchwytne elementy"]
+  },
   {
     "id": 4,
-    "word": "Cnota",
-    "definition": "Dobra cecha moralna; zaleta charakteru",
+    "word": "Ekstrapolacja",
+    "definition": "Wnioskowanie o nieznanych wartościach na podstawie znanych danych",
     "examples": [
-      "Cnota uczciwości jest fundamentem każdego społeczeństwa.",
-      "Mędrzec gardzi próżnością jako cnotą pozorowaną."
+      "Ekstrapolacja wyników może prowadzić do błędów.",
+      "Prognozy oparto na ekstrapolacji trendów."
     ],
-    "etymology": "od łacińskiego virtus = siła, cność",
+    "etymology": "od łacińskiego extra = poza + polire = wygładzać; tu użyte w kontekście „poprawiać” / „układać”",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "etyka",
-    "synonyms": ["zaleta", "cność", "przywaga"]
+    "category": "Nauka i medycyna",
+    "synonyms": ["prognozowanie", "szacowanie"]
   },
   {
     "id": 5,
-    "word": "Dezintegracja",
-    "definition": "Rozpad na części; utrata spójności",
+    "word": "Inkryminacja",
+    "definition": "Obciążenie kogoś zarzutem popełnienia czynu zabronionego",
     "examples": [
-      "Dezintegracja systemu politycznego nastąpiła po wojnie.",
-      "Proces dezintegracji społecznej postępuje w szybkim tempie."
+      "Doszło do inkryminacji niewinnej osoby.",
+      "Brak dowodów uniemożliwił inkryminację."
     ],
-    "etymology": "od łacińskiego des- + integratio = rozwiązanie całości",
+    "etymology": "od łacińskiego incriminare = oskarżać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "proces",
-    "synonyms": ["rozpad", "rozkład", "rozpadliny"]
+    "category": "Prawo",
+    "synonyms": ["oskarżenie", "zarzut", "posądzenie"]
   },
   {
     "id": 6,
     "word": "Eklektyzm",
-    "definition": "Łączenie różnych stylów, metod, poglądów",
+    "definition": "Łączenie w jedną całość niejednorodnych elementów mających swe źródło w różnych stylach lub doktrynach",
     "examples": [
       "Jego malarstwo to eklektyzm różnych epok i kierunków.",
-      "Eklektyzm filozoficzny bywa postrzegany jako brak konsekwencji."
+      "Jego muzyka to fascynujący eklektyzm gatunków."
     ],
     "etymology": "od greckiego eklektikos = wybierający",
     "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "sztuka",
-    "synonyms": ["mieszanka", "synkretyzm"]
+    "category": "Kultura i sztuka",
+    "synonyms": ["wielostylowość", "mieszanka"]
   },
   {
     "id": 7,
-    "word": "Fascynacja",
-    "definition": "Silne zainteresowanie, urzeczenie",
+    "word": "Jowialność",
+    "definition": "Mający pogodne usposobienie i nieco rubaszne poczucie humoru",
     "examples": [
-      "Miał fascynację starożytnymi cywilizacjami od dziecka.",
-      "Fascynacja młodą aktorką trwała tylko sezon."
+      "Jego jowialność zjednywała ludzi.",
+      "Przywitał gości z jowialnością."
     ],
-    "etymology": "od łacińskiego fascinare = czarować",
+    "etymology": "od łacińskiego lovialis = oznaczającego osobę urodzoną pod wpływem planety Jowisz (w astrologii Jowisz zwiastował szczęście, optymizm i pogodę ducha)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "emocje",
-    "synonyms": ["urok", "zauroczenie", "powab"]
+    "category": "Psychologia i emocje",
+    "synonyms": ["pogodność", "serdeczność"]
   },
   {
     "id": 8,
-    "word": "Gnob",
-    "definition": "Drobny diabeł, skrzat; złośliwy duch",
+    "word": "Labilność",
+    "definition": "Chwiejność, niestabilność emocjonalna lub stanów",
     "examples": [
-      "W ludowych wierzeniach gnob zamieszkivał stodoły.",
-      "Dzieci wierzyły, że gnoby wystraszą niegrzecznych."
+      "Labilność emocjonalna utrudnia funkcjonowanie.",
+      "Zauważono labilność nastrojów."
     ],
-    "etymology": "od niemieckiego Kobold = duszek",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "mitologia",
-    "synonyms": ["kobold", "skrzat", "duszek"]
+    "etymology": "od łacińskiego labilis = nietrwały, upadający, który wywodzi się od czasownika labi = ślizgać się, upadać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": ["niestabilność", "chwiejność", "zmienność"]
   },
   {
     "id": 9,
-    "word": "Hermetyzm",
-    "definition": "Niezrozumiałość; zamknięcie w sobie",
+    "word": "Metanoja",
+    "definition": "Zmiana sposobu myślenia i postępowania",
     "examples": [
-      "Jego poezja słynęła z hermetyzmu i abstrakcji.",
-      "Styl hermetyczny utrudnia komunikację z czytelnikiem."
+      "Doświadczył metanoi po trudnych wydarzeniach.",
+      "Metanoja jest ważnym pojęciem w teologii."
     ],
-    "etymology": "od greckiego hermeneia = wykładnia (według Hermesa)",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "sztuka",
-    "synonyms": ["nieprzystępność", "encyklopedyczność"]
+    "etymology": "od greckiego metanoia = zmiana myślenia, przemiana umysłu; od 'meta-' (zmiana) + 'nous' (umysł, rozum, intelekt)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Filozofia i pojęcia",
+    "synonyms": ["przemiana umysłu", "zmiana myślenia"]
   },
   {
     "id": 10,
-    "word": "Idiosynkrazja",
-    "definition": "Osobliwość; niezwykła cecha lub awersja",
+    "word": "Zoonoza",
+    "definition": "Choroba zakaźna zwierząt mogąca przenosić się na ludzi",
     "examples": [
-      "Miał idiosynkrazję do koloru zielonego.",
-      "Idiosynkrazje językowe są fascynującym fenomenem."
+      "Wścieklizna to groźna zoonoza.",
+      "Badania nad zoonozami są kluczowe dla zdrowia publicznego."
     ],
-    "etymology": "od greckiego idios + synkrasis = mieszanina właściwa",
+    "etymology": "z greckiego 'zoo-' (zôon = zwierzę) + 'noza' (nósos = choroba)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "charakterystyka",
-    "synonyms": ["osobliwość", "dziwactwo", "wyspa"]
+    "category": "Nauka i medycyna",
+    "synonyms": ["choroba odzwierzęca"]
   },
   {
     "id": 11,
-    "word": "Kontemplacja",
-    "definition": "Głęboka obserwacja; zadumanie, rozmyślanie",
+    "word": "Abnegat",
+    "definition": "człowiek niedbający o swój wygląd, o swoje korzyści",
     "examples": [
-      "Kontemplacja natury dawała mu spokój.",
-      "W ciszy klasztornej oddawał się kontemplacji."
+      "Filozof żył jak abnegat, gardząc dobrami materialnymi.",
+      "Został zapamiętany jako niechlujny abnegat."
     ],
-    "etymology": "od łacińskiego contemplatio = patrzenie",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "stan umysłu",
-    "synonyms": ["zadumanie", "medytacja", "refleksja"]
+    "etymology": "od łacińskiego abnegatio = odmowa, wyrzeczenie się oraz od abnegare = odmawiać, wyrzekać się",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Ludzie i postawy",
+    "synonyms": ["zaniedbana osoba", "niechluj"]
   },
   {
     "id": 12,
     "word": "Kuriozum",
-    "definition": "Coś dziwnego, osobliwego; zaskakujący fakt",
+    "definition": "Rzecz lub zjawisko osobliwe, budzące zdumienie swą niezwykłością lub dziwacznością",
     "examples": [
       "To kuriozum, że nikt wcześniej tego nie zauważył.",
-      "Muzeum pełne jest kuriozów z całego świata."
+      "Ten budynek to architektoniczne kuriozum, niepasujące do reszty miasta."
     ],
-    "etymology": "od łacińskiego curiosus = ciekawy",
+    "etymology": "od łacińskiego curiosum = ciekawa rzecz, ciekawostka, przedmiot godny uwagi",
     "partOfSpeech": "rzeczownik, rodzaj nijaki",
-    "category": "cecha",
-    "synonyms": ["osobliwość", "rzadkość", "dziwactwo"]
+    "category": "Filozofia i pojęcia",
+    "synonyms": ["rzadkość", "fenomen", "dziwactwo"]
   },
   {
     "id": 13,
-    "word": "Lukier",
-    "definition": "Słodka masa z cukru i białka; polewa",
+    "word": "Mitrężyć",
+    "definition": "Zwlekać z czymś, marnować czas",
     "examples": [
-      "Ciasto było pokryte cienkim lukrem.",
-      "Lukier królewski wymaga białka i cukru pudru."
+      "Przestań mitrężyć i zabierz się do pracy.",
+      "Cały dzień mitrężył zamiast zrobić coś pożytecznego."
     ],
-    "etymology": "od niemieckie Likör = likier (pierwotnie alkoholowy)",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "kulinaria",
-    "synonyms": ["polewa", "smarowidło"]
+    "etymology": "od rzeczownika mitręga (dawniej: praca licha, marudzenie)",
+    "partOfSpeech": "czasownik",
+    "category": "Zachowania i procesy",
+    "synonyms": ["marnować (czas)", "zwlekać", "ociągać się"]
   },
   {
     "id": 14,
@@ -174,90 +174,90 @@
     "definition": "Smutność, tęsknota; ponury nastrój",
     "examples": [
       "Jesienna pogoda wywoływała w nim melancholię.",
-      "Melancholia poetów romantycznych stała się archetypem."
+      "W jej głosie pobrzmiewała nuta dawnej, głęboko skrywanej melancholii."
     ],
-    "etymology": "od greckiego melas + chole = czarna żółć",
+    "etymology": "z greckiego dosłownie „czarna żółć” (melan-cholía, od mélaina – czarna i cholḗ – żółć)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "emocje",
-    "synonyms": ["smutek", "tęsknota", "czarnogłów"]
+    "category": "Psychologia i emocje",
+    "synonyms": ["smutek", "tęsknota", "przygnębienie"]
   },
   {
     "id": 15,
-    "word": "Nostalgia",
-    "definition": "Tęsknota za minionym; błogi żal",
+    "word": "Ludyzm",
+    "definition": "Skłonność do bawienia się, rozpatrywana jako cecha człowieka lub zjawisko kulturowe",
     "examples": [
-      "Nostalgia za dzieciństwem to uczucie uniwersalne.",
-      "Nostalgia za krajem ogarniała go każdej jesieni."
+      "W jego twórczości widoczny jest silny ludyzm.",
+      "Ludyzm w literaturze przejawia się poprzez gry językowe i żart."
     ],
-    "etymology": "od greckiego nostos = powrót + algos = ból",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "emocje",
-    "synonyms": ["tęsknota", "ból", "rozżalenie"]
+    "etymology": "od łacińskiego ludus = gra, zabawa",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Kultura i sztuka",
+    "synonyms": ["zabawa", "rozrywka"]
   },
   {
     "id": 16,
-    "word": "Opuszczność",
-    "definition": "Stan opuszczonego miejsca; pustka",
+    "word": "Tetryczeć",
+    "definition": "Stawać się zgryźliwym, zgorzkniałym, gderliwym",
     "examples": [
-      "Opuszczność dawnych fabryk świadczy o przemianach.",
-      "Czuł opuszczość po wyprowadzce z rodzinnego domu."
+      "Przestań tetryczeć i spróbuj spojrzeć na to pozytywnie.",
+      "Cały dzień tetryczał, narzekając na wszystko wokół."
     ],
-    "etymology": "od 'opuszczony' + -ność",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "stan",
-    "synonyms": ["pustka", "opor", "opuszczenie"]
+    "etymology": "od słowa „tetryk” (człowiek zrzędliwy, marudny); z łaciny taetricus (surowy, poważny) – ten pochodzi od taeter (odpychający, ponury)",
+    "partOfSpeech": "czasownik",
+    "category": "Zachowania i procesy",
+    "synonyms": ["zrzędzić", "marudzić", "narzekać"]
   },
   {
     "id": 17,
-    "word": "Paradoks",
-    "definition": "Twierdzenie logicznie sprzeczne",
+    "word": "Hormeza",
+    "definition": "Zjawisko korzystnego wpływu niskich dawek czynnika szkodliwego w wysokich dawkach",
     "examples": [
-      "Paradoks czasu fascynuje filozofów od wieków.",
-      "To paradoks, że bogactwo często przynosi nieszczęście."
+      "Hormeza tłumaczy, dlaczego niewielki stres może wzmacniać organizm.",
+      "Niektóre terapie opierają się na zjawisku hormezy."
     ],
-    "etymology": "od greckiego para + doxa = przeciwko opinii",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "logika",
-    "synonyms": ["sprzeczność", "anomalia"]
+    "etymology": "od greckiego hórmēsis = pobudzenie; szybki ruch, zapał",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Nauka i medycyna",
+    "synonyms": ["efekt hormetyczny"]
   },
   {
     "id": 18,
     "word": "Peregrynacja",
-    "definition": "Podróż, wędrówka; pielgrzymka",
+    "definition": "Długa podróż, wędrówka; pielgrzymka",
     "examples": [
       "Peregrynacja po Europie trwała trzy lata.",
       "Peregrynacja duchowa była częścią jego życia."
     ],
-    "etymology": "od łacińskiego peregrinatio = przebywanie za granicą",
+    "etymology": "od łacińskiego peregrīnātiō = przebywanie za granicą; peregrinus = cudzoziemiec, pielgrzym",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "podróż",
-    "synonyms": ["pielgrzymka", "wędrówka", "tułaczka"]
+    "category": "Podróże",
+    "synonyms": ["pielgrzymka", "wędrówka", "podróż"]
   },
   {
     "id": 19,
-    "word": "Quiwizacja",
-    "definition": "Zejście na manowce; błędna droga",
+    "word": "Defetyzm",
+    "definition": "Brak wiary w zwycięstwo lub powodzenie jakiejś sprawy, wyrażający się w ciągłym przewidywaniu porażki",
     "examples": [
-      "Polityka rządu to jedna wielka quiwizacja.",
-      "Od quiwizacji uratowała go rozmowa z mentorem."
+      "Defetyzm w zespole może obniżyć morale.",
+      "Jego wypowiedź była przejawem czystego defetyzmu."
     ],
-    "etymology": "od niemieckiego Quiwi = fałszywy (.Argon)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "błąd",
-    "synonyms": ["błąd", "pomyłka", "fiasko"]
+    "etymology": "od francuskiego défaite = porażka",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Psychologia i emocje",
+    "synonyms": ["pesymizm", "zniechęcenie"]
   },
   {
     "id": 20,
-    "word": "Refleksja",
-    "definition": "Zastanowienie; rozmyślanie nad czymś",
+    "word": "Dezynwoltura",
+    "definition": "Zbyt swobodne, często lekceważące zachowanie",
     "examples": [
-      "Refleksja nad własnym życiem jest konstruktywna.",
-      "Poetka dzieliła się refleksjami o naturze."
+      "Odpowiadał z dezynwolturą, jakby nic go nie obchodziło.",
+      "Jego dezynwoltura została odebrana jako brak szacunku."
     ],
-    "etymology": "od łacińskiego reflectere = odwrócić",
+    "etymology": "od francuskiego désinvolture = swoboda, nonszalancja",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "myślenie",
-    "synonyms": ["zastanowienie", "rozmyślanie", "rozważanie"]
+    "category": "Ludzie i postawy",
+    "synonyms": ["nonszalancja", "swoboda", "lekceważenie"]
   },
   {
     "id": 21,
