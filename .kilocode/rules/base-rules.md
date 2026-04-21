@@ -18,7 +18,7 @@ Zgodnie ze specyfikacją architektoniczną, system opiera się na nowoczesnej ar
 | Styling | Tailwind CSS |
 | Animacje | Framer Motion |
 | Routing | React Router v6 |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ### 1.3 Struktura Projektu
 
@@ -202,10 +202,10 @@ const getWordOfDay = (words) => {
 
 ## 8. Deployment
 
-### 8.1 GitHub Pages
+### 8.1 Vercel
 ```bash
 npm run build
-npx gh-pages -d dist
+npx vercel deploy --prod
 ```
 
 ### 8.2 Zmienne środowiskowe
@@ -225,7 +225,7 @@ VITE_APP_URL=https://username.github.io/slowo-dnia
 - [x] Share na social media
 - [x] Mobile responsive
 - [x] Piękna typografia i design
-- [x] Deploy na GitHub Pages
+- [x] Deploy na Vercel
 
 ---
 
@@ -233,7 +233,7 @@ VITE_APP_URL=https://username.github.io/slowo-dnia
 
 | Pozycja | Koszt |
 |---------|-------|
-| GitHub Pages | $0 |
+| Vercel | $0 |
 | Domain (.pl) | ~50 PLN/rok |
 | Google Fonts | $0 |
 | **RAZEM** | **~50 PLN** |

@@ -28,7 +28,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 | Frontend | React + Vite |
 | Styling | Tailwind CSS |
 | State | React Context + localStorage |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ---
 
@@ -60,7 +60,7 @@ slowo-dnia/
 | State Management | React Context + localStorage |
 | Routing | React Router v6 |
 | Animacje | Framer Motion |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 | Dane | Local JSON (MVP) |
 
 ### 3. Projektowanie API

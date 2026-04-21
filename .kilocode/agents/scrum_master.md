@@ -28,7 +28,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 |---------|-------------|
 | Frontend | React + Vite |
 | Styling | Tailwind CSS |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ---
 

@@ -25,7 +25,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 |---------|-------------|
 | Frontend | React + Vite |
 | Styling | Tailwind CSS |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ### Status Projektu
 **PROCEED** — Projekt zaakceptowany i gotowy do realizacji

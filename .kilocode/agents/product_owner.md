@@ -27,7 +27,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 |---------|-------------|
 | Frontend | React + Vite |
 | Styling | Tailwind CSS |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ---
 
@@ -76,7 +76,7 @@ Każda user story musi zawierać:
 3. **Wykorzystaj kontekst biznesowy**
    - ICP: Miłośnicy języka polskiego 25-45 lat
    - Model: Freemium + Premium 19 PLN/mies
-   - Stack: React + Vite + Tailwind CSS + GitHub Pages
+   - Stack: React + Vite + Tailwind CSS + Vercel
 
 ---
 

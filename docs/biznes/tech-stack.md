@@ -18,7 +18,7 @@ Audyt i optymalizacja stacku technologicznego dla projektu "Słowo Dnia" pod ką
 | **State** | React Context + localStorage | Prosty, bez backendu |
 | **Routing** | React Router v6 | Standard |
 | **Animacje** | Framer Motion | Smooth, beautiful |
-| **Hosting** | GitHub Pages | Free, CDN, SSL |
+| **Hosting** | Vercel | Free, CDN, SSL |
 | **Domain** | slowodnia.pl | Brand |
 
 ### 1.2 Stack v2 (Po MVP)
@@ -246,44 +246,19 @@ export const useLocalStorage = (key, initialValue) => {
 
 ## 6. Deployment
 
-### 6.1 GitHub Pages Setup
+### 6.1 Vercel Setup
 
 ```bash
-# Install gh-pages
-npm install -D gh-pages
+# Install Vercel CLI
+npm install -g vercel
 
 # Deploy
-npm run deploy
+vercel
 ```
 
-Lub w GitHub Settings:
-1. Settings → Pages
-2. Source: Deploy from branch
-3. Branch: gh-pages / root
+### 6.2 Vercel CI/CD
 
-### 6.2 CI/CD Pipeline
-
-```yaml
-# .github/workflows/deploy.yml
-name: Deploy
-on:
-  push:
-    branches: [main]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm ci
-      - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-```
+Vercel automatycznie deployuje przy push do main - wystarczy połączyć repozytorium w dashboard Vercel.
 
 ---
 
@@ -296,7 +271,7 @@ jobs:
 | **VS Code** | IDE | WebStorm |
 | **ESLint** | Linting | StandardJS |
 | **Prettier** | Formatowanie | - |
-| **GitHub** | Version control | GitLab |
+| **GitHub** | Version control | GitLab, Bitbucket |
 | **Figma** | Design | Canva |
 
 ### 7.2 Analytics & Monitoring
@@ -315,7 +290,7 @@ jobs:
 
 | Pozycja | Koszt |
 |---------|-------|
-| GitHub Pages (hosting) | $0 |
+| **Vercel** (hosting) | $0 |
 | Domain (.pl) | ~50 PLN/rok |
 | Google Fonts | $0 |
 | **Razem** | **~50 PLN/rok** |
@@ -324,7 +299,7 @@ jobs:
 
 | Pozycja | Koszt |
 |---------|-------|
-| GitHub Pages Pro | $0 |
+| Vercel | $0 |
 | Supabase | $0/mies (free tier) |
 | Stripe | 2% + 0.50 PLN |
 | Resend | $0/mies (free tier) |
@@ -340,11 +315,11 @@ jobs:
 
 | Praktyka | Implementacja |
 |----------|---------------|
-| **HTTPS** | GitHub Pages SSL (auto) |
+| **HTTPS** | Vercel SSL (auto) |
 | **CSP** | Meta tags |
 | **Sanitization** | DOMPurify dla user input |
 | **Secrets** | ENV variables |
-| **Rate limiting** | GitHub Pages limits |
+| **Rate limiting** | Vercel limits |
 
 ---
 

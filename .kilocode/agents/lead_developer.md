@@ -29,7 +29,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 | Frontend | React + Vite |
 | Styling | Tailwind CSS |
 | State | React Context + localStorage |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ---
 

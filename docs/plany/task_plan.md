@@ -66,7 +66,7 @@
 - [ ] Testy manualne
 
 ### Etap 7: Deploy
-- [ ] Setup GitHub Pages
+- [ ] Setup Vercel
 - [ ] Konfiguracja zmiennych środowiskowych
 - [ ] Deploy produkcyjny
 
@@ -84,7 +84,7 @@
 - [x] Share na social media
 - [x] Mobile responsive
 - [x] Piękna typografia i design
-- [ ] Deploy na GitHub Pages (slowodnia.pl)
+- [ ] Deploy na Vercel (slowodnia.pl)
 
 ---
 

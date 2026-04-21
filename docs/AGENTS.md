@@ -5,7 +5,7 @@
 **Produkt:** Aplikacja do nauki pięknych polskich słów  
 **Model:** Freemium + Newsletter  
 **Tech Stack:** React + Vite + Tailwind CSS + Framer Motion  
-**Hosting:** GitHub Pages  
+**Hosting:** Vercel  
 **Status:** ✅ PROCEED
 
 ---
@@ -138,7 +138,7 @@ const getWordOfDay = (words) => {
 | State | React Context + localStorage |
 | Routing | React Router v6 |
 | Animacje | Framer Motion |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ---
 
@@ -178,7 +178,7 @@ const getWordOfDay = (words) => {
 | D6 | Share na social media |
 | D7 | Mobile responsive |
 | D8 | Piękna typografia i design |
-| D9 | Deploy na GitHub Pages |
+| D9 | Deploy na Vercel |
 
 ---
 
@@ -210,7 +210,7 @@ const getWordOfDay = (words) => {
 
 | Pozycja | Koszt |
 |---------|-------|
-| GitHub Pages | $0 |
+| Vercel | $0 |
 | Domain (.pl) | ~50 PLN/rok |
 | Google Fonts | $0 |
 | **RAZEM** | **~50 PLN** |

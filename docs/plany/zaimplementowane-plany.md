@@ -88,11 +88,11 @@ Poniższy dokument zawiera listę zaimplementowanych funkcjonalności w projekci
 
 ## 2026-04-18 — Deployment
 
-### Plan: GitHub Pages
+### Plan: Vercel
 
-**Status:** ⏳ W trakcie
+**Status:** ✅ Zakończony
 
-**Opis:** Deploy aplikacji na GitHub Pages.
+**Opis:** Deploy aplikacji na Vercel.
 
 ---
 
@@ -110,7 +110,7 @@ Poniższy dokument zawiera listę zaimplementowanych funkcjonalności w projekci
 | Share na social media | ✅ |
 | Mobile responsive | ✅ |
 | Piękna typografia i design | ✅ |
-| Deploy na GitHub Pages | ⏳ W trakcie |
+| Deploy na Vercel | ✅ |
 
 **Większość funkcjonalności MVP zaimplementowana.** ✅
 

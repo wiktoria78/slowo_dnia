@@ -31,7 +31,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 | State | React Context + localStorage |
 | Routing | React Router v6 |
 | Animacje | Framer Motion |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 ---
 

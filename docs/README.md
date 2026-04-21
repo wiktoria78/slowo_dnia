@@ -79,14 +79,9 @@ Słowa są przechowywane w pliku [`src/data/words.json`](../src/data/words.json)
 ### 3. Deployment
 
 ```bash
-# Deploy to GitHub Pages
-npm run deploy
-```
-
-Lub ręcznie:
-```bash
+# Deploy to Vercel
 npm run build
-npx gh-pages -d dist
+npx vercel deploy --prod
 ```
 
 ---
@@ -171,7 +166,7 @@ npx gh-pages -d dist
 | Fonts | Playfair Display, Merriweather, Inter |
 | State | React Context + localStorage |
 | Routing | React Router v6 |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 
 **Koszt MVP:** ~50 PLN/rok
 
@@ -185,7 +180,7 @@ npx gh-pages -d dist
 | 2 | Core | WordCard + Definition |
 | 3 | Features | Favorites + Archive + Search |
 | 4 | Polish | Animacje + Mobile + Share |
-| 5 | Deploy | GitHub Pages + Domain + SEO |
+| 5 | Deploy | Vercel + Domain + SEO |
 
 ---
 
@@ -201,7 +196,7 @@ npx gh-pages -d dist
 - [x] Share na social media
 - [x] Mobile responsive
 - [x] Piękna typografia i design
-- [ ] Deploy na GitHub Pages
+- [ ] Deploy na Vercel
 
 ---
 
@@ -303,7 +298,7 @@ Projekt przeszedł przez następujące workflow:
 | ✅ | Zbieranie 100 pięknych słów |
 | ✅ | Setup projektu React + Vite |
 | ✅ | Build MVP |
-| ✅ | Deploy na GitHub Pages |
+| ✅ | Deploy na Vercel |
 | ⏳ | TikTok content start |
 
 ---

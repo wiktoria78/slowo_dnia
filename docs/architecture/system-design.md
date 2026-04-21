@@ -52,7 +52,7 @@ Aplikacja "Słowo Dnia" została zaprojektowana jako progresywna aplikacja webow
 | Animacje | Framer Motion | 11.x | React-native animacje |
 | Routing | React Router | 6.x | Standard SPA routing |
 | State | React Context + localStorage | - | Wymaga prostego state management |
-| Hosting | GitHub Pages | - | Darmowy, CDN, SSL |
+| Hosting | Vercel | - | Darmowy, CDN, SSL |
 
 ### 2.2 Struktura Projektu
 
@@ -237,11 +237,11 @@ const { favorites, toggleFavorite } = useContext(AppContext);
 
 ## 7. Deployment
 
-### 7.1 GitHub Pages
+### 7.1 Vercel
 
 ```bash
 npm run build     # Produkcja
-npx gh-pages -d dist  # Deploy
+npx vercel deploy --prod  # Deploy
 ```
 
 ### 7.2 Konfiguracja Vite

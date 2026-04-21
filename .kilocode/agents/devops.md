@@ -27,7 +27,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 | Warstwa | Technologia |
 |---------|-------------|
 | Frontend | React + Vite |
-| Hosting | GitHub Pages |
+| Hosting | Vercel |
 | Build | Vite |
 
 ---
@@ -36,58 +36,15 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 
 ### 1. CI/CD Pipeline
 
-#### GitHub Actions Workflow
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: Install Dependencies
-        run: npm ci
-      
-      - name: Run Tests
-        run: npm test
-      
-      - name: Build
-        run: npm run build
-      
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-```
+Vercel zapewnia automatyczny CI/CD - każdy push do main automatycznie deployuje aplikację.
 
 ### 2. Deployment
 
-#### GitHub Pages Configuration
+#### Vercel Deployment
 
-| Element | Wartość |
-|---------|---------|
-| Source | gh-pages branch |
-| Path | / (root) |
-| Branch | main |
-| Custom domain | (opcjonalnie) |
-
-#### Build Command
 ```bash
 npm run build
-npx gh-pages -d dist
+npx vercel deploy --prod
 ```
 
 ### 3. Środowisko
@@ -96,7 +53,7 @@ npx gh-pages -d dist
 
 | Zmienna | Opis | Przykład |
 |---------|------|----------|
-| VITE_APP_URL | URL aplikacji | https://username.github.io/slowo-dnia |
+| VITE_APP_URL | URL aplikacji | https://slowodnia.pl |
 | VITE_APP_TITLE | Tytuł aplikacji | Słowo Dnia |
 
 #### Node Version
@@ -109,9 +66,7 @@ npx gh-pages -d dist
 
 | Usługa | Cel |
 |--------|-----|
-| GitHub Pages | Hosting aplikacji |
-| GitHub Actions | CI/CD |
-| GitHub Repository | Kod i wersjonowanie |
+| Vercel | Hosting aplikacji |
 
 ### 5. Monitoring
 
@@ -138,8 +93,8 @@ npx gh-pages -d dist
    - `docs/infrastructure.md` — opis infrastruktury
 
 3. **Skonfiguruj CI/CD**
-   - Utwórz GitHub Actions workflow
-   - Skonfiguruj GitHub Pages
+   - Połącz repozytorium z Vercel
+   - Skonfiguruj domenę własną
    - Zweryfikuj deployment
 
 ---
@@ -149,7 +104,6 @@ npx gh-pages -d dist
 | Plik | Opis |
 |------|------|
 | docs/deployment.md | Procedura deploymentu krok po kroku |
-| docs/ci_cd_pipeline.md | Konfiguracja GitHub Actions |
 | docs/infrastructure.md | Opis infrastruktury i środowisk |
 
 ---
@@ -157,8 +111,7 @@ npx gh-pages -d dist
 ## Deployment Checklist
 
 - [ ] Build przechodzi bez błędów
-- [ ] GitHub Pages skonfigurowane
-- [ ] GitHub Actions workflow działa
+- [ ] Vercel skonfigurowane
 - [ ] Aplikacja dostępna pod URL
 - [ ] Bundle size optymalny (< 500KB)
 - [ ] Brak console errors

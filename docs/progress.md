@@ -100,7 +100,7 @@ Brak zidentyfikowanych problemów.
 | Share na social media | ✅ |
 | Mobile responsive | 🔄 |
 | Piękna typografia | 🔄 |
-| Deploy na GitHub Pages | ⏳ |
+| Deploy na Vercel | ✅ |
 
 ---
 
