@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useMemo, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import wordsData from '../data/words.json';
 
 const START_DATE = new Date('2026-04-13');
@@ -16,11 +16,23 @@ const getDaysElapsed = (startDate) => {
 const Archive = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const archiveWords = useMemo(() => {
     const daysElapsed = getDaysElapsed(START_DATE);
     const maxIndex = Math.min(daysElapsed, wordsData.length);
-    return wordsData.slice(0, maxIndex);
+    return wordsData.slice(0, maxIndex).reverse();
   }, []);
 
   const categories = useMemo(() => {
@@ -53,17 +65,45 @@ const Archive = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="flex-1 px-4 py-3 rounded-lg border border-text/20 bg-surface font-ui text-text placeholder:text-text/40 focus:outline-none focus:border-primary"
           />
-          <select
-            value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
-            className="px-4 py-3 rounded-lg border border-text/20 bg-surface font-ui text-text focus:outline-none focus:border-primary"
-          >
-            {categories.map(cat => (
-              <option key={cat} value={cat}>
-                {cat === 'all' ? 'Wszystkie kategorie' : cat}
-              </option>
-            ))}
-          </select>
+          <div className="relative" ref={dropdownRef}>
+            <button
+              type="button"
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-full px-4 py-3 rounded-lg border border-text/20 bg-surface font-ui text-text text-left flex justify-between items-center hover:border-primary/50 transition-colors"
+            >
+              <span>{selectedCategory === 'all' ? 'Wszystkie kategorie' : selectedCategory}</span>
+              <svg className={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute z-10 w-full mt-2 bg-surface border border-text/20 rounded-lg shadow-lg overflow-hidden"
+                >
+                  {categories.map(cat => (
+                    <button
+                      key={cat}
+                      type="button"
+                      onClick={() => {
+                        setSelectedCategory(cat);
+                        setIsOpen(false);
+                      }}
+                      className={`w-full px-4 py-3 text-left font-ui text-text hover:bg-background transition-colors ${
+                        selectedCategory === cat ? 'bg-background text-primary' : ''
+                      }`}
+                    >
+                      {cat === 'all' ? 'Wszystkie kategorie' : cat}
+                    </button>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
       </div>
 
