@@ -33,7 +33,7 @@ Aplikacja "Słowo Dnia" została zaprojektowana jako progresywna aplikacja webow
 │                      Data Layer                            │
 │  ┌────────────────┐  ┌────────────────────────────────┐  │
 │  │  words.json    │  │      localStorage              │  │
-│  │  (1388 słów)   │  │  (ulubione, preferencje)       │  │
+│  │  (100 słów)   │  │  (ulubione, preferencje)       │  │
 │  └────────────────┘  └────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -59,7 +59,7 @@ Aplikacja "Słowo Dnia" została zaprojektowana jako progresywna aplikacja webow
 ```
 src/
 ├── data/                    # Dane statyczne
-│   └── words.json          # Baza 1388 pięknych słów
+│   └── words.json          # Baza 100 pięknych słów
 │
 ├── hooks/                   # Logika biznesowa (custom hooks)
 │   ├── useWordOfDay.js     # Algorytm słowa dnia
@@ -88,7 +88,7 @@ Definicja struktury danych słowa zgodna z JSON schema:
 
 ```typescript
 interface Word {
-  id: number;              // Unikalny identyfikator (1-1388)
+  id: number;              // Unikalny identyfikator (1-100)
   word: string;           // Słowo (np. "Dyletant")
   definition: string;     // Definicja (np. "Osoba zajmująca się...")
   examples: string[];     // Przykłady użycia (1-3)
@@ -117,8 +117,8 @@ word_index = floor((current_date - START_DATE) / 1 dzień) % words_count
 ### 3.2 Zasady Działania
 
 1. **Determinizm** — to samo słowo dla wszystkich użytkowników w danym dniu
-2. **Kolejność** — słowa wyświetlane w ustalonej kolejności (id 1 → 1388)
-3. **Cykliczność** — po wyczerpaniu wszystkich słów (1388 dni) wyświetlane archiwum
+2. **Kolejność** — słowa wyświetlane w ustalonej kolejności (id 1 → 100)
+  3. **Cykliczność** — po wyczerpaniu wszystkich słów (100 dni) wyświetlane archiwum
 4. **Fallback** — przed datą startową wyświetlane słowo #1
 
 ### 3.3 Implementacja
@@ -261,7 +261,7 @@ export default defineConfig({
 | ID | Kryterium | Weryfikacja |
 |----|-----------|-------------|
 | D1 | Słowo dnia wyświetlane | Test: odwiedzenie strony |
-| D2 | 1388 słów w bazie | Test: sprawdzenie words.json |
+| D2 | 100 słów w bazie | Test: sprawdzenie words.json |
 | D3 | Definicja + przykłady | Test: wyświetlenie słowa |
 | D4 | Zapis ulubionych | Test: add → refresh → verify |
 | D5 | Archiwum funkcjonalne | Test: przejście do /archive |

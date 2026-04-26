@@ -443,7 +443,7 @@ WordCard:
 | ✅ | Wybrano Słowo Dnia |
 | ✅ | WF_Kill_The_Idea — PROCEED ✅✅✅ |
 | ✅ | **WF_MVP_Scoping — UKOŃCZONE** |
-| ✅ | Zbieranie 1388 pięknych słów |
+| ✅ | Zbieranie 100 pięknych słów |
 | ✅ | Setup projektu |
 | ✅ | Build MVP |
 | ✅ | Deploy na GitHub Pages |

@@ -26,7 +26,7 @@ Poniższy dokument zawiera listę zaimplementowanych funkcjonalności w projekci
 
 ## 2026-04-13 — Baza Słów
 
-### Plan: words.json z 1388 słowami
+### Plan: words.json z 100 słowami
 
 **Status:** ✅ Zaimplementowano
 

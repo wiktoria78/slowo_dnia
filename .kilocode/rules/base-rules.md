@@ -24,7 +24,7 @@ Zgodnie ze specyfikacją architektoniczną, system opiera się na nowoczesnej ar
 
 ```
 src/
-├── data/             # words.json (1388 słów)
+├── data/             # words.json (100 słów)
 ├── hooks/            # useWordOfDay, useFavorites, useLocalStorage
 ├── context/          # AppContext.jsx + components/
 │   ├── AppContext.jsx
@@ -118,7 +118,7 @@ const getWordOfDay = (words) => {
 **Zasady:**
 - Data startowa: 2026-04-13
 - To samo słowo dla wszystkich użytkowników w danym dniu
-- Po wyczerpaniu słów (1388 dni) wyświetla komunikat "Archiwum"
+- Po wyczerpaniu słów (100 dni) wyświetla komunikat "Archiwum"
 - Używany również w Archive.jsx do wyświetlania historii
 
 ---
@@ -161,7 +161,7 @@ const getWordOfDay = (words) => {
 
 ### MUST HAVE
 - [x] Wyświetlanie słowa dnia
-- [x] Baza 1388 pięknych słów
+- [x] Baza 100 pięknych słów
 - [x] Definicja + przykłady
 - [x] Słowo na dziś (data-based)
 - [x] Zapis ulubionych (localStorage)
@@ -218,7 +218,7 @@ VITE_APP_URL=https://username.github.io/slowo-dnia
 ## 9. Definicja Ukończenia MVP
 
 - [x] Widok słowa dnia działa
-- [x] 1388 pięknych słów w bazie
+- [x] 100 pięknych słów w bazie
 - [x] Definicje i przykłady wyświetlane
 - [x] Zapis ulubionych działa (localStorage)
 - [x] Archiwum poprzednich słów

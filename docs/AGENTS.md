@@ -25,7 +25,7 @@
 | ID | Feature | Priorytet |
 |----|---------|----------|
 | M1 | Wyświetlanie słowa dnia | MUST |
-| M2 | Baza 1388 pięknych słów | MUST |
+| M2 | Baza 100 pięknych słów | MUST |
 | M3 | Definicja + przykłady | MUST |
 | M4 | Słowo na dziś (data-based) | MUST |
 | M5 | Zapis ulubionych (localStorage) | MUST |
@@ -171,7 +171,7 @@ const getWordOfDay = (words) => {
 | ID | Kryterium |
 |----|-----------|
 | D1 | Widok słowa dnia działa |
-| D2 | 1388 pięknych słów w bazie |
+| D2 | 100 pięknych słów w bazie |
 | D3 | Definicje i przykłady wyświetlane |
 | D4 | Zapis ulubionych działa (localStorage) |
 | D5 | Archiwum poprzednich słów |

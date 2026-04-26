@@ -273,7 +273,7 @@ Tydzień 6:
 
 **Aktualny status (2026-04-18):**
 - MVP zbudowany w mniejszym czasie niż planowano
-- 1388 słów (vs planowane 100) 
+- 100 słów (vs planowane 100) 
 - Koszty zgodne z planem (~50 PLN)
 
 ---

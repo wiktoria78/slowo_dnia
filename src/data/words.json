@@ -1,5 +1,37 @@
 [
   {
+    "id": 1,
+    "word": "Dyletant",
+    "definition": "Człowiek zajmujący się jakąś dziedziną albo wypowiadający się o niej bez fachowej wiedzy lub odpowiedniego przygotowania",
+    "examples": [
+      "Ten dyletant wziął się za naprawę samochodu i tylko pogorszył sprawę.",
+      "Nie jestem dyletantem - studiowałem to przez pięć lat."
+    ],
+    "etymology": "z niem. Dilettant, z fr., wł. dilettante ‛bawiący się czymś, zajmujący się czymś dla przyjemności’",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "amator",
+      "laik"
+    ]
+  },
+  {
+    "id": 2,
+    "word": "Tabloidyzacja",
+    "definition": "Postrzeganie lub przedstawianie rzeczywistości w sposób uproszczony i jednostronny, odwołujące się do emocji, często nastawione na wywołanie sensacji",
+    "examples": [
+      "Internet przyspieszył proces tabloidyzacji informacji.",
+      "Widać wyraźną tabloidyzację wiadomości w wielu serwisach informacyjnych."
+    ],
+    "etymology": "od angielskiego „tabloid” - pierwotnie nazwa handlowa określająca sprasowaną tabletkę (czyli skondensowaną formę substancji leczniczej); następnie: coś przedstawionego w formie skróconej lub zagęszczonej; w końcu także gazeta o mniejszym formacie, zawierająca uproszczone i często sensacyjne treści.",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "sensacjonalizacja",
+      "upraszczanie przekazu"
+    ]
+  },
+  {
     "id": 3,
     "word": "Imponderabilia",
     "definition": "Czynniki trudne do zmierzenia lub uchwycenia, mające wpływ na sytuację; subtelne i niemierzalne elementy rzeczywistości",
@@ -9,7 +41,7 @@
     ],
     "etymology": "z łac. 'imponderabilis' („niedający się zważyć”), od 'in-' (nie) + 'ponderare' (ważyć)",
     "partOfSpeech": "rzeczownik (liczba mnoga)",
-    "category": "Filozofia i pojęcia",
+    "category": "Abstrakcyjne pojęcia",
     "synonyms": [
       "niuanse",
       "subtelności",
@@ -18,115 +50,36 @@
     ]
   },
   {
-    "id": 12,
-    "word": "Kuriozum",
-    "definition": "Rzecz lub zjawisko osobliwe, budzące zdumienie swą niezwykłością lub dziwacznością",
+    "id": 4,
+    "word": "Ekstrapolacja",
+    "definition": "Wnioskowanie o nieznanych wartościach na podstawie znanych danych",
     "examples": [
-      "To kuriozum, że nikt wcześniej tego nie zauważył.",
-      "Ten budynek to architektoniczne kuriozum, niepasujące do reszty miasta."
+      "Ekstrapolacja wyników może prowadzić do błędów.",
+      "Prognozy oparto na ekstrapolacji trendów."
     ],
-    "etymology": "od łacińskiego curiosum = ciekawa rzecz, ciekawostka, przedmiot godny uwagi",
-    "partOfSpeech": "rzeczownik, rodzaj nijaki",
-    "category": "Filozofia i pojęcia",
-    "synonyms": [
-      "rzadkość",
-      "fenomen",
-      "dziwactwo"
-    ]
-  },
-  {
-    "id": 9,
-    "word": "Metanoja",
-    "definition": "Zmiana sposobu myślenia i postępowania",
-    "examples": [
-      "Doświadczył metanoi po trudnych wydarzeniach.",
-      "Metanoja jest ważnym pojęciem w teologii."
-    ],
-    "etymology": "od greckiego metanoia = zmiana myślenia, przemiana umysłu; od 'meta-' (zmiana) + 'nous' (umysł, rozum, intelekt)",
+    "etymology": "ang. extrapolation, wg interpolation, jako jego przeciwieństwo, ekstra-",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Filozofia i pojęcia",
+    "category": "Nauka i wiedza",
     "synonyms": [
-      "przemiana umysłu",
-      "zmiana myślenia"
+      "prognozowanie",
+      "szacowanie"
     ]
   },
   {
-    "id": 28,
-    "word": "Acatalepsja",
-    "definition": "Stan całkowitego braku zrozumienia, niemożność uchwycenia sensu",
+    "id": 5,
+    "word": "Inkryminacja",
+    "definition": "Obciążenie kogoś zarzutem popełnienia czynu zabronionego",
     "examples": [
-      "Po przeczytaniu tego fragmentu ogarnęła go acatalepsja.",
-      "Niektórzy miewają acatalepsję wobec najbardziej oczywistych faktów."
+      "Doszło do inkryminacji niewinnej osoby.",
+      "Brak dowodów uniemożliwił inkryminację."
     ],
-    "etymology": "z gr. akatalepsía – niemożność pochwycenia, od a- (nie) + katalepsis (pojmowanie)",
+    "etymology": "od łacińskiego incriminare = oskarżać",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Filozofia i poznanie",
+    "category": "Prawo i polityka",
     "synonyms": [
-      "niezrozumiałość",
-      "absurdalność"
-    ]
-  },
-  {
-    "id": 40,
-    "word": "Anachronizm",
-    "definition": "Błąd chronologiczny polegający na przypisaniu czegoś do niewłaściwego okresu historycznego",
-    "examples": [
-      "Telefon komórkowy w filmie o średniowieczu to anachronizm.",
-      "W jego wystąpieniu było wiele anachronizmów i historycznych niedokładności."
-    ],
-    "etymology": "z gr. ana-chronismos (w przeciwnym czasie), od ana – przeciw + chronos – czas",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Historia i filologia",
-    "synonyms": [
-      "błąd czasu"
-    ]
-  },
-  {
-    "id": 24,
-    "word": "Eufonia",
-    "definition": "Przyjemne dla ucha brzmienie dźwięków; harmonijne zestawienie głosek lub tonów",
-    "examples": [
-      "Wiersz zachwycał swoją eufonią i rytmem.",
-      "Język włoski często uznawany jest za pełen eufonii."
-    ],
-    "etymology": "Pochodzi od greckiego słowa euphōnía, będącego połączeniem członu eu - „dobrze, ładnie” oraz phōnē - „dźwięk, głos”. Do polszczyzny trafiła najpewniej przez francuskie euphonie lub łacińskie euphōnia.",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "język",
-    "synonyms": [
-      "harmonia",
-      "melodyjność"
-    ]
-  },
-  {
-    "id": 23,
-    "word": "Kakofonia",
-    "definition": "Nieprzyjemnie brzmiąca, chaotyczna mieszanina dźwięków",
-    "examples": [
-      "Z ulicy dochodziła kakofonia klaksonów i krzyków.",
-      "Zamiast harmonii powstała kakofonia przypadkowych tonów."
-    ],
-    "etymology": "fr. cacophonie, utworzone (od gr. kakós ‛zły’) na wzór antonimu euphonie, eufonia; może na podstawie gr. kakó-phōnos ‛źle (nieprzyjemnie) brzmiący’",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "język",
-    "synonyms": [
-      "chaos dźwięków"
-    ]
-  },
-  {
-    "id": 21,
-    "word": "Imprimatur",
-    "definition": "Formuła drukowana na początku lub na końcu książki o treści religijnej, oznaczająca zezwolenie władzy kościelnej na publikację",
-    "examples": [
-      "Książka otrzymała imprimatur przed wydaniem.",
-      "Dokument wymagał imprimatur odpowiedniej instytucji kościelnej."
-    ],
-    "etymology": "od łacińskiego imprimatur = niech będzie odbite",
-    "partOfSpeech": "rzeczownik, rodzaj nijaki, nieodmienny",
-    "category": "kultura",
-    "synonyms": [
-      "zgoda",
-      "aprobata",
-      "autoryzacja"
+      "oskarżenie",
+      "zarzut",
+      "posądzenie"
     ]
   },
   {
@@ -143,367 +96,6 @@
     "synonyms": [
       "wielostylowość",
       "mieszanka"
-    ]
-  },
-  {
-    "id": 15,
-    "word": "Ludyzm",
-    "definition": "Zjawisko kulturowe podkreślające element zabawy i gry w twórczości i kulturze",
-    "examples": [
-      "W jego twórczości widoczny jest silny ludyzm.",
-      "Ludyzm w literaturze przejawia się poprzez gry językowe i żart."
-    ],
-    "etymology": "od łacińskiego ludus = gra, zabawa",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Kultura i sztuka",
-    "synonyms": [
-      "zabawa",
-      "rozrywka"
-    ]
-  },
-  {
-    "id": 11,
-    "word": "Abnegat",
-    "definition": "człowiek niedbający o swój wygląd, o swoje korzyści",
-    "examples": [
-      "Filozof żył jak abnegat, gardząc dobrami materialnymi.",
-      "Został zapamiętany jako niechlujny abnegat."
-    ],
-    "etymology": "od łacińskiego abnegatio = odmowa, wyrzeczenie się oraz od abnegare = odmawiać, wyrzekać się",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Ludzie i postawy",
-    "synonyms": [
-      "zaniedbana osoba",
-      "niechluj"
-    ]
-  },
-  {
-    "id": 20,
-    "word": "Dezynwoltura",
-    "definition": "Zbyt swobodne, często lekceważące zachowanie",
-    "examples": [
-      "Odpowiadał z dezynwolturą, jakby nic go nie obchodziło.",
-      "Jego dezynwoltura została odebrana jako brak szacunku."
-    ],
-    "etymology": "od francuskiego désinvolture = swoboda, nonszalancja",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Ludzie i postawy",
-    "synonyms": [
-      "nonszalancja",
-      "swoboda",
-      "lekceważenie"
-    ]
-  },
-  {
-    "id": 1,
-    "word": "Dyletant",
-    "definition": "Człowiek zajmujący się jakąś dziedziną albo wypowiadający się o niej bez fachowej wiedzy lub odpowiedniego przygotowania",
-    "examples": [
-      "Ten dyletant wziął się za naprawę samochodu i tylko pogorszył sprawę.",
-      "Nie jestem dyletantem - studiowałem to przez pięć lat."
-    ],
-    "etymology": "z niem. Dilettant, z fr., wł. dilettante ‛bawiący się czymś, zajmujący się czymś dla przyjemności’",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Ludzie i postawy",
-    "synonyms": [
-      "amator",
-      "laik"
-    ]
-  },
-  {
-    "id": 2,
-    "word": "Tabloidyzacja",
-    "definition": "Postrzeganie lub przedstawianie rzeczywistości w sposób uproszczony i jednostronny, odwołujące się do emocji, często nastawione na wywołanie sensacji",
-    "examples": [
-      "Internet przyspieszył proces tabloidyzacji informacji.",
-      "Widać wyraźną tabloidyzację wiadomości w wielu serwisach informacyjnych."
-    ],
-    "etymology": "od angielskiego „tabloid” - pierwotnie nazwa handlowa określająca sprasowaną tabletkę (czyli skondensowaną formę substancji leczniczej); następnie: coś przedstawionego w formie skróconej lub zagęszczonej; w końcu także gazeta o mniejszym formacie, zawierająca uproszczone i często sensacyjne treści.",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Media i społeczeństwo",
-    "synonyms": [
-      "sensacjonalizacja",
-      "upraszczanie przekazu"
-    ]
-  },
-  {
-    "id": 33,
-    "word": "Nocliwizja",
-    "definition": "Wizualna halucynacja będąca na granicy snu i jawy; koszmarna wizja",
-    "examples": [
-      "Nocliwizje nawiedzały go po całodziennym nadmiernym wysiłku.",
-      "Niektóre leki wywołują nocliwizje."
-    ],
-    "etymology": "z pol. noc (noctis) + łac. visio (widzenie) – „nocne widzenie”",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Medycyna i psychologia",
-    "synonyms": [
-      "nocna wizja",
-      "halucynacja",
-      "wizja koszmaru"
-    ]
-  },
-  {
-    "id": 26,
-    "word": "Efemeryda",
-    "definition": "Coś krótkotrwałego, ulotnego; także termin w astronomii (tablice pozycji ciał niebieskich)",
-    "examples": [
-      "Sława tego artysty była efemerydą.",
-      "Efemerydy są używane w astronomii."
-    ],
-    "etymology": "z gr. ephemeros – jednodniowy",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Nauka i kultura",
-    "synonyms": [
-      "coś ulotnego",
-      "chwilowość"
-    ]
-  },
-  {
-    "id": 4,
-    "word": "Ekstrapolacja",
-    "definition": "Wnioskowanie o nieznanych wartościach na podstawie znanych danych",
-    "examples": [
-      "Ekstrapolacja wyników może prowadzić do błędów.",
-      "Prognozy oparto na ekstrapolacji trendów."
-    ],
-    "etymology": "od łacińskiego extra = poza + polire = wygładzać; tu użyte w kontekście „poprawiać” / „układać”",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Nauka i medycyna",
-    "synonyms": [
-      "prognozowanie",
-      "szacowanie"
-    ]
-  },
-  {
-    "id": 17,
-    "word": "Hormeza",
-    "definition": "Zjawisko korzystnego wpływu niskich dawek czynnika szkodliwego w wysokich dawkach",
-    "examples": [
-      "Hormeza tłumaczy, dlaczego niewielki stres może wzmacniać organizm.",
-      "Niektóre terapie opierają się na zjawisku hormezy."
-    ],
-    "etymology": "od greckiego hórmēsis = pobudzenie; szybki ruch, zapał",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Nauka i medycyna",
-    "synonyms": [
-      "efekt hormetyczny"
-    ]
-  },
-  {
-    "id": 10,
-    "word": "Zoonoza",
-    "definition": "Choroba zakaźna zwierząt mogąca przenosić się na ludzi",
-    "examples": [
-      "Wścieklizna to groźna zoonoza.",
-      "Badania nad zoonozami są kluczowe dla zdrowia publicznego."
-    ],
-    "etymology": "z greckiego 'zoo-' (zôon = zwierzę) + 'noza' (nósos = choroba)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Nauka i medycyna",
-    "synonyms": [
-      "choroba odzwierzęca"
-    ]
-  },
-  {
-    "id": 18,
-    "word": "Peregrynacja",
-    "definition": "Długa podróż, wędrówka; pielgrzymka",
-    "examples": [
-      "Peregrynacja po Europie trwała trzy lata.",
-      "Peregrynacja duchowa była częścią jego życia."
-    ],
-    "etymology": "od łacińskiego peregrīnātiō = przebywanie za granicą; peregrinus = cudzoziemiec, pielgrzym",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Podróże",
-    "synonyms": [
-      "pielgrzymka",
-      "wędrówka",
-      "podróż"
-    ]
-  },
-  {
-    "id": 25,
-    "word": "Szaruga",
-    "definition": "Długotrwała deszczowa pogoda",
-    "examples": [
-      "Jesienna szaruga sprawiała, że dni wydawały się dłuższe i bardziej przygnębiające.",
-      "Za oknem panowała szaruga, więc najlepiej było zostać w domu z książką."
-    ],
-    "etymology": "Prawdopodobnie od słowa „szary”, odnoszącego się do koloru nieba i krajobrazu podczas takiej pogody",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "pogoda",
-    "synonyms": [
-      "plucha",
-      "niepogoda",
-      "słota",
-      "chlapa"
-    ]
-  },
-  {
-    "id": 5,
-    "word": "Inkryminacja",
-    "definition": "Obciążenie kogoś zarzutem popełnienia czynu zabronionego",
-    "examples": [
-      "Doszło do inkryminacji niewinnej osoby.",
-      "Brak dowodów uniemożliwił inkryminację."
-    ],
-    "etymology": "od łacińskiego incriminare = oskarżać",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Prawo",
-    "synonyms": [
-      "oskarżenie",
-      "zarzut",
-      "posądzenie"
-    ]
-  },
-  {
-    "id": 35,
-    "word": "Internować",
-    "definition": "Uwięzić, zamknąć w miejscu bez formalnego procesu sądowego",
-    "examples": [
-      "Tajna policja internowała go bez prawa do obrony.",
-      "Pod hitlerowskim reżimem internowano przeciwników politycznych."
-    ],
-    "etymology": "z łac. internerare – umieszczać gdzieś wewnątrz, więzić; współcześnie – internować",
-    "partOfSpeech": "czasownik",
-    "category": "Prawo i polityka",
-    "synonyms": [
-      "uwięzić",
-      "poddać represjom",
-      "wysłać do obozu"
-    ]
-  },
-  {
-    "id": 22,
-    "word": "Anhedonia",
-    "definition": "Stan polegający na utracie lub zmniejszeniu poziomu zdolności odczuwania przyjemności, nawet z rzeczy wcześniej dających radość",
-    "examples": [
-      "Anhedonia sprawiła, że przestał cieszyć się swoimi pasjami.",
-      "Jednym z objawów depresji może być anhedonia."
-    ],
-    "etymology": "od greckiego an- = bez oraz hēdonē = przyjemność",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "psychologia",
-    "synonyms": [
-      "brak odczuwania przyjemności"
-    ]
-  },
-  {
-    "id": 38,
-    "word": "Ekshibicjonizm",
-    "definition": "Skłonność do nadmiernego eksponowania własnej osoby",
-    "examples": [
-      "Jego ekshibicjonizm w social mediach był męczący.",
-      "Ekshibicjonizm bywa objawem głębokich kompleksów."
-    ],
-    "etymology": "z łac. exhibere – pokazywać",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Psychologia i cechy ludzkie",
-    "synonyms": [
-      "afiszowanie się",
-      "chęć bycia w centrum"
-    ]
-  },
-  {
-    "id": 36,
-    "word": "Akedia",
-    "definition": "Stan duchowego ociężenia, apatii i braku zainteresowania życiem",
-    "examples": [
-      "Akedia w starożytnym monastycyzmie była groźnym grzechem.",
-      "Jego akedia sprawiła, że porzucił wszystkie pasje."
-    ],
-    "etymology": "z gr. akēdeia – brak troski; a- (bez) + kēdos (troska, zainteresowanie)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i duchowość",
-    "synonyms": [
-      "duchowe ociężenie",
-      "apatia",
-      "znużenie życiem"
-    ]
-  },
-  {
-    "id": 37,
-    "word": "Ambiwalencja",
-    "definition": "Współistnienie sprzecznych uczuć lub postaw wobec tej samej osoby lub obiektu",
-    "examples": [
-      "Jego ambiwalencja wobec ojca była paraliżująca.",
-      "Ambiwalencja uczuć często prowadzi do impasu."
-    ],
-    "etymology": "z łac. ambo – oba dwa + valentia – siła, moc",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i emocje",
-    "synonyms": [
-      "sprzeczność uczuć",
-      "rozdarcie wewnętrzne",
-      "dwoistość"
-    ]
-  },
-  {
-    "id": 42,
-    "word": "Awersja",
-    "definition": "Silna niechęć lub wstręt do kogoś lub czegoś",
-    "examples": [
-      "Awersja do zmian była jego cechą charakterystyczną.",
-      "Czuł głęboką awersję do publicznych wystąpień."
-    ],
-    "etymology": "z łac. aversio – odwracanie się; a- (od) + vertere (zwracać)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i emocje",
-    "synonyms": [
-      "niechęć",
-      "wstręt",
-      "antypatia"
-    ]
-  },
-  {
-    "id": 19,
-    "word": "Defetyzm",
-    "definition": "Brak wiary w zwycięstwo lub powodzenie jakiejś sprawy, wyrażający się w ciągłym przewidywaniu porażki",
-    "examples": [
-      "Defetyzm w zespole może obniżyć morale.",
-      "Jego wypowiedź była przejawem czystego defetyzmu."
-    ],
-    "etymology": "od francuskiego défaite = porażka",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Psychologia i emocje",
-    "synonyms": [
-      "pesymizm",
-      "zniechęcenie"
-    ]
-  },
-  {
-    "id": 39,
-    "word": "Dysforia",
-    "definition": "Stan głębokiego niezadowolenia i drażliwości",
-    "examples": [
-      "Dysforia poprzedzała jego wybuchy złości.",
-      "Choroba afektywna często objawia się dysforią."
-    ],
-    "etymology": "z gr. dysphoria – trudność, cierpienie; dys- (źle) + pherein (nosić)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i emocje",
-    "synonyms": [
-      "niezadowolenie",
-      "rozdrażnienie",
-      "depresja"
-    ]
-  },
-  {
-    "id": 41,
-    "word": "Euforia",
-    "definition": "Stan intensywnej radości i pobudzenia psychicznego",
-    "examples": [
-      "Euforia po wygranej utrzymywała się przez dni.",
-      "Jego euforia była zaraźliwa dla całego zespołu."
-    ],
-    "etymology": "z gr. euphoria – dobre nastrojenie; eu- (dobrze) + pherein (nosić)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i emocje",
-    "synonyms": [
-      "radość",
-      "uniesienie",
-      "entuzjazm"
     ]
   },
   {
@@ -540,20 +132,84 @@
     ]
   },
   {
-    "id": 47,
-    "word": "Malizna",
-    "definition": "Złośliwość schowana pod pozorami uprzejmości; podstępna niechęć",
+    "id": 9,
+    "word": "Metanoja",
+    "definition": "Zmiana sposobu myślenia i postępowania",
     "examples": [
-      "Jej malizna objawiała się w subtelnych szyderstwach.",
-      "W jego tonie czuć było ukrytą maliznę."
+      "Doświadczył metanoi po trudnych wydarzeniach.",
+      "Metanoja jest ważnym pojęciem w teologii."
     ],
-    "etymology": "z włoskiego malizia – złośliwość, niechęć; od łac. malus – zły; przez fr. malice",
+    "etymology": "od greckiego metanoia = zmiana myślenia, przemiana umysłu; od 'meta-' (zmiana) + 'nous' (umysł, rozum, intelekt)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i emocje",
+    "category": "Abstrakcyjne pojęcia",
     "synonyms": [
-      "złośliwość",
-      "podstępna zawiść",
-      "chytrość"
+      "przemiana umysłu",
+      "zmiana myślenia"
+    ]
+  },
+  {
+    "id": 10,
+    "word": "Zoonoza",
+    "definition": "Choroba zakaźna zwierząt mogąca przenosić się na ludzi",
+    "examples": [
+      "Wścieklizna to groźna zoonoza.",
+      "Badania nad zoonozami są kluczowe dla zdrowia publicznego."
+    ],
+    "etymology": "z greckiego 'zoo-' (zôon = zwierzę) + 'noza' (nósos = choroba)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "choroba odzwierzęca"
+    ]
+  },
+  {
+    "id": 11,
+    "word": "Abnegat",
+    "definition": "człowiek niedbający o swój wygląd, o swoje korzyści",
+    "examples": [
+      "Filozof żył jak abnegat, gardząc dobrami materialnymi.",
+      "Został zapamiętany jako niechlujny abnegat."
+    ],
+    "etymology": "od łacińskiego abnegatio = odmowa, wyrzeczenie się oraz od abnegare = odmawiać, wyrzekać się",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "zaniedbana osoba",
+      "niechluj"
+    ]
+  },
+  {
+    "id": 12,
+    "word": "Kuriozum",
+    "definition": "Rzecz lub zjawisko osobliwe, budzące zdumienie swą niezwykłością lub dziwacznością",
+    "examples": [
+      "To kuriozum, że nikt wcześniej tego nie zauważył.",
+      "Ten budynek to architektoniczne kuriozum, niepasujące do reszty miasta."
+    ],
+    "etymology": "od łacińskiego curiosum = ciekawa rzecz, ciekawostka, przedmiot godny uwagi",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "rzadkość",
+      "fenomen",
+      "dziwactwo"
+    ]
+  },
+  {
+    "id": 13,
+    "word": "Mitrężyć",
+    "definition": "Zwlekać z czymś, marnować czas",
+    "examples": [
+      "Przestań mitrężyć i zabierz się do pracy.",
+      "Cały dzień mitrężył zamiast zrobić coś pożytecznego."
+    ],
+    "etymology": "od rzeczownika mitręga (dawniej: praca licha, marudzenie)",
+    "partOfSpeech": "czasownik",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "marnować (czas)",
+      "zwlekać",
+      "ociągać się"
     ]
   },
   {
@@ -574,6 +230,559 @@
     ]
   },
   {
+    "id": 15,
+    "word": "Ludyzm",
+    "definition": "Zjawisko kulturowe podkreślające element zabawy i gry w twórczości i kulturze",
+    "examples": [
+      "W jego twórczości widoczny jest silny ludyzm.",
+      "Ludyzm w literaturze przejawia się poprzez gry językowe i żart."
+    ],
+    "etymology": "od łacińskiego ludus = gra, zabawa",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Kultura i sztuka",
+    "synonyms": [
+      "zabawa",
+      "rozrywka"
+    ]
+  },
+  {
+    "id": 16,
+    "word": "Tetryczeć",
+    "definition": "Stawać się zgryźliwym, zgorzkniałym, gderliwym",
+    "examples": [
+      "Przestań tetryczeć i spróbuj spojrzeć na to pozytywnie.",
+      "Cały dzień tetryczał, narzekając na wszystko wokół."
+    ],
+    "etymology": "od słowa „tetryk” (człowiek zrzędliwy, marudny); z łaciny taetricus (surowy, poważny) – ten pochodzi od taeter (odpychający, ponury)",
+    "partOfSpeech": "czasownik",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "zrzędzić",
+      "marudzić",
+      "narzekać"
+    ]
+  },
+  {
+    "id": 17,
+    "word": "Hormeza",
+    "definition": "Korzystny wpływ niskich dawek czynnika, który w wyższych dawkach jest szkodliwy",
+    "examples": [
+      "Hormeza tłumaczy, dlaczego niewielki stres może wzmacniać organizm.",
+      "Niektóre terapie opierają się na zjawisku hormezy."
+    ],
+    "etymology": "od greckiego hórmēsis = pobudzenie; szybki ruch, zapał",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Nauka i wiedza",
+    "synonyms": [
+      "efekt hormetyczny"
+    ]
+  },
+  {
+    "id": 18,
+    "word": "Peregrynacja",
+    "definition": "Długa podróż, wędrówka; pielgrzymka",
+    "examples": [
+      "Peregrynacja po Europie trwała trzy lata.",
+      "Peregrynacja duchowa była częścią jego życia."
+    ],
+    "etymology": "od łacińskiego peregrīnātiō = przebywanie za granicą; peregrinus = cudzoziemiec, pielgrzym",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "pielgrzymka",
+      "wędrówka",
+      "podróż"
+    ]
+  },
+  {
+    "id": 19,
+    "word": "Defetyzm",
+    "definition": "Brak wiary w zwycięstwo lub powodzenie jakiejś sprawy, wyrażający się w ciągłym przewidywaniu porażki",
+    "examples": [
+      "Defetyzm w zespole może obniżyć morale.",
+      "Jego wypowiedź była przejawem czystego defetyzmu."
+    ],
+    "etymology": "od francuskiego défaite = porażka",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "pesymizm",
+      "zniechęcenie"
+    ]
+  },
+  {
+    "id": 20,
+    "word": "Dezynwoltura",
+    "definition": "Zbyt swobodne, często lekceważące zachowanie",
+    "examples": [
+      "Odpowiadał z dezynwolturą, jakby nic go nie obchodziło.",
+      "Jego dezynwoltura została odebrana jako brak szacunku."
+    ],
+    "etymology": "od francuskiego désinvolture = swoboda, nonszalancja",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "nonszalancja",
+      "swoboda",
+      "lekceważenie"
+    ]
+  },
+  {
+    "id": 21,
+    "word": "Imprimatur",
+    "definition": "Formuła drukowana na początku lub na końcu książki o treści religijnej, oznaczająca zezwolenie władzy kościelnej na publikację",
+    "examples": [
+      "Książka otrzymała imprimatur przed wydaniem.",
+      "Dokument wymagał imprimatur odpowiedniej instytucji kościelnej."
+    ],
+    "etymology": "od łacińskiego imprimatur = niech będzie odbite",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki, nieodmienny",
+    "category": "Kultura i sztuka",
+    "synonyms": [
+      "zgoda",
+      "aprobata",
+      "autoryzacja"
+    ]
+  },
+  {
+    "id": 22,
+    "word": "Anhedonia",
+    "definition": "Stan polegający na utracie lub zmniejszeniu poziomu zdolności odczuwania przyjemności, nawet z rzeczy wcześniej dających radość",
+    "examples": [
+      "Anhedonia sprawiła, że przestał cieszyć się swoimi pasjami.",
+      "Jednym z objawów depresji może być anhedonia."
+    ],
+    "etymology": "od greckiego an- = bez oraz hēdonē = przyjemność",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "brak odczuwania przyjemności"
+    ]
+  },
+  {
+    "id": 23,
+    "word": "Kakofonia",
+    "definition": "Nieprzyjemnie brzmiąca, chaotyczna mieszanina dźwięków",
+    "examples": [
+      "Z ulicy dochodziła kakofonia klaksonów i krzyków.",
+      "Zamiast harmonii powstała kakofonia przypadkowych tonów."
+    ],
+    "etymology": "fr. cacophonie, utworzone (od gr. kakós ‛zły’) na wzór antonimu euphonie, eufonia; może na podstawie gr. kakó-phōnos ‛źle (nieprzyjemnie) brzmiący’",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "chaos dźwięków"
+    ]
+  },
+  {
+    "id": 24,
+    "word": "Eufonia",
+    "definition": "Przyjemne dla ucha brzmienie dźwięków; harmonijne zestawienie głosek lub tonów",
+    "examples": [
+      "Wiersz zachwycał swoją eufonią i rytmem.",
+      "Język włoski często uznawany jest za pełen eufonii."
+    ],
+    "etymology": "Pochodzi od greckiego słowa euphōnía, będącego połączeniem członu eu - „dobrze, ładnie” oraz phōnē - „dźwięk, głos”. Do polszczyzny trafiła najpewniej przez francuskie euphonie lub łacińskie euphōnia.",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "harmonia",
+      "melodyjność"
+    ]
+  },
+  {
+    "id": 25,
+    "word": "Szaruga",
+    "definition": "Długotrwała deszczowa pogoda",
+    "examples": [
+      "Jesienna szaruga sprawiała, że dni wydawały się dłuższe i bardziej przygnębiające.",
+      "Za oknem panowała szaruga, więc najlepiej było zostać w domu z książką."
+    ],
+    "etymology": "Prawdopodobnie od słowa „szary”, odnoszącego się do koloru nieba i krajobrazu podczas takiej pogody",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Świat i rzeczywistość",
+    "synonyms": [
+      "plucha",
+      "niepogoda",
+      "słota",
+      "chlapa"
+    ]
+  },
+  {
+    "id": 26,
+    "word": "Efemeryda",
+    "definition": "Coś krótkotrwałego, ulotnego; także termin w astronomii (tablice pozycji ciał niebieskich)",
+    "examples": [
+      "Sława tego artysty była efemerydą.",
+      "Efemerydy są używane w astronomii."
+    ],
+    "etymology": "z gr. ephemeros – jednodniowy",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "coś ulotnego",
+      "chwilowość"
+    ]
+  },
+  {
+    "id": 27,
+    "word": "Apofenia",
+    "definition": "Skłonność do dostrzegania pozornych, nieistniejących powiązań między zdarzeniami lub danymi",
+    "examples": [
+      "Jego apofenia sprawiła, że widział spiski w każdym wydarzeniu.",
+      "W skrajnych przypadkach apofenia prowadzi do urojeń prześladowczych."
+    ],
+    "etymology": "z gr. apophainein – okazywać, ujawniać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "fałszywe powiązania"
+    ]
+  },
+  {
+    "id": 28,
+    "word": "Acatalepsja",
+    "definition": "Stan całkowitego braku zrozumienia, niemożność uchwycenia sensu",
+    "examples": [
+      "Po przeczytaniu tego fragmentu ogarnęła go acatalepsja.",
+      "Niektórzy miewają acatalepsję wobec najbardziej oczywistych faktów."
+    ],
+    "etymology": "z gr. akatalepsía – niemożność pochwycenia, od a- (nie) + katalepsis (pojmowanie)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "niezrozumiałość"
+    ]
+  },
+  {
+    "id": 29,
+    "word": "Eschatologia",
+    "definition": "Dziedzina teologii zajmująca się ostatecznymi losami świata i człowieka",
+    "examples": [
+      "Eschatologia chrześcijańska mówi o końcu świata.",
+      "Jego wizja była głęboko zakorzeniona w eschatologii."
+    ],
+    "etymology": "z gr. eschatos – ostatni, końcowy + logos – nauka, słowo",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "nauka o końcu świata",
+      "teologia końca"
+    ]
+  },
+  {
+    "id": 30,
+    "word": "Katatonia",
+    "definition": "Stan psychiczny, w którym następuje znieruchomienie i odcięcie od świata",
+    "examples": [
+      "Katatonia sprawiła, że pacjent nie reagował na bodźce.",
+      "W stanie katatonii człowiek bywa całkowicie wyciszony."
+    ],
+    "etymology": "z gr. kata + tonos (napięcie, siła)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "stupor",
+      "niereaktywność"
+    ]
+  },
+  {
+    "id": 31,
+    "word": "Inefabilność",
+    "definition": "Brak możliwości wyrażenia słowami; niewyrażalność",
+    "examples": [
+      "Piękno krajobrazu było pełne inefabilności.",
+      "Próbował opisać uczucie, lecz natrafiał na jego inefabilność."
+    ],
+    "etymology": "z łac. ineffabilis – niewyrażalny; in- (nie) + effabilis (wyrażalny)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "niewyrażalność",
+      "tajemniczość",
+      "milczenie"
+    ]
+  },
+  {
+    "id": 32,
+    "word": "Persyflaż",
+    "definition": "Ironia lub żartobliwe traktowanie poważnych spraw",
+    "examples": [
+      "Mówił z persyflażem.",
+      "Jej persyflaż był wyczuwalny w tonie głosu."
+    ],
+    "etymology": "z fr. persiflage – kpina",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "ironia",
+      "kpina"
+    ]
+  },
+  {
+    "id": 33,
+    "word": "Nocliwizja",
+    "definition": "Wizualna halucynacja będąca na granicy snu i jawy; koszmarna wizja",
+    "examples": [
+      "Nocliwizje nawiedzały go po całodziennym nadmiernym wysiłku.",
+      "Niektóre leki wywołują nocliwizje."
+    ],
+    "etymology": "z pol. noc (noctis) + łac. visio (widzenie) – „nocne widzenie”",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "nocna wizja",
+      "halucynacja",
+      "wizja koszmaru"
+    ]
+  },
+  {
+    "id": 34,
+    "word": "Eskapizm",
+    "definition": "Ucieczka od problemów rzeczywistości w świat iluzji lub marzeń",
+    "examples": [
+      "Literatura oferuje wygodny eskapizm od codzienności.",
+      "Jego eskapizm przybrał formę cyfrową w grach wideo."
+    ],
+    "etymology": "z ang. escapism, od łac. excappare – uciekać",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "ucieczka",
+      "wycofanie"
+    ]
+  },
+  {
+    "id": 35,
+    "word": "Internować",
+    "definition": "Uwięzić, zamknąć w miejscu bez formalnego procesu sądowego",
+    "examples": [
+      "Tajna policja internowała go bez prawa do obrony.",
+      "Pod hitlerowskim reżimem internowano przeciwników politycznych."
+    ],
+    "etymology": "z fr. interner („osadzać, zamykać”), od łac. internus („wewnętrzny”)",
+    "partOfSpeech": "czasownik",
+    "category": "Prawo i polityka",
+    "synonyms": [
+      "uwięzić",
+      "poddać represjom",
+      "wysłać do obozu"
+    ]
+  },
+  {
+    "id": 36,
+    "word": "Akedia",
+    "definition": "Stan duchowego ociężenia, apatii i braku zainteresowania życiem",
+    "examples": [
+      "Akedia w starożytnym monastycyzmie była groźnym grzechem.",
+      "Jego akedia sprawiła, że porzucił wszystkie pasje."
+    ],
+    "etymology": "z gr. akēdeia – brak troski; a- (bez) + kēdos (troska, zainteresowanie)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "duchowe ociężenie",
+      "apatia",
+      "znużenie życiem"
+    ]
+  },
+  {
+    "id": 37,
+    "word": "Ambiwalencja",
+    "definition": "Współistnienie sprzecznych uczuć lub postaw wobec tej samej osoby lub obiektu",
+    "examples": [
+      "Jego ambiwalencja wobec ojca była paraliżująca.",
+      "Ambiwalencja uczuć często prowadzi do impasu."
+    ],
+    "etymology": "z łac. ambo – oba dwa + valentia – siła, moc",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "sprzeczność uczuć",
+      "rozdarcie wewnętrzne"
+    ]
+  },
+  {
+    "id": 38,
+    "word": "Ekshibicjonizm",
+    "definition": "Skłonność do nadmiernego eksponowania własnej osoby",
+    "examples": [
+      "Jego ekshibicjonizm w social mediach był męczący.",
+      "Ekshibicjonizm bywa objawem głębokich kompleksów."
+    ],
+    "etymology": "z łac. exhibere – pokazywać",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "afiszowanie się",
+      "chęć bycia w centrum"
+    ]
+  },
+  {
+    "id": 39,
+    "word": "Dysforia",
+    "definition": "Stan głębokiego niezadowolenia i drażliwości",
+    "examples": [
+      "Dysforia poprzedzała jego wybuchy złości.",
+      "Choroba afektywna często objawia się dysforią."
+    ],
+    "etymology": "z gr. dysphoria – trudność, cierpienie; dys- (źle) + pherein (nosić)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "niezadowolenie",
+      "rozdrażnienie"
+    ]
+  },
+  {
+    "id": 40,
+    "word": "Anachronizm",
+    "definition": "Błąd chronologiczny polegający na przypisaniu czegoś do niewłaściwego okresu historycznego",
+    "examples": [
+      "Telefon komórkowy w filmie o średniowieczu to anachronizm.",
+      "W jego wystąpieniu było wiele anachronizmów i historycznych niedokładności."
+    ],
+    "etymology": "z gr. ana-chronismos (w przeciwnym czasie), od ana – przeciw + chronos – czas",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "błąd czasu"
+    ]
+  },
+  {
+    "id": 41,
+    "word": "Euforia",
+    "definition": "Stan intensywnej radości i pobudzenia psychicznego",
+    "examples": [
+      "Euforia po wygranej utrzymywała się przez dni.",
+      "Jego euforia była zaraźliwa dla całego zespołu."
+    ],
+    "etymology": "z gr. euphoria – dobre nastrojenie; eu- (dobrze) + pherein (nosić)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "radość",
+      "uniesienie",
+      "entuzjazm"
+    ]
+  },
+  {
+    "id": 42,
+    "word": "Awersja",
+    "definition": "Silna niechęć lub wstręt do kogoś lub czegoś",
+    "examples": [
+      "Awersja do zmian była jego cechą charakterystyczną.",
+      "Czuł głęboką awersję do publicznych wystąpień."
+    ],
+    "etymology": "z łac. aversio – odwracanie się; a- (od) + vertere (zwracać)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "niechęć",
+      "wstręt",
+      "antypatia"
+    ]
+  },
+  {
+    "id": 43,
+    "word": "Katachreza",
+    "definition": "Niewłaściwe użycie słowa lub wyrażenia; nadużycie językowe",
+    "examples": [
+      "Katachreza w tym zdaniu razi ucho.",
+      "Jego styl pełen był katachrez."
+    ],
+    "etymology": "z gr. katachrēsis – nadużycie; kata – przeciw + chrēsis – użycie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "nadużycie językowe",
+      "błąd stylistyczny"
+    ]
+  },
+  {
+    "id": 44,
+    "word": "Dyssymulacja",
+    "definition": "Ukrywanie prawdziwych uczuć lub intencji pod maską spokoju",
+    "examples": [
+      "Jego dyssymulacja była niesamowicie wiarygodna.",
+      "Dyssymulacja gniewu wymaga żelaznej dyscypliny."
+    ],
+    "etymology": "z łac. dissimulare – ukrywać, udawać; dis- (roze-) + simulare (udawać)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "ukrywanie",
+      "pozorowanie",
+      "maskowanie"
+    ]
+  },
+  {
+    "id": 45,
+    "word": "Hiperbolizacja",
+    "definition": "Przesadne wyolbrzymianie faktów lub zjawisk",
+    "examples": [
+      "Hiperbolizacja problemów była jego specjalnością.",
+      "Media często stosują hiperbolizację wydarzeń."
+    ],
+    "etymology": "z gr. hyperbole – przerzucenie, nadmiar; hyper (nad) + ballein (rzucać)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "wyolbrzymianie",
+      "przesada"
+    ]
+  },
+  {
+    "id": 46,
+    "word": "Interocepcja",
+    "definition": "Zdolność do odczuwania procesów wewnętrznych organizmu",
+    "examples": [
+      "Interocepcja pozwala rozpoznać wczesne objawy stresu.",
+      "Dobra interocepcja jest kluczowa w medytacji."
+    ],
+    "etymology": "z łac. intro – do wewnątrz + capere – brać, chwytać",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "samobadanie",
+      "czucie wewnętrzne"
+    ]
+  },
+  {
+    "id": 47,
+    "word": "Malizna",
+    "definition": "Złośliwość schowana pod pozorami uprzejmości; podstępna niechęć",
+    "examples": [
+      "Jej malizna objawiała się w subtelnych szyderstwach.",
+      "W jego tonie czuć było ukrytą maliznę."
+    ],
+    "etymology": "z włoskiego malizia – złośliwość, niechęć; od łac. malus – zły; przez fr. malice",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "złośliwość",
+      "podstępna zawiść",
+      "chytrość"
+    ]
+  },
+  {
+    "id": 48,
+    "word": "Neofobia",
+    "definition": "Lęk przed nowością, nowymi rozwiązaniami lub zmianą",
+    "examples": [
+      "Jego neofobia hamowała rozwój firmy.",
+      "Neofobia bywa paraliżująca w sytuacjach kryzysowych."
+    ],
+    "etymology": "z gr. neos – nowy + phobos – lęk, strach",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "strach przed nowością",
+      "konserwatyzm",
+      "opór przed zmianą"
+    ]
+  },
+  {
     "id": 49,
     "word": "Resentyment",
     "definition": "Głęboka uraza i żal, karmienie się negatywnymi emocjami",
@@ -591,235 +800,810 @@
     ]
   },
   {
-    "id": 31,
-    "word": "Inefabilność",
-    "definition": "Braki możliwości wyrażenia słowami; niewyrażalność",
-    "examples": [
-      "Piękno krajobrazu było pełne inefabilności.",
-      "Próbował opisać uczucie, lecz natrafiał na jego inefabilność."
-    ],
-    "etymology": "z łac. ineffabilis – niewyrażalny; in- (nie) + effabilis (wyrażalny)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i język",
-    "synonyms": [
-      "niewyrażalność",
-      "tajemniczość",
-      "milczenie"
-    ]
-  },
-  {
-    "id": 48,
-    "word": "Neofobia",
-    "definition": "Lęk przed nowością, nowymi rozwiązaniami lub zmianą",
-    "examples": [
-      "Jego neofobia hamowała rozwój firmy.",
-      "Neofobia bywa paraliżująca w sytuacjach kryzysowych."
-    ],
-    "etymology": "z gr. neos – nowy + phobos – lęk, strach",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i lęki",
-    "synonyms": [
-      "strach przed nowością",
-      "konserwatyzm",
-      "opór przed zmianą"
-    ]
-  },
-  {
-    "id": 46,
-    "word": "Introcepcja",
-    "definition": "Zdolność do odczuwania procesów wewnętrznych organizmu",
-    "examples": [
-      "Introcepcja pozwala rozpoznać wczesne objawy stresu.",
-      "Dobra introcepcja jest kluczowa w medytacji."
-    ],
-    "etymology": "z łac. intro – do wewnątrz + capere – brać, chwytać",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i medycyna",
-    "synonyms": [
-      "samobadanie",
-      "czucie wewnętrzne",
-      "percepcja trzewna"
-    ]
-  },
-  {
-    "id": 30,
-    "word": "Katatonia",
-    "definition": "Stan psychiczny, w którym następuje znieruchomienie i odcięcie od świata",
-    "examples": [
-      "Katatonia sprawiła, że pacjent nie reagował na bodźce.",
-      "W stanie katatonii człowiek bywa całkowicie wyciszony."
-    ],
-    "etymology": "z gr. kata + tonos (napięcie, siła)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i medycyna",
-    "synonyms": [
-      "stupor",
-      "niereaktywność"
-    ]
-  },
-  {
-    "id": 27,
-    "word": "Apofenia",
-    "definition": "Skłonność do dostrzegania pozornych, nieistniejących powiązań między zdarzeniami lub danymi",
-    "examples": [
-      "Jego apofenia sprawiła, że widział spiski w każdym wydarzeniu.",
-      "W skrajnych przypadkach apofenia prowadzi do urojeń prześladowczych."
-    ],
-    "etymology": "z gr. apophainein – okazywać, ujawniać",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i poznanie",
-    "synonyms": [
-      "fałszywe powiązania"
-    ]
-  },
-  {
-    "id": 45,
-    "word": "Hiperbolizacja",
-    "definition": "Przesadne wyolbrzymianie faktów lub zjawisk",
-    "examples": [
-      "Hiperbolizacja problemów była jego specjalnością.",
-      "Media często stosują hiperbolizację wydarzeń."
-    ],
-    "etymology": "z gr. hyperbole – przerzucenie, nadmiar; hyper (nad) + ballein (rzucać)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i stylistyka",
-    "synonyms": [
-      "wyolbrzymianie",
-      "przesada",
-      "egzaltacja"
-    ]
-  },
-  {
-    "id": 44,
-    "word": "Dyssymulacja",
-    "definition": "Ukrywanie prawdziwych uczuć lub intencji pod maską spokoju",
-    "examples": [
-      "Jego dyssymulacja była niesamowicie wiarygodna.",
-      "Dyssymulacja gniewu wymaga żelaznej dyscypliny."
-    ],
-    "etymology": "z łac. dissimulare – ukrywać, udawać; dis- (roze-) + simulare (udawać)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i zachowania",
-    "synonyms": [
-      "ukrywanie",
-      "pozorowanie",
-      "maskowanie"
-    ]
-  },
-  {
-    "id": 34,
-    "word": "Eskapizm",
-    "definition": "Ucieczka od problemów rzeczywistości w świat iluzji lub marzeń",
-    "examples": [
-      "Literatura oferuje wygodny eskapizm od codzienności.",
-      "Jego eskapizm przybrał formę cyfrową w grach wideo."
-    ],
-    "etymology": "z ang. escapism, od łac. excappare – uciekać",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Psychologia i zachowania",
-    "synonyms": [
-      "ucieczka",
-      "wycofanie"
-    ]
-  },
-  {
     "id": 50,
     "word": "Supresja",
-    "definition": "Tłumienie, blokowanie impulsów lub procesów psychicznych",
+    "definition": "Świadome tłumienie lub powstrzymywanie impulsów, emocji albo procesów psychicznych",
     "examples": [
       "Supresja gniewu doprowadziła do wybuchu.",
       "Jego supresja emocji była niszcząca."
     ],
     "etymology": "z łac. suppressio – ściskanie, tłumienie; sub- (pod) + premere (cisnąć)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i zachowania",
+    "category": "Człowiek i zachowanie",
     "synonyms": [
       "tłumienie",
       "blokowanie"
     ]
   },
   {
-    "id": 29,
-    "word": "Eschatologia",
-    "definition": "Dziedzina teologii zajmująca się ostatecznymi losami świata i człowieka",
+    "id": 51,
+    "word": "Prokrastynacja",
+    "definition": "Odkładanie wykonania zadań na później mimo świadomości negatywnych konsekwencji",
     "examples": [
-      "Eschatologia chrześcijańska mówi o końcu świata.",
-      "Jego wizja była głęboko zakorzeniona w eschatologii."
+      "Prokrastynacja sprawiła, że oddał projekt po terminie.",
+      "Walczy z prokrastynacją, stosując technikę małych kroków."
     ],
-    "etymology": "z gr. eschatos – ostatni, końcowy + logos – nauka, słowo",
+    "etymology": "z łac. procrastinatio – odraczanie; pro- (naprzód) + crastinus (jutrzejszy)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Religia i filozofia",
+    "category": "Psychologia i emocje",
     "synonyms": [
-      "nauka o końcu świata",
-      "teologia końca",
-      "eschatologia"
+      "odwlekanie",
+      "zwlekanie",
+      "odkładanie na później"
     ]
   },
   {
-    "id": 32,
-    "word": "Persyflaż",
-    "definition": "Ironia lub żartobliwe traktowanie poważnych spraw",
+    "id": 52,
+    "word": "Konfabulacja",
+    "definition": "Tworzenie nieprawdziwych wspomnień bez intencji kłamstwa, często służących wypełnianiu luk pamięci",
     "examples": [
-      "Mówił z persyflażem.",
-      "Jej persyflaż był wyczuwalny w tonie głosu."
+      "Pacjent miał skłonność do konfabulacji.",
+      "Jego opowieść była częściowo konfabulacją."
     ],
-    "etymology": "z fr. persiflage – kpina",
+    "etymology": "z łac. confabulatio – rozmowa, opowiadanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "fałszywe wspomnienia"
+    ]
+  },
+  {
+    "id": 53,
+    "word": "Reifikacja",
+    "definition": "Traktowanie pojęć abstrakcyjnych jak rzeczy istniejące realnie",
+    "examples": [
+      "Reifikacja pojęcia narodu bywa niebezpieczna.",
+      "W dyskusji pojawiła się reifikacja abstrakcyjnych idei."
+    ],
+    "etymology": "z łac. res (rzecz) + facere (czynić)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "uprzedmiotowienie",
+      "urzeczowienie"
+    ]
+  },
+  {
+    "id": 54,
+    "word": "Redundancja",
+    "definition": "Nadmierność lub powtarzalność informacji, które nie wnoszą nowej treści",
+    "examples": [
+      "Tekst zawierał dużo redundancji.",
+      "Redundancja sprawiła, że artykuł był nieczytelny."
+    ],
+    "etymology": "z łac. redundantia – nadmiar",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "nadmiar",
+      "powtórzenie",
+      "zbędność"
+    ]
+  },
+  {
+    "id": 55,
+    "word": "Kohabitacja",
+    "definition": "Współistnienie lub wspólne funkcjonowanie podmiotów, zwłaszcza w polityce (np. prezydent i rząd z różnych opcji)",
+    "examples": [
+      "Kohabitacja prezydenta i rządu była napięta.",
+      "Kohabitacja różnych kultur bywa wyzwaniem."
+    ],
+    "etymology": "z łac. cohabitare – mieszkać razem",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "współżycie",
+      "współistnienie"
+    ]
+  },
+  {
+    "id": 56,
+    "word": "Antynomia",
+    "definition": "Sprzeczność między dwoma twierdzeniami, które wydają się równie uzasadnione",
+    "examples": [
+      "Filozofia pełna jest antynomii.",
+      "Natrafił na antynomię, której nie potrafił rozwiązać."
+    ],
+    "etymology": "z gr. antinomia – sprzeczność; anti- (przeciw) + nomos (prawo)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "sprzeczność"
+    ]
+  },
+  {
+    "id": 57,
+    "word": "Transgresja",
+    "definition": "Przekraczanie granic, norm lub zasad, często w sensie symbolicznym, kulturowym lub społecznym",
+    "examples": [
+      "Sztuka często opiera się na transgresji.",
+      "Jego zachowanie było formą transgresji norm społecznych."
+    ],
+    "etymology": "z łac. transgressio – przekroczenie; trans- (przez) + gradi (iść)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Kultura i sztuka",
+    "synonyms": [
+      "przekroczenie",
+      "naruszenie",
+      "wyjście poza normy"
+    ]
+  },
+  {
+    "id": 58,
+    "word": "Egzemplifikacja",
+    "definition": "Ilustrowanie czegoś za pomocą przykładów",
+    "examples": [
+      "Użył egzemplifikacji, by wyjaśnić trudne pojęcie.",
+      "Tekst zawierał liczne egzemplifikacje."
+    ],
+    "etymology": "z łac. exemplum – przykład",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "ilustracja",
+      "obrazowanie"
+    ]
+  },
+  {
+    "id": 59,
+    "word": "Deskrypcja",
+    "definition": "Opis przedstawiający cechy lub właściwości danego zjawiska",
+    "examples": [
+      "Tekst miał charakter czysto deskrypcyjny.",
+      "Jego praca opierała się na deskrypcji faktów."
+    ],
+    "etymology": "z łac. descriptio – opis",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "opis",
+      "charakterystyka"
+    ]
+  },
+  {
+    "id": 60,
+    "word": "Permisywność",
+    "definition": "Nadmierna pobłażliwość lub brak ograniczeń w zachowaniu",
+    "examples": [
+      "Permisywność wychowania utrudniła mu funkcjonowanie w dorosłości.",
+      "Zarzucano systemowi edukacji zbytnią permisywność."
+    ],
+    "etymology": "z łac. permissivus – zezwalający",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "pobłażliwość",
+      "brak rygoru"
+    ]
+  },
+  {
+    "id": 61,
+    "word": "Deprywacja",
+    "definition": "Stan pozbawienia podstawowych potrzeb lub bodźców",
+    "examples": [
+      "Długotrwała deprywacja snu wpływa na zdrowie.",
+      "Deprywacja emocjonalna miała poważne skutki."
+    ],
+    "etymology": "z łac. deprivatio – pozbawienie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "pozbawienie",
+      "niedobór"
+    ]
+  },
+  {
+    "id": 62,
+    "word": "Perseweracja",
+    "definition": "Patologiczne powtarzanie tych samych czynności, słów lub myśli mimo zmiany sytuacji",
+    "examples": [
+      "Pacjent wykazywał persewerację w wypowiedziach.",
+      "Perseweracja utrudniała komunikację."
+    ],
+    "etymology": "z łac. perseverare – trwać przy czymś uporczywie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "patologiczne powtarzanie"
+    ]
+  },
+  {
+    "id": 63,
+    "word": "Echolalia",
+    "definition": "Mimowolne powtarzanie usłyszanych słów lub fraz",
+    "examples": [
+      "Dziecko przejawiało echolalię.",
+      "Echolalia jest objawem niektórych zaburzeń rozwojowych."
+    ],
+    "etymology": "z gr. echo (dźwięk) + lalia (mowa)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "powtarzanie słów"
+    ]
+  },
+  {
+    "id": 64,
+    "word": "Derealizacja",
+    "definition": "Poczucie nierealności otoczenia, w którym świat wydaje się obcy lub sztuczny",
+    "examples": [
+      "Podczas ataku paniki pojawiła się derealizacja.",
+      "Derealizacja utrudniała normalne funkcjonowanie."
+    ],
+    "etymology": "od łac. de- (od) + realis (rzeczywisty)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "poczucie nierealności"
+    ]
+  },
+  {
+    "id": 65,
+    "word": "Dychotomia",
+    "definition": "Podział na dwie wzajemnie wykluczające się części lub grupy",
+    "examples": [
+      "Autor przedstawił dychotomię między dobrem a złem.",
+      "W dyskusji zarysowała się wyraźna dychotomia poglądów."
+    ],
+    "etymology": "z gr. dicha (na dwoje) + tome (cięcie)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "dwudzielność",
+      "rozbieżność"
+    ]
+  },
+  {
+    "id": 66,
+    "word": "Kognitywny",
+    "definition": "Dotyczący poznania, wiedzy i procesów myślowych",
+    "examples": [
+      "Dysonans kognitywny pojawia się przy sprzecznych informacjach.",
+      "Psychologia kognitywna bada pamięć i uwagę."
+    ],
+    "etymology": "z łac. cognoscere (poznawać)",
+    "partOfSpeech": "przymiotnik",
+    "category": "Nauka i wiedza",
+    "synonyms": [
+      "poznawczy"
+    ]
+  },
+  {
+    "id": 67,
+    "word": "Stygmatyzacja",
+    "definition": "Publiczne potępianie i przypisywanie negatywnych cech jednostce lub grupie, prowadzące do ich izolacji",
+    "examples": [
+      "Stygmatyzacja osób chorych psychicznie utrudnia ich leczenie.",
+      "Kampania społeczna miała na celu zwalczanie stygmatyzacji."
+    ],
+    "etymology": "z gr. stigma – znamię",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "napiętnowanie",
+      "etykietowanie"
+    ]
+  },
+  {
+    "id": 68,
+    "word": "Eudajmonia",
+    "definition": "Stan pełni szczęścia i spełnienia, osiągany poprzez realizację własnego potencjału",
+    "examples": [
+      "Eudajmonia była celem życia według Arystotelesa.",
+      "Dążenie do eudajmonii wymaga samorozwoju."
+    ],
+    "etymology": "z gr. eudaimonia – dobre duchy, szczęście",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "szczęście",
+      "spełnienie"
+    ]
+  },
+  {
+    "id": 69,
+    "word": "Mizantropia",
+    "definition": "Niechęć, wrogość lub nieufność w stosunku do gatunku ludzkiego i społeczeństwa",
+    "examples": [
+      "Jego izolacja od ludzi wynikała z postępującej mizantropii.",
+      "Główny bohater powieści był znanym mizantropem."
+    ],
+    "etymology": "z gr. misos (nienawiść) + anthropos (człowiek)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "nienawiść do ludzi"
+    ]
+  },
+  {
+    "id": 70,
+    "word": "Altruizm",
+    "definition": "Bezinteresowne działanie na korzyść innych osób, nawet kosztem własnych interesów",
+    "examples": [
+      "Jej praca w wolontariacie była czystym altruizmem.",
+      "Badacze spierają się, czy w przyrodzie istnieje prawdziwy altruizm."
+    ],
+    "etymology": "z łac. alter – inny",
     "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Styl i komunikacja",
+    "category": "Człowiek i zachowanie",
     "synonyms": [
-      "ironia",
-      "kpina"
+      "bezinteresowność",
+      "ofiarność"
     ]
   },
   {
-    "id": 43,
-    "word": "Katachreza",
-    "definition": "Niewłaściwe użycie słowa lub wyrażenia; nadużycie językowe",
+    "id": 71,
+    "word": "Konformizm",
+    "definition": "Zmiana własnego zachowania lub opinii pod wpływem nacisku grupy społecznej",
     "examples": [
-      "Katachreza w tym zdaniu razi ucho.",
-      "Jego styl pełen był katachrez."
+      "Konformizm ułatwia życie w grupie, ale zabija kreatywność.",
+      "Wykazał się konformizmem, głosząc to samo co reszta zarządu."
     ],
-    "etymology": "z gr. katachrēsis – nadużycie; kata – przeciw + chrēsis – użycie",
+    "etymology": "z łac. conformo – nadaję kształt",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "uległość",
+      "przystosowanie"
+    ]
+  },
+  {
+    "id": 72,
+    "word": "Implikacja",
+    "definition": "Wynikanie jednego faktu z drugiego; konsekwencja logiczna",
+    "examples": [
+      "Ta decyzja ma poważne implikacje społeczne.",
+      "Implikacja logiczna jest podstawą rozumowania."
+    ],
+    "etymology": "z łac. implicatio – powiązanie",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Stylistyka i język",
+    "category": "Nauka i wiedza",
     "synonyms": [
-      "nadużycie językowe",
-      "błąd stylistyczny",
-      "barbarizm"
+      "konsekwencja",
+      "wynik"
     ]
   },
   {
-    "id": 13,
-    "word": "Mitrężyć",
-    "definition": "Zwlekać z czymś, marnować czas",
+    "id": 73,
+    "word": "Gradacja",
+    "definition": "Stopniowanie, układanie według określonego porządku lub natężenia",
     "examples": [
-      "Przestań mitrężyć i zabierz się do pracy.",
-      "Cały dzień mitrężył zamiast zrobić coś pożytecznego."
+      "Gradacja napięcia była wyraźnie odczuwalna.",
+      "Autor zastosował gradację środków stylistycznych."
     ],
-    "etymology": "od rzeczownika mitręga (dawniej: praca licha, marudzenie)",
-    "partOfSpeech": "czasownik",
-    "category": "Zachowania i procesy",
+    "etymology": "z łac. gradatio – stopniowanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
     "synonyms": [
-      "marnować (czas)",
-      "zwlekać",
-      "ociągać się"
+      "stopniowanie",
+      "hierarchizacja"
     ]
   },
   {
-    "id": 16,
-    "word": "Tetryczeć",
-    "definition": "Stawać się zgryźliwym, zgorzkniałym, gderliwym",
+    "id": 74,
+    "word": "Alienacja",
+    "definition": "Poczucie wyobcowania, utraty więzi z innymi ludźmi lub rzeczywistością",
     "examples": [
-      "Przestań tetryczeć i spróbuj spojrzeć na to pozytywnie.",
-      "Cały dzień tetryczał, narzekając na wszystko wokół."
+      "Alienacja była głównym tematem jego twórczości.",
+      "Praca zdalna może prowadzić do alienacji."
     ],
-    "etymology": "od słowa „tetryk” (człowiek zrzędliwy, marudny); z łaciny taetricus (surowy, poważny) – ten pochodzi od taeter (odpychający, ponury)",
-    "partOfSpeech": "czasownik",
-    "category": "Zachowania i procesy",
+    "etymology": "z łac. alienatio – wyobcowanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
     "synonyms": [
-      "zrzędzić",
-      "marudzić",
-      "narzekać"
+      "wyobcowanie",
+      "izolacja"
+    ]
+  },
+  {
+    "id": 75,
+    "word": "Instrumentalizacja",
+    "definition": "Wykorzystywanie czegoś lub kogoś jako środka do osiągnięcia celu",
+    "examples": [
+      "Instrumentalizacja ludzi jest nieetyczna.",
+      "Media bywają narzędziem instrumentalizacji politycznej."
+    ],
+    "etymology": "z łac. instrumentum – narzędzie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "wykorzystanie",
+      "uprzedmiotowienie"
+    ]
+  },
+  {
+    "id": 76,
+    "word": "Ataraksja",
+    "definition": "Stan wewnętrznego spokoju i niewzruszoności wobec przeciwności losu",
+    "examples": [
+      "Dążył do ataraksji poprzez medytację.",
+      "Filozofowie starożytni cenili ataraksję jako ideał życia."
+    ],
+    "etymology": "z gr. ataraxia – niewzruszoność, spokój",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "spokój ducha",
+      "równowaga"
+    ]
+  },
+  {
+    "id": 77,
+    "word": "Pareidolia",
+    "definition": "Skłonność do dostrzegania znajomych wzorców (np. twarzy) w przypadkowych bodźcach",
+    "examples": [
+      "Widzenie twarzy w chmurach to pareidolia.",
+      "Pareidolia tłumaczy wiele zjawisk uznawanych za paranormalne."
+    ],
+    "etymology": "z gr. para – obok + eidolon – obraz",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "iluzja wzorców"
+    ]
+  },
+  {
+    "id": 78,
+    "word": "Oneiryzm",
+    "definition": "Konwencja artystyczna polegająca na ukazaniu rzeczywistości na kształt snu, marzenia sennego lub koszmaru",
+    "examples": [
+      "Powieść charakteryzowała się głębokim oneiryzmem i brakiem logiki przyczynowej.",
+      "Twórczość Salvadora Dalí to doskonały przykład oneiryzmu w malarstwie."
+    ],
+    "etymology": "z gr. óneiros – marzenie senne",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Kultura i sztuka",
+    "synonyms": [
+      "senność",
+      "poetyka snu"
+    ]
+  },
+  {
+    "id": 79,
+    "word": "Ostracyzm",
+    "definition": "Wykluczenie jednostki z grupy lub społeczeństwa poprzez ich całkowite ignorowanie i niechęć",
+    "examples": [
+      "Po skandalu polityk spotkał się z towarzyskim ostracyzmem.",
+      "Ostracyzm w szkole może mieć tragiczne skutki dla psychiki dziecka."
+    ],
+    "etymology": "z gr. ostrakismos – sąd skorupkowy",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "bojkot",
+      "wykluczenie",
+      "napiętnowanie"
+    ]
+  },
+  {
+    "id": 80,
+    "word": "Paternalizm",
+    "definition": "Postawa polegająca na ograniczaniu wolności decydowania innej osoby dla jej rzekomego dobra",
+    "examples": [
+      "Lekarz wykazał się paternalizmem, nie informując pacjenta o ryzyku operacji.",
+      "Paternalizm państwa objawia się w narzucaniu obywatelom stylu życia."
+    ],
+    "etymology": "z łac. paternus – ojcowski",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "opiekuńczość",
+      "nadopiekuńczość"
+    ]
+  },
+  {
+    "id": 81,
+    "word": "Merytokracja",
+    "definition": "System, w którym pozycja społeczna i władza zależą wyłącznie od zdolności i zasług jednostki",
+    "examples": [
+      "Firma opiera swoją strukturę na zasadach pełnej merytokracji.",
+      "Krytycy merytokracji wskazują, że nie uwzględnia ona nierównego startu życiowego."
+    ],
+    "etymology": "z łac. meritum (zasługa) + gr. kratein (rządzić)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "rządy najzdolniejszych"
+    ]
+  },
+  {
+    "id": 82,
+    "word": "Indyferencja",
+    "definition": "Stan obojętności lub braku zainteresowania wobec kogoś lub czegoś",
+    "examples": [
+      "Polityczna indyferencja młodych ludzi budzi niepokój socjologów.",
+      "Jego indyferencja wobec cierpienia innych była przerażająca."
+    ],
+    "etymology": "z łac. indifferentia – obojętność",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "obojętność",
+      "apatia",
+      "brak zainteresowania"
+    ]
+  },
+  {
+    "id": 83,
+    "word": "Eksplikacja",
+    "definition": "Jasne i szczegółowe wyjaśnienie lub rozwinięcie złożonego problemu lub pojęcia",
+    "examples": [
+      "Autor dokonał dogłębnej eksplikacji swojej teorii w drugim rozdziale.",
+      "Eksplikacja tekstu filozoficznego wymaga znajomości kontekstu epoki."
+    ],
+    "etymology": "z łac. explicatio – objaśnienie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Nauka i wiedza",
+    "synonyms": [
+      "wyjaśnienie",
+      "objaśnienie",
+      "interpretacja"
+    ]
+  },
+  {
+    "id": 84,
+    "word": "Hipochondria",
+    "definition": "Stan nadmiernej i nieuzasadnionej obawy o własne zdrowie, objawiający się przypisywaniem sobie chorób",
+    "examples": [
+      "Jego hipochondria sprawiła, że odwiedził dziesięciu lekarzy w ciągu miesiąca.",
+      "Lęk przed zachorowaniem może przerodzić się w uciążliwą hipochondrię."
+    ],
+    "etymology": "z gr. hypochondrion – okolica podżebrowa (miejsce lęku)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "urojenie chorobowe"
+    ]
+  },
+  {
+    "id": 85,
+    "word": "Meritum",
+    "definition": "Istota sprawy, sedno problemu lub najważniejsza część zagadnienia",
+    "examples": [
+      "Po długim wstępie prelegent przeszedł wreszcie do meritum.",
+      "Spór o formę przysłonił całkowicie meritum dyskusji."
+    ],
+    "etymology": "z łac. meritum – zasługa, rzecz należyta",
+    "partOfSpeech": "rzeczownik, rodzaj nijaki",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "sedno",
+      "istota"
+    ]
+  },
+  {
+    "id": 86,
+    "word": "Aporia",
+    "definition": "Sytuacja bez wyjścia, trudność nie do przezwyciężenia w rozumowaniu, sprzeczność logiczna",
+    "examples": [
+      "Filozof napotkał aporię, której nie potrafił rozwiązać klasycznymi metodami.",
+      "Paradoks kłamcy jest jedną z najsłynniejszych aporii logicznych."
+    ],
+    "etymology": "z gr. aporia – brak przejścia, bezradność",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Nauka i wiedza",
+    "synonyms": [
+      "dylemat",
+      "impas"
+    ]
+  },
+  {
+    "id": 87,
+    "word": "Inhibicja",
+    "definition": "Proces hamowania lub powstrzymywania reakcji, czynności lub funkcji organizmu",
+    "examples": [
+      "Inhibicja zwrotna jest kluczowym mechanizmem w regulacji hormonalnej.",
+      "W sytuacjach stresowych u pacjenta następowała inhibicja procesów poznawczych."
+    ],
+    "etymology": "z łac. inhibitio – powstrzymanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "hamowanie",
+      "powstrzymywanie"
+    ]
+  },
+  {
+    "id": 88,
+    "word": "Atrybucja",
+    "definition": "Przypisywanie komuś lub czemuś określonych cech, motywów lub autorstwa",
+    "examples": [
+      "Podstawowy błąd atrybucji polega na przecenianiu cech charakteru nad czynniki sytuacyjne.",
+      "Eksperci spierają się o atrybucję tego niepodpisanego obrazu."
+    ],
+    "etymology": "z łac. attributio – przypisywanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "przypisanie"
+    ]
+  },
+  {
+    "id": 89,
+    "word": "Inercja",
+    "definition": "Bierność, niechęć do zmian lub skłonność do pozostawania w dotychczasowym stanie",
+    "examples": [
+      "Inercja urzędnicza blokuje wprowadzenie niezbędnych reform.",
+      "Pokonanie inercji psychicznej po długiej przerwie w pracy jest trudnym zadaniem."
+    ],
+    "etymology": "z łac. inertia – gnuśność, bezwład",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Człowiek i zachowanie",
+    "synonyms": [
+      "bierność",
+      "zastój"
+    ]
+  },
+  {
+    "id": 90,
+    "word": "Peryfraza",
+    "definition": "Zastosowanie opisu zamiast konkretnego wyrazu w celu uniknięcia powtórzeń lub urozmaicenia stylu",
+    "examples": [
+      "Określenie 'stolica świata' zamiast 'Nowy Jork' to typowa peryfraza.",
+      "Peryfraza pozwala nadać wypowiedzi bardziej poetycki charakter."
+    ],
+    "etymology": "z gr. periphrasis – omówienie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "omówienie"
+    ]
+  },
+  {
+    "id": 91,
+    "word": "Precedens",
+    "definition": "Wydarzenie, które zdarzyło się po raz pierwszy i służy jako wzór lub uzasadnienie dla podobnych spraw w przyszłości",
+    "examples": [
+      "Ten wyrok sądowy stworzył precedens, na który powoływali się inni prawnicy.",
+      "Decyzja dyrekcji była sytuacją bez precedensu w historii firmy."
+    ],
+    "etymology": "z łac. praecedens – poprzedzający",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "przykład",
+      "wzorzec"
+    ]
+  },
+  {
+    "id": 92,
+    "word": "Gnoza",
+    "definition": "Wiedza o charakterze tajemnym lub religijnym, mająca prowadzić do zbawienia lub oświecenia",
+    "examples": [
+      "Starożytna gnoza łączyła elementy filozofii greckiej z tradycjami wschodnimi.",
+      "Jego eseje przesycone były nowoczesną gnozą i mistycyzmem."
+    ],
+    "etymology": "z gr. gnōsis – wiedza",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Kultura i sztuka",
+    "synonyms": [
+      "wtajemniczenie",
+      "wiedza tajemna"
+    ]
+  },
+  {
+    "id": 93,
+    "word": "Hermeneutyka",
+    "definition": "Sztuka i teoria interpretacji tekstów, zwłaszcza literackich, prawnych i biblijnych",
+    "examples": [
+      "Hermeneutyka prawnicza pozwala zrozumieć ducha ustawy, a nie tylko jej literę.",
+      "Współczesna hermeneutyka kładzie nacisk na dialog między czytelnikiem a dziełem."
+    ],
+    "etymology": "z gr. hermēneutikḗ – sztuka wyjaśniania",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Nauka i wiedza",
+    "synonyms": [
+      "interpretacja"
+    ]
+  },
+  {
+    "id": 94,
+    "word": "Idiosynkrazja",
+    "definition": "Specyficzna dla danej osoby, często irracjonalna niechęć do kogoś, czegoś lub określonych bodźców",
+    "examples": [
+      "Moja idiosynkrazja do dźwięku skrobania po tablicy jest nie do opanowania.",
+      "Uczony ten słynął z licznych idiosynkrazji językowych."
+    ],
+    "etymology": "z gr. idios (własny) + synkrasis (zmieszanie)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Psychologia i emocje",
+    "synonyms": [
+      "wstręt"
+    ]
+  },
+  {
+    "id": 95,
+    "word": "Nomenklatura",
+    "definition": "Zbiór nazw i terminów używanych w danej dziedzinie nauki, techniki lub sztuki",
+    "examples": [
+      "Zrozumienie specjalistycznej nomenklatury medycznej zajęło mu lata.",
+      "Nowy system wprowadził jednolitą nomenklaturę dla wszystkich produktów."
+    ],
+    "etymology": "z łac. nomenclatura – wykaz imion",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Język i komunikacja",
+    "synonyms": [
+      "terminologia",
+      "nazewnictwo"
+    ]
+  },
+  {
+    "id": 96,
+    "word": "Polifonia",
+    "definition": "Współwystępowanie wielu równorzędnych głosów, poglądów lub wątków w jednym dziele lub dyskusji",
+    "examples": [
+      "Powieści Dostojewskiego cechuje polifonia – każdy bohater ma własną prawdę.",
+      "Współczesne społeczeństwo to polifonia kultur i wartości."
+    ],
+    "etymology": "z gr. polyphōnía – wielogłosowość",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Kultura i sztuka",
+    "synonyms": [
+      "wielogłosowość"
+    ]
+  },
+  {
+    "id": 97,
+    "word": "Agnozja",
+    "definition": "Zaburzenie percepcji polegające na utracie zdolności rozpoznawania znanych przedmiotów przy zachowaniu sprawnych narządów zmysłów",
+    "examples": [
+      "Pacjent cierpiący na agnozję twarzy nie rozpoznawał własnych dzieci.",
+      "Agnozja słuchowa uniemożliwia identyfikację dźwięków otoczenia."
+    ],
+    "etymology": "z gr. a- (brak) + gnōsis (wiedza)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
+    "synonyms": [
+      "nierozpoznawanie"
+    ]
+  },
+  {
+    "id": 98,
+    "word": "Latentny",
+    "definition": "Ukryty, niewidoczny, pozostający w uśpieniu, ale gotowy do ujawnienia się",
+    "examples": [
+      "W społeczeństwie narastał latentny bunt przeciwko nowym podatkom.",
+      "Latentny okres choroby pozwalał mu na normalne funkcjonowanie."
+    ],
+    "etymology": "z łac. latens – ukryty",
+    "partOfSpeech": "przymiotnik",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "ukryty",
+      "uśpiony"
+    ]
+  },
+  {
+    "id": 99,
+    "word": "Oscylacja",
+    "definition": "Wahanie się między dwiema wartościami, postawami lub stanami",
+    "examples": [
+      "Wykres pokazuje stałą oscylację poziomu wód w rzece.",
+      "Oscylacja między optymizmem a rozpaczą wyczerpała go psychicznie."
+    ],
+    "etymology": "z łac. oscillatio – kołysanie",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Abstrakcyjne pojęcia",
+    "synonyms": [
+      "wahanie",
+      "drganie"
+    ]
+  },
+  {
+    "id": 100,
+    "word": "Hegemonia",
+    "definition": "Przewaga, dominacja lub przywództwo jednego państwa, grupy lub idei nad innymi",
+    "examples": [
+      "Historycy analizują hegemonię kulturową starożytnego Rzymu.",
+      "Firma walczy o hegemonię na rynku technologii mobilnych."
+    ],
+    "etymology": "z gr. hēgemonía – przewodnictwo",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Społeczeństwo i media",
+    "synonyms": [
+      "dominacja",
+      "przywództwo",
+      "zwierzchnictwo"
     ]
   }
 ]

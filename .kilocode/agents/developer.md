@@ -42,7 +42,7 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 #### Struktura Projektu (AKTUALNA)
 ```
 src/
-├── data/              # words.json (1388 słów)
+├── data/              # words.json (100 słów)
 ├── hooks/             # useWordOfDay, useFavorites, useLocalStorage
 ├── context/           # AppContext.jsx + components/
 │   ├── AppContext.jsx

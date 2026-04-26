@@ -74,7 +74,7 @@ npx vercel deploy --prod
 
 ```
 src/
-├── data/words.json          # 1388 słów
+├── data/words.json          # 100 słów
 ├── hooks/
 │   ├── useWordOfDay.js      # Algorytm słowa dnia
 │   └── useFavorites.js    # Ulubione
