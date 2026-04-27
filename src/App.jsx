@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Link, Routes, Route, NavLink } from 'react-router-dom'
 import Home from './pages/Home'
 import Archive from './pages/Archive'
 import Favorites from './pages/Favorites'
@@ -11,17 +11,17 @@ function App() {
           <Link to="/" className="font-display text-2xl font-bold text-primary">
             Słowo Dnia
           </Link>
-          <div className="flex gap-4 font-ui text-sm">
-            <Link to="/" className="text-text hover:text-primary transition-colors">
-              Dzisiaj
-            </Link>
-            <Link to="/archive" className="text-text hover:text-primary transition-colors">
-              Archiwum
-            </Link>
-            <Link to="/favorites" className="text-text hover:text-primary transition-colors">
-              Ulubione
-            </Link>
-          </div>
+           <div className="flex gap-4 font-ui text-sm">
+              <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                Dzisiaj
+              </NavLink>
+              <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                Archiwum
+              </NavLink>
+              <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                Ulubione
+              </NavLink>
+           </div>
         </nav>
       </header>
       
