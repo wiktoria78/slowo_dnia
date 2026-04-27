@@ -95,7 +95,7 @@
     "category": "Kultura i sztuka",
     "synonyms": [
       "wielostylowość",
-      "mieszanka"
+      "synkretyzm"
     ]
   },
   {
@@ -106,7 +106,7 @@
       "Jego jowialność zjednywała ludzi.",
       "Przywitał gości z jowialnością."
     ],
-    "etymology": "od łacińskiego lovialis = oznaczającego osobę urodzoną pod wpływem planety Jowisz (w astrologii Jowisz zwiastował szczęście, optymizm i pogodę ducha)",
+    "etymology": "od łacińskiego Iovialis = oznaczającego osobę urodzoną pod wpływem planety Jowisz (w astrologii Jowisz zwiastował szczęście, optymizm i pogodę ducha)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "Psychologia i emocje",
     "synonyms": [
@@ -155,7 +155,7 @@
       "Wścieklizna to groźna zoonoza.",
       "Badania nad zoonozami są kluczowe dla zdrowia publicznego."
     ],
-    "etymology": "z greckiego 'zoo-' (zôon = zwierzę) + 'noza' (nósos = choroba)",
+    "etymology": "z greckiego zōion (zwierzę) + nosos (choroba)”.",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "Zdrowie i medycyna",
     "synonyms": [
@@ -165,7 +165,7 @@
   {
     "id": 11,
     "word": "Abnegat",
-    "definition": "człowiek niedbający o swój wygląd, o swoje korzyści",
+    "definition": "Człowiek świadomie niedbający o swój wygląd, o swoje korzyści",
     "examples": [
       "Filozof żył jak abnegat, gardząc dobrami materialnymi.",
       "Został zapamiętany jako niechlujny abnegat."
@@ -207,7 +207,7 @@
     "partOfSpeech": "czasownik",
     "category": "Człowiek i zachowanie",
     "synonyms": [
-      "marnować (czas)",
+      "marnować",
       "zwlekać",
       "ociągać się"
     ]
@@ -287,7 +287,7 @@
     ],
     "etymology": "od łacińskiego peregrīnātiō = przebywanie za granicą; peregrinus = cudzoziemiec, pielgrzym",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Człowiek i zachowanie",
+    "category": "Świat i rzeczywistość",
     "synonyms": [
       "pielgrzymka",
       "wędrówka",
@@ -411,7 +411,7 @@
   {
     "id": 26,
     "word": "Efemeryda",
-    "definition": "Coś krótkotrwałego, ulotnego; także termin w astronomii (tablice pozycji ciał niebieskich)",
+    "definition": "Coś krótkotrwałego, ulotnego; także termin w astronomii (tablice pozycji ciał niebieskich); także nazwa rzędu owadów (jętek), które żyją bardzo krótko w postaci dorosłej.",
     "examples": [
       "Sława tego artysty była efemerydą.",
       "Efemerydy są używane w astronomii."
@@ -441,11 +441,11 @@
   },
   {
     "id": 28,
-    "word": "Acatalepsja",
+    "word": "Akatalepsja",
     "definition": "Stan całkowitego braku zrozumienia, niemożność uchwycenia sensu",
     "examples": [
-      "Po przeczytaniu tego fragmentu ogarnęła go acatalepsja.",
-      "Niektórzy miewają acatalepsję wobec najbardziej oczywistych faktów."
+      "Po przeczytaniu tego fragmentu ogarnęła go akatalepsja.",
+      "Niektórzy miewają akatalepsję wobec najbardziej oczywistych faktów."
     ],
     "etymology": "z gr. akatalepsía – niemożność pochwycenia, od a- (nie) + katalepsis (pojmowanie)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
@@ -499,8 +499,8 @@
     "category": "Język i komunikacja",
     "synonyms": [
       "niewyrażalność",
-      "tajemniczość",
-      "milczenie"
+      "nieopisywalność"
+      
     ]
   },
   {
@@ -520,21 +520,17 @@
     ]
   },
   {
-    "id": 33,
-    "word": "Nocliwizja",
-    "definition": "Wizualna halucynacja będąca na granicy snu i jawy; koszmarna wizja",
-    "examples": [
-      "Nocliwizje nawiedzały go po całodziennym nadmiernym wysiłku.",
-      "Niektóre leki wywołują nocliwizje."
-    ],
-    "etymology": "z pol. noc (noctis) + łac. visio (widzenie) – „nocne widzenie”",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Zdrowie i medycyna",
-    "synonyms": [
-      "nocna wizja",
-      "halucynacja",
-      "wizja koszmaru"
-    ]
+  "id": 33,
+  "word": "Hipnagogia",
+  "definition": "Stan przejściowy między jawą a snem, w którym pojawiają się żywe obrazy, dźwięki lub wrażenia",
+  "examples": [
+    "W stanie hipnagogii widział wyraźne, nierealne obrazy.",
+    "Hipnagogia może powodować wrażenie spadania tuż przed zaśnięciem."
+  ],
+  "etymology": "z gr. hypnos – sen + agogos – prowadzący",
+  "partOfSpeech": "rzeczownik, rodzaj żeński",
+  "category": "Psychologia i emocje",
+  "synonyms": ["stan przedsenny"]
   },
   {
     "id": 34,
@@ -558,15 +554,14 @@
     "definition": "Uwięzić, zamknąć w miejscu bez formalnego procesu sądowego",
     "examples": [
       "Tajna policja internowała go bez prawa do obrony.",
-      "Pod hitlerowskim reżimem internowano przeciwników politycznych."
+      "Niektórzy zostali internowani bez wyjaśnienia."
     ],
     "etymology": "z fr. interner („osadzać, zamykać”), od łac. internus („wewnętrzny”)",
     "partOfSpeech": "czasownik",
     "category": "Prawo i polityka",
     "synonyms": [
       "uwięzić",
-      "poddać represjom",
-      "wysłać do obozu"
+      "poddać represjom"
     ]
   },
   {
@@ -701,11 +696,11 @@
   },
   {
     "id": 44,
-    "word": "Dyssymulacja",
+    "word": "Dysymulacja",
     "definition": "Ukrywanie prawdziwych uczuć lub intencji pod maską spokoju",
     "examples": [
-      "Jego dyssymulacja była niesamowicie wiarygodna.",
-      "Dyssymulacja gniewu wymaga żelaznej dyscypliny."
+      "Jego dysymulacja była niesamowicie wiarygodna.",
+      "Dysymulacja gniewu wymaga żelaznej dyscypliny."
     ],
     "etymology": "z łac. dissimulare – ukrywać, udawać; dis- (roze-) + simulare (udawać)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
@@ -744,25 +739,25 @@
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "Zdrowie i medycyna",
     "synonyms": [
-      "samobadanie",
+      "propriocepcja wewnętrzna",
       "czucie wewnętrzne"
     ]
   },
-  {
-    "id": 47,
-    "word": "Malizna",
-    "definition": "Złośliwość schowana pod pozorami uprzejmości; podstępna niechęć",
-    "examples": [
-      "Jej malizna objawiała się w subtelnych szyderstwach.",
-      "W jego tonie czuć było ukrytą maliznę."
-    ],
-    "etymology": "z włoskiego malizia – złośliwość, niechęć; od łac. malus – zły; przez fr. malice",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i emocje",
-    "synonyms": [
-      "złośliwość",
-      "podstępna zawiść",
-      "chytrość"
+ {
+  "id": 47,
+  "word": "Malizna",
+  "definition": "Coś bardzo małego, niewielkiego lub niepozornego",
+  "examples": [
+     "Ten kawałek to tylko malizna, nie wystarczy dla wszystkich.",
+     "Dostał maliznę zamiast porządnej porcji."
+  ],
+  "etymology": "od słowa „mały”",
+  "partOfSpeech": "rzeczownik, rodzaj żeński",
+  "category": "Świat i rzeczywistość",
+  "synonyms": [
+     "drobina", 
+     "niewielka ilość",
+     "okruszek"
     ]
   },
   {
@@ -1004,7 +999,8 @@
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "Zdrowie i medycyna",
     "synonyms": [
-      "patologiczne powtarzanie"
+      "patologiczne powtarzanie",
+      "uporczywe powtarzanie"
     ]
   },
   {
@@ -1092,7 +1088,7 @@
       "Eudajmonia była celem życia według Arystotelesa.",
       "Dążenie do eudajmonii wymaga samorozwoju."
     ],
-    "etymology": "z gr. eudaimonia – dobre duchy, szczęście",
+    "etymology": "z gr. eudaimonia – dobre duchy, szczęście, eu (dobry) + daimōn (duch/los)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "Abstrakcyjne pojęcia",
     "synonyms": [
@@ -1254,7 +1250,7 @@
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "Kultura i sztuka",
     "synonyms": [
-      "senność",
+      "marzycielstwo",
       "poetyka snu"
     ]
   },
@@ -1287,7 +1283,6 @@
     "partOfSpeech": "rzeczownik, rodzaj męski",
     "category": "Człowiek i zachowanie",
     "synonyms": [
-      "opiekuńczość",
       "nadopiekuńczość"
     ]
   },
@@ -1352,7 +1347,7 @@
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "Zdrowie i medycyna",
     "synonyms": [
-      "urojenie chorobowe"
+      "lęk o zdrowie"
     ]
   },
   {
@@ -1508,7 +1503,8 @@
     "partOfSpeech": "rzeczownik, rodzaj żeński",
     "category": "Psychologia i emocje",
     "synonyms": [
-      "wstręt"
+      "wstręt",
+      "antypatia"
     ]
   },
   {
