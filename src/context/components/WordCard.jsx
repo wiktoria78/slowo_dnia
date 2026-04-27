@@ -62,7 +62,7 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
           Przykłady użycia
         </button>
         
-        <AnimatePresence>
+         <AnimatePresence>
           {showExamples && (
             <motion.div
               initial={{ height: 0, opacity: 0 }}

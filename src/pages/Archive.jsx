@@ -69,7 +69,7 @@ const Archive = () => {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="w-full px-4 py-3 rounded-lg border border-text/20 bg-surface font-ui text-text text-left flex justify-between items-center hover:border-primary/50 transition-colors"
+              className="w-full px-4 py-3 rounded-lg border border-text/20 bg-surface font-ui text-text text-left flex justify-between items-center gap-2 hover:border-primary/50 transition-colors"
             >
               <span>{selectedCategory === 'all' ? 'Wszystkie kategorie' : selectedCategory}</span>
               <svg className={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,29 +78,31 @@ const Archive = () => {
             </button>
             <AnimatePresence>
               {isOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute z-10 w-full mt-2 bg-surface border border-text/20 rounded-lg shadow-lg overflow-hidden"
-                >
-                  {categories.map(cat => (
-                    <button
-                      key={cat}
-                      type="button"
-                      onClick={() => {
-                        setSelectedCategory(cat);
-                        setIsOpen(false);
-                      }}
-                      className={`w-full px-4 py-3 text-left font-ui text-text hover:bg-background transition-colors ${
-                        selectedCategory === cat ? 'bg-background text-primary' : ''
-                      }`}
-                    >
-                      {cat === 'all' ? 'Wszystkie kategorie' : cat}
-                    </button>
-                  ))}
-                </motion.div>
+                 <motion.div
+                   initial={{ opacity: 0, y: -10 }}
+                   animate={{ opacity: 1, y: 0 }}
+                   exit={{ opacity: 0, y: -10 }}
+                   transition={{ duration: 0.15 }}
+                   className="absolute z-10 w-full mt-2 bg-surface border border-text/20 rounded-lg shadow-lg overflow-hidden"
+                 >
+                    {categories.map(cat => (
+                      <button
+                        key={cat}
+                        type="button"
+                        onClick={() => {
+                          setSelectedCategory(cat);
+                          setIsOpen(false);
+                        }}
+                        className={`w-full px-3 py-2 text-left font-ui text-sm transition-colors whitespace-nowrap ${
+                          selectedCategory === cat
+                            ? 'bg-secondary/10 text-secondary'
+                            : 'text-text hover:bg-secondary/5 hover:text-secondary'
+                        }`}
+                      >
+                        {cat === 'all' ? 'Wszystkie kategorie' : cat}
+                      </button>
+                    ))}
+                 </motion.div>
               )}
             </AnimatePresence>
           </div>
@@ -120,16 +122,16 @@ const Archive = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.05 }}
-            className="bg-surface rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow"
+            className="bg-surface rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col min-h-[180px]"
           >
             <h3 className="font-display text-xl font-bold text-primary mb-2">
               {word.word}
             </h3>
-            <p className="font-body text-sm text-text/80 line-clamp-2 mb-3">
+            <p className="font-body text-sm text-text/80 leading-relaxed mb-3 flex-grow line-clamp-3">
               {word.definition}
             </p>
-            <div className="flex flex-wrap gap-1">
-              <span className="px-2 py-0.5 bg-background rounded text-xs font-ui text-text/60">
+            <div className="mt-auto">
+              <span className="inline-block px-3 py-1 bg-secondary/20 rounded-full font-ui text-xs font-medium text-secondary">
                 {word.category}
               </span>
             </div>
