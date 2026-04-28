@@ -1,8 +1,10 @@
 # Słowo Dnia
 
+[![Live on Vercel](https://img.shields.io/badge/Live%20on%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://slowo-dnia-pi.vercel.app/)
+
 Aplikacja, która każdego dnia prezentuje piękne, rzadko używane polskie słowo — z definicją, przykładami i etymologią. Pomaga wzbogacić słownictwo i mówić piękniej po polsku.
 
-**Status:** ✅ Live  
+**Status:** ✅ [Live](https://slowo-dnia-pi.vercel.app/)  
 **Tech:** React + Vite + Tailwind CSS
 
 ---
