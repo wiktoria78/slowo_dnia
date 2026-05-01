@@ -242,8 +242,8 @@ VITE_APP_URL=https://username.github.io/slowo-dnia
 
 ## 11. Referencje Dokumentów
 
-- [docs/architecture/system-design.md](docs/architecture/system-design.md) — Specyfikacja architektoniczna
-- [docs/AGENTS.md](docs/AGENTS.md) — Reguły agenta AI
-- [docs/README.md](docs/README.md) — Dokumentacja projektu
-- [docs/biznes/mvp-scoping.md](docs/biznes/mvp-scoping.md) — Zakres MVP
-- [docs/biznes/tech-stack.md](docs/biznes/tech-stack.md) — Tech Stack
+- [docs/architecture/system-design.md](../../docs/architecture/system-design.md) — Specyfikacja architektoniczna
+- [docs/AGENTS.md](../../docs/AGENTS.md) — Reguły agenta AI
+- [README.md](../../README.md) — Dokumentacja projektu
+- [docs/business/mvp-scoping.md](../../docs/business/mvp-scoping.md) — Zakres MVP
+- [docs/business/tech-stack.md](../../docs/business/tech-stack.md) — Tech Stack

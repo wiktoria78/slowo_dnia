@@ -66,7 +66,7 @@ Każda user story musi zawierać:
 
 1. **Przeczytaj dokumentację projektu**
     - [README.md](../../README.md)
-    - [docs/business/](../../docs/business/)
+    - [docs/business/](../business/)
 
 2. **Utwórz dokumenty wyjściowe w folderze docs/**
    - `docs/prd.md` — Product Requirements Document

@@ -35,14 +35,14 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 ## Struktura Zespołu
 
 ```
-                    ┌─────────────────────┐
-                    │  PROJECT MANAGER   │
-                    │    (Management)    │
-                    └─────────┬──────────┘
-                              │
-        ┌─────────────────────┼─────────────────────┐
-        │                     │                     │
-        ▼                     ▼                     ▼
+                     ┌─────────────────────┐
+                     │  PROJECT MANAGER   │
+                     │    (Management)    │
+                     └─────────┬──────────┘
+                               │
+         ┌─────────────────────┼─────────────────────┐
+         │                     │                     │
+         ▼                     ▼                     ▼
 ┌───────────────┐    ┌───────────────┐    ┌───────────────┐
 │  PRODUCT &    │    │   TECHNICAL   │    │   EXECUTION   │
 │    DESIGN     │    │  LEADERSHIP   │    │               │
@@ -161,7 +161,7 @@ Projekt realizowany jest w ustalonej kolejności. Każdy etap musi zostać ukoń
    - Monitorowanie postępu prac
 
 2. **Zarządzanie workflow**
-   - Wymuszanie kolejności выполнения etapów
+   - Wymuszanie kolejności wykonania etapów
    - Blokowanie przejścia do następnego etapu bez ukończenia poprzedniego
    - Zarządzanie zależnościami między zadaniami
 
@@ -194,7 +194,7 @@ Projekt realizowany jest w ustalonej kolejności. Każdy etap musi zostać ukoń
 
 3. **Odwołanie do dokumentacji projektu**
     - [README.md](../../README.md)
-    - [AGENTS.md](../../docs/AGENTS.md)
+    - [AGENTS.md](../AGENTS.md)
 
 ---
 
@@ -272,29 +272,25 @@ Przed przejściem do następnego etapu:
 
 ### Agenci Zespołu
 
-- [.kilocode/agents/product_owner.md](./product_owner.md)
-- [.kilocode/agents/ux_designer.md](./ux_designer.md)
-- [.kilocode/agents/ui_designer.md](./ui_designer.md)
-- [.kilocode/agents/it_architect.md](./it_architect.md)
-- [.kilocode/agents/lead_developer.md](./lead_developer.md)
-- [.kilocode/agents/scrum_master.md](./scrum_master.md)
-- [.kilocode/agents/developer.md](./developer.md)
-- [.kilocode/agents/tester.md](./tester.md)
-- [.kilocode/agents/devops.md](./devops.md)
+- [.kilocode/agents/product_owner.md](../.kilocode/agents/product_owner.md)
+- [.kilocode/agents/ux_designer.md](../.kilocode/agents/ux_designer.md)
+- [.kilocode/agents/ui_designer.md](../.kilocode/agents/ui_designer.md)
+- [.kilocode/agents/it_architect.md](../.kilocode/agents/it_architect.md)
+- [.kilocode/agents/lead_developer.md](../.kilocode/agents/lead_developer.md)
+- [.kilocode/agents/scrum_master.md](../.kilocode/agents/scrum_master.md)
+- [.kilocode/agents/developer.md](../.kilocode/agents/developer.md)
+- [.kilocode/agents/tester.md](../.kilocode/agents/tester.md)
+- [.kilocode/agents/devops.md](../.kilocode/agents/devops.md)
 
 ### Dokumenty Projektu
 
 - [README.md](../../README.md)
-- [AGENTS.md](../../docs/AGENTS.md)
-- [Zaimplementowane Plany](../../implemented_plans.md)
-- [Zaimplementowane Funkcje](../../implemented_features.md)
+- [AGENTS.md](../AGENTS.md)
 
 ---
 
 ## Definition of Done (Project Manager)
 
-- [ ] docs/plany/task_plan.md utworzony i aktualny
-- [ ] docs/progress.md utworzony i aktualny
 - [ ] Wszystkie 9 etapów workflow ukończone
 - [ ] Każdy etap zweryfikowany i zaakceptowany
 - [ ] Code review przeszedł z wynikiem ≥ 80%

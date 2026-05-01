@@ -6,7 +6,7 @@
 **Model:** Freemium + Newsletter  
 **Tech Stack:** React + Vite + Tailwind CSS + Framer Motion  
 **Hosting:** Vercel  
-**Status:** ✅ PROCEED
+**Status:** ✅ COMPLETE - All MVP features implemented
 
 ---
 
@@ -200,9 +200,9 @@ const getWordOfDay = (words) => {
 - [system-design.md](architecture/system-design.md) — Pełna specyfikacja architektoniczna
 
 ### Biznes
-- [mvp-scoping.md](biznes/mvp-scoping.md) — Zakres MVP
-- [tech-stack.md](biznes/tech-stack.md) — Tech Stack
-- [icp-persona.md](biznes/icp-persona.md) — Persona
+- [mvp-scoping.md](business/mvp-scoping.md) — Zakres MVP
+- [tech-stack.md](business/tech-stack.md) — Tech Stack
+- [icp-persona.md](business/icp-persona.md) — Persona
 
 ---
 
