@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useWordOfDay } from '../../hooks/useWordOfDay.js';
 import { useFavorites } from '../../hooks/useFavorites.js';
 import ShareButton from './ShareButton';
 
-const WordCard = ({ word, showFavoriteButton = true }) => {
+const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
   const { toggleFavorite, isFavorite } = useFavorites();
   const [showExamples, setShowExamples] = useState(false);
   const [showEtymology, setShowEtymology] = useState(false);
@@ -18,7 +17,7 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-surface rounded-2xl shadow-lg p-8 max-w-2xl mx-auto"
+      className={`bg-surface rounded-2xl shadow-lg p-8 max-w-2xl mx-auto ${scrollable ? 'max-h-[80vh] overflow-y-auto custom-scrollbar' : ''}`}
     >
       {/* Word */}
       <div className="text-center mb-6">
@@ -70,11 +69,11 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
               exit={{ height: 0, opacity: 0 }}
               className="pl-6 border-l-2 border-secondary/30"
             >
-              {word.examples && word.examples.map((example, idx) => (
-                <p key={idx} className="font-body text-text/80 italic mb-2">
-                  "{example}"
-                </p>
-              ))}
+               {word.examples && word.examples.map((example, idx) => (
+                 <p key={idx} className="font-body text-text/80 italic mb-2">
+                   &ldquo;{example}&rdquo;
+                 </p>
+               ))}
             </motion.div>
           )}
         </AnimatePresence>
@@ -114,15 +113,15 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
       </div>
 
       {/* Actions */}
-      {(showFavoriteButton || true) && (
+      {showFavoriteButton && (
         <div className="mt-8 pt-6 border-t border-text/10 flex justify-center gap-4 max-w-sm mx-auto">
           <motion.button
             onClick={() => toggleFavorite(word)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={`flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-lg font-medium transition-all duration-200 min-w-[140px] ${
-              favorite 
-                ? 'bg-primary text-white' 
+              favorite
+                ? 'bg-primary text-white'
                 : 'bg-primary text-white hover:bg-primary/90'
             }`}
           >

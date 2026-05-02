@@ -2,8 +2,6 @@ import { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import wordsData from '../data/words.json';
 import WordCard from '../context/components/WordCard.jsx';
-import ShareButton from '../context/components/ShareButton.jsx';
-import { useFavorites } from '../hooks/useFavorites.js';
 
 const START_DATE = new Date('2026-04-13');
 
@@ -75,7 +73,7 @@ const Archive = () => {
               onClick={(e) => e.stopPropagation()}
               className="relative w-full max-w-2xl"
             >
-              <WordCard word={selectedWord} showFavoriteButton={true} />
+               <WordCard word={selectedWord} showFavoriteButton={true} scrollable={true} />
               <button
                 onClick={() => setSelectedWord(null)}
                 className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-surface border border-text/20 text-text/60 hover:text-text hover:border-text/40 flex items-center justify-center transition-colors"

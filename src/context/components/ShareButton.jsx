@@ -34,7 +34,7 @@ export default function ShareButton({ word }) {
 
   const copyToClipboard = async () => {
     try {
-      const fullText = `${shareText} + ${shareUrl}`;
+      const fullText = `${shareText} ${shareUrl}`;
       await navigator.clipboard.writeText(fullText);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);

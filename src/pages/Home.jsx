@@ -4,7 +4,7 @@ import WordCard from '../context/components/WordCard.jsx';
 import wordsData from '../data/words.json';
 
 const Home = () => {
-  const { wordOfDay, loading, isFinished, getCurrentIndex, START_DATE } = useWordOfDay();
+  const { wordOfDay, loading, isFinished, getCurrentIndex } = useWordOfDay();
 
   const today = new Date().toLocaleDateString('pl-PL', {
     weekday: 'long',
