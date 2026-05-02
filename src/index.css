@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Custom scrollbar */
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: rgba(201, 162, 39, 0.3) transparent;
+  scrollbar-color: rgba(44, 44, 44, 0.3) transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -51,10 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(201, 162, 39, 0.3);
+  background-color: rgba(44, 44, 44, 0.3);
   border-radius: 3px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(201, 162, 39, 0.5);
+  background-color: rgba(44, 44, 44, 0.5);
 }
