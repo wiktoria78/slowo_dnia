@@ -1,6 +1,9 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import wordsData from '../data/words.json';
+import WordCard from '../context/components/WordCard.jsx';
+import ShareButton from '../context/components/ShareButton.jsx';
+import { useFavorites } from '../hooks/useFavorites.js';
 
 const START_DATE = new Date('2026-04-13');
 
@@ -49,8 +52,44 @@ const Archive = () => {
     });
   }, [archiveWords, searchTerm, selectedCategory]);
 
+  const [selectedWord, setSelectedWord] = useState(null);
+
   return (
     <div>
+      {/* Word Detail Modal */}
+      <AnimatePresence>
+        {selectedWord && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-50 flex items-center justify-center px-4 py-8 bg-black/60 backdrop-blur-sm"
+            onClick={() => setSelectedWord(null)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ duration: 0.3, type: 'spring' }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-2xl"
+            >
+              <WordCard word={selectedWord} showFavoriteButton={true} />
+              <button
+                onClick={() => setSelectedWord(null)}
+                className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-surface border border-text/20 text-text/60 hover:text-text hover:border-text/40 flex items-center justify-center transition-colors"
+                aria-label="Zamknij"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <h1 className="font-display text-3xl font-bold text-text text-center mb-8">
         Archiwum słów
       </h1>
@@ -114,7 +153,7 @@ const Archive = () => {
         Znaleziono {filteredWords.length} słów
       </p>
 
-      {/* Words grid */}
+       {/* Words grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredWords.map((word, index) => (
           <motion.div
@@ -122,7 +161,18 @@ const Archive = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.05 }}
-            className="bg-surface rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col min-h-[180px]"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => setSelectedWord(word)}
+            className="bg-surface rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col min-h-[180px] cursor-pointer border border-transparent hover:border-primary/20"
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setSelectedWord(word);
+              }
+            }}
           >
             <h3 className="font-display text-xl font-bold text-primary mb-2">
               {word.word}
