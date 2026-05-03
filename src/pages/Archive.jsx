@@ -130,11 +130,11 @@ const Archive = () => {
                           setSelectedCategory(cat);
                           setIsOpen(false);
                         }}
-                        className={`w-full px-3 py-2 text-left font-ui text-sm transition-colors whitespace-nowrap ${
-                          selectedCategory === cat
-                            ? 'bg-secondary/10 text-secondary'
-                            : 'text-text hover:bg-secondary/5 hover:text-secondary'
-                        }`}
+                         className={`w-full px-3 py-2 text-left font-ui text-sm transition-colors whitespace-nowrap ${
+                           selectedCategory === cat
+                             ? 'bg-secondary/10 text-secondary font-bold'
+                             : 'text-text hover:bg-secondary/5 hover:text-secondary'
+                         }`}
                       >
                         {cat === 'all' ? 'Wszystkie kategorie' : cat}
                       </button>
