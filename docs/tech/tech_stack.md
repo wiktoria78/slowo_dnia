@@ -91,33 +91,35 @@ src/
 ├── data/                  # Dane statyczne
 │   └── words.json         # 100 słów
 ├── hooks/                 # Custom hooks (logika biznesowa)
-│   ├── useWordOfDay.js    # Algorytm Słowa Dnia
-│   ├── useFavorites.js    # Ulubione słowa
-│   └── useLocalStorage.js # Abstrakcja localStorage
+│   ├── useWordOfDay.js    # Algorytm Słowa Dnia + getRandomWord
+│   ├── useFavorites.js    # Ulubione słowa (CRUD)
+│   └── useLocalStorage.js # Abstrakcja localStorage z obsługą błędów
 ├── context/               # Stan globalny i komponenty kontekstowe
-│   ├── AppContext.jsx     # Provider kontekstu
+│   ├── AppContext.jsx     # Provider kontekstu (favorites state)
 │   └── components/        # Komponenty wielokrotnego użytku
-│       ├── WordCard.jsx   # Karta słowa
-│       └── ShareButton.jsx# Przycisk udostępniania
+│       ├── WordCard.jsx   # Karta słowa (z expandowanymi sekcjami)
+│       └── ShareButton.jsx# Przycisk udostępniania (Web Share API)
 ├── pages/                 # Komponenty stron (widoki)
-│   ├── Home.jsx           # Strona główna
-│   ├── Archive.jsx        # Archiwum słów
-│   └── Favorites.jsx      # Ulubione słowa
-├── App.jsx                # Routing, layout główny
+│   ├── Home.jsx           # Strona główna (słowo dnia)
+│   ├── Archive.jsx        # Archiwum + search + filtry + modal
+│   └── Favorites.jsx      # Ulubione z możliwością usuwania
+├── components/            # Komponenty pomocnicze
+│   └── ErrorBoundary.jsx  # Error boundary dla całej aplikacji
+├── App.jsx                # Routing + layout główny
 ├── main.jsx               # Entry point, ReactDOM
 └── index.css              # Globalne style, Tailwind, fonty
 ```
 
 ### 2.3. Importy (Konwencja)
-Porządek importów (ESLint rule?):
+Porządek importów (ESLint rule):
 ```javascript
 // 1. React i biblioteki zewnętrzne
 import { motion } from 'framer-motion';
 import { BrowserRouter } from 'react-router-dom';
 
-// 2. Importy wewnętrzne (bezwzględne od src)
-import WordCard from '../context/components/WordCard';
-import { useFavorites } from '../../hooks/useFavorites';
+// 2. Importy wewnętrzne (bezwzględne od src, uwzględniające .jsx)
+import WordCard from '../context/components/WordCard.jsx';
+import { useFavorites } from '../../hooks/useFavorites.js';
 
 // 3. Dane i style
 import wordsData from '../data/words.json';
@@ -179,15 +181,13 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
 ```
 App
 ├── BrowserRouter
-│   ├── Nav (Linki nawigacyjne)
+│   ├── Nav (Linki nawigacyjne z react-router-dom)
 │   └── Routes
 │       ├── Route / → Home
 │       │   └── WordCard (z useWordOfDay)
-│       ├── Route /archive → Archive
-│       │   └── Grid WordCards (uproszczony)
-│       └── Route /favorites → Favorites
-│           └── Lista WordCards (z możliwością usuwania)
-└── AppProvider (Context)
+│       ├── Route /archive → Archive (z modalami + filtrami)
+│       └── Route /favorites → Favorites (z możliwością usuwania)
+└── AppProvider (Context provider dla favorites)
     └── useFavorites
         └── useLocalStorage
 ```
@@ -202,15 +202,15 @@ App
 ### 3.3. Hooki Niestandardowe (Business Logic)
 | Hook | Zwraca | Opis |
 |------|--------|------|
-| `useWordOfDay()` | `{ wordOfDay, loading, isFinished, getCurrentIndex, START_DATE }` | Wybiera słowo na bazie daty, obsługuje tryb archiwum |
+| `useWordOfDay()` | `{ wordOfDay, loading, isFinished, getCurrentIndex, START_DATE, getRandomWord }` | Wybiera słowo na bazie daty, obsługuje tryb archiwum, dostarcza losowe słowo |
 | `useFavorites()` | `{ favorites, addFavorite, removeFavorite, isFavorite, toggleFavorite }` | CRUD operacje na ulubionych słowach |
-| `useLocalStorage(key, initialValue)` | `[value, setValue]` | Abstrakcja nad localStorage z obsługą błędów |
+| `useLocalStorage(key, initialValue)` | `[value, setValue]` | Abstrakcja nad localStorage z obsługą błędów (try-catch) |
 
 ### 3.4. Kontekst (Global State)
-- `AppContext` – przechowuje stan ulubionych słów
-- Provider otacza całą aplikację (powyżej Routera)
-- Konsumenci: `WordCard`, `Favorites`
-- Wartość: rozłożony obiekt z `useFavorites()`
+- `AppContext` – przechowuje stan ulubionych słów (złożony z `useFavorites`)
+- Provider otacza całą aplikację (powyżej Routera w `App.jsx`)
+- Konsumenci: `WordCard` (przycisk ulubionych), `Favorites` (strona)
+- Wartość: rozłożony obiekt `{ favorites, addFavorite, removeFavorite, isFavorite, toggleFavorite }`
 
 ---
 
@@ -222,14 +222,15 @@ App
 2. main.jsx → ReactDOM.createRoot() → <App />
 3. App.jsx → BrowserRouter + AppProvider + Routes
 4. AppProvider → useFavorites() → useLocalStorage()
-   → localStorage.getItem() → JSON.parse() → state
+   → localStorage.getItem() → JSON.parse() → state z ulubionymi
 5. Home (Route) → useWordOfDay()
-   → useState: loading=true
+   → useState: loading=true (300ms min dla UX)
    → useEffect: setTimeout 300ms
    → getDaysElapsed(START_DATE) → days
    → words[days] → setWordOfDay()
    → setLoading(false)
 6. Render: WordCard(wordOfDay)
+7. NavLink aktywne ustawiane przez NavLink/Nav z RRv6
 ```
 
 ### 4.2. Interakcja: Dodanie do Ulubionych
@@ -280,9 +281,10 @@ App
 
 ### 5.1. Algorytm Słowa Dnia
 
-**Wejście:** 
+**Wejście:**
 - `words.json` – tablica 100 obiektów Word
 - `START_DATE = new Date('2026-04-13')`
+- 300ms delay symulujący ładowanie (optimistic UI)
 
 **Wyjście:**
 - `Word` obiekt lub `null` (tryb archiwum)
@@ -302,13 +304,15 @@ function getWordOfDay(words, daysElapsed):
     if daysElapsed < 0:
         return words[0]             // Pierwsze słowo
     if daysElapsed >= words.length:
-        return null                 // Tryb archiwum
+        return null                 // Tryb archiwum (100+ dni)
     return words[daysElapsed]       // Normalne słowo
-
-// Użycie w hooku:
-daysElapsed = getDaysElapsed(START_DATE)
-wordOfDay = getWordOfDay(wordsData, daysElapsed)
 ```
+
+**Stany w hooku (`useWordOfDay`):**
+- `loading: true` przez 300ms (symulacja asynchroniczności)
+- `isFinished: true` gdy `daysElapsed >= 100`
+- `wordOfDay: null` gdy tryb archiwum
+- `getRandomWord: () → Word` – losowe słowo z całej bazy (bonus)
 
 **Złożoność czasowa:** O(1) – stały czas
 **Złożoność pamięciowa:** O(1) – brak dodatkowych struktur
@@ -420,15 +424,19 @@ transition={{ delay: index * 0.05 }}
 ### 6.3. Wydajność Pamięci
 
 **LocalStorage:**
-- Rozmiar danych: ~50KB (100 słów × ~500B)
+- Rozmiar danych: ~40-50KB (100 słów × ~400-500B)
 - Zapis: `JSON.stringify` – blocking, ale szybki dla małych danych
-- Odczyt: `JSON.parse` – blocking, ale tylko przy starcie aplikacji
-- Wpływ na wydajność: niemierzalny (pojedyncze operacje)
+- Odczyt: `JSON.parse` – blocking, tylko przy starcie aplikacji (index, archiwum)
+- Wpływ na wydajność: niemierzalny (pojedyncze operacje przy uruchomieniu)
+- Obsługa błędów: `try-catch` z fallback do `initialValue`
 
 **Import JSON:**
 - Vite ładuje JSON jako moduł podczas buildu
-- Bundle zawiera dane – brak dodatkowego requestu
-- Zwiększa bundle o ~40KB, ale eliminuje network latency
+- Bundle zawiera dane – brak dodatkowego requestu sieciowego
+- Zwiększa bundle o ~40KB, ale eliminuje network latency (strategia offline-first)
+
+**Lazy-loading potencjalne (przyszłość):**
+- Code-splitting dla `/archive` lub `/favorites` (jeśli bundle przekroczy 300KB)
 
 ### 6.4. Czas ładowania (Performance Budget)
 
@@ -481,16 +489,20 @@ export default React.memo(WordCard);
 - React domyślnie escapuje zawartość `{variable}` w JSX
 - Brak użycia `dangerouslySetInnerHTML` nigdzie w kodzie
 - URL params statyczne (brak dynamicznych routów z user input)
-- Danych z `words.json` nie można zmienić przez użytkownika
+- Danych z `words.json` nie można zmienić przez użytkownika (build-time)
 
 **LocalStorage Security:**
 - Dostępny tylko dla danej domeny (same-origin policy)
-- Brak przechowywania wrażliwych danych (tylko ID słów)
-- Odporność na uszkodzone dane (try-catch w `useLocalStorage`)
+- Brak przechowywania wrażliwych danych (tylko ID słów i pełne obiekty Word)
+- Odporność na uszkodzone dane (try-catch w `useLocalStorage` + fallback)
 
 **HTTPS:**
 - Vercel automatycznie wymusza HTTPS
 - Wszystkie requesty szyfrowane (TLS)
+
+**Error Boundaries:**
+- `ErrorBoundary.jsx` w folderze `components/` – łapie błędy w drzewie renderowania
+- Nie używany globalnie, ale dostępny dla przyszłych rozszerzeń (obecnie brak błędów krytycznych w MVP)
 
 ### 7.2. Odporność na błędy (Resilience)
 
