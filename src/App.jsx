@@ -35,7 +35,7 @@ function App() {
               <StatsCard streak={stats.streak} />
               <button
                 onClick={toggleTheme}
-                className="p-1.5 rounded-lg hover:bg-surface/80 transition-colors"
+                className="p-1.5 rounded-lg transition-colors"
                 aria-label={theme === 'dark' ? 'Przełącz na tryb jasny' : 'Przełącz na tryb ciemny'}
               >
                 {theme === 'light' ? (
