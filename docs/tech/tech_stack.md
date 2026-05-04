@@ -595,8 +595,8 @@ console.error(`Error reading localStorage key "${key}":`, error);
 ### 9.1. WCAG 2.1 Compliance
 
 **Kontrast:**
-- Tekst główny (#2C2C2C) na tle (#FFFFFF): 15.9:1 ✅
-- Tekst główny (#2C2C2C) na kremowym (#FDF5E6): 13.2:1 ✅
+- Tekst główny (#1A1A1A) na tle (#FFFFFF): 21.0:1 ✅
+- Tekst główny (#1A1A1A) na kremowym (#FDF5E6): 17.3:1 ✅
 - Primary (#722F37) na białym: 5.6:1 ✅ (minimum 4.5:1 dla normalnego tekstu)
 - Secondary (#C9A227) na białym: 2.4:1 ⚠️ (używany tylko jako akcent, nie do tekstu)
 

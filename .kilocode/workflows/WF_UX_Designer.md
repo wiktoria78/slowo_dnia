@@ -617,7 +617,7 @@ Gold: #C9A227 (Highlights, secondary)
 ```
 Background: #FDF5E6 (Cream)
 Surface: #FFFFFF (White)
-Text: #2C2C2C (Dark gray)
+Text: #1A1A1A (Dark gray)
 Muted: #666666 (Secondary text)
 Border: #E5E5E5 (Light gray)
 ```

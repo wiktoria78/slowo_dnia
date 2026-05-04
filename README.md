@@ -203,7 +203,7 @@ Kolory definiowane jako CSS variables w `src/index.css`:
   --color-secondary: #C9A227;  # Gold
   --color-background: #FDF5E6; # Cream
   --color-surface: #FFFFFF;    # White
-  --color-text: #2C2C2C;       # Dark Gray
+   --color-text: #1A1A1A;       # Dark Gray
   --color-accent: #228B22;     # Forest Green
 }
 ```
@@ -256,7 +256,7 @@ const getWordOfDay = (words) => {
 | Secondary | `#C9A227` | Kategory, hover, akcenty |
 | Background | `#FDF5E6` | Tło strony |
 | Surface | `#FFFFFF` | Karty, panele |
-| Text | `#2C2C2C` | Tekst główny |
+| Text | `#1A1A1A` | Tekst główny |
 | Accent | `#228B22` | Suwak, powiadomienia |
 
 ### Cienie

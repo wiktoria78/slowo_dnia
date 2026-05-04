@@ -253,7 +253,7 @@ Zastosowanie spójnego design systemu (typografia, kolory, spacing, animacje) w 
 - [x] Secondary: #C9A227 (Gold)
 - [x] Background: #FDF5E6 (Cream)
 - [x] Surface: #FFFFFF (White)
-- [x] Text: #2C2C2C (Dark Gray)
+- [x] Text: #1A1A1A (Dark Gray)
 - [x] Accent: #228B22 (Forest Green)
 
 ### Animacje

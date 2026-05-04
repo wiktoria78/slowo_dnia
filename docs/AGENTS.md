@@ -152,7 +152,7 @@ const getWordOfDay = (words) => {
 | Secondary | Gold | #C9A227 |
 | Background | Cream | #FDF5E6 |
 | Surface | White | #FFFFFF |
-| Text | Dark Gray | #2C2C2C |
+| Text | Dark Gray | #1A1A1A |
 | Accent | Forest Green | #228B22 |
 
 ### Typography

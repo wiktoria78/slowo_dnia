@@ -11,7 +11,7 @@ export default {
         secondary: '#C9A227',
         background: '#FDF5E6',
         surface: '#FFFFFF',
-        text: '#2C2C2C',
+        text: '#1A1A1A',
         accent: '#228B22',
       },
       fontFamily: {

@@ -7,7 +7,7 @@
   --color-secondary: #C9A227;
   --color-background: #FDF5E6;
   --color-surface: #FFFFFF;
-  --color-text: #2C2C2C;
+   --color-text: #1A1A1A;
   --color-accent: #228B22;
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Custom scrollbar */
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: rgba(44, 44, 44, 0.3) transparent;
+   scrollbar-color: rgba(26, 26, 26, 0.3) transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(44, 44, 44, 0.3);
+   background-color: rgba(26, 26, 26, 0.3);
   border-radius: 3px;
 }
 

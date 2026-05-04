@@ -111,7 +111,7 @@ Surface (Powierzchnie)
 
 ```
 Dark Text (Tekst główny)
-  #2C2C2C - główny tekst (90% czerni)
+   #1A1A1A - główny tekst (90% czerni)
   #3D3D3D - tekst drugorzędny
   #5A5A5A - subtelny tekst (placeholder)
   #8A8A8A - disabled, inactive
@@ -132,10 +132,10 @@ Semantic Colors (Statusy)
 
 ```
 Słowo główne (Hero)        → Deep Burgundy (#722F37)
-Część mowy                 → Dark Text (#2C2C2C) italic
-Definicja                  → Dark Text (#2C2C2C) na tle (#FFFFFF)
+            Część mowy                 → Dark Text (#1A1A1A) italic
+            Definicja                  → Dark Text (#1A1A1A) na tle (#FFFFFF)
 Przykłady (blockquote)     → Dark Text, italic, left border (2px, #C9A227/30)
-Etymologia                 → Dark Text (#2C2C2C), left border (2px, #C9A227/30)
+            Etymologia                 → Dark Text (#1A1A1A), left border (2px, #C9A227/30)
 Kategoria (tag)            → Secondary background (#C9A227/20), rounded-full, secondary text
 Przyciski główne           → Deep Burgundy, biały tekst
 Przyciski drugorzędne      → Transparent, bordowy border

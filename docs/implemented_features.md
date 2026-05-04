@@ -257,7 +257,7 @@ Przerwa >1 dzień: streak = 1, lastVisit = today
 - **Secondary:** `#C9A227` (Gold)
 - **Background:** `#FDF5E6` (Cream)
 - **Surface:** `#FFFFFF` (White)
-- **Text:** `#2C2C2C` (Dark Gray)
+- **Text:** `#1A1A1A` (Dark Gray)
 - **Accent:** `#228B22` (Forest Green)
 
 ### Animacje
