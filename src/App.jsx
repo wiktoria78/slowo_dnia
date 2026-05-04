@@ -1,9 +1,18 @@
 import { Link, Routes, Route, NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
 import Home from './pages/Home'
 import Archive from './pages/Archive'
 import Favorites from './pages/Favorites'
+import { useUserStats } from './hooks/useUserStats'
+import StatsCard from './context/components/StatsCard'
 
 function App() {
+  const { stats, updateStats } = useUserStats()
+
+  useEffect(() => {
+    updateStats()
+  }, [updateStats])
+
   return (
     <div className="min-h-screen bg-background">
       <header className="bg-surface shadow-sm">
@@ -11,18 +20,19 @@ function App() {
           <Link to="/" className="font-display text-2xl font-bold text-primary">
             Słowo Dnia
           </Link>
-           <div className="flex gap-4 font-ui text-sm">
-              <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                Dzisiaj
-              </NavLink>
-              <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                Archiwum
-              </NavLink>
-              <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                Ulubione
-              </NavLink>
-           </div>
-        </nav>
+           <div className="flex gap-4 font-ui text-sm items-center">
+               <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                 Dzisiaj
+               </NavLink>
+               <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                 Archiwum
+               </NavLink>
+               <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                 Ulubione
+               </NavLink>
+               <StatsCard streak={stats.streak} />
+            </div>
+         </nav>
       </header>
       
       <main className="max-w-4xl mx-auto px-4 py-8">

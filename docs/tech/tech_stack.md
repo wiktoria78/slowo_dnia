@@ -58,6 +58,9 @@
   - Synchronizacja między zakładkami przez event `storage`
   - Tylko stringi (wymaga JSON.stringify/parse)
   - Brak w trybie incognito (obsługa błędów w hooku)
+- **Klucze:**
+  - `slowo-dnia-favorites` – ulubione słowa
+  - `slowo-dnia-user-stats` – statystyki użytkownika (streak, lastVisit)
 
 ### 1.9. Języki i Formaty
 - **JavaScript (ES2022+)** – moduły ES6, import/export
@@ -93,6 +96,7 @@ src/
 ├── hooks/                 # Custom hooks (logika biznesowa)
 │   ├── useWordOfDay.js    # Algorytm Słowa Dnia + getRandomWord
 │   ├── useFavorites.js    # Ulubione słowa (CRUD)
+│   ├── useUserStats.js    # Statystyki użytkownika (streak)
 │   └── useLocalStorage.js # Abstrakcja localStorage z obsługą błędów
 ├── context/               # Stan globalny i komponenty kontekstowe
 │   ├── AppContext.jsx     # Provider kontekstu (favorites state)
@@ -197,6 +201,7 @@ App
 |-----------|----------------------|------|
 | `WordCard` | `word` (Word), `showFavoriteButton` (boolean, default true) | Główny komponent wyświetlający słowo z wszystkimi danymi |
 | `ShareButton` | `word` (Word) | Przycisk udostępniania z Web Share API |
+| `StatsCard` | `streak` (number) | Wyświetla liczbę streak z ikoną ognia |
 | `NavLink` (z RR) | `to`, `children` | Stylizowany link nawigacyjny |
 
 ### 3.3. Hooki Niestandardowe (Business Logic)
@@ -204,6 +209,7 @@ App
 |------|--------|------|
 | `useWordOfDay()` | `{ wordOfDay, loading, isFinished, getCurrentIndex, START_DATE, getRandomWord }` | Wybiera słowo na bazie daty, obsługuje tryb archiwum, dostarcza losowe słowo |
 | `useFavorites()` | `{ favorites, addFavorite, removeFavorite, isFavorite, toggleFavorite }` | CRUD operacje na ulubionych słowach |
+| `useUserStats()` | `{ stats, updateStats }` | Statystyki użytkownika (streak, lastVisit), aktualizacja przy wejściu |
 | `useLocalStorage(key, initialValue)` | `[value, setValue]` | Abstrakcja nad localStorage z obsługą błędów (try-catch) |
 
 ### 3.4. Kontekst (Global State)
@@ -865,6 +871,6 @@ Architektura jest minimalistyczna, co pozwala na:
 - Prosty onboarding dla nowych deweloperów
 
 Kluczowe decyzje (brak backendu, date-based algorithm, client-side storage) są świadomymi trade-offami, które optymalizują pod kątem czasu i kosztów, przy akceptowalnych kompromisach w skali MVP.
+---
 
----  
-*Dokumentacja techniczna, zgodna z aktualnym codebase (stan na 2026-04-28).*
+*Dokumentacja techniczna, zgodna z aktualnym codebase (stan na 2026-05-03).*

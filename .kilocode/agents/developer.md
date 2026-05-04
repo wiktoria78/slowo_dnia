@@ -80,6 +80,12 @@ src/
 - Dodawanie/usuwanie z localStorage
 - Wyświetlanie listy ulubionych
 
+#### Streak
+- Śledzenie kolejnych dni odwiedzania aplikacji
+- Wyświetlanie liczby dni streak
+- Resetowanie przy przegapieniu dnia
+- Persystencja w localStorage
+
 #### Archiwum
 - Paginacja
 - Wyszukiwarka
@@ -131,10 +137,6 @@ import './index.css';
    - Stosuj konwencje kodowania
    - Używaj component library
    - Implementuj responsive design
-
-3. **WAŻNE: Nie modyfikuj istniejących plików aplikacji**
-   - Ta rola działa na poziomie konceptualnym
-   - Dokumentuje implementację, nie wykonuje zmian w kodzie
 
 ---
 

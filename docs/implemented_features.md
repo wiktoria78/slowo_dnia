@@ -2,8 +2,8 @@
 
 ## Status Projektu
 
-**Wersja:** 1.0.0  
-**Data:** 2026-04-28  
+**Wersja:** 1.1.0  
+**Data:** 2026-05-03  
 **Status:** ✅ PRODUKCJA
 
 ---
@@ -18,6 +18,7 @@ Wszystkie zaplanowane funkcjonalności dla Minimum Viable Product (MVP) zostały
 | 🎯 Core | Baza 100 słów | ✅ |
 | 🎯 Core | Definicje i przykłady | ✅ |
 | 🎯 Core | Ulubione słowa | ✅ |
+| 🎯 Core | Streak (statystyki użytkownika) | ✅ |
 | 🎯 Core | Archiwum słów | ✅ |
 | 🎯 Core | Wyszukiwanie tekstowe | ✅ |
 | 🎯 Core | Filtrowanie po kategoriach | ✅ |
@@ -130,7 +131,49 @@ Wszystkie zaplanowane funkcjonalności dla Minimum Viable Product (MVP) zostały
 
 ---
 
-## 4. Archiwum i Wyszukiwanie
+## 4. Streak (Statystyki Użytkownika)
+
+### Funkcjonalność
+- **Śledzenie:** Kolejne dni odwiedzin aplikacji
+- **Zapis:** localStorage (klucz: `slowo-dnia-user-stats`)
+- **Reset:** Streak wraca do 1 po pominięciu dnia
+- **Data handling:** Porównywanie tylko dat (YYYY-MM-DD), niezależnie od strefy czasowej
+- **UI:** StatsCard z ikoną ognia (🔥) wyświetlana w nawigacji
+
+### Status
+```
+✅ Zaimplementowane
+📄 Plan: docs/plans/PLAN_user_stats.md (nieistniejący)
+📍 Kod: src/hooks/useUserStats.js
+📍 Komponent: src/context/components/StatsCard.jsx
+📍 Integracja: src/App.jsx
+```
+
+### Logika
+```javascript
+Pierwsza wizyta: streak = 1, lastVisit = today
+Ta sama data: brak zmian
+Następny dzień: streak++, lastVisit = today
+Przerwa >1 dzień: streak = 1, lastVisit = today
+```
+
+### Testy
+- [x] pierwsza wizyta ustawia streak na 1
+- [x] ponowna wizyta tego samego dnia nie zmienia streak
+- [x] odwiedzenie następnego dnia zwiększa streak
+- [x] pominięcie dnia resetuje streak do 1
+- [x] brak błędów stref czasowych (test z różnymi timezone)
+- [x] dane persistują po odświeżeniu (localStorage)
+- [x] StatsCard wyświetla poprawną wartość
+
+### Przeglądarki
+- [x] Chrome / Firefox / Safari / Edge
+- [x] iOS Safari
+- [x] Chrome Android
+
+---
+
+## 5. Archiwum i Wyszukiwanie
 
 ### Funkcjonalność
 - **Lista:** Słowa od najnowszych do najstarszych

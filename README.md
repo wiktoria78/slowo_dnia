@@ -1,8 +1,6 @@
-# Słowo Dnia
+﻿# Słowo Dnia
 
 **Autor:** Wiktoria Łoboda
-
-**Link do Projektu:** [https://github.com/username/slowo-dnia](https://github.com/username/slowo-dnia)
 
 **Wersja Live:** [https://slowo-dnia-pi.vercel.app](https://slowo-dnia-pi.vercel.app)
 
@@ -16,6 +14,7 @@ Aplikacja webowa typu SPA (Single Page Application), która każdego dnia prezen
 - ✅ Słowo dnia (wybór deterministyczny na podstawie daty)
 - ✅ 100 pięknych słów polskich (pełne dane)
 - ✅ Ulubione słowa (zapis w localStorage)
+- ✅ Streak (statystyki użytkownika – dni z rzędu)
 - ✅ Archiwum + zaawansowane wyszukiwanie i filtrowanie
 - ✅ Udostępnianie (Web Share API / Clipboard API)
 - ✅ Responsywny design (mobile-first)
@@ -74,12 +73,19 @@ Aplikacja webowa typu SPA (Single Page Application), która każdego dnia prezen
 - Przycisk ulubionych (toggle)
 
 ### 3. Ulubione Słowa
-- Zapis w localStorage (trwałe)
+- Zapis w localStorage (klucz: `slowo-dnia-favorites`)
 - Toggle (dodaj/usuń) z pełnym usunięciem z listy
 - Globalny dostęp (React Context)
 - Widoczne na dedykowanej stronie
 
-### 4. Archiwum
+### 4. Streak (Statystyki Użytkownika)
+- Śledzenie kolejnych dni odwiedzin aplikacji
+- Zapis w localStorage (klucz: `slowo-dnia-user-stats`)
+- Reset streak po pominięciu dnia
+- Porównywanie tylko dat (YYYY-MM-DD) – brak błędów stref czasowych
+- Wyświetlanie w nawigacji (🔥 liczba dni)
+
+### 5. Archiwum
 - Przegląd historycznych słów (od najnowszych)
 - Wyszukiwanie po słowie i definicji
 - Filtrowanie po kategoriach (dropdown)
@@ -161,8 +167,8 @@ slowo-dnia/
 │   ├── hooks/
 │   │   ├── useWordOfDay.js     # Algorytm Słowa Dnia
 │   │   ├── useFavorites.js     # Logika ulubionych
-│   │   ├── useLocalStorage.js  # Abstrakcja localStorage
-│   │   └── useTheme.js         # Tryb ciemny/jasny
+│   │   ├── useUserStats.js     # Statystyki użytkownika (streak)
+│   │   └── useLocalStorage.js  # Abstrakcja localStorage
 │   ├── context/
 │   │   ├── AppContext.jsx      # Global State Provider
 │   │   └── components/
@@ -287,6 +293,7 @@ const getWordOfDay = (words) => {
 - [x] 100 słów w bazie
 - [x] Definicje, przykłady, etymologia
 - [x] Ulubione (localStorage)
+- [x] Streak (statystyki użytkownika)
 - [x] Archiwum + filtry + wyszukiwanie
 - [x] Udostępnianie (Share API)
 - [x] Mobile-first design
