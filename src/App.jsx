@@ -38,7 +38,7 @@ function App() {
                 className="p-1.5 rounded-lg transition-colors"
                 aria-label={theme === 'dark' ? 'Przełącz na tryb jasny' : 'Przełącz na tryb ciemny'}
               >
-                {theme === 'light' ? (
+                {theme === 'dark' ? (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="4" strokeWidth={1.5} />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2v2M12 20v2M5 12H3M21 12h-2M6.34 6.34l-1.42 1.42M17.08 17.08l1.42 1.42M6.34 17.66l1.42-1.42M17.08 6.92l1.42-1.42" />
