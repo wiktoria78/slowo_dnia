@@ -41,7 +41,7 @@ function App() {
                 {theme === 'dark' ? (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="4" strokeWidth={1.5} />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2v2M12 20v2M5 12H3M21 12h-2M6.34 6.34l-1.42 1.42M17.08 17.08l1.42 1.42M6.34 17.66l1.42-1.42M17.08 6.92l1.42-1.42" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2v3M12 19v3M5.64 5.64l1.41 1.41M16.95 16.95l1.41 1.41M5.64 18.36l1.41-1.41M16.95 7.05l1.41-1.41M3 12h3M18 12h3" />
                   </svg>
                 ) : (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
