@@ -43,8 +43,7 @@ const Archive = () => {
 
   const filteredWords = useMemo(() => {
     return archiveWords.filter(word => {
-      const matchesSearch = word.word.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        word.definition.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesSearch = word.word.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesCategory = selectedCategory === 'all' || word.category === selectedCategory;
       return matchesSearch && matchesCategory;
     });
