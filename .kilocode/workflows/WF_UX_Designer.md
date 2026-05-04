@@ -609,25 +609,38 @@ Caption (Metadata): 12px / 16px
 
 ### **Primary Colors:**
 ```
-Deep Burgundy: #722F37 (Accent, CTAs)
-Gold: #C9A227 (Highlights, secondary)
+Deep Burgundy (Akcent główny):
+  #722F37 - jasny tryb (primary)
+  #B97A83 - ciemny tryb (word/slogan)
+  #d6d3d1 - ciemny tryb (akcenty nawigacji)
+Gold (Złoty akcent):
+  #C9A227 - jasny i ciemny tryb (podświetlenia, tagi)
 ```
 
-### **Neutrals:**
+### **Neutrals (Jasny tryb):**
 ```
-Background: #FDF5E6 (Cream)
-Surface: #FFFFFF (White)
-Text: #1A1A1A (Dark gray)
-Muted: #666666 (Secondary text)
-Border: #E5E5E5 (Light gray)
+Tło (Background):      #FDF5E6 (Kremowy)
+Powierzchnia (Surface): #FFFFFF (Biały)
+Tekst główny:          #1A1A1A (Ciemny szary)
+Tekst ciemny:          #666666 (Szary)
+Obramowanie:           #E5E5E5 (Jasny szary)
 ```
 
-### **Semantic:**
+### **Neutrals (Ciemny tryb):**
 ```
-Success: #228B22 (Forest green)
-Warning: #D4A017 (Amber)
-Error: #CC3333 (Red)
-Info: #4A90D9 (Blue)
+Tło (Background):      #111111 (Czarny)
+Powierzchnia (Surface): #1f1f1f (Ciemny)
+Tekst główny:          #f5f5f5 (Jasny)
+Tekst ciemny:          #a1a1a1 (Jasnoszary)
+Obramowanie:           #2f2f2f (Ciemnoszary)
+```
+
+### **Semantic Colors:**
+```
+Success (Sukces):      #228B22 (jasny) / #d6d3d1 (ciemny) - Zielony lasu
+Warning (Ostrzeżenie): #D4A017 (jasny/ciemny) - Złoty/Amber
+Error (Błąd):          #CC3333 (jasny) / #FF6B6B (ciemny) - Czerwony
+Info (Informacja):     #3A6B8D (jasny) / #6B9AB8 (ciemny) - Granatowy
 ```
 
 ---

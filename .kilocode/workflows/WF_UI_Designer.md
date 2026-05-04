@@ -86,6 +86,24 @@ UI Elements / Interface: Inter
 
 ```
 Deep Burgundy (Akcent główny)
+  Jasny tryb:
+    #722F37 - główny (słowa, akcenty, przyciski)
+    #8B3A45 - hover/lżejszy akcent
+    #5A222A - ciemniejszy, pressed state
+    #E8D0D2 - bardzo jasny, tła subtelne
+  Ciemny tryb:
+    #B97A83 - główny słowa (pink)
+    #8B3A45 - hover/lżejszy akcent
+    #5A222A - ciemniejszy, pressed state
+    #8b3842 - bardzo jasny, tła subtelne
+
+Golden (Akcent drugorzędny) - Jasny i ciemny tryb:
+    #C9A227 - główny złoty, highlighty
+    #D4AF37 - hover, lśniący złoty
+    #A67C1A - ciemniejszy, borders
+    #F5E8B0 - blady złoty, tła
+```
+Deep Burgundy (Akcent główny)
   #722F37 - główny, akcenty, przyciski
   #8B3A45 - hover, lżejszy akcent
   #5A222A - ciemniejszy, pressed state
@@ -97,39 +115,77 @@ Golden (Akcent drugorzędny)
   #A67C1A - ciemniejszy, borders
   #F5E8B0 - blady złoty, tła
 
-Cream (Tło główne)
-  #FDF5E6 - główne tło, papierowy krem
-  #FAF0D9 - alternatywne tło sekcji
-  #F5E6D3 - subtelny wzór
+Cream (Tło główne) - Jasny tryb:
+    #FDF5E6 - główne tło, papierowy krem
+    #FAF0D9 - alternatywne tło sekcji
+    #F5E6D3 - subtelny wzór
 
-Surface (Powierzchnie)
-  #FFFFFF - karty, modal, powierzchnie podniesione
-  #FCFCFC - lekkie cienie
+Cream (Tło główne) - Ciemny tryb:
+    #111111 - główne tło
+    #1a1a1a - alternatywne tło sekcji
+    #252525 - subtelny wzór
+
+Surface (Powierzchnie) - Jasny tryb:
+    #FFFFFF - karty, modal, powierzchnie podniesione
+    #FCFCFC - lekkie cienie
+
+Surface (Powierzchnie) - Ciemny tryb:
+    #1f1f1f - karty, modal, powierzchnie podniesione
+    #2a2a2a - lekkie cienie
 ```
 
 **Neutral Palette:**
 
 ```
 Dark Text (Tekst główny)
-   #1A1A1A - główny tekst (90% czerni)
-  #3D3D3D - tekst drugorzędny
-  #5A5A5A - subtelny tekst (placeholder)
-  #8A8A8A - disabled, inactive
+  Jasny tryb:
+    #1A1A1A - główny tekst (90% czerni)
+    #3D3D3D - tekst drugorzędny
+    #5A5A5A - subtelny tekst (placeholder)
+    #8A8A8A - disabled, inactive
+  Ciemny tryb:
+    #f5f5f5 - główny tekst
+    #a1a1a1 - tekst drugorzędny
+    #6b6b6b - subtelny tekst
+    #8A8A8A - disabled, inactive
 
 Light Grays (Borders, Dividers)
-  #E8E8E8 - główne borders
-  #F0F0F0 - subtelne krawędzie
-  #FAFAFA - najlżejsze separatory
+  Jasny tryb:
+    #E8E8E8 - główne borders
+    #F0F0F0 - subtelne krawędzie
+    #FAFAFA - najlżejsze separatory
+  Ciemny tryb:
+    #2f2f2f - główne borders
+    #3a3a3a - subtelne krawędzie
+    #454545 - najlżejsze separatory
 
-Semantic Colors (Statusy)
-  Success: #228B22 - zielony lasu (potwierdzenie)
-  Warning: #B8860B - ciemny żółty (ostrzeżenie)
-  Error: #A63333 - bordowy (błąd)
-  Info: #3A6B8D - granatowy niebieski (info)
+Semantic Colors (Statusy) - Jasny tryb:
+    Success: #228B22 - zielony lasu (potwierdzenie)
+    Warning: #B8860B - ciemny żółty (ostrzeżenie)
+    Error: #A63333 - bordowy (błąd)
+    Info: #3A6B8D - granatowy niebieski (info)
+
+Semantic Colors (Statusy) - Ciemny tryb:
+    Success: #d6d3d1 - jasny (potwierdzenie)
+    Warning: #C9A227 - złoty (ostrzeżenie)
+    Error: #FF6B6B - czerwony (błąd)
+    Info: #6B9AB8 - granatowy (info)
 ```
 
 **Color Usage Rules:**
 
+```
+Słowo główne (Hero)            → Deep Burgundy (#722F37 w jasnym, #B97A83 w ciemnym)
+Część mowy                     → Dark Text (#1A1A1A jasny / #f5f5f5 ciemny) italic
+Definicja                      → Dark Text (#1A1A1A jasny / #f5f5f5 ciemny) na tło Surface
+Przykłady (blockquote)         → Dark Text, italic, left border (2px, #C9A227/30)
+Etymologia                     → Dark Text (#1A1A1A jasny / #f5f5f5 ciemny), left border (2px, #C9A227/30)
+Kategoria (tag)                → Secondary background (#C9A227/20), rounded-full, secondary text
+Przyciski główne               → Deep Burgundy (#722F37), biały tekst
+Przyciski drugorzędne          → Transparent, bordowy border
+Hover stanu                   → Lżejszy odcień (#8B3A45) lub przezroczystość
+Focus ring                     → Złoty (#D4AF37), 2px
+Borders                        → Subtelne (#E8E8E8 jasny / #2f2f2f ciemny)
 ```
 Słowo główne (Hero)        → Deep Burgundy (#722F37)
             Część mowy                 → Dark Text (#1A1A1A) italic
@@ -334,12 +390,12 @@ Container:
 Header (Word + Metadata):
   Layout: Vertical stack, centered
   
-  Word (Słowo):
-    Font: Playfair Display Bold
-    Size: 64px (desktop), 44px (mobile)
-    Color: #722F37 (Deep Burgundy)
-    Line-height: 1.1
-    Letter-spacing: -0.02em
+   Word (Słowo):
+     Font: Playfair Display Bold
+     Size: 48px (desktop), 44px (mobile)
+     Color: #722F37 (jasny tryb) / #B97A83 (ciemny tryb)
+     Line-height: 1.1
+     Letter-spacing: -0.02em
     Margin-bottom: 8px
     
   Part of Speech (Część mowy):
@@ -404,13 +460,13 @@ Body (Content):
       Color: #5A5A5A
       Font-style: italic
 
-  Category (Kategoria):
-    Display: Inline-block
-    Background: #F5E8B0 (pale gold)
-    Color: #722F37 (burgundy)
-    Font: Inter Medium 12px
-    Padding: 4px 12px
-    Border-radius: 20px
+   Category (Kategoria):
+     Display: inline-block
+     Background: #F5E8B0 (pale gold)
+     Color: #722F37 (jasny) / #B97A83 (ciemny)
+     Font: Inter Medium 12px
+     Padding: 4px 12px
+     Border-radius: 20px
     Margin-bottom: 24px
 
 Actions (Przyciski):
@@ -460,10 +516,10 @@ Compact Word Card:
     Font: Inter Regular 12px
     Color: #8A8A8A
     
-  Word:
-    Font: Playfair Display Bold 20px
-    Color: #2C2C2C
-    Margin-bottom: 4px
+   Word:
+     Font: Playfair Display Bold 20px
+     Color: #2C2C2C (jasny) / #f5f5f5 (ciemny)
+     Margin-bottom: 4px
     
   Definition preview:
     Font: Merriweather Regular 14px
@@ -548,13 +604,13 @@ Bottom Navigation (Mobile):
     Size: 44px x 44px (touch target)
     Display: Flex, flex-direction column, align center, justify center
     
-    Icon:
-      Size: 24px
-      Color: #8A8A8A (inactive), #722F37 (active)
-      
-    Label:
-      Font: Inter 10px
-      Color: #8A8A8A (inactive), #722F37 (active)
+     Icon:
+       Size: 24px
+       Color: #8A8A8A (nieaktywne jasny/ciemny), #722F37 (aktywne jasny) / #B97A83 (aktywne ciemny)
+       
+     Label:
+       Font: Inter 10px
+       Color: #8A8A8A (nieaktywne jasny/ciemny), #722F37 (aktywne jasny) / #B97A83 (aktywne ciemny)
       
     Active State:
       Icon and label tinted burgundy
@@ -919,33 +975,52 @@ Status:
 
 ```css
 :root {
-  /* Colors */
-  --color-primary: #722F37;
-  --color-primary-light: #8B3A45;
-  --color-primary-dark: #5A222A;
-  --color-primary-pale: #E8D0D2;
-  
-  --color-gold: #C9A227;
-  --color-gold-light: #D4AF37;
-  --color-gold-dark: #A67C1A;
-  --color-gold-pale: #F5E8B0;
-  
-  --color-bg: #FDF5E6;
-  --color-bg-alt: #FAF0D9;
-  --color-surface: #FFFFFF;
-  
-  --color-text: #2C2C2C;
-  --color-text-secondary: #3D3D3D;
-  --color-text-muted: #5A5A5A;
-  --color-text-inactive: #8A8A8A;
-  
-  --color-border: #E8E8E8;
-  --color-border-light: #F0F0F0;
-  
-  --color-success: #228B22;
-  --color-warning: #B8860B;
-  --color-error: #A63333;
-  --color-info: #3A6B8D;
+   /* Colors - Jasny tryb */
+   --color-primary: #722F37;
+   --color-primary-light: #8B3A45;
+   --color-primary-dark: #5A222A;
+   --color-primary-pale: #E8D0D2;
+   
+   --color-gold: #C9A227;
+   --color-gold-light: #D4AF37;
+   --color-gold-dark: #A67C1A;
+   --color-gold-pale: #F5E8B0;
+   
+   --color-bg: #FDF5E6;
+   --color-bg-alt: #FAF0D9;
+   --color-surface: #FFFFFF;
+   
+   --color-text: #2C2C2C;
+   --color-text-secondary: #3D3D3D;
+   --color-text-muted: #5A5A5A;
+   --color-text-inactive: #8A8A8A;
+   
+   --color-border: #E8E8E8;
+   --color-border-light: #F0F0F0;
+   
+   --color-success: #228B22;
+   --color-warning: #B8860B;
+   --color-error: #A63333;
+   --color-info: #3A6B8D;
+
+   /* Colors - Ciemny tryb */
+   --color-bg-dark: #111111;
+   --color-bg-alt-dark: #1a1a1a;
+   --color-surface-dark: #1f1f1f;
+   
+   --color-text-dark: #f5f5f5;
+   --color-text-secondary-dark: #a1a1a1;
+   --color-text-muted-dark: #6b6b6b;
+   
+   --color-border-dark: #2f2f2f;
+   --color-border-light-dark: #3a3a3a;
+   
+   --color-word-light: #722F37;
+   --color-word-dark: #B97A83;
+   
+   --color-error-dark: #FF6B6B;
+   --color-info-dark: #6B9AB8;
+}
   
   /* Typography */
   --font-display: 'Playfair Display', Georgia, serif;
