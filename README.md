@@ -203,7 +203,7 @@ Kolory definiowane jako CSS variables w `src/index.css`:
   --color-secondary: #C9A227;  # Gold
   --color-background: #FDF5E6; # Cream
   --color-surface: #FFFFFF;    # White
-   --color-text: #1A1A1A;       # Dark Gray
+  --color-text: #1A1A1A;       # Dark Gray
   --color-accent: #228B22;     # Forest Green
 }
 ```
