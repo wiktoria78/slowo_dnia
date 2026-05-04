@@ -75,7 +75,7 @@ const Archive = () => {
                <WordCard word={selectedWord} showFavoriteButton={true} scrollable={true} />
               <button
                 onClick={() => setSelectedWord(null)}
-                className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-surface border border-text/20 text-text/60 hover:text-text hover:border-text/40 flex items-center justify-center transition-colors"
+                className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-surface border border-text-20 text-text-60 hover:text-text hover:border-text-40 flex items-center justify-center transition-colors"
                 aria-label="Zamknij"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,13 +99,13 @@ const Archive = () => {
             placeholder="Szukaj słowa..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-lg border border-text/20 bg-surface font-ui text-text placeholder:text-text/40 focus:outline-none focus:border-primary"
+            className="flex-1 px-4 py-3 rounded-lg border border-text-20 bg-surface font-ui text-text placeholder:text-text-40 focus:outline-none focus:border-primary"
           />
           <div className="relative" ref={dropdownRef}>
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="w-full px-4 py-3 rounded-lg border border-text/20 bg-surface font-ui text-text text-left flex justify-between items-center gap-2 hover:border-primary/50 transition-colors"
+              className="w-full px-4 py-3 rounded-lg border border-text-20 bg-surface font-ui text-text text-left flex justify-between items-center gap-2 hover:opacity-80 transition-colors"
             >
               <span>{selectedCategory === 'all' ? 'Wszystkie kategorie' : selectedCategory}</span>
               <svg className={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,13 +115,13 @@ const Archive = () => {
             <AnimatePresence>
               {isOpen && (
                  <motion.div
-                   initial={{ opacity: 0, y: -10 }}
-                   animate={{ opacity: 1, y: 0 }}
-                   exit={{ opacity: 0, y: -10 }}
-                   transition={{ duration: 0.15 }}
-                   className="absolute z-10 w-full mt-2 bg-surface border border-text/20 rounded-lg shadow-lg overflow-hidden"
-                 >
-                    {categories.map(cat => (
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute z-10 w-full mt-2 bg-surface border border-text-20 rounded-lg shadow-lg overflow-hidden"
+                  >
+                      {categories.map(cat => (
                       <button
                         key={cat}
                         type="button"
@@ -130,10 +130,10 @@ const Archive = () => {
                           setIsOpen(false);
                         }}
                          className={`w-full px-3 py-2 text-left font-ui text-sm transition-colors whitespace-nowrap ${
-                           selectedCategory === cat
-                             ? 'bg-secondary/10 text-secondary font-bold'
-                             : 'text-text hover:bg-secondary/5 hover:text-secondary'
-                         }`}
+                          selectedCategory === cat
+                            ? 'bg-secondary-20 text-secondary font-bold'
+                            : 'text-text hover:bg-secondary-20 hover:text-secondary'
+                        }`}
                       >
                         {cat === 'all' ? 'Wszystkie kategorie' : cat}
                       </button>
@@ -146,7 +146,7 @@ const Archive = () => {
       </div>
 
       {/* Results count */}
-      <p className="text-center text-text/60 font-ui text-sm mb-6">
+      <p className="text-center text-text-60 font-ui text-sm mb-6">
         Znaleziono {filteredWords.length} słów
       </p>
 
@@ -161,7 +161,7 @@ const Archive = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => setSelectedWord(word)}
-            className="bg-surface rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col min-h-[180px] cursor-pointer border border-transparent hover:border-primary/20"
+            className="bg-surface rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col min-h-[180px] cursor-pointer border border-transparent hover:opacity-80"
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
@@ -174,11 +174,11 @@ const Archive = () => {
             <h3 className="font-display text-xl font-bold text-primary mb-2">
               {word.word}
             </h3>
-            <p className="font-body text-sm text-text/80 leading-relaxed mb-3 flex-grow line-clamp-3">
+            <p className="font-body text-sm text-text-80 leading-relaxed mb-3 flex-grow line-clamp-3">
               {word.definition}
             </p>
             <div className="mt-auto">
-              <span className="inline-block px-3 py-1 bg-secondary/20 rounded-full font-ui text-xs font-medium text-secondary">
+              <span className="inline-block px-3 py-1 bg-secondary-20 rounded-full font-ui text-xs font-medium text-secondary">
                 {word.category}
               </span>
             </div>
@@ -187,7 +187,7 @@ const Archive = () => {
       </div>
 
       {filteredWords.length === 0 && (
-        <p className="text-center text-text/60 font-ui py-12">
+        <p className="text-center text-text-60 font-ui py-12">
           Brak słów spełniających kryteria wyszukiwania.
         </p>
       )}

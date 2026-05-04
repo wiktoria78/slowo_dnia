@@ -13,7 +13,7 @@ const Favorites = () => {
 
       {favorites.length === 0 ? (
         <div className="text-center py-12">
-          <p className="font-body text-text/60 mb-4">
+          <p className="font-body text-text-60 mb-4">
             Nie masz jeszcze ulubionych słów.
           </p>
           <a 
@@ -25,7 +25,7 @@ const Favorites = () => {
         </div>
       ) : (
         <>
-          <p className="text-center text-text/60 font-ui text-sm mb-8">
+          <p className="text-center text-text-60 font-ui text-sm mb-8">
             {favorites.length} {favorites.length === 1 ? 'słowo' : favorites.length < 5 ? 'słowa' : 'słów'} w ulubionych
           </p>
           

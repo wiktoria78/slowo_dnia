@@ -19,7 +19,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Header */}
       <div className="text-center mb-8">
-        <p className="font-ui text-sm text-text/60 uppercase tracking-wider mb-2">
+        <p className="font-ui text-sm text-text-60 uppercase tracking-wider mb-2">
           {today}
         </p>
         <h1 className="font-display text-3xl md:text-4xl font-bold text-text">
@@ -38,10 +38,10 @@ const Home = () => {
         </div>
       ) : isFinished ? (
         <div className="max-w-xl mx-auto mt-12 text-center">
-          <p className="font-body text-text/80 text-lg">
+          <p className="font-body text-text-80 text-lg">
             Wszystkie słowa zostały wyświetlone.
           </p>
-          <p className="font-body text-text/60 text-sm mt-2">
+          <p className="font-body text-text-60 text-sm mt-2">
             Przeszłeś przez {currentIndex} / {wordsData?.length || 100} słów.
           </p>
         </div>
@@ -51,7 +51,7 @@ const Home = () => {
 
       {/* Info section */}
       <div className="max-w-xl mx-auto mt-12 text-center">
-        <p className="font-body text-text/60 text-sm">
+        <p className="font-body text-text-60 text-sm">
           Odkrywaj piękne, rzadko używane polskie słowa każdego dnia.
           Dodawaj ulubione do swojej kolekcji i ucz się nowych wyrazów.
         </p>

@@ -17,14 +17,14 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`bg-surface rounded-2xl shadow-lg p-8 max-w-2xl mx-auto ${scrollable ? 'max-h-[80vh] overflow-y-auto custom-scrollbar' : ''}`}
+      className={`card p-8 max-w-2xl mx-auto ${scrollable ? 'max-h-[80vh] overflow-y-auto custom-scrollbar' : ''}`}
     >
       {/* Word */}
       <div className="text-center mb-6">
         <h1 className="font-display text-5xl font-bold text-primary mb-2">
           {word.word}
         </h1>
-        <p className="font-body text-text/60 italic">{word.partOfSpeech}</p>
+        <p className="font-body text-text-60 italic">{word.partOfSpeech}</p>
       </div>
 
       {/* Definition */}
@@ -39,12 +39,12 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
 
       {/* Synonyms */}
       <div className="mb-6">
-        <h2 className="font-ui text-xs font-medium text-text/50 uppercase tracking-wider mb-2">
+        <h2 className="font-ui text-xs font-medium text-text-50 uppercase tracking-wider mb-2">
           Synonimy
         </h2>
         <div className="flex flex-wrap gap-2">
           {word.synonyms && word.synonyms.map((syn, idx) => (
-            <span key={idx} className="px-3 py-1 bg-primary/10 rounded-full font-ui text-sm text-primary">
+            <span key={idx} className="tag">
               {syn}
             </span>
           ))}
@@ -55,7 +55,7 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
       <div className="space-y-3">
         <button
           onClick={() => setShowExamples(!showExamples)}
-          className="flex items-center gap-2 font-ui text-sm text-primary hover:text-primary/80 transition-colors"
+          className="flex items-center gap-2 font-ui text-sm text-primary hover:opacity-80 transition-colors"
         >
           <span>{showExamples ? '▼' : '▶'}</span>
           Przykłady użycia
@@ -67,20 +67,20 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="pl-6 border-l-2 border-secondary/30"
+              className="pl-6 border-l-2 border-secondary-30"
             >
                {word.examples && word.examples.map((example, idx) => (
-                 <p key={idx} className="font-body text-text/80 italic mb-2">
-                   &ldquo;{example}&rdquo;
-                 </p>
-               ))}
+                  <p key={idx} className="font-body text-text-80 italic mb-2">
+                    &ldquo;{example}&rdquo;
+                  </p>
+                ))}
             </motion.div>
           )}
         </AnimatePresence>
 
         <button
           onClick={() => setShowEtymology(!showEtymology)}
-          className="flex items-center gap-2 font-ui text-sm text-primary hover:text-primary/80 transition-colors"
+          className="flex items-center gap-2 font-ui text-sm text-primary hover:opacity-80 transition-colors"
         >
           <span>{showEtymology ? '▼' : '▶'}</span>
           Etymologia
@@ -92,9 +92,9 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="pl-6 border-l-2 border-secondary/30"
+              className="pl-6 border-l-2 border-secondary-30"
             >
-              <p className="font-body text-text/80">
+              <p className="font-body text-text-80">
                 {word.etymology}
               </p>
             </motion.div>
@@ -103,10 +103,10 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
 
         {/* Category */}
         <div className="mt-4">
-          <h2 className="font-ui text-xs font-medium text-text/50 uppercase tracking-wider mb-2">
+          <h2 className="font-ui text-xs font-medium text-text-50 uppercase tracking-wider mb-2">
             Kategoria
           </h2>
-          <span className="inline-block px-4 py-1.5 bg-secondary/20 rounded-full font-ui text-sm text-secondary font-medium">
+          <span className="badge">
             {word.category}
           </span>
         </div>
@@ -114,7 +114,7 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
 
       {/* Actions */}
       {showFavoriteButton && (
-        <div className="mt-8 pt-6 border-t border-text/10 flex justify-center gap-4 max-w-sm mx-auto">
+        <div className="mt-8 pt-6 border-t border-text-10 flex justify-center gap-4 max-w-sm mx-auto">
           <motion.button
             onClick={() => toggleFavorite(word)}
             whileHover={{ scale: 1.05 }}
@@ -122,7 +122,7 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
             className={`flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-lg font-medium transition-all duration-200 min-w-[140px] ${
               favorite
                 ? 'bg-primary text-white'
-                : 'bg-primary text-white hover:bg-primary/90'
+                : 'bg-primary text-white hover:opacity-90'
             }`}
           >
             <span>{favorite ? '♥' : '♡'}</span>

@@ -4,10 +4,12 @@ import Home from './pages/Home'
 import Archive from './pages/Archive'
 import Favorites from './pages/Favorites'
 import { useUserStats } from './hooks/useUserStats'
+import { useTheme } from './hooks/useTheme'
 import StatsCard from './context/components/StatsCard'
 
 function App() {
   const { stats, updateStats } = useUserStats()
+  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     updateStats()
@@ -21,16 +23,23 @@ function App() {
             Słowo Dnia
           </Link>
            <div className="flex gap-4 font-ui text-sm items-center">
-               <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                 Dzisiaj
-               </NavLink>
-               <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                 Archiwum
-               </NavLink>
-               <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                 Ulubione
-               </NavLink>
-               <StatsCard streak={stats.streak} />
+              <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                Dzisiaj
+              </NavLink>
+              <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                Archiwum
+              </NavLink>
+              <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                Ulubione
+              </NavLink>
+              <StatsCard streak={stats.streak} />
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-lg hover:bg-surface/80 transition-colors"
+                aria-label={theme === 'dark' ? 'Przełącz na tryb jasny' : 'Przełącz na tryb ciemny'}
+              >
+                {theme === 'dark' ? '☀️' : '🌙'}
+              </button>
             </div>
          </nav>
       </header>
@@ -43,7 +52,7 @@ function App() {
         </Routes>
       </main>
       
-      <footer className="text-center py-6 text-text/60 text-sm font-ui">
+      <footer className="text-center py-6 text-text-60 text-sm font-ui">
         <p>© 2026 Słowo Dnia. Piękne polskie słowa każdego dnia.</p>
       </footer>
     </div>
