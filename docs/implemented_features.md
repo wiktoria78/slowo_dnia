@@ -253,12 +253,18 @@ Przerwa >1 dzień: streak = 1, lastVisit = today
 - **Inter 500:** UI, przyciski, formularze
 
 ### Paleta Kolorów
-- **Primary:** `#722F37` (Deep Burgundy)
-- **Secondary:** `#C9A227` (Gold)
-- **Background:** `#FDF5E6` (Cream)
-- **Surface:** `#FFFFFF` (White)
-- **Text:** `#1A1A1A` (Dark Gray)
-- **Accent:** `#228B22` (Forest Green)
+- **Primary:** `#722F37` (Deep Burgundy) - light / `#d6d3d1` dark
+- **Secondary:** `#C9A227` (Gold) - light / `#C9A227` dark
+- **Background:** `#FDF5E6` (Cream) - light / `#111111` dark
+- **Surface:** `#FFFFFF` (White) - light / `#1f1f1f` dark
+- **Text:** `#1A1A1A` (Dark Gray) - light / `#f5f5f5` dark
+- **Accent:** `#228B22` (Forest Green) - light / `#d6d3d1` dark
+- **Word (typography):** `#722F37` light / `#B97A83` dark - tytuł słowa
+
+### Tryb Ciemny (Dark Mode)
+- Automatyczny przełącznik w prawym górnym rogu
+- Ciemne tła (`#111111`) z jaśniejszym tekstem dla lepszej czytelności
+- Kolory słów zachowane dla spójności (`#B97A83` w dark mode)
 
 ### Animacje
 - **Framer Motion:** Wejścia, hover, tap, mount/unmount

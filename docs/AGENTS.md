@@ -146,10 +146,15 @@ const getWordOfDay = (words) => {
 
 ### Color Palette
 
-| Element | Kolor | Hex |
-|---------|-------|-----|
-| Primary | Deep Burgundy | #722F37 |
-| Secondary | Gold | #C9A227 |
+| Element | Kolor (Light) | Kolor (Dark) | Hex |
+|---------|---------------|--------------|-----|
+| Primary | Deep Burgundy | #d6d3d1 | #722F37 |
+| Secondary | Gold | #C9A227 | #C9A227 |
+| Background | Cream | #111111 | #FDF5E6 |
+| Surface | White | #1f1f1f | #FFFFFF |
+| Text | Dark Gray | #f5f5f5 | #1A1A1A |
+| Accent | Forest Green | #d6d3d1 | #228B22 |
+| Word | Burgundy/Pink | #722F37 / #B97A83 | Tytuł słowa |
 | Background | Cream | #FDF5E6 |
 | Surface | White | #FFFFFF |
 | Text | Dark Gray | #1A1A1A |

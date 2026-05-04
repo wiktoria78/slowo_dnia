@@ -151,14 +151,21 @@ const getWordOfDay = (words) => {
 
 #### Color Palette
 
-| Token | Nazwa | Hex | Zastosowanie |
-|-------|-------|-----|--------------|
-| `--color-primary` | Deep Burgundy | #722F37 | Słowo, przyciski, akcenty |
-| `--color-secondary` | Gold | #C9A227 | Nagłówki sekcji, tagi |
-| `--color-background` | Cream | #FDF5E6 | Tło strony |
-| `--color-surface` | White | #FFFFFF | Karty, inputy |
-| `--color-text` | Dark Gray | #2C2C2C | Tekst główny |
-| `--color-accent` | Forest Green | #228B22 | Linki, success |
+| Token | Nazwa | Hex (Light) | Hex (Dark) | Zastosowanie |
+|-------|-------|-------------|------------|--------------|
+| `--color-primary` | Deep Burgundy | #722F37 | #d6d3d1 | Słowo, przyciski, akcenty |
+| `--color-secondary` | Gold | #C9A227 | #C9A227 | Nagłówki sekcji, tagi |
+| `--color-background` | Cream | #FDF5E6 | #111111 | Tło strony |
+| `--color-surface` | White | #FFFFFF | #1f1f1f | Karty, inputy |
+| `--color-text` | Dark Gray | #1A1A1A | #f5f5f5 | Tekst główny |
+| `--color-accent` | Forest Green | #228B22 | #d6d3d1 | Linki, success |
+
+**Kolory specyficzne dla słów:**
+
+| Token | Hex (Light) | Hex (Dark) | Zastosowanie |
+|-------|-------------|------------|--------------|
+| `text-word` | #722F37 | #B97A83 | Tytuł słowa (WordCard, Archive, Logo) |
+| `text-primary` | #722F37 | #d6d3d1 | Elementy nawigacyjne |
 
 #### Typography
 

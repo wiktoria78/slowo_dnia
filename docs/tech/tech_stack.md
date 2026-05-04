@@ -20,6 +20,7 @@
   - JIT (Just-In-Time) mode
   - PurgeCSS wbudowany (usuwa nieużywane style)
   - Custom CSS variables w `:root` dla palety kolorów
+  - Obsługa light/dark mode przez `data-theme` attribute
 - **PostCSS 8.4.49** – przetwarzanie CSS
 - **Autoprefixer 10.4.20** – dodawanie prefixów dla przeglądarek
 
@@ -595,9 +596,13 @@ console.error(`Error reading localStorage key "${key}":`, error);
 ### 9.1. WCAG 2.1 Compliance
 
 **Kontrast:**
-- Tekst główny (#1A1A1A) na tle (#FFFFFF): 21.0:1 ✅
-- Tekst główny (#1A1A1A) na kremowym (#FDF5E6): 17.3:1 ✅
-- Primary (#722F37) na białym: 5.6:1 ✅ (minimum 4.5:1 dla normalnego tekstu)
+- Tekst główny (#1A1A1A) na tle (#FFFFFF): 21.0:1 ✅ (light)
+- Tekst główny (#f5f5f5) na tle (#111111): 15.9:1 ✅ (dark)
+- Tekst główny (#1A1A1A) na kremowym (#FDF5E6): 17.3:1 ✅ (light)
+- Primary (#722F37) na białym: 5.6:1 ✅ (light, minimum 4.5:1 dla tekstu)
+- Primary (#d6d3d1) na ciemnym: 10.8:1 ✅ (dark)
+- Word (#722F37) na białym: 5.6:1 ✅ (light)
+- Word (#B97A83) na ciemnym: 4.7:1 ✅ (dark)
 - Secondary (#C9A227) na białym: 2.4:1 ⚠️ (używany tylko jako akcent, nie do tekstu)
 
 **Rozmiar fonta:**

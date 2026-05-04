@@ -240,6 +240,14 @@ const getWordOfDay = (words) => {
 
 ## 🎨 Design System
 
+### Kolory Specyficzne
+
+| Token | Hex (Light) | Hex (Dark) | Użycie |
+|-------|-------------|------------|--------|
+| `text-word` | `#722F37` | `#B97A83` | Tytuł słowa (WordCard, Archive, Logo) |
+
+**Motyw Dark Mode:** Automatycznie przełączany przez przycisk w prawym górnym rogu. W dark mode używane są ciemne tła z jaśniejszym tekstem dla lepszej czytelności. Kolor `#B97A83` dla słowa zachowany w obu trybach dla spójności wizualnej.
+
 ### Typografia
 
 | Element | Font | Waga | Rozmiar (Desktop) |
@@ -250,14 +258,14 @@ const getWordOfDay = (words) => {
 
 ### Paleta Kolorów
 
-| Nazwa | Hex | Użycie |
-|-------|-----|--------|
-| Primary | `#722F37` | Nagłówki, akcenty, przyciski |
-| Secondary | `#C9A227` | Kategory, hover, akcenty |
-| Background | `#FDF5E6` | Tło strony |
-| Surface | `#FFFFFF` | Karty, panele |
-| Text | `#1A1A1A` | Tekst główny |
-| Accent | `#228B22` | Suwak, powiadomienia |
+| Nazwa | Hex (Light) | Hex (Dark) | Użycie |
+|-------|-------------|------------|--------|
+| Primary | `#722F37` | `#d6d3d1` | Nagłówki, akcenty, przyciski |
+| Secondary | `#C9A227` | `#C9A227` | Kategory, hover, akcenty |
+| Background | `#FDF5E6` | `#111111` | Tło strony |
+| Surface | `#FFFFFF` | `#1f1f1f` | Karty, panele |
+| Text | `#1A1A1A` | `#f5f5f5` | Tekst główny |
+| Accent | `#228B22` | `#d6d3d1` | Suwak, powiadomienia |
 
 ### Cienie
 

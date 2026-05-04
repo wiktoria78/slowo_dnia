@@ -55,6 +55,7 @@ Słowo Dnia to aplikacja webowa typu SPA (Single Page Application) zbudowana z m
 - **Szybki start**: < 100KB zasobów statycznych do pobrania
 - **Progresywne wzmocnienie**: Aplikacja działa podstawowo nawet bez JS (HTML/CSS)
 - **Bezpieczeństwo**: Brak backendu = brak wektorów ataku serwerowych
+- **Obsługa motywów**: Jasny i ciemny tryb z automatycznym przełącznikiem
 
 ---
 
