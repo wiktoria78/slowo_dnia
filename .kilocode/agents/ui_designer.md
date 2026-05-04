@@ -36,25 +36,27 @@ Aplikacja do nauki pięknych polskich słów — użytkownicy otrzymują codzien
 
 ### 1. System Kolorów
 
-| Element | Kolor | Hex |
-|---------|-------|-----|
-| Primary | Deep Burgundy | #722F37 |
-| Secondary | Gold | #C9A227 |
-| Background | Cream | #FDF5E6 |
-| Surface | White | #FFFFFF |
-| Text | Dark Gray | #1A1A1A |
-| Accent | Forest Green | #228B22 |
+| Element | Kolor (Light) | Kolor (Dark) | Hex |
+|---------|---------------|--------------|-----|
+| Primary | Deep Burgundy | #d6d3d1 | #722F37 |
+| Secondary | Gold | #C9A227 | #C9A227 |
+| Background | Cream | #111111 | #FDF5E6 |
+| Surface | White | #1f1f1f | #FFFFFF |
+| Text | Dark Gray | #f5f5f5 | #1A1A1A |
+| Accent | Forest Green | #d6d3d1 | #228B22 |
+| Word (typografia) | Burgundy | Pink | #722F37 / #B97A83 |
 
 #### Użycie Kolorów
-| Komponent | Kolor |
-|-----------|-------|
-| Nagłówek | Primary (#722F37) |
-| Logo | Primary (#722F37) |
-| Przyciski akcji | Secondary (#C9A227) |
-| Tło strony | Background (#FDF5E6) |
-| Karty | Surface (#FFFFFF) |
-| Tekst główny | Text (#2C2C2C) |
-| Linki/akcenty | Accent (#228B22) |
+| Komponent | Kolor (Light) | Kolor (Dark) | Hex |
+|-----------|---------------|--------------|-----|
+| Nagłówek | Primary | #d6d3d1 | #722F37 |
+| Logo | Primary | #d6d3d1 | #722F37 |
+| Przyciski akcji | Secondary | #C9A227 | #C9A227 |
+| Tło strony | Background | #111111 | #FDF5E6 |
+| Karty | Surface | #1f1f1f | #FFFFFF |
+| Tekst główny | Text | #f5f5f5 | #1A1A1A |
+| Linki/akcenty | Accent | #d6d3d1 | #228B22 |
+| Słowa (WordCard) | Word | #B97A83 | #722F37 |
 
 ### 2. Typografia
 
