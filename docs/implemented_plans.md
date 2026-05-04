@@ -249,12 +249,13 @@ Zastosowanie spójnego design systemu (typografia, kolory, spacing, animacje) w 
 - [x] Inter 500 dla UI i przycisków
 
 ### Kolory
-- [x] Primary: #722F37 (Deep Burgundy)
-- [x] Secondary: #C9A227 (Gold)
-- [x] Background: #FDF5E6 (Cream)
-- [x] Surface: #FFFFFF (White)
-- [x] Text: #1A1A1A (Dark Gray)
-- [x] Accent: #228B22 (Forest Green)
+- [x] Primary: #722F37 (Deep Burgundy) - jasny / #d6d3d1 - ciemny
+- [x] Secondary: #C9A227 (Gold) - jasny i ciemny
+- [x] Background: #FDF5E6 (Cream) - jasny / #111111 - ciemny
+- [x] Surface: #FFFFFF (White) - jasny / #1f1f1f - ciemny
+- [x] Text: #1A1A1A (Dark Gray) - jasny / #f5f5f5 - ciemny
+- [x] Accent: #228B22 (Forest Green) - jasny / #d6d3d1 - ciemny
+- [x] Word (typografia): #722F37 jasny / #B97A83 ciemny - tytuł słowa
 
 ### Animacje
 - [x] Framer Motion dla wszystkich animacji

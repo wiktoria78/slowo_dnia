@@ -103,18 +103,6 @@ Golden (Akcent drugorzędny) - Jasny i ciemny tryb:
     #A67C1A - ciemniejszy, borders
     #F5E8B0 - blady złoty, tła
 ```
-Deep Burgundy (Akcent główny)
-  #722F37 - główny, akcenty, przyciski
-  #8B3A45 - hover, lżejszy akcent
-  #5A222A - ciemniejszy, pressed state
-  #E8D0D2 - bardzo jasny, tła subtelne
-
-Golden (Akcent drugorzędny)
-  #C9A227 - główny złoty, highlighty
-  #D4AF37 - hover, lśniący złoty
-  #A67C1A - ciemniejszy, borders
-  #F5E8B0 - blady złoty, tła
-
 Cream (Tło główne) - Jasny tryb:
     #FDF5E6 - główne tło, papierowy krem
     #FAF0D9 - alternatywne tło sekcji
@@ -355,10 +343,20 @@ Favorite Button (❤️):
    Active: Filled red #A63333, slight scale down
    Animated: Heart beat pulse on favorited
 
-Share Button (📤):
-   Default: Share icon #2C2C2C
-   Hover: Gold bg #F5E8B0
-   Active: Darker gold bg
+ Share Button (📤):
+    Default: Share icon #2C2C2C on bg-primary
+    Hover: bg-primary/90 (slightly transparent)
+    Active: Scale 0.95
+    Focus: Gold ring
+    Copied state: Green (#2E8B57 / bg-green-600) with check icon
+    
+    Button styling:
+    - Background: bg-primary (Deep Burgundy #722F37)
+    - Text: White
+    - Border radius: 0.5rem (8px)
+    - Min-width: 140px
+    - Padding: 0.5rem 0.75rem
+    - Font: Inter Medium 14px
    
 Back/Forward Navigation (⏪ ⏩):
    Large circular buttons
@@ -393,7 +391,7 @@ Header (Word + Metadata):
    Word (Słowo):
      Font: Playfair Display Bold
      Size: 48px (desktop), 44px (mobile)
-     Color: #722F37 (jasny tryb) / #B97A83 (ciemny tryb)
+     Color: #722F37 (jasny) / #B97A83 (ciemny)
      Line-height: 1.1
      Letter-spacing: -0.02em
     Margin-bottom: 8px
@@ -530,9 +528,9 @@ Compact Word Card:
     
   Category:
     Display: inline-block
-    Background: #F5E8B0
-    Color: #722F37
-    Font-size: 11px
+     Background: #F5E8B0
+     Color: #C9A227 (gold)
+     Font-size: 11px
     Padding: 2px 8px
     Border-radius: 12px
     Margin-top: 8px
@@ -816,15 +814,15 @@ const pageTransition = {
 
 ### **5.2 Micro-Interactions
 
-**Favorite Toggle:**
-```
-Default: Heart outline, gray
-Hover: Scale 1.1, color darkens
-Tap: Scale 0.9 → spring back to 1
-If toggled on: 
-  - Fill animation (clip-path or scale)
-  - Color change to red (#A63333)
-  - Slight bounce
+ **Favorite Toggle:**
+ ```
+ Default: Heart outline, deep gray (#8A8A8A)
+ Hover: Scale 1.1, slight opacity change
+ Tap: Scale 0.9 → spring back to 1
+ If toggled on: 
+   - Fill animation
+   - Color changes to primary burgundy (#722F37 or #8B3A45)
+   - Slight bounce effect
   - Toast appears
 ```
 
