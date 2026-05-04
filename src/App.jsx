@@ -18,11 +18,11 @@ function App() {
   return (
     <div className="min-h-screen bg-background">
       <header className="bg-surface shadow-sm">
-        <nav className="max-w-4xl mx-auto px-4 py-2.5 flex justify-between items-center">
-          <Link to="/" className="font-display text-xl font-bold text-primary">
+        <nav className="max-w-4xl mx-auto px-4 py-3.5 flex justify-between items-center">
+          <Link to="/" className="font-display text-2xl font-bold text-primary">
             Słowo Dnia
           </Link>
-           <div className="flex gap-3 font-ui text-xs items-center">
+           <div className="flex gap-4 font-ui text-sm items-center">
               <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
                 Dzisiaj
               </NavLink>
