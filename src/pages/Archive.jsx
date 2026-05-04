@@ -171,7 +171,7 @@ const Archive = () => {
               }
             }}
           >
-            <h3 className="font-display text-xl font-bold text-primary mb-2">
+            <h3 className="font-display text-xl font-bold text-word mb-2">
               {word.word}
             </h3>
             <p className="font-body text-sm text-text-80 leading-relaxed mb-3 flex-grow line-clamp-3">

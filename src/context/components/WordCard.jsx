@@ -21,7 +21,7 @@ const WordCard = ({ word, showFavoriteButton = true, scrollable = false }) => {
     >
       {/* Word */}
       <div className="text-center mb-6">
-        <h1 className="font-display text-5xl font-bold text-primary mb-2">
+        <h1 className="font-display text-5xl font-bold text-word mb-2">
           {word.word}
         </h1>
         <p className="font-body text-text-60 italic">{word.partOfSpeech}</p>

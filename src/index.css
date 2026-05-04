@@ -44,6 +44,11 @@ body {
 .text-text-secondary { color: var(--color-text-secondary); }
 .text-accent { color: var(--color-accent); }
 
+.text-word { color: #722F37; }
+
+/* Word color - dark theme */
+[data-theme="dark"] .text-word { color: #B97A83; }
+
 .bg-surface { background-color: var(--color-surface); }
 .bg-background { background-color: var(--color-background); }
 .border-border { border-color: var(--color-border); }
@@ -96,15 +101,15 @@ body {
   border-radius: 9999px;
   font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
-  background-color: rgba(114, 47, 55, 0.1);
+  background-color: rgba(114, 47, 55, 0.15);
   color: #722F37;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Tag/pill styles - dark theme */
 [data-theme="dark"] .tag {
-  background-color: rgba(214, 211, 209, 0.1);
-  color: #d6d3d1;
+  background-color: rgba(180, 180, 180, 0.4);
+  color: #ffffff;
 }
 
 /* Category badge - light theme */
