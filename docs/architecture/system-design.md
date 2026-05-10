@@ -164,7 +164,7 @@ const getWordOfDay = (words) => {
 
 | Token | Hex (Light) | Hex (Dark) | Zastosowanie |
 |-------|-------------|------------|--------------|
-| `text-word` | #722F37 | #B97A83 | Tytuł słowa (WordCard, Archive, Logo) |
+| `text-word` | #722F37 | #C47A8C | Tytuł słowa (WordCard, Archive, Logo) |
 | `text-primary` | #722F37 | #d6d3d1 | Elementy nawigacyjne |
 
 #### Typography

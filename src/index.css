@@ -47,7 +47,7 @@ body {
 .text-word { color: #722F37; }
 
 /* Word color - dark theme */
-[data-theme="dark"] .text-word { color: #B97A83; }
+[data-theme="dark"] .text-word { color: #C47A8C; }
 
 .bg-surface { background-color: var(--color-surface); }
 .bg-background { background-color: var(--color-background); }

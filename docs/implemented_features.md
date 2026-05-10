@@ -259,12 +259,12 @@ Przerwa >1 dzień: streak = 1, lastVisit = today
 - **Surface:** `#FFFFFF` (White) - light / `#1f1f1f` dark
 - **Text:** `#1A1A1A` (Dark Gray) - light / `#f5f5f5` dark
 - **Accent:** `#228B22` (Forest Green) - light / `#d6d3d1` dark
-- **Word (typography):** `#722F37` light / `#B97A83` dark - tytuł słowa
+- **Word (typography):** `#722F37` light / `#C47A8C` dark - tytuł słowa
 
 ### Tryb Ciemny (Dark Mode)
 - Automatyczny przełącznik w prawym górnym rogu
 - Ciemne tła (`#111111`) z jaśniejszym tekstem dla lepszej czytelności
-- Kolory słów zachowane dla spójności (`#B97A83` w dark mode)
+- Kolory słów zachowane dla spójności (`#C47A8C` w dark mode)
 
 ### Animacje
 - **Framer Motion:** Wejścia, hover, tap, mount/unmount

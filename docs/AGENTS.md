@@ -154,7 +154,7 @@ const getWordOfDay = (words) => {
 | Surface | White | #1f1f1f | #FFFFFF |
 | Text | Dark Gray | #f5f5f5 | #1A1A1A |
 | Accent | Forest Green | #d6d3d1 | #228B22 |
-| Word | Burgundy/Pink | #722F37 / #B97A83 | Tytuł słowa |
+| Word | Burgundy/Pink | #722F37 / #C47A8C | Tytuł słowa |
 
 ### Typography
 

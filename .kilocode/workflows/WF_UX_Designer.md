@@ -611,7 +611,7 @@ Caption (Metadata): 12px / 16px
 ```
 Deep Burgundy (Akcent główny):
   #722F37 - jasny tryb (primary)
-  #B97A83 - ciemny tryb (word/slogan)
+  #C47A8C - ciemny tryb (word/slogan)
   #d6d3d1 - ciemny tryb (akcenty nawigacji)
 Gold (Złoty akcent):
   #C9A227 - jasny i ciemny tryb (podświetlenia, tagi)

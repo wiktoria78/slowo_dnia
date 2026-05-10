@@ -255,7 +255,7 @@ Zastosowanie spójnego design systemu (typografia, kolory, spacing, animacje) w 
 - [x] Surface: #FFFFFF (White) - jasny / #1f1f1f - ciemny
 - [x] Text: #1A1A1A (Dark Gray) - jasny / #f5f5f5 - ciemny
 - [x] Accent: #228B22 (Forest Green) - jasny / #d6d3d1 - ciemny
-- [x] Word (typografia): #722F37 jasny / #B97A83 ciemny - tytuł słowa
+- [x] Word (typografia): #722F37 jasny / #C47A8C ciemny - tytuł słowa
 
 ### Animacje
 - [x] Framer Motion dla wszystkich animacji

@@ -92,7 +92,7 @@ Deep Burgundy (Akcent główny)
     #5A222A - ciemniejszy, pressed state
     #E8D0D2 - bardzo jasny, tła subtelne
   Ciemny tryb:
-    #B97A83 - główny słowa (pink)
+    #C47A8C - główny słowa (pink)
     #8B3A45 - hover/lżejszy akcent
     #5A222A - ciemniejszy, pressed state
     #8b3842 - bardzo jasny, tła subtelne
@@ -163,7 +163,7 @@ Semantic Colors (Statusy) - Ciemny tryb:
 **Color Usage Rules:**
 
 ```
-Słowo główne (Hero)            → Deep Burgundy (#722F37 w jasnym, #B97A83 w ciemnym)
+Słowo główne (Hero)            → Deep Burgundy (#722F37 w jasnym, #C47A8C w ciemnym)
 Część mowy                     → Dark Text (#1A1A1A jasny / #f5f5f5 ciemny) italic
 Definicja                      → Dark Text (#1A1A1A jasny / #f5f5f5 ciemny) na tło Surface
 Przykłady (blockquote)         → Dark Text, italic, left border (2px, #C9A227/30)
@@ -391,7 +391,7 @@ Header (Word + Metadata):
    Word (Słowo):
      Font: Playfair Display Bold
      Size: 48px (desktop), 44px (mobile)
-     Color: #722F37 (jasny) / #B97A83 (ciemny)
+     Color: #722F37 (jasny) / #C47A8C (ciemny)
      Line-height: 1.1
      Letter-spacing: -0.02em
     Margin-bottom: 8px
@@ -461,7 +461,7 @@ Body (Content):
    Category (Kategoria):
      Display: inline-block
      Background: #F5E8B0 (pale gold)
-     Color: #722F37 (jasny) / #B97A83 (ciemny)
+     Color: #722F37 (jasny) / #C47A8C (ciemny)
      Font: Inter Medium 12px
      Padding: 4px 12px
      Border-radius: 20px
@@ -604,11 +604,11 @@ Bottom Navigation (Mobile):
     
      Icon:
        Size: 24px
-       Color: #8A8A8A (nieaktywne jasny/ciemny), #722F37 (aktywne jasny) / #B97A83 (aktywne ciemny)
+       Color: #8A8A8A (nieaktywne jasny/ciemny), #722F37 (aktywne jasny) / #C47A8C (aktywne ciemny)
        
      Label:
        Font: Inter 10px
-       Color: #8A8A8A (nieaktywne jasny/ciemny), #722F37 (aktywne jasny) / #B97A83 (aktywne ciemny)
+       Color: #8A8A8A (nieaktywne jasny/ciemny), #722F37 (aktywne jasny) / #C47A8C (aktywne ciemny)
       
     Active State:
       Icon and label tinted burgundy
@@ -1014,7 +1014,7 @@ Status:
    --color-border-light-dark: #3a3a3a;
    
    --color-word-light: #722F37;
-   --color-word-dark: #B97A83;
+   --color-word-dark: #C47A8C;
    
    --color-error-dark: #FF6B6B;
    --color-info-dark: #6B9AB8;

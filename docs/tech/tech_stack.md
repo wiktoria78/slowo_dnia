@@ -602,7 +602,7 @@ console.error(`Error reading localStorage key "${key}":`, error);
 - Primary (#722F37) na białym: 5.6:1 ✅ (light, minimum 4.5:1 dla tekstu)
 - Primary (#d6d3d1) na ciemnym: 10.8:1 ✅ (dark)
 - Word (#722F37) na białym: 5.6:1 ✅ (light)
-- Word (#B97A83) na ciemnym: 4.7:1 ✅ (dark)
+- Word (#C47A8C) na ciemnym: 4.5:1 ✅ (dark)
 - Secondary (#C9A227) na białym: 2.4:1 ⚠️ (używany tylko jako akcent, nie do tekstu)
 
 **Rozmiar fonta:**

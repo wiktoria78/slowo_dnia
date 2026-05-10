@@ -244,9 +244,9 @@ const getWordOfDay = (words) => {
 
 | Token | Hex (Light) | Hex (Dark) | Użycie |
 |-------|-------------|------------|--------|
-| `text-word` | `#722F37` | `#B97A83` | Tytuł słowa (WordCard, Archive, Logo) |
+| `text-word` | `#722F37` | `#C47A8C` | Tytuł słowa (WordCard, Archive, Logo) |
 
-**Motyw Dark Mode:** Automatycznie przełączany przez przycisk w prawym górnym rogu. W dark mode używane są ciemne tła z jaśniejszym tekstem dla lepszej czytelności. Kolor `#B97A83` dla słowa zachowany w obu trybach dla spójności wizualnej.
+**Motyw Dark Mode:** Automatycznie przełączany przez przycisk w prawym górnym rogu. W dark mode używane są ciemne tła z jaśniejszym tekstem dla lepszej czytelności. Kolor `#C47A8C` dla słowa zachowany w obu trybach dla spójności wizualnej.
 
 ### Typografia
 
