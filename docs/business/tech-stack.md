@@ -337,11 +337,12 @@ Vercel automatycznie deployuje przy push do main - wystarczy połączyć repozyt
 | ✅ | **WF_Tech_Stack — UKOŃCZONE** |
 | ✅ | WF_Resource_Analysis — UKOŃCZONE |
 | ✅ | MVP Built (React + Vite + Tailwind + Framer Motion) |
-| ⏳ | Zakup domeny |
-
-**Aktualny status (2026-04-18):**
+ 
+**Aktualny status (2026-05-10):**
 - Stack wdrożony zgodnie z planem
 - Technologie: React, Vite, Tailwind, Framer Motion ✅
+- Projekt deployed na Vercel pod domeną .pl ✅
+- Wszystkie funkcje MVP zaimplementowane i działające
 
 ---
 

@@ -2,8 +2,8 @@
 
 ## Status Projektu
 
-**Wersja:** 1.1.0  
-**Data:** 2026-05-03  
+**Wersja:** 1.2.0  
+**Data:** 2026-05-10  
 **Status:** ✅ PRODUKCJA
 
 ---
@@ -26,8 +26,8 @@ Wszystkie zaplanowane funkcjonalności dla Minimum Viable Product (MVP) zostały
 | 🎨 UI/UX | Responsive design (mobile-first) | ✅ |
 | 🎨 UI/UX | Animacje Framer Motion | ✅ |
 | 🎨 UI/UX | Design system (typografia, kolory) | ✅ |
-| 🎨 UI/UX | Dark mode toggle | ❌ (Faza 2) |
-| 📊 Tech | Code splitting | ✅ |
+| 🎨 UI/UX | Dark mode toggle | ✅ |
+| 📊 Tech | Code splitting | ❌ (Planowane) |
 | 📊 Tech | PWA capabilities | 🔄 (częściowo) |
 | 📊 Tech | Service Worker | ❌ (Faza 2) |
 

@@ -2,8 +2,8 @@
 
 ## Status: ✅ PRODUKCJA
 
-Aktualizacja: 2026-04-28  
-Wersja: 1.0.0
+Aktualizacja: 2026-05-10  
+Wersja: 1.1.0
 
 ---
 

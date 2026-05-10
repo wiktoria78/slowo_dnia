@@ -297,7 +297,7 @@ const getWordOfDay = (words) => {
 - [x] Share na social media
 - [x] Mobile responsive
 - [x] Piękna typografia i design
-- [ ] Deploy na GitHub Pages 
+- [x] Deploy na Vercel 
 
 ---
 

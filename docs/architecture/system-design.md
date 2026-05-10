@@ -252,11 +252,12 @@ npx vercel deploy --prod  # Deploy
 ```
 
 ### 7.2 Konfiguracja Vite
-
+ 
 ```javascript
 // vite.config.js
 export default defineConfig({
-  base: '/slowo-dnia/',
+  plugins: [react()],
+  base: '/',
   build: { outDir: 'dist' }
 });
 ```

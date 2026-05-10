@@ -254,7 +254,7 @@ Tydzień 6:
 | Niedziela | Rest/Planning |
 
 ---
-
+ 
 ## 9. Co Dalej?
 
 | Status | Krok |
@@ -269,12 +269,14 @@ Tydzień 6:
 | ✅ | WF_Tech_Stack — COMPLETE |
 | ✅ | **WF_Resource_Analysis — UKOŃCZONE** |
 | ✅ | MVP built (88h → ~40h actual) |
-| ⏳ | Growth phase |
-
-**Aktualny status (2026-04-18):**
-- MVP zbudowany w mniejszym czasie niż planowano
-- 100 słów (vs planowane 100) 
-- Koszty zgodne z planem (~50 PLN)
+| ✅ | **Project deployed and live on Vercel** |
+ 
+**Aktualny status (2026-05-10):**
+ - MVP zbudowany w mniejszym czasie niż planowano
+ - 100+ słów w bazie (planowane 100)
+ - Projekt działa i jest dostępny pod adresem na Vercel
+ - Koszty zgodne z planem (~50 PLN)
+ - Wszystkie funkcje MVP zaimplementowane i przetestowane
 
 ---
 

@@ -11,8 +11,9 @@
 | **Produkt** | Aplikacja do nauki pięknych polskich słów |
 | **Problem** | Ludzie chcą mówić piękniej, ale nie znają rzadkich, pięknych polskich słów |
 | **Rozwiązanie** | Codzienne słowo dnia z definicją, przykładami i etymologią |
-| **Model** | Freemium + Premium (19 PLN/mies) + Newsletter (9 PLN/mies) |
+| **Model** | Freemium + Premium (19 PLN/mies) |
 | **Target** | Miłośnicy języka polskiego (25-45 lat) |
+| **Planowane rozszerzenia** | Newsletter (9 PLN/mies) - w fazie rozwoju po MVP |
 
 ---
 
@@ -35,7 +36,6 @@
 | D1 Retention | 40% |
 | D7 Retention | 20% |
 | D30 Retention | 10% |
-| Newsletter Open Rate | 40% |
 | Share Rate | 5% |
 
 ---

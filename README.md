@@ -357,13 +357,13 @@ const getWordOfDay = (words) => {
 
 ### Code Review Checklist
 
-- [ ] Zgodność z architekturą (ADR, design system)
-- [ ] Brak błędów ESLint
-- [ ] Responsywność (mobile/tablet/desktop)
-- [ ] Dostępność (WCAG AA)
-- [ ] Wydajność (animacje 60fps)
-- [ ] Brak breaking changes
-- [ ] Zaktualizowana dokumentacja (jeśli wymagane)
+- [x] Zgodność z architekturą (ADR, design system)
+- [x] Brak błędów ESLint
+- [x] Responsywność (mobile/tablet/desktop)
+- [x] Dostępność (WCAG AA)
+- [x] Wydajność (animacje 60fps)
+- [x] Brak breaking changes
+- [x] Zaktualizowana dokumentacja (jeśli wymagane)
 
 ---
 
