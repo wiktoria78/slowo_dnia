@@ -6,30 +6,6 @@
 
 Aplikacja webowa typu SPA (Single Page Application), która każdego dnia prezentuje piękne, rzadko używane polskie słowo — z definicją, przykładami i etymologią. Pomaga wzbogacić słownictwo, mówić piękniej po polsku i udostępniać swoje odkrycia znajomym.
 
-## 🚀 Status Projektu
-
-**Status:** ✅ PRODUCTION (Wdrożone na Vercel)
-
-**MVP Features (Wszystkie wdrożone):**
-- ✅ Słowo dnia (wybór deterministyczny na podstawie daty)
-- ✅ 100 pięknych słów polskich (pełne dane)
-- ✅ Ulubione słowa (zapis w localStorage)
-- ✅ Streak (statystyki użytkownika – dni z rzędu)
-- ✅ Archiwum + zaawansowane wyszukiwanie i filtrowanie
-- ✅ Udostępnianie (Web Share API / Clipboard API)
-- ✅ Responsywny design (mobile-first)
-- ✅ Animacje Framer Motion (premium feel)
-- ✅ Design system (typografia, paleta kolorów)
-
-**Tech Stack:**
-- React 18 + Vite 6
-- Tailwind CSS 3.4
-- Framer Motion 11
-- React Router v6
-
-**Hosting:**
-- Vercel (Edge Network, HTTPS, CDN)
-
 ---
 
 ## 📚 Dokumentacja
