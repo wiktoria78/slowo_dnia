@@ -75,7 +75,7 @@
   - Plugin: eslint-plugin-react
   - Plugin: eslint-plugin-react-hooks
   - Plugin: eslint-plugin-react-refresh
-- **GitHub Pages (gh-pages)** – hosting i deployment
+- **Vercel** — hosting i deployment
 
 ---
 
@@ -727,19 +727,14 @@ const { t } = useTranslation();
 ### 11.1. Obecny Stan
 
 **Hosting:**
-- GitHub Pages (via `gh-pages` package)
-- Automatyczny deploy z npm script `npm run deploy`
-- Branch: `gh-pages` (stolicowy)
-- CDN: GitHub Pages globalny CDN
+- Vercel – platforma hostingowa dla aplikacji frontendowych
+- Automatyczny deploy przy push do brancha `main`
+- CDN globalny z SSL
+- Wbudowane analytics i monitoring wydajności
 
 **Konfiguracja:**
 ```json
-// package.json scripts
-{
-  "deploy": "npm run build && npx gh-pages -d dist"
-}
-
-// vercel.json (przestarzały, nieużywany)
+// vercel.json
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
@@ -749,7 +744,7 @@ const { t } = useTranslation();
 // vite.config.js
 export default defineConfig({
   plugins: [react()],
-  base: '/',  // Required for GitHub Pages root deployment
+  base: '/',
 })
 ```
 
@@ -761,19 +756,18 @@ export default defineConfig({
 
 ```
 1. Push do brancha main
-2. GitHub Actions (jeśli skonfigurowane) lub ręczny trigger
-3. Uruchomienie: npm run deploy
+2. Vercel automatycznie wykrywa zmiany
+3. Uruchamia build: npm run build
 4. Vite build: tworzy folder dist/ z assets
-5. gh-pages: push zawartości dist/ do brancha gh-pages
-6. GitHub Pages: serwuje zawartość z brancha gh-pages
-7. URL: https://wiktoria78.github.io/slowo_dnia/
+5. Deploy do produkcji
+6. URL: https://slowo-dnia-pi.vercel.app
 ```
 
 ### 11.3. Monitorowanie Uptime
 
-- GitHub Pages Analytics: podstawowe statystyki ruchu
-- Brak wbudowanego monitoringu uptime (zewnętrzne usługi jak UptimeRobot mogą być dodane)
-- Brak Lighthouse CI (opcjonalne do dodania)
+- Vercel Analytics: podstawowe statystyki wydajności
+- Wbudowany monitoring uptime
+- Deploy previews dla pull requestów
 
 ### 11.4. Versioning
 
