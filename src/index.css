@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Mobile navbar fixes */
+@media (max-width: 768px) {
+  header {
+    overflow-x: hidden;
+  }
+  nav {
+    min-width: 0;
+  }
+}
+
 :root {
   --color-primary: #722F37;
   --color-secondary: #C9A227;
