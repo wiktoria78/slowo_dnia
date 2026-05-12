@@ -44,7 +44,8 @@ const Favorites = () => {
                   <button
                     onClick={() => removeFavorite(word.id)}
                     className="absolute top-3 right-3 flex items-center justify-center w-7 h-7 rounded-full favorite-remove-btn shadow-sm font-ui text-sm text-red-500 hover:text-red-700 hover:bg-gray-100 transition-colors"
-                    aria-label="Usuń z ulubionych"
+                    title="Usuń"
+                     aria-label="Usuń z ulubionych"
                   >
                     ✕
                   </button>
