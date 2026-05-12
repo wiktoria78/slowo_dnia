@@ -2,40 +2,41 @@
 
 ## 1. Przegląd Systemu (High-Level)
 
-Słowo Dnia to aplikacja webowa typu SPA (Single Page Application) zbudowana z myślą o nauce i odkrywaniu rzadkich polskich słów. System nie posiada backendu w fazie MVP – wszystkie dane są przechowywane lokalnie w postaci pliku JSON, a stan użytkownika (ulubione słowa) jest utrwalany w przeglądarkowym localStorage.
+Słowo Dnia to aplikacja webowa typu SPA (Single Page Application) zbudowana z myślą o nauce i odkrywaniu rzadkich polskich słów. System nie posiada backendu w fazie MVP – wszystkie dane są przechowywane lokalnie w postaci pliku JSON, a stan użytkownika (ulubione słowa, statystyki odwiedzin, preferencje motywu) jest utrwalany w przeglądarkowym localStorage.
 
 ### 1.1. Model Architektoniczny
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                         BROWSER (Client)                    │
-│                                                             │
-│  ┌─────────────────────────────────────────────────────────┐ │
-│  │                  React Application                      │ │
-│  │                                                         │ │
-│  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐ │ │
-│  │  │  Routing    │    │  Context    │    │  State Mgmt │ │ │
-│  │  │  (RR v6)    │◄──►│  (AppCtx)   │◄──►│  (Hooks)    │ │ │
-│  │  └──────┬──────┘    └──────┬──────┘    └──────┬──────┘ │ │
-│  │         │                   │                   │       │ │
-│  │  ┌──────┴──────┐  ┌────────┴────────┐  ┌─────┴─────┐ │ │
-│  │  │ Presentation│  │ Business Logic │  │  Data     │ │ │
-│  │  │ Components  │  │ (Custom Hooks) │  │ (JSON/LS) │ │ │
-│  │  │             │  │                 │  │           │ │ │
-│  │  │ - Home      │  │ - useWordOfDay │  │ - words.  │ │ │
-│  │  │ - Archive   │  │ - useFavorites │  │   json    │ │ │
-│  │  │ - Favorites │  │                 │  │ - local   │ │ │
-│  │  │ - WordCard  │  └─────────────────┘  │   Storage │ │ │
-│  │  │ - ShareBtn  │                        │           │ │ │
-│  │  └─────────────┘                        └───────────┘ │ │
-│  │                                                         │ │
-│  └─────────────────────────────────────────────────────────┘ │
-│        ▲                     ▲                    ▲        │
-│        │                     │                    │        │
-│   HTTP (Vercel)          LocalStorage          JSON File    │
-│   (Static Hosting)       (5MB limit)           (40KB)       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+ ┌─────────────────────────────────────────────────────────────┐
+ │                         BROWSER (Client)                    │
+ │                                                             │
+ │  ┌─────────────────────────────────────────────────────────┐ │
+ │  │                  React Application                      │ │
+ │  │                                                         │ │
+ │  │  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐ │ │
+ │  │  │   Routing   │    │   Context   │    │   State     │ │ │
+ │  │  │  (RR v6)    │◄──►│ (AppCtx)    │◄──►│ Management │ │ │
+ │  │  └──────┬──────┘    └──────┬──────┘    └──────┬──────┘ │ │
+ │  │         │                   │                   │       │ │
+ │  │  ┌──────┴──────┐  ┌────────┴────────┐  ┌─────┴─────┐ │ │
+ │  │  │ Presentation│  │ Business Logic │  │  Data     │ │ │
+ │  │  │ Components  │  │  (Custom Hooks)│  │ (JSON/LS) │ │ │
+ │  │  │             │  │                 │  │           │ │ │
+ │  │  │ - Home      │  │ - useWordOfDay │  │ - words.  │ │ │
+ │  │  │ - Archive   │  │ - useFavorites │  │   json    │ │ │
+ │  │  │ - Favorites │  │ - useUserStats │  │ - local   │ │ │
+ │  │  │ - WordCard  │  │ - useTheme     │  │   Storage │ │ │
+ │  │  │ - ShareBtn  │  │ - useLocalSt.  │  │           │ │ │
+ │  │  │ - StatsCard │  └─────────────────┘  └───────────┘ │ │
+ │  │  └─────────────┘                                    │ │
+ │  │                                                      │ │
+ │  └─────────────────────────────────────────────────────────┘ │
+ │        ▲                     ▲                    ▲        │
+ │        │                     │                    │        │
+ │   HTTP (Vercel)          LocalStorage          JSON File    │
+ │   (Static Hosting)       (5MB limit)           (40KB)       │
+ │                                                             │
+ └─────────────────────────────────────────────────────────────┘
 ```
 
 ### 1.2. Warstwy Architektoniczne
@@ -43,16 +44,16 @@ Słowo Dnia to aplikacja webowa typu SPA (Single Page Application) zbudowana z m
 | Warstwa | Technologie | Odpowiedzialność |
 |---------|-------------|------------------|
 | **Prezentacja** | React, JSX, Tailwind CSS, Framer Motion | UI, routing, animacje, responsywność |
-| **Logika Biznesowa** | Custom Hooks (React) | Algorytmy, walidacja, reguły domeny |
-| **Dane** | JSON, localStorage | Trwałe/przeżytkowe przechowywanie |
-| **State Management** | React Context + Hooks | Dystrybucja stanu globalnego |
+| **Logika Biznesowa** | Custom Hooks (React) | Algorytmy, walidacja, reguły domeny (słowo dnia, ulubione, statystyki użytkownika, motyw) |
+| **Dane** | JSON, localStorage | Trwałe/przeżytkowe przechowywanie (słowa, ulubione, statystyki, motyw) |
+| **State Management** | React Context + Hooks | Dystrybucja stanu globalnego (ulubione) |
 | **Infrastruktura** | Vercel, HTTPS | Hosting, CDN, SSL |
 
 ### 1.3. Cechy Kluczowe
 
 - **Brak backendu**: MVP operuje wyłącznie na kliencie
 - **Offline-first**: Pełna funkcjonalność bez połączenia z internetem
-- **Szybki start**: < 100KB zasobów statycznych do pobrania
+- **Szybki start**: ~150KB bundle (gzipped), szybkie ładowanie
 - **Progresywne wzmocnienie**: Aplikacja działa podstawowo nawet bez JS (HTML/CSS)
 - **Bezpieczeństwo**: Brak backendu = brak wektorów ataku serwerowych
 - **Obsługa motywów**: Jasny i ciemny tryb z automatycznym przełącznikiem
@@ -129,7 +130,7 @@ Array<{
 
 **Eksponowane API**:
 - `wordOfDay`, `loading`, `isFinished`
-- `getRandomWord()` - losowe słowo (niewykorzystywane)
+- `getRandomWord()` - losowe słowo (niewykorzystywane w UI)
 - `getCurrentIndex()` - aktualny dzień od startu
 - `START_DATE` - stała
 
@@ -160,6 +161,36 @@ function useLocalStorage<T>(key: string, initialValue: T): [T, setter]
 
 **Baza**: Używa useLocalStorage z kluczem `slowo-dnia-favorites`
 
+#### 2.3.4. useUserStats
+
+**Odpowiedzialność**: Śledzenie aktywności użytkownika (seria odwiedzin).
+
+**Logika**:
+- Przechowuje `lastVisit` (data ostatniej wizyty) i `streak` (bieżąca seria dni z rzędu)
+- Przy każdej wizycie aktualizuje streak: 
+  - Jeśli ostatnia wizyta był wczoraj → streak +1
+  - Jeśli dzisiaj już odwiedzony → brak zmiany
+  - jeśli przerwa >1 dnia → streak reset do 1
+
+**Stan wewnętrzny**:
+```typescript
+{ lastVisit: string | null, streak: number }
+```
+
+**Użycie**: Wyświetlanie liczby kolejnych dni odwiedzin w StatsCard (🔥{streak}).
+
+#### 2.3.5. useTheme
+
+**Odpowiedzialność**: Zarządzanie trybem jasny/ciemny z auto-detekcją systemu.
+
+**Logika**:
+- Stan inicjalizowany z wartości w localStorage pod kluczem `theme`, lub `null` jeśli brak
+- Komponent wy renderowania: `theme || 'light'` zapewnia domyślny motyw
+- `toggleTheme()` przełącza między `'light'` i `'dark'`, zapisuje do localStorage i ustawia atrybut `data-theme` na `<html>`
+- Inicjalizacja atrybutu `data-theme` przed pierwszym renderem odbywa się w `main.jsx` (funkcja `initializeTheme`) — zapobiega "flash" nieprawidłowego motywu
+
+**Klucz localStorage**: `'theme'`
+
 ### 2.4. Moduł Kontekstu (AppContext)
 
 **Rola**: Dystrybucja stanu ulubionych do całego drzewa komponentów bez prop-drilling.
@@ -178,6 +209,8 @@ function useLocalStorage<T>(key: string, initialValue: T): [T, setter]
 **Zastosowanie**:
 - Owijany wokół `<BrowserRouter>` w `main.jsx`
 - Konsumowany przez WordCard i Favorites
+
+**Uwaga**: `useUserStats` i `useTheme` NIE są dostarczane przez AppContext. Są używane bezpośrednio w `App.jsx` (główny komponent), ponieważ stan jest lokalny dla App i nie musi być współdzielony z podkomponentami (poza StatsCard, który otrzymuje `streak` jako prop).
 
 ### 2.5. Moduł UI (Komponenty)
 
@@ -259,6 +292,20 @@ function useLocalStorage<T>(key: string, initialValue: T): [T, setter]
 
 **Timeout**: 2s powrót do stanu domyślnego
 
+#### 2.5.6. StatsCard (Karta Statystyk)
+
+**Rola**: Wyświetlanie statystyk użytkownika w nagłówku.
+
+**Props**:
+- `streak`: number — bieżąca seria kolejnych dni odwiedzin
+
+**UI**:
+- Ikona ognia (🔥) + liczba
+- Styl: mała, tekst secondary
+- Lokalizacja: nagłówek App.jsx, obok linków nawigacyjnych
+
+**Brak interakcji** — tylko prezentacyjny.
+
 ---
 
 ## 3. Przepływ Danych
@@ -267,16 +314,21 @@ function useLocalStorage<T>(key: string, initialValue: T): [T, setter]
 
 ```
 1. index.html ładuje skrypty
-2. ReactDOM.render tworzy root
-3. App.jsx montuje BrowserRouter
-4. AppContext.Provider inicjalizuje useFavorites
-   → useLocalStorage odczytuje z localStorage (lub fallback)
-5. Home ładuje useWordOfDay
+2. main.jsx: initializeTheme() odczytuje motyw z localStorage lub system preference, ustawia data-theme na <html>
+3. ReactDOM.render tworzy root
+4. App.jsx montuje BrowserRouter
+5. AppContext.Provider inicjalizuje useFavorites
+   → useLocalStorage odczytuje z localStorage 'slowo-dnia-favorites' (lub fallback)
+6. App.jsx inicjalizuje useUserStats i useTheme
+   → useUserStats: stats odczytane z 'slowo-dnia-user-stats'
+   → useTheme: theme odczytane z 'theme' (lub fallback z initializeTheme)
+7. App.jsx: useEffect wywołuje updateStats() — aktualizuje statistics visit streak
+8. Home ładuje useWordOfDay
    → useState inicjalizuje loading=true
    → useEffect po 300ms oblicza słowo dnia
    → setState(word, loading=false, isFinished?)
-6. Render: WordCard z word
-7. Interakcje użytkownika odpychają zmiany stanu
+9. Render: WordCard z word + StatsCard z streak
+10. Interakcje użytkownika odpychają zmiany stanu
 ```
 
 ### 3.2. Ścieżki Użytkownika (User Flows)

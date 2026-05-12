@@ -29,9 +29,12 @@
 | M3 | Definicja + przykłady | MUST |
 | M4 | Słowo na dziś (data-based) | MUST |
 | M5 | Zapis ulubionych (localStorage) | MUST |
+| M6 | Obsługa błędów (ErrorBoundary) | MUST |
 | S1 | Archiwum poprzednich słów | SHOULD |
 | S2 | Wyszukiwarka słów | SHOULD |
 | S3 | Share na social media | SHOULD |
+| S4 | Motyw jasny/ciemny (dark mode) | SHOULD |
+| S5 | Statystyki użytkownika (streak) | COULD |
 
 ---
 
@@ -47,12 +50,17 @@ slowo-dnia/
 │   ├── hooks/
 │   │   ├── useWordOfDay.js     # Algorytm słowa dnia
 │   │   ├── useFavorites.js    # CRUD ulubionych
-│   │   └── useLocalStorage.js  # localStorage wrapper
+│   │   ├── useLocalStorage.js  # localStorage wrapper
+│   │   ├── useUserStats.js     # Statystyki (streak, wizyty)
+│   │   └── useTheme.js         # Zarządzanie motywem jasny/ciemny
 │   ├── context/
 │   │   ├── AppContext.jsx      # Global state provider
 │   │   └── components/
 │   │       ├── WordCard.jsx    # Komponent karty słowa
-│   │       └── ShareButton.jsx # Share functionality
+│   │       ├── ShareButton.jsx # Share functionality
+│   │       └── StatsCard.jsx   # Karta statystyk (streak)
+│   ├── components/
+│   │   └── ErrorBoundary.jsx   # Obsługa błędów (React class component)
 │   ├── pages/
 │   │   ├── Home.jsx            # Strona główna
 │   │   ├── Archive.jsx        # Archiwum + search
@@ -71,8 +79,8 @@ slowo-dnia/
 
 | Warstwa | Komponenty | Odpowiedzialność |
 |---------|------------|------------------|
-| Presentation | Home, Archive, Favorites, WordCard, ShareButton | UI, routing, animacje |
-| Business Logic | useWordOfDay, useFavorites | Logika biznesowa, algorytmy |
+| Presentation | Home, Archive, Favorites, WordCard, ShareButton, StatsCard, ErrorBoundary | UI, routing, animacje, obsługa błędów |
+| Business Logic | useWordOfDay, useFavorites, useUserStats, useTheme | Logika biznesowa, algorytmy, motyw, statystyki |
 | Data | words.json, localStorage | Przechowywanie danych |
 | State | AppContext | Globalny stan aplikacji |
 
@@ -146,24 +154,24 @@ const getWordOfDay = (words) => {
 
 ### Color Palette
 
-| Element | Kolor (Light) | Kolor (Dark) | Hex |
-|---------|---------------|--------------|-----|
-| Primary | Deep Burgundy | #d6d3d1 | #722F37 |
-| Secondary | Gold | #C9A227 | #C9A227 |
-| Background | Cream | #111111 | #FDF5E6 |
-| Surface | White | #1f1f1f | #FFFFFF |
-| Text | Dark Gray | #f5f5f5 | #1A1A1A |
-| Accent | Forest Green | #d6d3d1 | #228B22 |
-| Word | Burgundy/Pink | #722F37 / #C47A8C | Tytuł słowa |
+| Element | Light | Dark | Hex |
+|---------|-------|------|-----|
+| Primary | Deep Burgundy | #d6d3d1 | #722F37 / #d6d3d1 |
+| Secondary | Gold | Gold | #C9A227 |
+| Background | Cream | #111111 | #FDF5E6 / #111111 |
+| Surface | White | #1f1f1f | #FFFFFF / #1f1f1f |
+| Text | #1A1A1A | #f5f5f5 | #1A1A1A / #f5f5f5 |
+| Accent | Forest Green | #d6d3d1 | #228B22 / #d6d3d1 |
+| Word (typografia) | Burgundy | Pink | #722F37 / #C47A8C |
 
 ### Typography
 
-| Element | Font | Waga |
-|---------|------|------|
-| Słowo hero | Playfair Display | 700 |
-| Definicja | Merriweather | 400 |
-| Przykłady | Merriweather | 400 italic |
-| UI | Inter | 500 |
+| Element | Font | Waga | Rozmiar |
+|---------|------|------|---------|
+| Słowo hero | Playfair Display | 700 | 3rem (48px) |
+| Definicja | Merriweather | 400 | 1.125rem (18px) |
+| Przykłady | Merriweather | 400 italic | 1rem (16px) |
+| UI | Inter | 500 | 0.875rem (14px) |
 
 ---
 
@@ -180,6 +188,8 @@ const getWordOfDay = (words) => {
 | D7 | Mobile responsive |
 | D8 | Piękna typografia i design |
 | D9 | Deploy na Vercel |
+| D10 | Motyw jasny/ciemny |
+| D11 | Statystyki użytkownika (streak) |
 
 ---
 
@@ -192,6 +202,8 @@ const getWordOfDay = (words) => {
 5. **Accessibility** — Czytelne czcionki, wystarczający kontrast
 6. **No backend (MVP)** — Dane w local JSON, stan w localStorage
 7. **Beautiful UI** — Piękna typografia = core experience
+8. **Jasny/ciemny motyw** — Obsługa `data-theme` na `<html>`, CSS custom properties, inicjalizacja przed render (main.jsx)
+9. **Statystyki użytkownika** — `useUserStats` hook z streak (localStorage `slowo-dnia-user-stats`), `StatsCard` w nagłówku
 
 ---
 
@@ -219,4 +231,4 @@ const getWordOfDay = (words) => {
 ---
 
 _Reguły zgodne z architekturą systemu (system-design.md)_
-_Aktualizacja: 2026-03-15_
+_Aktualizacja: 2026-05-12_

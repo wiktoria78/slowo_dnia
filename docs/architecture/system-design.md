@@ -64,13 +64,16 @@ src/
 ├── hooks/                   # Logika biznesowa (custom hooks)
 │   ├── useWordOfDay.js     # Algorytm słowa dnia
 │   ├── useFavorites.js    # Operacje na ulubionych
-│   └── useLocalStorage.js  # Wrapper localStorage
+│   ├── useLocalStorage.js # Wrapper localStorage
+│   ├── useUserStats.js    # Statystyki użytkownika (seria wizyt)
+│   └── useTheme.js        # Zarządzanie motywem jasny/ciemny
 │
 ├── context/                # Globalny stan
 │   ├── AppContext.jsx      # Provider kontekstu
 │   └── components/         # Komponenty kontekstowe
 │       ├── WordCard.jsx    # Karta słowa
-│       └── ShareButton.jsx # Przycisk share
+│       ├── ShareButton.jsx # Przycisk share
+│       └── StatsCard.jsx   # Kart statystyk (seria)
 │
 ├── pages/                  # Widoki (routes)
 │   ├── Home.jsx            # Strona główna
@@ -198,6 +201,11 @@ const getWordOfDay = (words) => {
 - Clipboard fallback (desktop)
 - Visual feedback (copied state)
 
+#### StatsCard
+- Wyświetla aktualną serię odwiedzin (streak) z ikoną ognia
+- Komponent prezentacyjny, otrzymuje `streak` jako prop
+- Używany w nagłówku App.jsx obok linków nawigacyjnych
+
 ---
 
 ## 5. State Management
@@ -206,7 +214,9 @@ const getWordOfDay = (words) => {
 
 ```javascript
 // Klucze localStorage
-'slowo-dnia-favorites'  // Array<Word>
+'slowo-dnia-favorites'        // Array<Word>
+'slowo-dnia-user-stats'      // {lastVisit: string, streak: number}
+'theme'                      // 'light' | 'dark' | null
 ```
 
 ### 5.2 Custom Hooks
@@ -215,7 +225,9 @@ const getWordOfDay = (words) => {
 |------|------------------|-----|
 | useLocalStorage | Wrapper localStorage | `[value, setValue]` |
 | useFavorites | CRUD ulubionych | `{favorites, addFavorite, removeFavorite, isFavorite, toggleFavorite}` |
-| useWordOfDay | Logika słowa dnia | `{wordOfDay, loading, isFinished}` |
+| useWordOfDay | Logika słowa dnia | `{wordOfDay, loading, isFinished, getRandomWord, getCurrentIndex, START_DATE}` |
+| useUserStats | Śledzenie statystyk użytkownika (seria odwiedzin) | `{stats, updateStats}` |
+| useTheme | Zarządzanie motywem jasny/ciemny | `{theme, toggleTheme}` |
 
 ### 5.3 App Context
 
@@ -229,6 +241,15 @@ React Context zapewnia dostęp do ulubionych w całej aplikacji:
 // usage
 const { favorites, toggleFavorite } = useContext(AppContext);
 ```
+
+**Uwaga:** `useUserStats` i `useTheme` są używane bezpośrednio w `App.jsx` (nie przez kontekst), ponieważ stan jest lokalny dla komponentu App i nie musi być dzielony z głębszymi komponentami.
+
+### 5.4 localStorage Keys
+
+Aplikacja używa następujących kluczy w localStorage:
+- `'slowo-dnia-favorites'` — Tablica ulubionych słów `Word[]`
+- `'slowo-dnia-user-stats'` — Statystyki użytkownika `{lastVisit: string, streak: number}`
+- `'theme'` — Preferencja motywu `'light' | 'dark' | null`
 
 ---
 
@@ -277,6 +298,8 @@ export default defineConfig({
 | D7 | Mobile responsive | Test: mobile viewport |
 | D8 | Piękna typografia | Test: wizualna weryfikacja |
 | D9 | Deploy OK | Test: dostęp przez URL |
+| D10 | Statystyki użytkownika (streak) | Test: streak rośnie po kolejnych dniach |
+| D11 | Motyw jasny/ciemny | Test: przełącznik działa, zapisuje się |
 
 ---
 

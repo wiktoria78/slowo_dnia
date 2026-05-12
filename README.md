@@ -67,7 +67,7 @@ Aplikacja webowa typu SPA (Single Page Application), która każdego dnia prezen
 - Filtrowanie po kategoriach (dropdown)
 - Siatka responsywna (1/2/3 kolumny)
 
-### 5. Udostępnianie
+### 6. Udostępnianie
 - Web Share API (mobile)
 - Clipboard API z feedbackiem (desktop)
 - Wizualny feedback (skopiowano ✓)
@@ -144,13 +144,14 @@ slowo-dnia/
 │   │   ├── useWordOfDay.js     # Algorytm Słowa Dnia
 │   │   ├── useFavorites.js     # Logika ulubionych
 │   │   ├── useUserStats.js     # Statystyki użytkownika (streak)
+│   │   ├── useTheme.js         # Zarządzanie motywem jasny/ciemny
 │   │   └── useLocalStorage.js  # Abstrakcja localStorage
 │   ├── context/
 │   │   ├── AppContext.jsx      # Global State Provider
 │   │   └── components/
 │   │       ├── WordCard.jsx    # Karta słowa
 │   │       ├── ShareButton.jsx # Przycisk udostępniania
-│   │       └── ThemeToggle.jsx # Przełącznik trybu nocnego
+│   │       └── StatsCard.jsx   # Karta statystyk (seria)
 │   ├── pages/
 │   │   ├── Home.jsx            # Strona główna
 │   │   ├── Archive.jsx         # Archiwum + wyszukiwanie

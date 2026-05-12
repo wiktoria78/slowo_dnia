@@ -6,7 +6,7 @@
 - **React 18.3.1** – biblioteka do budowy interfejsów użytkownika
   - Użycie: Komponenty funkcjonalne, Hooks (useState, useEffect, useMemo, useRef)
   - StrictMode włączony (podwójne renderowanie w development)
-  - Brak klasycznych komponentów (legacy)
+  - Znikome użycie klasycznych komponentów (tylko ErrorBoundary – pattern legacy)
 
 ### 1.2. Narzędzia Budowania i Opakowywania
 - **Vite 6.0.1** – build tool i bundler
@@ -62,6 +62,7 @@
 - **Klucze:**
   - `slowo-dnia-favorites` – ulubione słowa
   - `slowo-dnia-user-stats` – statystyki użytkownika (streak, lastVisit)
+  - `theme` – tryb jasny/ciemny (useTheme hook)
 
 ### 1.9. Języki i Formaty
 - **JavaScript (ES2022+)** – moduły ES6, import/export
@@ -74,7 +75,7 @@
   - Plugin: eslint-plugin-react
   - Plugin: eslint-plugin-react-hooks
   - Plugin: eslint-plugin-react-refresh
-- **GitHub Actions / Vercel** – CI/CD
+- **GitHub Pages (gh-pages)** – hosting i deployment
 
 ---
 
@@ -98,20 +99,22 @@ src/
 │   ├── useWordOfDay.js    # Algorytm Słowa Dnia + getRandomWord
 │   ├── useFavorites.js    # Ulubione słowa (CRUD)
 │   ├── useUserStats.js    # Statystyki użytkownika (streak)
-│   └── useLocalStorage.js # Abstrakcja localStorage z obsługą błędów
+│   ├── useLocalStorage.js # Abstrakcja localStorage z obsługą błędów
+│   └── useTheme.js        # Zarządzanie trybem jasny/ciemny
 ├── context/               # Stan globalny i komponenty kontekstowe
 │   ├── AppContext.jsx     # Provider kontekstu (favorites state)
 │   └── components/        # Komponenty wielokrotnego użytku
 │       ├── WordCard.jsx   # Karta słowa (z expandowanymi sekcjami)
-│       └── ShareButton.jsx# Przycisk udostępniania (Web Share API)
+│       ├── ShareButton.jsx# Przycisk udostępniania (Web Share API)
+│       └── StatsCard.jsx  # Wyświetlanie streak (ogień + liczba)
 ├── pages/                 # Komponenty stron (widoki)
 │   ├── Home.jsx           # Strona główna (słowo dnia)
 │   ├── Archive.jsx        # Archiwum + search + filtry + modal
 │   └── Favorites.jsx      # Ulubione z możliwością usuwania
 ├── components/            # Komponenty pomocnicze
-│   └── ErrorBoundary.jsx  # Error boundary dla całej aplikacji
-├── App.jsx                # Routing + layout główny
-├── main.jsx               # Entry point, ReactDOM
+│   └── ErrorBoundary.jsx  # Error boundary klasyczny (class component)
+├── App.jsx                # Routing + layout główny + theme toggle
+├── main.jsx               # Entry point, ReactDOM + theme init
 └── index.css              # Globalne style, Tailwind, fonty
 ```
 
@@ -168,15 +171,15 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
 ### 2.6. Hooki (Konwencja)
 - Zawsze zaczynają się od `use` (React rules of hooks)
 - Zwracają obiekt lub tablicę (useLocalStorage)
-- Używają `useState`, `useEffect`, `useMemo`, `useCallback`
+- Używają `useState`, `useEffect`, `useMemo` (ew. `useCallback` w przyszłości)
 - Efekty uboczne w `useEffect` (czyszczenie w return)
 - Błąd w `localStorage` obsłużony try/catch z fallback'em
 
 ### 2.7. Obsługa Błędów
 - Walidacja JSON w `localStorage`: try-catch z fallback do initialValue
 - Brak `try-catch` w logice biznesowej (nie ma tu błędów do obsługi)
-- Brak `console.error` oprócz błędów krytycznych systemu (np. localStorage)
-- Brak globalnych error boundary (zbyt duży narzut dla małej appki)
+- `console.error` używany tylko dla błędów krytycznych (localStorage, ErrorBoundary, ShareButton)
+- **Error Boundary** – używany globalnie (w `main.jsx`), class component łapiący błędy renderowania
 
 ---
 
@@ -185,33 +188,40 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
 ### 3.1. Drzewo Komponentów
 ```
 App
-├── BrowserRouter
-│   ├── Nav (Linki nawigacyjne z react-router-dom)
+├── BrowserRouter (RRv6)
+│   ├── ErrorBoundary (class component – łapie błędy)
 │   └── Routes
 │       ├── Route / → Home
-│       │   └── WordCard (z useWordOfDay)
-│       ├── Route /archive → Archive (z modalami + filtrami)
-│       └── Route /favorites → Favorites (z możliwością usuwania)
-└── AppProvider (Context provider dla favorites)
-    └── useFavorites
-        └── useLocalStorage
+│       │   └── WordCard (z useWordOfDay, useFavorites)
+│       ├── Route /archive → Archive (z modalami + filtrami + useMemo)
+│       └── Route /favorites → Favorites (z useFavorites)
+├── AppProvider (Context provider dla favorites + ulubione)
+│   └── useFavorites → useLocalStorage
+├── Header (w App.jsx)
+│   ├── NavLink (RRv6) – Dzisiaj, Archiwum, Ulubione
+│   ├── StatsCard (z useUserStats)
+│   ├── ThemeToggle (z useTheme)
+│   └── ShareButton (opcjonalnie)
+└── Footer
 ```
 
 ### 3.2. Komponenty Prezentacyjne (UI)
 | Komponent | Właściwości (Props) | Opis |
 |-----------|----------------------|------|
-| `WordCard` | `word` (Word), `showFavoriteButton` (boolean, default true) | Główny komponent wyświetlający słowo z wszystkimi danymi |
-| `ShareButton` | `word` (Word) | Przycisk udostępniania z Web Share API |
-| `StatsCard` | `streak` (number) | Wyświetla liczbę streak z ikoną ognia |
-| `NavLink` (z RR) | `to`, `children` | Stylizowany link nawigacyjny |
+| `WordCard` | `word` (Word), `showFavoriteButton` (boolean, default true), `scrollable` (boolean, default false) | Główny komponent wyświetlający słowo z wszystkimi danymi |
+| `ShareButton` | `word` (Word) | Przycisk udostępniania z Web Share API (fallback: clipboard) |
+| `StatsCard` | `streak` (number) | Wyświetla liczbę streak z ikoną ognia 🔥 |
+| `NavLink` (z RRv6) | `to`, `children`, `className` | Stylizowany link nawigacyjny z aktywnym stanem |
+| `ErrorBoundary` (class) | `children` | Klasyczny error boundary (class component) łapiący błędy w drzewie renderowania |
 
 ### 3.3. Hooki Niestandardowe (Business Logic)
 | Hook | Zwraca | Opis |
 |------|--------|------|
 | `useWordOfDay()` | `{ wordOfDay, loading, isFinished, getCurrentIndex, START_DATE, getRandomWord }` | Wybiera słowo na bazie daty, obsługuje tryb archiwum, dostarcza losowe słowo |
-| `useFavorites()` | `{ favorites, addFavorite, removeFavorite, isFavorite, toggleFavorite }` | CRUD operacje na ulubionych słowach |
+| `useFavorites()` | `{ favorites, addFavorite, removeFavorite, isFavorite, toggleFavorite }` | CRUD operacje na ulubionych słowach (localStorage) |
 | `useUserStats()` | `{ stats, updateStats }` | Statystyki użytkownika (streak, lastVisit), aktualizacja przy wejściu |
-| `useLocalStorage(key, initialValue)` | `[value, setValue]` | Abstrakcja nad localStorage z obsługą błędów (try-catch) |
+| `useLocalStorage(key, initialValue)` | `[value, setValue]` | Abstrakcja nad localStorage z obsługą błędów (try-catch, JSON) |
+| `useTheme()` | `{ theme, toggleTheme }` | Zarządza trybem jasny/ciemny (data-theme attribute + localStorage) |
 
 ### 3.4. Kontekst (Global State)
 - `AppContext` – przechowuje stan ulubionych słów (złożony z `useFavorites`)
@@ -225,19 +235,24 @@ App
 
 ### 4.1. Inicjalizacja Aplikacji
 ```
-1. index.html → root div
-2. main.jsx → ReactDOM.createRoot() → <App />
-3. App.jsx → BrowserRouter + AppProvider + Routes
-4. AppProvider → useFavorites() → useLocalStorage()
+1. index.html → root div + Google Fonts preconnect
+2. main.jsx → initializeTheme() – odczyt/ustawienie data-theme PRZED renderem
+   - localStorage.getItem('theme')
+   - fallback: prefers-color-scheme media query
+   - document.documentElement.setAttribute('data-theme', theme)
+3. ReactDOM.createRoot() → <App />
+4. App.jsx → BrowserRouter + ErrorBoundary + AppProvider + Routes
+5. AppProvider → useFavorites() → useLocalStorage('slowo-dnia-favorites')
    → localStorage.getItem() → JSON.parse() → state z ulubionymi
-5. Home (Route) → useWordOfDay()
+6. useUserStats() → useLocalStorage('slowo-dnia-user-stats') → updateStats() przy mount
+7. Home (Route) → useWordOfDay()
    → useState: loading=true (300ms min dla UX)
    → useEffect: setTimeout 300ms
    → getDaysElapsed(START_DATE) → days
    → words[days] → setWordOfDay()
    → setLoading(false)
-6. Render: WordCard(wordOfDay)
-7. NavLink aktywne ustawiane przez NavLink/Nav z RRv6
+8. Render: WordCard(wordOfDay) + ShareButton + ThemeToggle
+9. NavLink aktywne ustawiane przez NavLink/Nav z RRv6
 ```
 
 ### 4.2. Interakcja: Dodanie do Ulubionych
@@ -309,17 +324,35 @@ function getDaysElapsed(startDate):
 
 function getWordOfDay(words, daysElapsed):
     if daysElapsed < 0:
-        return words[0]             // Pierwsze słowo
+        return words[0]             // Pierwsze słowo (przed startem)
     if daysElapsed >= words.length:
         return null                 // Tryb archiwum (100+ dni)
     return words[daysElapsed]       // Normalne słowo
 ```
 
-**Stany w hooku (`useWordOfDay`):**
+**W hooku (`useWordOfDay`):**
+```javascript
+useEffect(() => {
+  setTimeout(() => {
+    const daysElapsed = getDaysElapsed(START_DATE)
+    if (daysElapsed >= wordsData.length) {
+      setIsFinished(true)    // Tryb archiwum (po 100 dniach)
+      setWordOfDay(null)
+    } else {
+      const word = getWordOfDay(wordsData)
+      setWordOfDay(word)
+    }
+    setLoading(false)        // Po 300ms
+  }, 300)
+}, [])
+```
+
+**Stany:**
 - `loading: true` przez 300ms (symulacja asynchroniczności)
-- `isFinished: true` gdy `daysElapsed >= 100`
+- `isFinished: true` gdy `daysElapsed >= 100` (archiwum)
 - `wordOfDay: null` gdy tryb archiwum
 - `getRandomWord: () → Word` – losowe słowo z całej bazy (bonus)
+- `getCurrentIndex: () → number` – obecny indeks dnia
 
 **Złożoność czasowa:** O(1) – stały czas
 **Złożoność pamięciowa:** O(1) – brak dodatkowych struktur
@@ -457,7 +490,7 @@ transition={{ delay: index * 0.05 }}
 - Łącznie: ~275KB (gzippowany bundle JS)
 
 **First Contentful Paint (FCP):**
-- CDN (Vercel) + HTTP/2 + kompresja gzip
+- CDN (GitHub Pages) + HTTP/2 + kompresja gzip
 - Docelowe: < 1.5s na 3G
 - Rzeczywiste (test): ~1s na desktop, ~1.5s na 3G
 
@@ -504,12 +537,13 @@ export default React.memo(WordCard);
 - Odporność na uszkodzone dane (try-catch w `useLocalStorage` + fallback)
 
 **HTTPS:**
-- Vercel automatycznie wymusza HTTPS
+- GitHub Pages automatycznie wymusza HTTPS
 - Wszystkie requesty szyfrowane (TLS)
 
 **Error Boundaries:**
 - `ErrorBoundary.jsx` w folderze `components/` – łapie błędy w drzewie renderowania
-- Nie używany globalnie, ale dostępny dla przyszłych rozszerzeń (obecnie brak błędów krytycznych w MVP)
+- **Używany globalnie** (opakowuje całą aplikację w `main.jsx`)
+- Zapewnia graceful degradation i przycisk do odświeżenia
 
 ### 7.2. Odporność na błędy (Resilience)
 
@@ -562,11 +596,10 @@ try {
 
 ### 8.1. Obecne Logowanie
 
-**Błędy krytyczne:**
-```javascript
-console.error(`Error reading localStorage key "${key}":`, error);
-// Tylko przy odczycie localStorage (rzadkie)
-```
+**Błędy systemu (console.error):**
+- `useLocalStorage.js` – odczyt/zapis localStorage ( approaches unavailable storage, corrupted JSON)
+- `ErrorBoundary.jsx` – przechwytywanie nieobsłużonych błędów renderowania (componentDidCatch)
+- `ShareButton.jsx` – błędy Web Share API lub clipboard API (fallback failures)
 
 **Brak logów informacyjnych:**
 - Żadnych `console.log` w kodzie produkcyjnym
@@ -694,42 +727,53 @@ const { t } = useTranslation();
 ### 11.1. Obecny Stan
 
 **Hosting:**
-- Vercel (vercel.com)
-- Automatyczny deploy z GitHub
-- Preview deployments dla PR
-- Edge Network (CDN globalne)
+- GitHub Pages (via `gh-pages` package)
+- Automatyczny deploy z npm script `npm run deploy`
+- Branch: `gh-pages` (stolicowy)
+- CDN: GitHub Pages globalny CDN
 
 **Konfiguracja:**
 ```json
-// vercel.json
+// package.json scripts
 {
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install"
+  "deploy": "npm run build && npx gh-pages -d dist"
 }
+
+// vercel.json (przestarzały, nieużywany)
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+
+// vite.config.js
+export default defineConfig({
+  plugins: [react()],
+  base: '/',  // Required for GitHub Pages root deployment
+})
 ```
 
 **Environment Variables:**
-- Obecnie: brak (config w kodzie: `START_DATE`)
-- Przyszłość: `VITE_API_URL`, `VITE_GA_ID`
+- Obecnie: brak (config w kodzie: `START_DATE`, `VITE_APP_URL` niepotrzebny)
+- Przyszłość: `VITE_GA_ID` dla analityki
 
 ### 11.2. Proces Deployu
 
 ```
 1. Push do brancha main
-2. GitHub → webhook → Vercel
-3. Vercel: install dependencies
-4. Vercel: run `npm run build`
-5. Vercel: create preview deployment (URL: <hash>.vercel.app)
-6. Na approval: deploy to production (slowo-dnia-pi.vercel.app)
-7. Rollback automatyczny przy błędach buildu
+2. GitHub Actions (jeśli skonfigurowane) lub ręczny trigger
+3. Uruchomienie: npm run deploy
+4. Vite build: tworzy folder dist/ z assets
+5. gh-pages: push zawartości dist/ do brancha gh-pages
+6. GitHub Pages: serwuje zawartość z brancha gh-pages
+7. URL: https://wiktoria78.github.io/slowo_dnia/
 ```
 
 ### 11.3. Monitorowanie Uptime
 
-- Vercel Analytics: dostępność, czasy odpowiedzi
-- Lighthouse CI: testy wydajności na każdym PR
-- Obecnie brak alerting'u (brak wymaganej infra)
+- GitHub Pages Analytics: podstawowe statystyki ruchu
+- Brak wbudowanego monitoringu uptime (zewnętrzne usługi jak UptimeRobot mogą być dodane)
+- Brak Lighthouse CI (opcjonalne do dodania)
 
 ### 11.4. Versioning
 
@@ -878,4 +922,4 @@ Architektura jest minimalistyczna, co pozwala na:
 Kluczowe decyzje (brak backendu, date-based algorithm, client-side storage) są świadomymi trade-offami, które optymalizują pod kątem czasu i kosztów, przy akceptowalnych kompromisach w skali MVP.
 ---
 
-*Dokumentacja techniczna, zgodna z aktualnym codebase (stan na 2026-05-03).*
+*Dokumentacja techniczna, zgodna z aktualnym codebase (stan na 2026-05-12).*
