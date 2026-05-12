@@ -160,3 +160,18 @@ h1, h2, h3, h4, h5, h6 {
 .font-ui {
   font-family: 'Inter', sans-serif;
 }
+
+/* Favorite remove button circle */
+.favorite-remove-btn {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+[data-theme="dark"] .favorite-remove-btn {
+  background-color: #1f1f1f;
+  border-color: #2f2f2f;
+}
+
+[data-theme="dark"] .favorite-remove-btn:hover {
+  background-color: #2a2a2a;
+}
