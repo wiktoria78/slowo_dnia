@@ -472,18 +472,17 @@
   },
   {
     "id": 30,
-    "word": "Katatonia",
-    "definition": "Stan psychiczny, w którym następuje znieruchomienie i odcięcie od świata",
+    "word": "Paternalizm",
+    "definition": "Postawa polegająca na ograniczaniu wolności decydowania innej osoby dla jej rzekomego dobra",
     "examples": [
-      "Katatonia sprawiła, że pacjent nie reagował na bodźce.",
-      "W stanie katatonii człowiek bywa całkowicie wyciszony."
+      "Lekarz wykazał się paternalizmem, nie informując pacjenta o ryzyku operacji.",
+      "Paternalizm państwa objawia się w narzucaniu obywatelom stylu życia."
     ],
-    "etymology": "z gr. kata + tonos (napięcie, siła)",
-    "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Zdrowie i medycyna",
+    "etymology": "z łac. paternus – ojcowski",
+    "partOfSpeech": "rzeczownik, rodzaj męski",
+    "category": "Człowiek i zachowanie",
     "synonyms": [
-      "stupor",
-      "niereaktywność"
+      "nadopiekuńczość"
     ]
   },
   {
@@ -1273,17 +1272,18 @@
   },
   {
     "id": 80,
-    "word": "Paternalizm",
-    "definition": "Postawa polegająca na ograniczaniu wolności decydowania innej osoby dla jej rzekomego dobra",
+    "word": "Katatonia",
+    "definition": "Stan psychiczny, w którym następuje znieruchomienie i odcięcie od świata",
     "examples": [
-      "Lekarz wykazał się paternalizmem, nie informując pacjenta o ryzyku operacji.",
-      "Paternalizm państwa objawia się w narzucaniu obywatelom stylu życia."
+      "Katatonia sprawiła, że pacjent nie reagował na bodźce.",
+      "W stanie katatonii człowiek bywa całkowicie wyciszony."
     ],
-    "etymology": "z łac. paternus – ojcowski",
-    "partOfSpeech": "rzeczownik, rodzaj męski",
-    "category": "Człowiek i zachowanie",
+    "etymology": "z gr. kata + tonos (napięcie, siła)",
+    "partOfSpeech": "rzeczownik, rodzaj żeński",
+    "category": "Zdrowie i medycyna",
     "synonyms": [
-      "nadopiekuńczość"
+      "stupor",
+      "niereaktywność"
     ]
   },
   {
