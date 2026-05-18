@@ -359,19 +359,20 @@
       "brak odczuwania przyjemności"
     ]
   },
-  {
+ {
     "id": 23,
-    "word": "Kakofonia",
-    "definition": "Nieprzyjemnie brzmiąca, chaotyczna mieszanina dźwięków",
+    "word": "Ambiwalencja",
+    "definition": "Współistnienie sprzecznych uczuć lub postaw wobec tej samej osoby lub obiektu",
     "examples": [
-      "Z ulicy dochodziła kakofonia klaksonów i krzyków.",
-      "Zamiast harmonii powstała kakofonia przypadkowych tonów."
+      "Jego ambiwalencja wobec ojca była paraliżująca.",
+      "Ambiwalencja uczuć często prowadzi do impasu."
     ],
-    "etymology": "fr. cacophonie, utworzone (od gr. kakós ‛zły’) na wzór antonimu euphonie, eufonia; może na podstawie gr. kakó-phōnos ‛źle (nieprzyjemnie) brzmiący’",
+    "etymology": "z łac. ambo – oba dwa + valentia – siła, moc",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Język i komunikacja",
+    "category": "Psychologia i emocje",
     "synonyms": [
-      "chaos dźwięków"
+      "sprzeczność uczuć",
+      "rozdarcie wewnętrzne"
     ]
   },
   {
@@ -580,20 +581,19 @@
       "znużenie życiem"
     ]
   },
-  {
+   {
     "id": 37,
-    "word": "Ambiwalencja",
-    "definition": "Współistnienie sprzecznych uczuć lub postaw wobec tej samej osoby lub obiektu",
+    "word": "Kakofonia",
+    "definition": "Nieprzyjemnie brzmiąca, chaotyczna mieszanina dźwięków",
     "examples": [
-      "Jego ambiwalencja wobec ojca była paraliżująca.",
-      "Ambiwalencja uczuć często prowadzi do impasu."
+      "Z ulicy dochodziła kakofonia klaksonów i krzyków.",
+      "Zamiast harmonii powstała kakofonia przypadkowych tonów."
     ],
-    "etymology": "z łac. ambo – oba dwa + valentia – siła, moc",
+    "etymology": "fr. cacophonie, utworzone (od gr. kakós ‛zły’) na wzór antonimu euphonie, eufonia; może na podstawie gr. kakó-phōnos ‛źle (nieprzyjemnie) brzmiący’",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Psychologia i emocje",
+    "category": "Język i komunikacja",
     "synonyms": [
-      "sprzeczność uczuć",
-      "rozdarcie wewnętrzne"
+      "chaos dźwięków"
     ]
   },
   {
