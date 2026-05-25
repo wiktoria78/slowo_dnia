@@ -19,19 +19,19 @@ function App() {
     <div className="min-h-screen bg-background">
 <header className="bg-surface shadow-sm">
         <nav className="max-w-4xl mx-auto px-3 py-2 md:px-4 md:py-3.5 flex justify-between items-center w-full md:w-auto">
-           <Link to="/" className="font-display text-xl md:text-2xl font-bold text-word whitespace-nowrap">
+<Link to="/" className="font-display text-lg md:text-2xl font-bold text-word whitespace-nowrap mr-2 md:mr-4">
               Słowo Dnia
             </Link>
-            <div className="flex gap-2 md:gap-4 font-ui text-xs md:text-sm items-center">
-               <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                 Dzisiaj
-               </NavLink>
-               <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                 Archiwum
-               </NavLink>
-               <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                 Ulubione
-               </NavLink>
+<div className="flex gap-2 md:gap-4 font-ui text-xs md:text-sm items-center">
+               <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors px-1'}>
+                  Dzisiaj
+                </NavLink>
+                <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                  Archiwum
+                </NavLink>
+                <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
+                  Ulubione
+                </NavLink>
                <StatsCard streak={stats.streak} />
                <button
                  onClick={toggleTheme}
