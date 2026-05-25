@@ -23,15 +23,15 @@ function App() {
               Słowo Dnia
             </Link>
 <div className="flex gap-2 md:gap-4 font-ui text-xs md:text-sm items-center">
-               <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors px-1'}>
-                  Dzisiaj
-                </NavLink>
-                <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                  Archiwum
-                </NavLink>
-                <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold' : 'text-primary hover:text-secondary transition-colors'}>
-                  Ulubione
-                </NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? 'text-secondary font-semibold md:px-1' : 'text-primary hover:text-secondary transition-colors md:px-1'}>
+                   Dzisiaj
+                 </NavLink>
+                 <NavLink to="/archive" className={({ isActive }) => isActive ? 'text-secondary font-semibold md:px-1' : 'text-primary hover:text-secondary transition-colors md:px-1'}>
+                   Archiwum
+                 </NavLink>
+                 <NavLink to="/favorites" className={({ isActive }) => isActive ? 'text-secondary font-semibold md:px-1' : 'text-primary hover:text-secondary transition-colors md:px-1'}>
+                   Ulubione
+                 </NavLink>
                <StatsCard streak={stats.streak} />
                <button
                  onClick={toggleTheme}
