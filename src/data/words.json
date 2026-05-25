@@ -583,17 +583,19 @@
   },
    {
     "id": 37,
-    "word": "Kakofonia",
-    "definition": "Nieprzyjemnie brzmiąca, chaotyczna mieszanina dźwięków",
+    "word": "Dysymulacja",
+    "definition": "Ukrywanie prawdziwych uczuć lub intencji pod maską spokoju",
     "examples": [
-      "Z ulicy dochodziła kakofonia klaksonów i krzyków.",
-      "Zamiast harmonii powstała kakofonia przypadkowych tonów."
+      "Jego dysymulacja była niesamowicie wiarygodna.",
+      "Dysymulacja gniewu wymaga żelaznej dyscypliny."
     ],
-    "etymology": "fr. cacophonie, utworzone (od gr. kakós ‛zły’) na wzór antonimu euphonie, eufonia; może na podstawie gr. kakó-phōnos ‛źle (nieprzyjemnie) brzmiący’",
+    "etymology": "z łac. dissimulare – ukrywać, udawać; dis- (roze-) + simulare (udawać)",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Język i komunikacja",
+    "category": "Człowiek i zachowanie",
     "synonyms": [
-      "chaos dźwięków"
+      "ukrywanie",
+      "pozorowanie",
+      "maskowanie"
     ]
   },
   {
@@ -693,21 +695,19 @@
       "błąd stylistyczny"
     ]
   },
-  {
+   {
     "id": 44,
-    "word": "Dysymulacja",
-    "definition": "Ukrywanie prawdziwych uczuć lub intencji pod maską spokoju",
+    "word": "Kakofonia",
+    "definition": "Nieprzyjemnie brzmiąca, chaotyczna mieszanina dźwięków",
     "examples": [
-      "Jego dysymulacja była niesamowicie wiarygodna.",
-      "Dysymulacja gniewu wymaga żelaznej dyscypliny."
+      "Z ulicy dochodziła kakofonia klaksonów i krzyków.",
+      "Zamiast harmonii powstała kakofonia przypadkowych tonów."
     ],
-    "etymology": "z łac. dissimulare – ukrywać, udawać; dis- (roze-) + simulare (udawać)",
+    "etymology": "fr. cacophonie, utworzone (od gr. kakós ‛zły’) na wzór antonimu euphonie, eufonia; może na podstawie gr. kakó-phōnos ‛źle (nieprzyjemnie) brzmiący’",
     "partOfSpeech": "rzeczownik, rodzaj żeński",
-    "category": "Człowiek i zachowanie",
+    "category": "Język i komunikacja",
     "synonyms": [
-      "ukrywanie",
-      "pozorowanie",
-      "maskowanie"
+      "chaos dźwięków"
     ]
   },
   {
