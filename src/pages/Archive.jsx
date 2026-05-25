@@ -2,6 +2,7 @@ import { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import wordsData from '../data/words.json';
 import WordCard from '../context/components/WordCard.jsx';
+import { useTheme } from '../hooks/useTheme';
 
 const START_DATE = new Date('2026-04-13');
 
@@ -15,10 +16,11 @@ const getDaysElapsed = (startDate) => {
 };
 
 const Archive = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+   const [searchTerm, setSearchTerm] = useState('');
+   const [selectedCategory, setSelectedCategory] = useState('all');
+   const [isOpen, setIsOpen] = useState(false);
+   const dropdownRef = useRef(null);
+   const { theme } = useTheme();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -94,19 +96,19 @@ const Archive = () => {
       {/* Filters */}
       <div className="max-w-2xl mx-auto mb-8">
         <div className="flex flex-col md:flex-row gap-4">
-          <input
-            type="text"
-            placeholder="Szukaj słowa..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-lg border border-text-20 bg-surface font-ui text-text placeholder:text-text-40 focus:outline-none focus:border-primary"
-          />
+            <input
+              type="text"
+              placeholder="Szukaj słowa..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className={`flex-1 px-4 py-3 rounded-lg border border-text-20 bg-surface font-ui text-text placeholder:text-text-40 focus:outline-none focus:border-${theme === 'dark' ? 'c47a8c' : 'primary'}`}
+            />
           <div className="relative" ref={dropdownRef}>
             <button
-               type="button"
-               onClick={() => setIsOpen(!isOpen)}
-               className="w-full px-4 py-3 rounded-lg border border-text-20 bg-surface font-ui text-text text-left flex justify-between items-center gap-2 hover:opacity-80 transition-colors focus:outline-none focus:border-primary"
-             >
+                type="button"
+                onClick={() => setIsOpen(!isOpen)}
+                className={`w-full px-4 py-3 rounded-lg border border-text-20 bg-surface font-ui text-text text-left flex justify-between items-center gap-2 hover:opacity-80 transition-colors focus:outline-none focus:border-${theme === 'dark' ? 'c47a8c' : 'primary'}`}
+              >
               <span>{selectedCategory === 'all' ? 'Wszystkie kategorie' : selectedCategory}</span>
               <svg className={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
