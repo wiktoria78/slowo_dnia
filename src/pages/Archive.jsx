@@ -41,13 +41,13 @@ const Archive = () => {
     return ['all', ...Array.from(cats)];
   }, [archiveWords]);
 
-  const filteredWords = useMemo(() => {
-    return archiveWords.filter(word => {
-      const matchesSearch = word.word.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesCategory = selectedCategory === 'all' || word.category === selectedCategory;
-      return matchesSearch && matchesCategory;
-    });
-  }, [archiveWords, searchTerm, selectedCategory]);
+   const filteredWords = useMemo(() => {
+     return archiveWords.filter(word => {
+       const matchesSearch = word.word.toLowerCase().startsWith(searchTerm.toLowerCase());
+       const matchesCategory = selectedCategory === 'all' || word.category === selectedCategory;
+       return matchesSearch && matchesCategory;
+     });
+   }, [archiveWords, searchTerm, selectedCategory]);
 
   const [selectedWord, setSelectedWord] = useState(null);
 
