@@ -6,7 +6,7 @@
 - **React 18.3.1** – biblioteka do budowy interfejsów użytkownika
   - Użycie: Komponenty funkcjonalne, Hooks (useState, useEffect, useMemo, useRef)
   - StrictMode włączony (podwójne renderowanie w development)
-  - Znikome użycie klasycznych komponentów (tylko ErrorBoundary – pattern legacy)
+  - Brak klasycznych komponentów (legacy)
 
 ### 1.2. Narzędzia Budowania i Opakowywania
 - **Vite 6.0.1** – build tool i bundler
@@ -75,7 +75,7 @@
   - Plugin: eslint-plugin-react
   - Plugin: eslint-plugin-react-hooks
   - Plugin: eslint-plugin-react-refresh
-- **Vercel** — hosting i deployment
+- **GitHub Actions / Vercel** – CI/CD
 
 ---
 
@@ -171,15 +171,15 @@ const WordCard = ({ word, showFavoriteButton = true }) => {
 ### 2.6. Hooki (Konwencja)
 - Zawsze zaczynają się od `use` (React rules of hooks)
 - Zwracają obiekt lub tablicę (useLocalStorage)
-- Używają `useState`, `useEffect`, `useMemo` (ew. `useCallback` w przyszłości)
+- Używają `useState`, `useEffect`, `useMemo`, `useCallback`
 - Efekty uboczne w `useEffect` (czyszczenie w return)
 - Błąd w `localStorage` obsłużony try/catch z fallback'em
 
 ### 2.7. Obsługa Błędów
 - Walidacja JSON w `localStorage`: try-catch z fallback do initialValue
 - Brak `try-catch` w logice biznesowej (nie ma tu błędów do obsługi)
-- `console.error` używany tylko dla błędów krytycznych (localStorage, ErrorBoundary, ShareButton)
-- **Error Boundary** – używany globalnie (w `main.jsx`), class component łapiący błędy renderowania
+- Brak `console.error` oprócz błędów krytycznych systemu (np. localStorage)
+- Brak globalnych error boundary (zbyt duży narzut dla małej appki)
 
 ---
 
@@ -490,7 +490,7 @@ transition={{ delay: index * 0.05 }}
 - Łącznie: ~275KB (gzippowany bundle JS)
 
 **First Contentful Paint (FCP):**
-- CDN (GitHub Pages) + HTTP/2 + kompresja gzip
+- CDN (Vercel) + HTTP/2 + kompresja gzip
 - Docelowe: < 1.5s na 3G
 - Rzeczywiste (test): ~1s na desktop, ~1.5s na 3G
 
@@ -537,13 +537,12 @@ export default React.memo(WordCard);
 - Odporność na uszkodzone dane (try-catch w `useLocalStorage` + fallback)
 
 **HTTPS:**
-- GitHub Pages automatycznie wymusza HTTPS
+- Vercel automatycznie wymusza HTTPS
 - Wszystkie requesty szyfrowane (TLS)
 
 **Error Boundaries:**
 - `ErrorBoundary.jsx` w folderze `components/` – łapie błędy w drzewie renderowania
-- **Używany globalnie** (opakowuje całą aplikację w `main.jsx`)
-- Zapewnia graceful degradation i przycisk do odświeżenia
+- Nie używany globalnie, ale dostępny dla przyszłych rozszerzeń (obecnie brak błędów krytycznych w MVP)
 
 ### 7.2. Odporność na błędy (Resilience)
 
@@ -596,10 +595,11 @@ try {
 
 ### 8.1. Obecne Logowanie
 
-**Błędy systemu (console.error):**
-- `useLocalStorage.js` – odczyt/zapis localStorage ( approaches unavailable storage, corrupted JSON)
-- `ErrorBoundary.jsx` – przechwytywanie nieobsłużonych błędów renderowania (componentDidCatch)
-- `ShareButton.jsx` – błędy Web Share API lub clipboard API (fallback failures)
+**Błędy krytyczne:**
+```javascript
+console.error(`Error reading localStorage key "${key}":`, error);
+// Tylko przy odczycie localStorage (rzadkie)
+```
 
 **Brak logów informacyjnych:**
 - Żadnych `console.log` w kodzie produkcyjnym
@@ -714,12 +714,6 @@ const { t } = useTranslation();
 - `Intl.DateTimeFormat` zamiast `toLocaleDateString`
 - `Intl.NumberFormat` dla liczby ulubionych
 
-### 10.3. Priorytet
-
-- MVP: Tylko polski (żadnych zmian)
-- Faza 2: Dodanie angielskiego (zależnie od demografii użytkowników)
-- Faza 3: Español, Deutsch (jeśli wejście na rynek międzynarodowy)
-
 ---
 
 ## 11. Deployment i CI/CD
@@ -727,14 +721,19 @@ const { t } = useTranslation();
 ### 11.1. Obecny Stan
 
 **Hosting:**
-- Vercel – platforma hostingowa dla aplikacji frontendowych
-- Automatyczny deploy przy push do brancha `main`
-- CDN globalny z SSL
-- Wbudowane analytics i monitoring wydajności
+- GitHub Pages (via `gh-pages` package)
+- Automatyczny deploy z npm script `npm run deploy`
+- Branch: `gh-pages` (stolicowy)
+- CDN: GitHub Pages globalny CDN
 
 **Konfiguracja:**
 ```json
-// vercel.json
+// package.json scripts
+{
+  "deploy": "npm run build && npx gh-pages -d dist"
+}
+
+// vercel.json (przestarzały, nieużywany)
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
@@ -744,7 +743,7 @@ const { t } = useTranslation();
 // vite.config.js
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/',  // Required for GitHub Pages root deployment
 })
 ```
 
@@ -756,18 +755,19 @@ export default defineConfig({
 
 ```
 1. Push do brancha main
-2. Vercel automatycznie wykrywa zmiany
-3. Uruchamia build: npm run build
+2. GitHub Actions (jeśli skonfigurowane) lub ręczny trigger
+3. Uruchomienie: npm run deploy
 4. Vite build: tworzy folder dist/ z assets
-5. Deploy do produkcji
-6. URL: https://slowo-dnia-pi.vercel.app
+5. gh-pages: push zawartości dist/ do brancha gh-pages
+6. GitHub Pages: serwuje zawartość z brancha gh-pages
+7. URL: https://wiktoria78.github.io/slowo_dnia/
 ```
 
 ### 11.3. Monitorowanie Uptime
 
-- Vercel Analytics: podstawowe statystyki wydajności
-- Wbudowany monitoring uptime
-- Deploy previews dla pull requestów
+- GitHub Pages Analytics: podstawowe statystyki ruchu
+- Brak wbudowanego monitoringu uptime (zewnętrzne usługi jak UptimeRobot mogą być dodane)
+- Brak Lighthouse CI (opcjonalne do dodania)
 
 ### 11.4. Versioning
 
@@ -916,4 +916,4 @@ Architektura jest minimalistyczna, co pozwala na:
 Kluczowe decyzje (brak backendu, date-based algorithm, client-side storage) są świadomymi trade-offami, które optymalizują pod kątem czasu i kosztów, przy akceptowalnych kompromisach w skali MVP.
 ---
 
-*Dokumentacja techniczna, zgodna z aktualnym codebase (stan na 2026-05-12).*
+*Dokumentacja techniczna, zgodna z aktualnym codebase (stan na 2026-05-03).*
