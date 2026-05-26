@@ -279,7 +279,7 @@ App
 2. onChange → setSearchTerm(value)
 3. useMemo re-runs (dependency: searchTerm changed)
 4. filteredWords = archiveWords.filter(word => 
-     word.word.includes(term) || word.definition.includes(term))
+      word.word.toLowerCase().startsWith(term.toLowerCase()))
 5. useMemo re-runs (dependency: filteredWords changed)
 6. UI re-renders with new grid items
 7. Total count updates
@@ -374,8 +374,7 @@ archiveWords = wordsData.slice(0, maxIndex).reverse()
 filtered = archiveWords.filter(word => {
     // Wyszukiwanie tekstowe (ignoruje wielkość liter)
     lowerTerm = searchTerm.toLowerCase()
-    matchesSearch = word.word.toLowerCase().includes(lowerTerm) 
-                 OR word.definition.toLowerCase().includes(lowerTerm)
+    matchesSearch = word.word.toLowerCase().startsWith(lowerTerm)
     
     // Dopasowanie kategorii
     matchesCategory = (selectedCategory == 'all') 
