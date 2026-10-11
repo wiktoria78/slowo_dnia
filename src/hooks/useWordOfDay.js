@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import wordsData from '../data/words.json';
 
-const START_DATE = new Date('2026-04-13');
+const START_DATE = new Date('2026-10-01');
 
 const getDaysElapsed = (startDate) => {
   const now = new Date();
